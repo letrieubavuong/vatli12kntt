@@ -72,6 +72,16 @@ export function renderTextWithMath(text) {
         return <code key={index} className="math-error">{part.content}</code>;
       }
     }
-    return part.content;
+    const textLines = part.content.split('\\\\');
+    return (
+      <React.Fragment key={index}>
+        {textLines.map((line, lIdx) => (
+          <React.Fragment key={lIdx}>
+            {line}
+            {lIdx < textLines.length - 1 && <br />}
+          </React.Fragment>
+        ))}
+      </React.Fragment>
+    );
   });
 }
