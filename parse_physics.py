@@ -148,9 +148,9 @@ def parse_tex_file(file_path, lesson_id):
         dest_path = f"C:/Users/ThayVuongNTK/Documents/GitHub/vatli12kntt/public/images/tikz/tikz_{lesson_id}_{tikz_counter}.svg"
         
         if os.path.exists(dest_path):
-            replacement = f"\n[TIKZ: {svg_url}|{tikz_code}]\n"
+            replacement = f"\n__TIKZ_START__{svg_url}|{tikz_code}__TIKZ_END__\n"
         else:
-            replacement = f"\n[TIKZ: placeholder|{tikz_code}]\n"
+            replacement = f"\n__TIKZ_START__placeholder|{tikz_code}__TIKZ_END__\n"
             
         content = content[:match_start] + replacement + content[end_idx:]
         idx = match_start + len(replacement)

@@ -25,8 +25,8 @@ export default function Latex({ content }) {
     }
   );
 
-  // Trích xuất tất cả các khối [TIKZ: ...] (có thể trải dài trên nhiều dòng)
-  const tikzRegex = /\[TIKZ: ([\s\S]+?)\]/g;
+  // Trích xuất tất cả các khối __TIKZ_START__...__TIKZ_END__
+  const tikzRegex = /__TIKZ_START__([\s\S]+?)__TIKZ_END__/g;
   const tikzBlocks = [];
   let counter = 0;
 

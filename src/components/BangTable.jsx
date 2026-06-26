@@ -21,7 +21,7 @@ function cleanCell(raw) {
 
 function protectTikzBlocks(text) {
   const blocks = [];
-  const protectedText = text.replace(/\[TIKZ: ([\s\S]+?)\]/g, (_match, content) => {
+  const protectedText = text.replace(/__TIKZ_START__([\s\S]+?)__TIKZ_END__/g, (_match, content) => {
     blocks.push(content);
     return `__TIKZ_CELL_${blocks.length - 1}__`;
   });
@@ -50,7 +50,7 @@ function renderCellContent(cell, tikzBlocks) {
     return code ? <TikzViewer code={code} /> : null;
   }
 
-  const tikzInline = cell.match(/\[TIKZ:\s*([\s\S]+?)\]/);
+  const tikzInline = cell.match(/__TIKZ_START__\s*([\s\S]+?)__TIKZ_END__/);
   if (tikzInline) {
     return <TikzViewer code={tikzInline[1]} />;
   }
