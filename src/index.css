@@ -2664,6 +2664,13 @@ button, input {
   border-radius: var(--border-radius-sm);
 }
 
+.tikz-svg-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-sm);
+  filter: invert(0.9) brightness(1.6) contrast(1.2);
+}
+
 .tikz-code-expanded-panel {
   border-top: 1px solid var(--border-color);
   background: #07090e;
@@ -3610,6 +3617,8 @@ button, input {
 }
 
 /* ── Loading Spinner Styles ── */
+
+/* ── Loading Spinner Styles ── */
 .az-loading-container {
   display: flex;
   flex-direction: column;
@@ -3642,4 +3651,51 @@ button, input {
     transform: rotate(360deg);
   }
 }
+
+/* --- 19. Blockquote / tcolorbox callouts --- */
+.theory-blockquote {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  color: var(--text-normal);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  border-left: 4px solid var(--primary);
+  background: rgba(56, 189, 248, 0.02);
+}
+
+.theory-blockquote.border-warning {
+  border-left-color: #f59e0b; /* Amber/gold */
+  background: rgba(245, 158, 11, 0.03);
+}
+
+.theory-blockquote.border-info {
+  border-left-color: #818cf8; /* Indigo/purple */
+  background: rgba(129, 140, 248, 0.03);
+}
+
+.theory-blockquote strong {
+  color: var(--text-bright);
+}
+
+.theory-blockquote.border-warning strong {
+  color: #fbd38d; /* Soft bright orange-gold */
+}
+
+.theory-blockquote.border-info strong {
+  color: #c7d2fe; /* Soft bright indigo */
+}
+
+.blockquote-p {
+  margin: 0.25rem 0;
+}
+
+.blockquote-p:first-child {
+  margin-top: 0;
+}
+
+.blockquote-p:last-child {
+  margin-bottom: 0;
+}
+
 

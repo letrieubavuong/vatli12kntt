@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { Code, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
+import React from 'react';
+import { Code } from 'lucide-react';
 
 export default function TikzViewer({ code }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-
   let svgUrl = null;
   let tikzCode = code;
   if (code && code.includes('|')) {
@@ -12,16 +9,6 @@ export default function TikzViewer({ code }) {
     svgUrl = parts[0];
     tikzCode = parts.slice(1).join('|');
   }
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(tikzCode);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy text: ', err);
-    }
-  };
 
   // Trích xuất chú thích từ code Tikz nếu có (ví dụ các dòng chú thích % ...)
   const extractCaption = (tikzCodeText) => {
@@ -47,14 +34,6 @@ export default function TikzViewer({ code }) {
           </div>
           <span className="tikz-title">{caption}</span>
         </div>
-        <button 
-          className={`tikz-toggle-btn ${isOpen ? 'active' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? 'Thu gọn mã Tikz' : 'Xem mã Tikz'}
-        >
-          {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-          <span className="tikz-toggle-text">{isOpen ? 'Thu gọn mã' : 'Xem mã Tikz'}</span>
-        </button>
       </div>
 
       {/* Phần minh họa đồ họa SVG thay thế sinh động cho sơ đồ vật lí */}
@@ -81,7 +60,7 @@ export default function TikzViewer({ code }) {
             <rect width="100%" height="100%" fill="url(#grid)" />
 
             {/* Trục tọa độ đại diện */}
-            <line x1="40" y1="130" x2="360" y2="130" stroke="rgba(255,255,255,0.3)" strokeWidth="2" markerEnd="url(#arrow)" />
+            <line x1="40" y1="130" x2="360" y2="130" stroke="rgba(255,255,255,0.3)" strokeWidth="2" />
             <line x1="50" y1="140" x2="50" y2="20" stroke="rgba(255,255,255,0.3)" strokeWidth="2" />
             <text x="350" y="145" fill="rgba(255,255,255,0.6)" fontSize="10">x</text>
             <text x="40" y="25" fill="rgba(255,255,255,0.6)" fontSize="10">y</text>
@@ -104,35 +83,6 @@ export default function TikzViewer({ code }) {
           </svg>
         )}
       </div>
-
-      {/* Code details expanded */}
-      {isOpen && (
-        <div className="tikz-code-expanded-panel animate-fade-in">
-          <div className="tikz-code-toolbar">
-            <span className="tikz-language-label">Tikz LaTeX Code</span>
-            <button 
-              className={`tikz-copy-btn ${copied ? 'copied' : ''}`}
-              onClick={handleCopy}
-              aria-label="Sao chép mã Tikz"
-            >
-              {copied ? (
-                <>
-                  <Check size={14} />
-                  <span>Đã sao chép!</span>
-                </>
-              ) : (
-                <>
-                  <Copy size={14} />
-                  <span>Sao chép mã</span>
-                </>
-              )}
-            </button>
-          </div>
-          <pre className="tikz-code-pre">
-            <code>{tikzCode}</code>
-          </pre>
-        </div>
-      )}
     </div>
   );
 }

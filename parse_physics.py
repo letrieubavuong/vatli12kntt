@@ -65,12 +65,105 @@ def process_boder_commands(content):
         
     return content
 
+def process_note_environment(content):
+    idx = 0
+    while True:
+        match = re.search(r'\\begin{note}', content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        end_match = re.search(r'\\end{note}', content[match_start:])
+        if not end_match:
+            break
+        end_idx = match_start + end_match.end()
+        
+        body = content[match_start + 12 : end_idx - 10]
+        lines = body.strip().split('\n')
+        blockquote = '\n'.join(f"> **Lưu ý:** {line}" if i == 0 else f"> {line}" for i, line in enumerate(lines))
+        
+        replacement = f"\n\n{blockquote}\n\n"
+        content = content[:match_start] + replacement + content[end_idx:]
+        idx = match_start + len(replacement)
+    return content
+
+def process_note_commands(content):
+    idx = 0
+    while True:
+        match = re.search(r'\\Note{', content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        start_braces = match_start + 5
+        
+        inner_content, end_idx = parse_braces(content, start_braces)
+        lines = inner_content.strip().split('\n')
+        blockquote = '\n'.join(f"> **Chú ý:** {line}" if i == 0 else f"> {line}" for i, line in enumerate(lines))
+        
+        replacement = f"\n\n{blockquote}\n\n"
+        content = content[:match_start] + replacement + content[end_idx:]
+        idx = match_start + len(replacement)
+    return content
+
+def process_ghichu_commands(content):
+    idx = 0
+    while True:
+        match = re.search(r'\\newghichu{', content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        start_braces = match_start + 10
+        
+        inner_content, end_idx = parse_braces(content, start_braces)
+        lines = inner_content.strip().split('\n')
+        blockquote = '\n'.join(f"> **Lưu ý:** {line}" if i == 0 else f"> {line}" for i, line in enumerate(lines))
+        
+        replacement = f"\n\n{blockquote}\n\n"
+        content = content[:match_start] + replacement + content[end_idx:]
+        idx = match_start + len(replacement)
+    return content
+
+
+def process_bang_environments(content):
+    idx = 0
+    while True:
+        match = re.search(r'\\begin{bang}(?:\[.*?\])?', content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        # Find the start of the title brace '{'
+        start_braces = content.find('{', match_start + len(match.group(0)) - 1)
+        if start_braces == -1:
+            idx = match_start + len(match.group(0))
+            continue
+            
+        title, after_title_idx = parse_braces(content, start_braces)
+        
+        end_match = re.search(r'\\end{bang}', content[after_title_idx:])
+        if not end_match:
+            break
+        end_idx = after_title_idx + end_match.end()
+        
+        table_body = content[after_title_idx : after_title_idx + end_match.start()]
+        md_table = convert_tabular_to_md(table_body)
+        
+        replacement = f"\n\n__BANG_START__{title}\n{md_table.strip()}\n__BANG_END__\n\n"
+        content = content[:match_start] + replacement + content[end_idx:]
+        idx = match_start + len(replacement)
+    return content
+
+
+
 def convert_tabular_to_md(table_content):
     rows = table_content.split('\\\\')
     lines = []
     for row in rows:
         row = row.strip()
-        if not row or row.startswith('%') or row.startswith('\\hline'):
+        if not row or row.startswith('%'):
+            continue
+        row = re.sub(r'^\\hline\s*', '', row)
+        row = re.sub(r'\s*\\hline$', '', row)
+        row = row.strip()
+        if not row:
             continue
         cells = row.split('&')
         cleaned_cells = []
@@ -169,7 +262,10 @@ def parse_tex_file(file_path, lesson_id):
         second_start = content.find('{', next_idx)
         comment_content, end_idx = parse_braces(content, second_start)
         
-        replacement = f"\n\n{text_content}\n\n> *Bình luận:* {comment_content}\n\n"
+        comment_lines = comment_content.strip().split('\n')
+        comment_blockquote = '\n'.join(f"> *Bình luận:* {line}" if i == 0 else f"> {line}" for i, line in enumerate(comment_lines))
+        
+        replacement = f"\n\n{text_content}\n\n{comment_blockquote}\n\n"
         content = content[:match_start] + replacement + content[end_idx:]
         idx = match_start + len(replacement)
 
@@ -217,6 +313,11 @@ def parse_tex_file(file_path, lesson_id):
 
     # 6. Replace custom class macros context-aware
     content = process_boder_commands(content)
+    content = process_note_environment(content)
+    content = process_note_commands(content)
+    content = process_ghichu_commands(content)
+    content = process_bang_environments(content)
+
 
     # Headings
     content = re.sub(r'\\subsection\*?{([\s\S]*?)}', r'## \1', content)
@@ -224,7 +325,6 @@ def parse_tex_file(file_path, lesson_id):
     content = re.sub(r'\\paragraph\*?{([\s\S]*?)}', r'#### \1', content)
     
     # Text styles
-    content = re.sub(r'\\newghichu{([\s\S]*?)}', r'> **\1**', content)
     content = re.sub(r'\\textbf{([\s\S]*?)}', r'**\1**', content)
     content = re.sub(r'\\textit{([\s\S]*?)}', r'*\1*', content)
     content = re.sub(r'{\\bf\s+([\s\S]*?)}', r'**\1**', content)
@@ -240,7 +340,6 @@ def parse_tex_file(file_path, lesson_id):
     content = content.replace('\\begin{enumerate}', '\n').replace('\\end{enumerate}', '\n')
     content = content.replace('\\begin{enumEX}', '\n').replace('\\end{enumEX}', '\n')
     content = content.replace('\\begin{enumEX}[\\faEdit]{3}', '\n').replace('\\begin{enumEX}[\\faEdit]{2}', '\n').replace('\\begin{enumEX}[\\faEdit]{1}', '\n')
-    content = content.replace('\\begin{note}', '\n> **Lưu ý:**\n').replace('\\end{note}', '\n')
 
     # Convert \item
     content = re.sub(r'\\item\s*\[(.*?)\]', r'- **\1** ', content)
@@ -256,7 +355,7 @@ def parse_tex_file(file_path, lesson_id):
     content = re.sub(r'\\includegraphics{([\s\S]*?)}', replace_image, content)
 
     # Math environments
-    content = content.replace('\\begin{align*}', '\n$$\n').replace('\\end{align*}', '\n$$\n')
+    content = content.replace('\\begin{align*}', '\n$$\n\\begin{aligned}').replace('\\end{align*}', '\\end{aligned}\n$$\n')
     content = content.replace('\\begin{center}', '\n').replace('\\end{center}', '\n')
     content = content.replace('\\[', '\n$$\n').replace('\\]', '\n$$\n')
     content = content.replace('\\(', '$').replace('\\)', '$')
