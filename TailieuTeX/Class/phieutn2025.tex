@@ -1,0 +1,82 @@
+\newpage
+\pagestyle{empty}
+\begin{center}
+	\begin{tikzpicture}[scale=1,line join = round, line cap =round,>=stealth,font=\footnotesize,scale=1, remember picture,overlay, declare function={a=4.328;b=5.528;c=2.16;d=2.766;}]
+		\tikzset{vt/.pic={\fill (0,0) rectangle (.545,.545);},
+			vn/.pic={\fill (0,0) rectangle (.273,.273);},
+			tr/.pic={\draw (0,0) circle (0.17);}
+		}
+		\path ([xshift=1.03cm,yshift=-1.55cm]current page.north west) coordinate (A)
+		pic{vt}
+		($(A)+(2.66,0)$) node[anchor=west,font=\color{black}\fontsize{14}{0}\selectfont]{\textbf{PHIẾU TRẢ LỜI TRẮC NGHIỆM}}
+		($(A)+(5.38,-.72)$) node[anchor=west,font=\color{black}, text width=6.6cm]{Kỳ thi:\dotfill}
+		($(A)+(0.38,-1.38)$) node[anchor=west,font=\color{black}, text width=11.6cm]{Bài thi:\makebox[5.5cm]{\dotfill}Ngày thi:\dotfill/\dotfill/20\dotfill}
+		($(A)+(2.655,-2.12)$)node{Điểm}
+		($(A)+(2.655,-4.32)$)node[text width=4cm]{
+			\begin{center}
+				Họ tên, chữ kí\\ của cán bộ coi thi 1
+			\end{center}
+		}
+		($(A)+(2.655,-5.82)$)node[text width=4cm]{
+			\begin{center}
+				Họ tên, chữ kí\\ của cán bộ coi thi 2
+			\end{center}
+		}
+		($(A)+(14.53,-.5)$) node[font=\color{black}]{7. Số báo danh}
+		($(A)+(17.5475,-.5)$) node[font=\color{black}]{8. Mã đề thi}
+		($(A)+(4.95,-2.35)$) node[anchor=west,font=\color{black}, text width=7cm]{1. Hội đồng thi:\dotfill}
+		($(A)+(4.95,-3.22)$) node[anchor=west,font=\color{black}, text width=7cm]{2. Điểm thi:\dotfill}
+		($(A)+(4.95,-4.17)$) node[anchor=west,font=\color{black}, text width=7cm]{3. Phòng thi số:\dotfill}
+		($(A)+(4.95,-5.06)$) node[anchor=west,font=\color{black}, text width=7cm]{4. Họ và tên thí sinh:\dotfill}
+		($(A)+(4.95,-5.98)$) node[anchor=west,font=\color{black}, text width=7cm]{5. Ngày sinh:\dotfill/\dotfill/\dotfill(Nam/Nữ)}
+		($(A)+(4.95,-6.75)$) node[anchor=west,font=\color{black}, text width=7cm]{6. Chữ kí của thí sinh:\dotfill}
+		($(A)+(4.95,-5.98)$)
+		($(A)+(.7,-8.3)$) coordinate (x)
+		($(A)+(18.25,-26.4)$) coordinate (y)
+		($(A)+(16.31,-4.48)$) coordinate (B) pic{vn}
+		;
+		\fill[Mapcolor!5] (x) rectangle (y);
+		\path ($(A)+(1,-8.62)$) node[anchor=west,font=\color{black}]{\bfseries PHẦN I}($(A)+(1,-14.54)$) node[anchor=west,font=\color{black}]{\bfseries PHẦN II}($(A)+(1,-18.32)$) node[anchor=west,font=\color{black}]{\bfseries PHẦN III};
+		\foreach \x/\y in {12.43/0,18.37/0,0/-8.045,12.345/-8.045,18.37/-8.045,0/-27.15,18.37/-27.15}{\path ($(A)+(\x,\y)$) pic {vt};}
+		\foreach \x/\y in {0/-2.885,-2.66/-4.74,-6.98/-4.74,-11.3/-4.74,-2.66/-9.89,-6.98/-9.89,-11.3/-9.89,-2.66/-10.625,-6.98/-10.625,-11.3/-10.625,-2.66/-13.665,-6.98/-13.665,-11.3/-13.665,-1.465/-14.04,-4.225/-14.04,-9.749/-14.04,-12.515/-14.04,-1.465/-21.84,-4.225/-21.84,-6.987/-21.84,-9.749/-21.84,-12.515/-21.84}{\path ($(B)+(\x,\y)$) pic {vn};}
+		\foreach \xS/\yS/\xE/\yE in {12.94/-0.75/16.12/-0.75,
+			12.94/-1.35/16.12/-1.35,16.7525/-0.75/18.3425/-0.75,16.7525/-1.35/18.3425/-1.35,0.65/-2.46/4.66/-2.46, 0.65/-3.93/4.66/-3.93,0.65/-5.6/4.66/-5.6}{\draw[Mapcolor] ($(A)+(\xS,\yS)$) -- ($(A)+(\xE,\yE)$);}
+		\foreach \xOne/\yOne/\xTwo/\yTwo in {0.65/-1.8/4.66/-7.25,4.9/-1.8/12.11/-7.25, 12.88/-1.45/16.18/-7.23, 16.7/-1.45/18.39/-7.23}{\draw[Mapcolor] ($(A)+(\xOne,\yOne)$) rectangle ($(A)+(\xTwo,\yTwo)$);}
+		\foreach \t in {0,1,...,8}{\draw[Mapcolor] ($(A)+(12.94+0.3975*\t,-0.75)$)--($(A)+(12.94+0.3975*\t,-1.35)$);}
+		\foreach \t in {0,1,...,4}{\draw[Mapcolor] ($(A)+(16.7525+0.3975*\t,-0.75)$)--($(A)+(16.7525+0.3975*\t,-1.35)$);}
+		\foreach \x in {0,1,...,7}{
+			\foreach \y in {0,1,...,9}{\draw[Mapcolor] ($(A)+(13.13875+0.401*\x,-1.75-0.576*\y)$) pic {tr};
+				\draw[Mapcolor] ($(A)+(13.13875-0.5,-1.75-0.576*\y)$) pic {tr}node{\y};}}
+		\foreach \x in {0,1,...,3}{
+			\foreach \y in {0,1,...,9}{\draw[Mapcolor] ($(A)+(16.95+0.401*\x,-1.75-0.576*\y)$) pic {tr};
+				\draw[Mapcolor] ($(A)+(18.7,-1.75-0.576*\y)$) pic {tr}node{\y};}}
+		\foreach \i in {0,1,2,3}{
+			\draw[Mapcolor,fill=white] ($(A)+(1.15+a*\i,-9.05)$) rectangle ($(A)+(4.83+a*\i,-14.25)$);
+			\foreach \x in {0,1,...,3}{
+				\foreach \y in {1,2,...,10}{\draw[Mapcolor] ($(A)+(1.905+a*\i+0.862*\x,-9.349-0.446*\y)$) pic {tr};}}
+			\foreach \x/\p in {0/A,1/B,2/C,3/D}{\path ($(A)+(1.905+a*\i+0.862*\x,-9.345)$)node[Mapcolor]{\p};}
+			\draw[Mapcolor,fill=white] ($(A)+(1.16+a*\i,-14.93)$) rectangle ($(A)+(4.83+a*\i,-17.99)$);
+			\foreach \x in {0,1,...,3}{
+				\foreach \y in {0,1,2,3}{\draw[Mapcolor] ($(A)+(1.905+a*\i+0.862*\x,-16.25-0.446*\y)$) pic {tr};}}
+			\foreach \x/\p in {0/Đúng,1/Sai,2/Đúng,3/Sai}{\path ($(A)+(1.905+a*\i+0.862*\x,-15.8)$)node{\p};}
+			\draw[Mapcolor] ($(A)+(3.17+a*\i,-14.93)$)--($(A)+(3.17+a*\i,-17.99)$);}
+		\foreach \i in {0,1,2,3}{
+			\foreach \x/\y in {0/a),1/b),2/c),3/d)}{\path ($(A)+(1.465+a*\i,-16.25-0.446*\x)$)node{\y};}}
+		\foreach \i in {1,3,5,7}{\path ($(A)+(2.336+c*\i-c,-15.35)$)node{\textbf{Câu \i}};}
+		\foreach \i in {2,4,6,8}{\path ($(A)+(1.9+c*\i-c,-15.35)$)node{\textbf{Câu \i}};}
+		\foreach \y in {1,2,...,10}{\path ($(A)+(1.45,-9.349-0.446*\y)$)node{\bfseries \y};}
+		\foreach \y/\p in {1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19,10/20}{\path ($(A)+(1.45+a,-9.349-0.446*\y)$)node{\bfseries \p};}
+		\foreach \y/\p in {1/21,2/22,3/23,4/24,5/25,6/26,7/27,8/28,9/29,10/30}{\path ($(A)+(1.45+2*a,-9.349-0.446*\y)$)node{\bfseries \p};}
+		\foreach \y/\p in {1/31,2/32,3/33,4/34,5/35,6/36,7/27,8/38,9/39,10/40}{\path ($(A)+(1.45+3*a,-9.349-0.446*\y)$)node{\bfseries \p};}
+		\foreach \i in {0,1,2,3,4,5}{\draw[Mapcolor,fill=white] ($(A)+(1.16+d*\i,-18.82)$) rectangle ($(A)+(3.926+d*\i,-25.74)$);
+			\foreach \x in {0,1,2,3}{\foreach \y in {0,1,2,...,9}{\draw[Mapcolor] ($(A)+(1.765+d*\i+.594*\x,-21.158-.457*\y)$) pic {tr};}}
+			\foreach \x in {1,2}{\draw[Mapcolor] ($(A)+(1.765+d*\i+.594*\x,-21.158+.457)$) pic {tr};}
+			\draw[Mapcolor] ($(A)+(1.765+d*\i,-21.158+2*.457)$) pic {tr};
+			\foreach \y in {0,1,2,...,9}{\draw ($(A)+(1.36+d*\i,-21.158-.457*\y)$)node{\bfseries \y};}
+			\draw ($(A)+(1.36+d*\i,-21.158+.457)$)node{\bfseries ,};
+			\draw ($(A)+(1.36+d*\i,-21.158+.457*2)$)node{\bfseries -};}
+		\foreach \x in {1,2,3,...,6}{\path ($(A)+(-0.666+d*\x,-19.36)$)node{\bfseries Câu \x};}
+	\end{tikzpicture}
+\end{center}
+\newpage
+\pagestyle{fancy}

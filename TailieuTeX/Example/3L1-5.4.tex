@@ -1,0 +1,142 @@
+\loai{Loại 1: Chuyển hóa công thành nội năng}
+\begin{vidu}
+	\immini[thm]{Một người mài một con dao bằng sắt có khối lượng $150 \ g$ trên một tấm đá mài. Sau một khoảng thời gian thì con dao nóng thêm $12^\circ C$. Giả sử rằng $40 \%$ công mà người này thực hiện được dùng để làm nóng dao. Biết nhiệt dung riêng của sắt là $460 \ J /kg.K$. Công mà người này đã thực hiện là bao nhiêu jun?
+	\shortans[oly]{2070 }}{\includegraphics[width=4cm]{images/323}}
+	\loigiai{
+		\begin{itemize}
+			\item Nhiệt lượng mà miếng sắt nhận được: $Q=mc\Delta t=828\ J$.
+			\item Công mà người đã thực hiện: $A=\dfrac{828}{0,4}=2070 \ J$.
+		\end{itemize}
+	}
+	\haidong{6}
+\end{vidu}
+\loai{Loại 2: Chuyển hóa cơ năng thành nội năng}
+
+\begin{vidu}
+	\immini[thm]{Quả cầu có nhiệt dung riêng $c=460 \ J / kg . K$ được treo bởi sợi dây có chiều dài $\ell=46 \ cm$ vào bức tường thẳng đứng. Từ vị trí ban đầu A, quả cầu được nâng lên trong mặt phẳng thẳng đứng vuông góc với tường đến $B$ sao cho sợi dây có phương vuông góc với tường rồi thả rơi. Sau khi chạm tường, nó bật lên đến vị trí $C$, tại $C$ góc hợp bởi phương sợi dây và tường là $60^\circ$. Biết rằng $60 \%$ độ giảm thế năng biến thành nhiệt làm nóng quả cầu. Lấy $g=10 \ m/s^2$. Độ tăng nhiệt độ của quả cầu bằng bao nhiêu mK?
+		\shortans[oly]{3 }}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\tkzDefPoints{0/0/o, 3.5/0/b, 0.2/-3.5/a, 3.2/-1.25/c}
+			\draw[line width=3pt,gray] (0,0.5) -- (0,-4);
+			\tkzDrawSegments[](o,b)
+			\shade[ball color=blue!60] (a) circle (1.3ex);
+			\shade[ball color=blue!30] (c) circle (1.3ex);
+			\tkzDrawSegments[dashed](o,a o,c)
+			\draw[dashed,thin](a) to [bend left =-40](b);
+			\shade[ball color=blue] (b) circle (1.3ex);
+			\node at (1.75,0.25) {$\ell$};
+			\tkzMarkAngles[size=0.7cm](a,o,c)
+			\tkzLabelAngles[pos=.5, scale=0.8](a,o,c){$60^\circ$}
+			\tkzLabelPoint[below=4pt](a){$A$}
+			\tkzLabelPoint[below right](c){$C$}
+			\tkzLabelPoint[right=4pt](b){$B$}
+	\end{tikzpicture}}
+	\loigiai{
+		\begin{itemize}
+			\item Độ giảm thế năng của quả cầu: $$\Delta W_{t}=W_{tB}-W_{tC}=mg\ell-mg\ell(1-\cos \alpha)=mg\ell \cos \alpha$$
+			\item Phần thế năng biến thành nhiệt làm nóng quả cầu:
+			$$Q=0,6 . \Delta W_{t}=0,6 \ m . g . \ell . \cos \alpha$$ 
+			\item Mà $Q=m . c . \Delta t$, suy ra: $\Delta t=\dfrac{0,6 . g . \ell . \cos \alpha}{c}=3\ mK$
+		\end{itemize}
+	}
+	\haidong{8}\end{vidu}
+
+\begin{vidu}
+	\immini[thm]{Đầu thép của một búa máy có khối lượng $12\ kg$ nóng lên thêm $20^\circ C$ sau 1,5 phút hoạt động. Biết rằng chỉ có $40 \%$ cơ năng của búa máy chuyển thành nhiệt năng của đầu búa. Lấy nhiệt dung riêng của thép là $460\ J/kg.K$. Công suất của búa là 
+	\choice
+	{\True $3\ kW$}
+	{$4\ kW$}
+	{$5\ kW$}
+	{$6\ kW$}}{\includegraphics[width=4cm]{images/334}}
+	\loigiai{
+		
+		Nhiệt lượng đầu búa nhận được: $Q=m c \Delta t=12.460.20=110400\ J$.
+		
+		Công của búa thực hiện: $A=\dfrac{Q}{0,4}=\dfrac{110400}{0,4}=276000\ J$.
+		
+		Công suất của búa: $\mathcal{P}=\dfrac{A}{t}=\dfrac{276000}{1,5.60} \approx 3067\ W \approx 3\ kW$.
+		
+	}
+	\haidong{6}\end{vidu}
+	 
+\loai{Loại 3: Chuyển hóa đồng thời cơ năng và nhiệt}
+\begin{vidu} \nguon{2}
+	\immini[thm]{Súng là một dạng của động cơ nhiệt và hoạt động như một động cơ đốt trong mà không có pit-tông hoạt động theo chu trình, thay vào đó, nó tham gia vào một quá trình giãn nở nhiệt đơn lẻ  trong đó đầu đạn được phóng đi. }{\includegraphics[width=4cm]{images/342}}
+	
+	Với khối lượng thân súng làm bằng sắt là $1,8 \ kg$, súng này phóng một viên đạn có khối lượng $2,4 \ g$ với vận tốc $320 \ m/s$ và có hiệu suất $1,1 \%$. Giả sử rằng thân súng hấp thụ toàn bộ nhiệt năng thừa.  Bỏ qua sự mất mát nhiệt vào môi trường xung quanh. Biết rằng nhiệt dung riêng của sắt là $448 \ J / kg. K$. Độ tăng nhiệt độ của súng sau khi bắn một phát đạn là 
+	\choice
+	{\True $13,7^\circ C$}
+	{$11,7^\circ C$}
+	{$12,0^\circ C$}
+	{$10,0^\circ C$}
+	\loigiai{
+		\begin{itemize}
+			\item Động năng của viên đạn:
+			\begin{align*}
+				W_{\text{đ}}=\dfrac{1}{2} m v^2=\dfrac{1}{2}\left(2,4 . 10^{-3}\right) 320^2=123 \ J
+			\end{align*}
+			Với $m$ là khối lượng của viên đạn 
+			\item Năng lượng $Q$ mà viên đạn nhận được
+			\begin{align*}
+				Q=\dfrac{123}{0,011}=1,118 . 10^{4} \ J
+			\end{align*}
+			\item Năng lượng thừa mà thân súng nhận được:
+			\begin{align*}
+				Q_1=Q-W_{\text{đ}}=1,118 . 10^{4}-123=1,1057 . 10^{4} \ J
+			\end{align*}
+			\item Năng lượng mà thân súng nhận được làm tăng nhiệt độ của nó khi bắn:
+			\begin{align*}
+				Q_1=m_2. c. \Delta t
+			\end{align*}
+			Trong đó $m_2$ là khối lượng của thân súng
+			\begin{align*}
+				\Rightarrow \Delta t=\dfrac{Q_1}{m_2. c}=\dfrac{1,1057 . 10^{4}}{1,8 . 448}=13,7^\circ C
+			\end{align*}
+			\item Nhiệt độ của súng tăng lên $13,7^\circ C$
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Loại 4: Va chạm, áp dụng định lí biến thiên động năng}
+\begin{vidu}
+	\immini[thm]{Viên đạn chì có nhiệt dung riêng $c=0,12 \ kJ / kg. K$ bay với vận tốc $v_0=360\ km / h$. Sau khi xuyên qua một tấm thép, vận tốc viên đạn giảm còn $72\ km / h$. Biết $60 \%$ độ tăng nội năng biến thành nhiệt làm nóng viên đạn. Độ tăng nhiệt độ của đạn bằng bao nhiêu độ C?
+	\shortans[oly]{24 }}{\includegraphics[width=4cm]{images/7047}}
+	\loigiai{
+		\begin{align*}
+		&Q=0,6 \Delta U=0,6\left(W_0-W\right)\\ 
+		\Rightarrow &m c \Delta t=0,6\left(\dfrac{1}{2} m v_0^2-\dfrac{1}{2} m v^2\right)\\
+		\Rightarrow & \Delta t=0,3 . \dfrac{v_0^2-v^2}{c}=0,3 . \dfrac{100^2-20^2}{120}=24^\circ C
+		\end{align*}
+		\textbf{Trả lời ngắn:} 24	
+	}
+	\haidong{5}
+\end{vidu}
+\loai{Loại 5: So sánh 2 vật}
+\begin{vidu}
+	\immini[thm]{Hai viên bi bằng nhôm và chì cùng được thả rơi tự do từ cùng một độ cao xuống sàn nhà, sau đó nằm yên trên sàn nhà. Coi toàn bộ cơ năng của viên bi khi rơi đều dùng để làm nóng viên bi. Nhiệt dung riêng của nhôm là $880\ J/kg.K$, của chì là $130\ J / kg. K$. Tỉ số độ tăng nhiệt độ của viên bi chì so với viên bi nhôm sau khi chúng va chạm với sàn nhà là
+	\choice
+	{\True 6,77 lần}
+	{6 lần}
+	{5,77 lần}
+	{5 lần}}{\includegraphics[width=4cm]{images/409}} 
+	\loigiai{
+		$Q=W \Rightarrow m c \Delta t=m g h \Rightarrow \Delta t=\dfrac{g h}{c} \Rightarrow \dfrac{\Delta t_{c}}{\Delta t_{n}}=\dfrac{c_{n}}{c_{c}}=\dfrac{880}{130} \approx 6,77$.
+		
+	}
+	\haidong{5}\end{vidu}
+	\begin{vidu}
+		\immini[thm]{Có hai quả cầu bằng chì giống nhau có nhiệt dung riêng là $c$, chuyển động đến va chạm mềm trực diện với tốc độ lần lượt là $v$ và $2 v$. Độ tăng nhiệt độ $\Delta t$ của hai quả cầu là
+		\choice
+		{\True $\dfrac{9 v^2}{8 c}$}
+		{$\dfrac{7 v^2}{8 c}$}
+		{$\dfrac{9 v^2}{7 c}$}
+		{$\dfrac{11 v^2}{7 c}$}}{\vspace*{.3 cm}\includegraphics[width=8cm]{images/4308}} 
+		\loigiai{
+			
+			Bảo toàn động lượng $m_1 \overrightarrow{v_1}+m_2 \overrightarrow{v_2}=\left(m_1+m_2\right) \vec{V} \Rightarrow-m . v+m . 2 v=2 m . V \Rightarrow V=0,5 v$
+			
+			Độ giảm cơ năng bằng nhiệt lượng tăng thêm: 
+			
+			$\dfrac{1}{2} m_1 v_1^2+\dfrac{1}{2} m_2 v_2^2-\dfrac{1}{2}\left(m_1+m_2\right) V^2=\left(m_1+m_2\right) c \Delta t$ 
+			
+			$\Rightarrow \dfrac{1}{2} m v^2+\dfrac{1}{2} . m .(2 v)^2-\dfrac{1}{2} . 2 m .(0,5 v)^2=2 m c \Delta t \Rightarrow \Delta t=\dfrac{9 v^2}{8 c}$.
+		}
+		\haidong{6}\end{vidu}

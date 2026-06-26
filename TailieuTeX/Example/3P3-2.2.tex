@@ -1,0 +1,311 @@
+\begin{vidu}%[3P3-2.2B][Loai4]
+	\nguon{QG - 2020} Dòng điện xoay chiều chạy qua một đoạn mạch có cường độ $i=3\cos(100\pi t+\dfrac{\pi}{2})$ (A). Pha ban đầu của cường độ dòng điện này là
+	\choice
+	{3 rad}
+	{\True $\dfrac{\pi}{2}$ rad}
+	{$100\pi$ rad}
+	{100 rad}
+	\loigiai{Pha ban đầu của dòng điện là $\pi/2$}	
+\end{vidu}
+\begin{vidu} %[3P3-2.2B][Loai4] 
+	Dòng điện xoay chiều có cường độ $i=2\sin50\pi t\ A$. Dòng điện này có
+	\choice
+	{cường độ hiệu dụng là $2\sqrt{2}\ A$}
+	{\True tần số là $25\ Hz$}
+	{cường độ hiệu dụng là $2\ A$}
+	{chu kì là $0,02\ s$}
+	\loigiai{
+		\begin{itemize}
+			\item Tần số: $f=\dfrac{\omega }{2\pi }=$$\dfrac{50\pi }{2\pi }=25\ Hz$.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Xác định cường độ tức thời tại thời điểm t}
+\begin{vidu}%[3P3-2.2Y][Loai5]
+	Cường độ dòng điện qua một đoạn mạch có biểu thức $i=5\sqrt{2}\cos 100\pi t$ A (t tính bằng s). Cường độ dòng điện tức thời tại thời điểm $t = 2023$ s là
+	\choice
+	{$-5\sqrt{2}$ A}
+	{5 A}
+	{\True $5\sqrt{2}$ A}
+	{$-5$ A}
+	\loigiai{
+		Tại $t = 2023$ s: $\phi_{2015\ s}\equiv 0$ $\Rightarrow$ $i={I_0}=5\sqrt{2}$ A.
+	}
+\end{vidu}
+\loai{Xác định điện áp tức thời tại thời điểm t}
+\begin{vidu}%[3P3-2.2B][Loai6]
+	Một điện áp xoay chiều có biểu thức $u=220\sqrt{2}\cos  \left( 100\pi t+\dfrac{2\pi}{3} \right)$ V (t tính bằng s). Điện áp tức thời tại $t = 0$ có độ lớn
+	\choice
+	{$-110\sqrt{2}$ V và đang tăng}
+	{\True $-110\sqrt{2}$ V  và đang giảm}
+	{$110\sqrt{2}$ V  và đang giảm}
+	{$110\sqrt{2}$ V và đang tăng}
+	\loigiai{
+		Tại $t = 0$: $\varphi =\dfrac{2\pi}{3}$
+		$\Rightarrow$ $u=-\dfrac{U_0}{2}=-110\sqrt{2}$  và đang giảm.
+	}
+\end{vidu}
+\loai{Xác định khoảng thời gian, thời điểm theo cường độ dòng điện}
+\begin{vidu}%[3P3-2.2K][Loai7]
+	Dòng điện xoay chiều qua một đoạn mạch có biểu thức $i={I_0}\cos \left( 120\pi t-\dfrac{\pi}{3} \right)\ A$. Thời điểm thứ 2023 độ lớn cường độ dòng điện bằng cường độ dòng điện hiệu dụng là
+	\choice
+	{8,15 s}
+	{\True 8,43 s}
+	{9,26 s}
+	{10,3 s}
+	\loigiai{
+%\Binhluan{
+		\begin{itemize}
+			\item Tại t = 0: $i=\dfrac{I_0}{2}$ và đang tăng.
+			\item $\left| i \right|=I=\dfrac{I_0}{\sqrt{2}}\Rightarrow i=\pm \dfrac{I_0}{\sqrt{2}}$, mỗi chu kì có 4 lần mà dòng điện $i=\pm \dfrac{I_0}{\sqrt{2}}$.
+		\end{itemize}
+%	}
+%	{Có thể dùng VTLG cho dễ hình dung}
+		\begin{itemize}	
+			\centerline{\begin{tikzpicture}[scale=1,thick,>=stealth']
+				\tkzDefPoints{0/0/o, 5/0/i, -5/0/i', 4/0/m, -4/0/n, 2/0/p, 2.8/0/q}
+				\tkzDrawSegments[->](i',i)
+				\tkzDrawPoints[size=3,fill=white](o,m,n,p,q)
+				\tkzLabelPoint[above](o){$O$}
+				\tkzLabelPoint[above](m){$I_0$}
+				\tkzLabelPoint[above](p){$\dfrac{I_0}{2}$}
+				\tkzLabelPoint[above](n){$-I_0$}
+				\tkzLabelPoint[above](q){$\dfrac{I_0\sqrt{2}}{2}$}
+				\tkzLabelPoint[above](i){$i$}
+				\draw[->](2,-0.5)--(4,-0.5)--++(-90:0.3)--(2.8,-0.8);
+				\end{tikzpicture}}			
+			\item Tách $2023 = 2020 + 3$.
+			Thời điểm cần tìm là: ${{t}}=505T+\dfrac{T}{6}+\dfrac{T}{4}+\dfrac{T}{8}\approx 8,43\ s$.
+	\end{itemize}
+}
+\end{vidu}
+\loai{Xác định khoảng thời gian, thời điểm theo điện áp}
+\begin{vidu}%[3P3-2.2K][Loai8]
+	Hiệu điện thế giữa hai đầu một đoạn mạch có biểu thức $u = U_0\sin(100\pi t + \dfrac{\pi}{2})$  V. Tại thời điểm t nào sau đây hiệu điện thế tức thời $u \ne \dfrac{U_0}{\sqrt 2}$?
+	\choice
+	{$\dfrac{1}{400}$ s}
+	{$\dfrac{9}{400}$ s}
+	{$\dfrac{7}{400}$ s}
+	{\True $\dfrac{11}{400}$ s}
+	\loigiai{
+%		\Binhluan{
+		Ta có: 
+		\begin{align*}
+		&u = U_0\sin(100\pi t + \dfrac{\pi}{2})= {U_0}\cos  100\pi t = \dfrac{U_0}{\sqrt 2}\\ 
+		\Rightarrow\ &\begin{cases} 100\pi t = \dfrac{\pi}{4} + 2k\pi \Rightarrow t = \dfrac{1 + 8k}{400}\ s\\
+		100\pi t = - \dfrac{\pi}{4} + 2k\pi \Rightarrow t = \dfrac{8k - 1}{400}\ s \end{cases}.
+	\end{align*}
+%		}
+%	{Chuẩn hoá $U_0=100\ V$ rồi bấm máy tính cũng là 1 ý hay}
+	}
+\end{vidu}
+\loai{Xác định số lần đạt u, i trong thời gian cho trước}
+\begin{vidu} %[3P3-2.2B][Loai9] 
+	Điện áp giữa hai đầu một đoạn mạch là $u=220\sqrt{2}\cos \left( 100\pi t \right)\ V$. Cứ mỗi giây số lần điện áp này bằng 0 là
+	\choice
+	{\True 100 lần}
+	{50 lần}
+	{200 lần}
+	{2 lần}
+	\loigiai{
+%		\Binhluan{
+		\begin{itemize}
+			\item Mỗi dao động toàn phần có 2 thời điểm $ u=0$. Vậy mỗi giây dòng điện có 2f lần bằng 0.
+			\item Vậy với $2f=2.\dfrac{\omega }{2\pi }=50.2=100$ lần.
+		\end{itemize}
+%}
+%{Trong mỗi giây dòng điện tương ứng cũng đổi chiều 2f lần}
+	}
+\end{vidu}
+\loai{Xác định u, i tại thời điểm sau khi biết tại thời điểm trước}
+\begin{vidu} %[3P3-2.2K][Loai10] 
+	\nguon{CĐ - 2013} Điện áp ở hai đầu một đoạn mạch là $u=160cos100\pi t$ V (t tính bằng giây). Tại thời điểm $t_1$, điện áp ở hai đầu đoạn mạch có giá trị là 80\ V và đang giảm. đến thời điểm $t_2=t_1+0,015$ s, điện áp ở hai đầu đoạn mạch có giá trị bằng
+	\choice
+	{$40\sqrt{3}$ V}
+	{\True $80\sqrt{3}$ V}
+	{40 V}
+	{80 V}
+	\loigiai{
+		immini[thm]{\begin{itemize}
+				\item $t_2=t_1+0,015\ s = t_1+ \dfrac{3T}{4}$.
+				\item Với $\dfrac{3T}{4}$ ứng góc quay $\dfrac{3\pi}{2}$. 
+				\item Từ $t_1$ đến $t_2$ góc quay $M_1OM_2 =\dfrac{3\pi}{2}$.
+				\item Nhìn hình vẽ thời gian quay $\dfrac{3T}{4}$ (ứng với góc quay $\dfrac{3\pi}{2}$).
+				\item $M_2$ chiếu xuống trục u $\Rightarrow u=80\sqrt{3}$ V. 
+		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\tkzInit[ymin=-2.5,ymax=2.5,xmin=-3,xmax=3]\tkzClip
+			\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+			\tkzDefShiftPoint[o](-30:2){m1}
+			\tkzDefShiftPoint[o](60:2){m2}
+			\tkzDefPointBy[projection=onto m--n](m1) \tkzGetPoint{h1}
+			\tkzDefPointBy[projection=onto m--n](m2) \tkzGetPoint{h2}
+			\draw(o)circle(2cm);
+			\tkzDrawSegments[dashed,thin](m1,h1 m2,h2)
+			\tkzDrawSegments[->](m,n)
+			\tkzDrawSegments(p,q)
+			\tkzDrawSegments[blue,->](o,m1 o,m2)
+			\tkzDrawPoints[size=3,fill=white](o,m1,m2,h1,h2)
+			\tkzMarkAngles[size=0.4cm](n,o,m2)
+			\tkzLabelAngles[pos=0.7](n,o,m2){$\dfrac{\pi}{3}$}
+			\node at (m1)[below right]{$M_2$};
+			\node at (m2)[above right]{$M_1$};
+			\node at (2,0)[below right]{$160$};
+			\node at (n)[above]{$u$};
+			\node at (h1)[above]{$80\sqrt{3}$};
+			\node at (h2)[below]{$80$};
+			\end{tikzpicture}}
+	}
+\end{vidu}
+\loai{Xác định thời gian đèn sáng hoặc tắt}
+\begin{vidu}%[3P3-2.2B][Loai11]
+	Một đèn ống được mắc vào mạng điện xoay chiều có phương trình $u = 220\sqrt{2}\cos \left( 100\pi t-\dfrac{\pi}{2} \right)$ V (trong đó u tính bằng V, t tính bằng s). Biết rằng đèn sáng mỗi khi điện áp hai đầu đèn có độ lớn không nhỏ hơn $110\sqrt{2}\ V$. Khoảng thời gian đèn tắt trong một chu kì là
+	\choice
+	{$\dfrac{1}{300}\ s$}
+	{\True $\dfrac{1}{150}\ s$}
+	{$\dfrac{1}{75}\ s$}
+	{$\dfrac{1}{50}\ s$}
+	\loigiai{
+		Mỗi chu kì, khoảng thời gian đèn tắt (nét đứt) là $\Delta t=\dfrac{T}{3}=\dfrac{1}{150}\ s$.
+		\\
+		\centerline{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\tkzDefPoints{0/0/o, 5/0/i, -5/0/i', 4/0/m, -4/0/n, 2/0/p, -2/0/p', 3.5/0/q}
+			\tkzDrawSegments[->](i',i)
+			\tkzDrawPoints[size=3,fill=white](o,m,n,p,p')
+			\tkzLabelPoint[above](o){$O$}
+			\tkzLabelPoint[above](m){$U_0$}
+			\tkzLabelPoint[above](p){$\dfrac{U_0}{2}$}
+			\tkzLabelPoint[above](p'){$-\dfrac{U_0}{2}$}
+			\tkzLabelPoint[above](n){$-U_0$}
+			\tkzLabelPoint[above](i){$u$}
+			\draw[very thick](2,-0.5)--(4,-0.5)--++(-90:0.3)--(2,-0.8);
+			\draw[very thick](-2,-0.5)--(-4,-0.5)--++(-90:0.3)--(-2,-0.8);
+			\draw[dashed](-2,-0.5)--(2,-0.5)(-2,-0.8)--(2,-0.8);
+			\end{tikzpicture}}		
+	}
+\end{vidu}
+\loai{Xác định thời điểm đèn sáng hoặc tắt}
+\begin{vidu}%[3P3-2.2K][Loai12]
+	Đặt vào hai đầu đèn ống điện áp xoay chiều $u=220\sqrt{2}\cos \left( \dfrac{100\pi t}{3}+\dfrac{\pi}{2} \right)$ V. Biết đèn chỉ sáng khi điện áp tức thời có độ lớn không nhỏ hơn $110\sqrt{2}$ V. Kể từ $t = 0$, thời điểm đèn sáng lần thứ 2018 là
+	\choice
+	{60,505 s}
+	{\True 60,515 s}
+	{30,275 s}
+	{30,265 s}
+	\loigiai{
+		\begin{itemize}
+			\item Tại $t = 0:\ u = 0$  và đang giảm.
+			\\
+			\centerline{\begin{tikzpicture}[scale=1,thick,>=stealth']
+				\tkzDefPoints{0/0/o, 5/0/i, -5/0/i', 4/0/m, -4/0/n, 2/0/p, -2/0/p', 3.5/0/q}
+				\tkzDrawSegments[->](i',i)
+				\tkzDrawPoints[size=3,fill=white](o,m,n,p,p')
+				\tkzLabelPoint[above](o){$O$}
+				\tkzLabelPoint[above](m){$U_0$}
+				\tkzLabelPoint[above](p){$\dfrac{U_0}{2}$}
+				\tkzLabelPoint[above](p'){$-\dfrac{U_0}{2}$}
+				\tkzLabelPoint[above](n){$-U_0$}
+				\tkzLabelPoint[above](i){$u$}
+				\draw[->](0,-0.5)--(-4,-0.5)--++(-90:0.3)--(2,-0.8);
+				\end{tikzpicture}}			
+			\item Mỗi chu kì, đèn sáng 2 lần $\Rightarrow$ tách $2018 = 2016 + 2 \Rightarrow$ $\Delta t = 1008T +$ $\dfrac{T}{4}+\dfrac{T}{3} = 60,515$ s.
+	\end{itemize}}
+\end{vidu}
+\loai{Xác định giá trị cực đại và hiệu dụng từ đồ thị}
+\begin{vidu}%[3P3-2.2B][Loai13]
+	immini[thm]{Đồ thị phụ thuộc thời gian của cường độ dòng điện chạy qua mạch như hình vẽ. Cường độ hiệu dụng là
+		\motcot
+		{3A}
+		{3,5 A}
+		{5 A}
+		{\True 2,5$\sqrt{2}$ A}}{\begin{tikzpicture}[scale=0.75,thick,>=stealth',x=1.5cm,y=1cm]
+		\draw[->] (0,0)--(3.5,0)node[above]{$t$};
+		\draw[->] (0,-2)--(0,2)node[right]{$i\ (A)$};
+		
+		\foreach  \A  in  {1.5} % Biên độ
+		\foreach  \T  in  {3} % Chu kì
+		\foreach  \Phi  in  {-90} % Pha ban đầu
+		{\draw [red, line width = 1.2pt, domain=0:3.4, samples=500]%
+			plot (\x, {(\A)*cos(360/\T*\x+\Phi)});
+			\draw[dashed](0, {\A})node[left]{$5$}--(0.75, {(\A)*cos(360/\T*0.75+\Phi)})--(0.75,0);
+		}
+		\node at (0,0)[left]{$O$};
+		\draw[fill=white](0.75,1.5)circle(1.2pt);
+		\end{tikzpicture}}
+	\loigiai{
+		Theo đồ thị ta có: $I_0 = 5\ A \Rightarrow I = \dfrac{I_0}{\sqrt{2}} = 2,5\sqrt{2}$ A.
+	}
+\end{vidu}
+\loai{Viết biểu thức u, i từ đồ thị}
+\begin{vidu}%[3P3-2.2B][Loai14]
+	immini[thm]{Trên hình vẽ là đồ thị phụ thuộc thời gian của dòng điện xoay chiều. Biểu thức của dòng điện là
+		\motcot
+		{$i = 2\cos(50\pi t + \pi)$ A}
+		{\True $i = 2\cos(50\pi t - \dfrac{\pi}{3})$ A}
+		{$i = 2\cos(50\pi t + \dfrac{\pi}{3})$ A}
+		{$i = 2\cos(50\pi t)$ A}}{\begin{tikzpicture}[scale=1,thick,>=stealth',x=1cm,y=1cm]
+		\draw[->] (0,0)--(3,0)node[above,xshift=7pt]{$t\ (s)$};
+		\draw[->] (0,-2)--(0,2)node[right]{$i\ (A)$};
+		
+		\foreach  \A  in  {1.5} % Biên độ
+		\foreach  \T  in  {2.4} % Chu kì
+		\foreach  \Phi  in  {-60} % Pha ban đầu
+		{\draw [red, line width = 1.2pt, domain=0:2.5, samples=500]%
+			plot (\x, {(\A)*cos(360/\T*\x+\Phi)});
+		}
+		\node at (0,0)[left]{$O$};
+		\draw[dashed](0,1.5)--(0.4,1.5);
+		\draw[fill=white](0,1.5)circle(1.2pt);
+		\draw[fill=white](0,0.75)circle(1.2pt);
+		\draw[fill=white](1,0)circle(1.2pt);
+		\draw[fill=white](0.4,1.5)circle(1.2pt);
+		\node at (0,1.5)[left]{$2$};
+		\node at (0,0.75)[left]{$1$};
+		\node at (1,0)[below left]{$\dfrac{1}{60}$};
+		\end{tikzpicture}}
+	\loigiai{
+		Tại t = 0 thì i = $\dfrac{I_0}{2}$ và đang tăng $\Rightarrow \varphi  = - \dfrac{\pi}{3}$.
+	}
+\end{vidu}
+\loai{Xác định độ lệch pha từ đồ thị}
+\begin{vidu}%[3P3-2.2K][Loai15]
+	immini[thm]{Hình vẽ bên là đồ thị phụ thuộc thời gian của hai dòng điện xoay chiều $(1)$ và $(2)$. So với dòng điện $(1)$ thì dòng điện $(2)$
+		\motcot
+		{sớm pha hơn $\dfrac{\pi}{12}$}
+		{\True sớm pha hơn $\dfrac{\pi}{6}$}
+		{trễ pha hơn $\dfrac{\pi}{6}$}
+		{trễ pha hơn $\dfrac{\pi}{12}$}}{\begin{tikzpicture}[scale=1,thick,>=stealth',x=1.5cm,y=1cm]
+		\draw[->] (0,0)--(3.2,0)node[above]{$t\ (s)$};
+		\draw[->] (0,-2)--(0,2)node[right]{$i\ (A)$};
+		\foreach  \y  in  {-1.5,1.5}
+		{\draw [dashed,thin] (0,\y) --(3,\y);}
+		\foreach  \x  in  {0.2,0.4,...,3}
+		{\draw [dashed,thin] (\x,-1.5) --(\x,1.5);}
+		
+		\foreach  \A  in  {1.5} % Biên độ
+		\foreach  \T  in  {2.4} % Chu kì
+		\foreach  \Phi  in  {60} % Pha ban đầu
+		{\draw [red, line width = 1.2pt, domain=0:3, samples=500]%
+			plot (\x, {(\A)*cos(360/\T*\x+\Phi)});
+		}
+		
+		\foreach  \A  in  {0.75} % Biên độ
+		\foreach  \T  in  {2.4} % Chu kì
+		\foreach  \Phi  in  {30} % Pha ban đầu
+		{\draw [blue,dashed, line width = 1.2pt, domain=0:3, samples=500]%
+			plot (\x, {(\A)*cos(360/\T*\x+\Phi)});
+		}
+		
+		\node at (0,0)[left]{$O$};
+		\node at (3,-1)[below]{$(2)$};
+		\node at (3,-0.2)[below]{$(1)$};
+		\end{tikzpicture}}
+	\loigiai{
+	\Binhluan{
+		\begin{itemize}
+			\item Chu kì $T = 12$ ô $\sim 2\pi$.
+			\item $i_2$ cắt trục hoành sớm hơn $i_1$ 1 ô $\sim \dfrac{\pi}{6}$.
+	\end{itemize}
+}
+{Dùng VTLG dễ thấy hơn}
+}
+\end{vidu}

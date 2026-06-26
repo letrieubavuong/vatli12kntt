@@ -1,0 +1,200 @@
+\loai{Tăng áp - Hạ áp}
+\begin{vidu} %[3P3-15.6K][Loai1] 
+	Khi truyền điện năng có công suất P từ nơi phát điện xoay chiều đến nơi tiêu thụ thì công suất hao phí trên đường dây là $\Delta P$. Để cho công suất hao phí trên đường dây chỉ còn là $\dfrac{\Delta P}{n}$ (với $n > 1$), ở nơi phát điện người ta sử dụng một máy biến áp (lí tưởng) có tỉ số giữa số vòng dây của cuộn sơ cấp và số vòng dây của cuộn thứ cấp là
+	\choice
+	{$\sqrt{n}$}
+	{\True $\dfrac{1}{\sqrt{n}}$}
+	{n}
+	{$\dfrac{1}{n}$}
+	\loigiai{
+		\Binhluan{
+				\begin{bang}[tabularx={X|X|X}]{$P,\ R,\ \cos\varphi=const$}
+			$$k=\dfrac{N_2}{N_1}$$&$$\Delta P=\dfrac{P^2R}{U^2\cos^2\varphi}$$&$$\dfrac{\Delta P_2}{\Delta P_1}=\dfrac{1}{n}$$
+		\end{bang}
+		}
+{
+Ta xử lí phần truyển tải trước rồi đi đến máy biến áp và kết luận.
+}
+		\begin{itemize}
+			\item Ta đi tìm mối liên hệ giữa U và $\Delta P$ trước.
+			\item $\Delta P\sim \dfrac{1}{U^2}\Rightarrow U\sim \dfrac{1}{\sqrt{\Delta P}}\Rightarrow \dfrac{U_2}{U_1}=\sqrt{\dfrac{\Delta P_1}{\Delta P_2}}=\sqrt{n}$.
+			\item Vậy cần tăng điện áp lên $\sqrt n$ lần hay $\dfrac{N_1}{N_2}=\dfrac{1}{\sqrt{n}}$.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Máy biến thế}
+\begin{vidu} %[3P3-15.6K][Loai2]
+	Điện năng được tải từ trạm tăng áp tới trạm hạ áp bằng đường dây tải điện một pha có điện trở $30\ \Omega.$ Biết điện áp hiệu dụng ở hai đầu cuộn sơ cấp và thứ cấp của máy hạ áp lần lượt là 2200 V và 220 V, cường độ dòng điện chạy trong cuộn thứ cấp của máy hạ áp là 100 A. Bỏ qua tổn hao năng lượng ở các máy biến áp. Coi hệ số công suất bằng 1. Điện áp hiệu dụng ở hai đầu cuộn thứ cấp của máy tăng áp là
+	\choice
+	{\True 2500 V}
+	{2420 V}
+	{2200 V}
+	{4400 V}
+	\loigiai{
+\Binhluan{
+		\begin{itemize}
+			\item Bỏ qua hao tổn năng lượng của các máy biến áp nên ở máy hạ áp có đẳng thức: 
+			\begin{align*}
+			\dfrac{U_1}{U_2}=\dfrac{I_2}{I_1}\Rightarrow {I_1}=10\ A.
+			\end{align*}
+			\item Điện áp hiệu dụng ở hai đầu cuộn thứ cấp
+			của máy tăng áp là: 
+			\begin{align*}
+			U={U_1}+{I_1}R=2200+10. 30=2500\ V.
+			\end{align*}
+			\begin{note}
+			 \textit{Bài toán nên được sơ đồ để học sinh dễ hình dung ra công thức}
+			 \end{note}
+		\end{itemize}
+	}
+{
+Ta xử lí ở máy hạ áp trước để lấy cường độ dòng điện trên đường dây truyền tải. Sau đó vẽ lại sơ đồ truyền tải để có công thức: $U=U_1+I_1R$.\\
+Bài toán không liên quan đến cấu trúc của máy tăng áp.
+}
+	}
+\end{vidu}
+
+
+\loai{Khi $P_{\text{phát}}=const$ - Liên quan MBA}
+
+
+\loai{Khi $P_{\text{tiêu thụ}}=const$. Nếu biết công suất hao phí đầu và cuối}
+\begin{vidu*} %[3P3-15.6T][Loai5] 
+	Từ một trạm điện, điện năng được truyền tải đến nơi tiêu thụ bằng đường dây tải điện một pha. Biết công suất truyền đến nơi tiêu thụ luôn không đổi, điện áp và cường độ dòng điện luôn cùng pha. Ban đầu, nếu ở trạm điện chưa sử dụng máy biến áp thì điện áp hiệu dụng ở trạm điện bằng 1,2375 lần điện áp hiệu dụng ở nơi tiêu thụ. Để công suất hao phí trên đường dây truyền tải giảm 100 lần so với lúc ban đầu thì ở trạm điện cần sử dụng máy biến áp có tỉ lệ số vòng dây của cuộn thứ cấp so với cuộn sơ cấp \textbf{gần nhất} với giá trị nào sau đây?
+	\choice
+	{\True 8,1}
+	{6,5}
+	{7,6}
+	{10}
+	\loigiai{
+		\textbf{Cách 1: }
+		\begin{itemize}
+			\item Khi chưa sử dụng máy biến áp thì điện áp đầu đường dây là
+			\begin{align*}
+				U_1=1,2375U_{tt1}\Rightarrow U_{tt1}=\dfrac{U_1}{1,2375}\quad (1).
+			\end{align*}
+			\item Độ giảm điện áp trên đường dây khi đó là 
+			\begin{align*}
+				\Delta U_1=U_1-U_{tt1}=\left(1-\dfrac{1}{1,2375}\right)U_1=\dfrac{19}{99}U_1 \quad (2).
+			\end{align*}
+			\item Lúc sau, công suất hao phí trên dây giảm 100 lần so với lúc đầu, tức là
+			\begin{align*}
+				\dfrac{\Delta P_1}{\Delta P_2}=\dfrac{I_1^2R}{I_2^2R}=\dfrac{I_1^2}{I_2^2}=100\Rightarrow I_1=10.I_2.
+			\end{align*}
+			\item Độ giảm điện áp lúc đầu và lúc sau lần lượt là: 
+			$\Delta U_1=I_1R;\Delta U_2=I_2R$
+			\begin{align*}
+				\Rightarrow \dfrac{\Delta U_2}{\Delta U_1}=\dfrac{I_2}{I_1}\Leftrightarrow \Delta U_2=\dfrac{\Delta U_1}{10}=\dfrac{19}{990}U_1 \quad (3).
+			\end{align*}
+			\item Do công suất nơi tiêu thụ không đổi nên $P_{tt}=U_{tt1}.I_1=U_{tt2}.I_2$
+			\begin{align*}
+				\Rightarrow U_{tt2}=\dfrac{I_1}{I_2}.U_{tt1}=10.U_{tt1}=\dfrac{800}{99}U_1 \quad (4).
+			\end{align*}
+			\item Điện áp đầu đường dây lúc sau là:  $U_2=U_{tt2}+\Delta U_2\quad (5).$
+			\item Thay $(3)$ và $(4)$ vào $(5)$, ta được
+			\begin{align*}
+				U_2=\dfrac{800}{99}U_1+\dfrac{19}{990}U_1=\dfrac{8019}{990}U_1\Rightarrow \dfrac{U_2}{U_1}=\dfrac{8019}{990}=8,1.
+			\end{align*}
+			\item Vậy ở trạm điện cần sử dụng máy biến áp có tỉ lệ số vòng dây của cuộn thứ cấp so với cuộn sơ cấp là:
+			\begin{align*}
+				\dfrac{N_2}{N_1}=\dfrac{U_2}{U_1}=8,1.
+			\end{align*}
+		\end{itemize}
+		\textbf{Cách 2: } Chuẩn hoá $P_{tt}=U_{tt1}=R=1$
+			\begin{bang}[tabularx={l|X|X|X|X|X}]{$P_{tt}=R=\cos\varphi=U_{tt1}=1$}
+		k&U&$U_{tt}$&$\Delta U=IR$&$\Delta P=I^2R$&I \\\midrule
+		1&$U_1=1,2375$&$U_{tt1}=1$&$\Delta U_1=0,2375\ (1)$&$\Delta P_1=100\Delta P_2$&$I_1=0,2375\ (2)$ \\\midrule
+		$8,2\ (7)$&$U_2=10,1\ (6)$&$U_{tt2}=0,1\ (5)$&$\Delta U_2=10\ (4)$&$\Delta P_2$& $I_2=2,375\ (3)$
+	\end{bang}
+\Binhluan{
+	\begin{itemize}
+		\item $\Delta U_1=U_1-U_{tt1}=0,2375=I_1R\Rightarrow I_1=0,2375\ A$.
+		\item $\Delta P\sim I^2$ nên $\dfrac{I_2}{I_1}=\sqrt{\dfrac{\Delta P_2}{\Delta P_1}}=10\Rightarrow I_2=2,375\ A$.
+		\item $\Delta U_2=I_2.R=10\ V$
+		\item $U_{tt1}I_1=U_{tt2}I_2 \Rightarrow U_{tt2}=0,1\ V$
+		\item $U_2=U_{tt2}+\Delta U_2=10,1\ V$
+		\item $k_2=\dfrac{N_2}{N_1}=\dfrac{U_2}{U_1}=8,2$.
+	\end{itemize}
+}
+{
+Đây là bài toán khó và phức tạp. Nếu không sử dụng nhuần nhuyễn kĩ thuật chuẩn hoá và lập bảng thì sẽ khó kiểm soát thông số và mất nhiều thời gian.
+}
+	}
+\end{vidu*}
+
+
+
+
+
+
+
+
+
+\loai{Khi $P_{\text{tiêu thụ}}=const$. Nếu biết tỉ số giữa độ giảm áp và  điện áp hai đầu đường dây tải}
+\begin{vidu} %[3P3-15.6K][Loai6] 
+	Điện áp giữa hai cực của một trạm phát điện cần tăng lên bao nhiêu lần để giảm công suất hao phí trên đường dây tải điện 25 lần, với điều kiện công suất đến tải tiêu thụ không đổi? Biết rằng khi chưa tăng điện áp, độ giảm điện áp trên đường dây tải điện bằng 20\% điện áp giữa hai cực trạm phát điện. Coi cường độ dòng điện trong mạch luôn cùng pha với điện áp.
+	\choice
+	{\True 4,04 lần}
+	{5,05 lần}
+	{6,06 lần}
+	{7,07 lần}
+	\loigiai{
+		\textbf{Cách 1:} Mấu chốt nằm ở hệ thức: $P_{tt}=UI-\Delta U.I\quad (*)$\\
+		Thực hiện tính toán theo thứ tự $(1)\to (9)$.
+				\begin{bang}[tabularx={l|X|l|X|l|l}]{$R,\ P_{tt}=const;\ \cos\varphi=1$; Chuẩn hoá $R=U=1000$}
+			$U=1000$&$\Delta U=IR=1000I$&$I=\dfrac{\Delta U}{1000}$ &$\Delta P=I^2R$&$P=UI$&$P_{tt}$ \\\midrule
+			$1000$&$200$&$I_1=0,2\ (1)$&$\Delta P_1=40\ (2)$&$P_1=200\ (3)$&$160\ (4)$\\\midrule
+			$1000k$&$\Delta U_2=40\ (9)$&$I_2=0,04\ (8)$&$\Delta P_2=\dfrac{\Delta P_1}{25}=1,6\ (6)$&$P_2=161,6\ (7)$&$160\ (5)$
+		\end{bang}
+	\begin{note}
+		Thay vào $(*)$: $160=1000k.0,04-40.0,04\Rightarrow k=4,04$.
+	\end{note}
+\Binhluan{
+	\textbf{Cách 2: Dùng công thức giải nhanh}
+		\begin{itemize}
+			\item Trong quá trình truyền tải điện năng đi xa, ban đầu độ giảm điện áp trên đường dây tải điện một pha bằng n lần điện áp ở nơi truyền đi. 
+			\item Coi cường độ dòng điện trong mạch luôn cùng pha với điện áp. 
+			\item Để công suất hao phí trên đường dây giảm a lần nhưng vẫn đảm bảo công suất truyền đến nơi tiêu thụ không đổi, cần phải tăng điện áp của nguồn lên: $\dfrac{a(1-n)+n}{\sqrt{a}}$ lần.
+			\item Suy ra : $\dfrac{a(1-n)+n}{\sqrt{a}}=\dfrac{25(1-0,2)+0,2}{\sqrt{25}}=4,04$.
+	\end{itemize}
+}
+{
+Đây là dạng toán nhiều dữ liệu. Nếu chuẩn hoá phù hợp ta sẽ tính được nhanh kết quả. Tuy nhiên đòi hỏi phải có kinh nghiệm để biết nên chuẩn hoá đại lượng nào.
+}
+}
+\end{vidu}
+\loai{Giữ nguyên U - Thay đổi $P_{tt}$}
+\begin{vidu} %[3P3-15.6K][Loai8]
+	Điện năng được truyền từ một nhà máy điện A có công suất không đổi tới nơi tiêu thụ B bằng đường dây một pha. Nếu điện áp truyền đi là U và ở B lắp một máy hạ áp với tỉ số vòng dây cuộn sơ cấp và thứ cấp là $k = 30$ thì đáp ứng được $\dfrac{20}{21}$ nhu cầu điện năng ở B. Bây giờ muốn cung cấp đủ điện năng cho B với điện áp truyền đi là 2U thì ở B phải dùng máy hạ áp có k bằng
+	\choice
+	{\True 63}
+	{58}
+	{53}
+	{44}
+	\loigiai{
+		Ta khéo léo giả sử ở B cần tiêu thụ lượng điện năng là $21P_0$. Ta chuẩn hoá luôn $P_0=1$
+				\begin{bang}[tabularx={l|X|l|X|X|l|X}]{$R,\ P=const$. Chuẩn hoá $U=1$}
+			$U$&$U_{tt}=\dfrac{P_{tt}}{I}$&$k_2$&$I=\dfrac{P}{U}$&$\Delta P$&$P_{tt}$&$P$\\\midrule
+			$1$&$\dfrac{15}{16}\ (9)$&$30$&$\dfrac{64}{3}\ (7)$&$\Delta P=\dfrac{4}{3}\ (4)$&$20$&$20+\Delta P\ (1)=\dfrac{64}{3}$ \\\midrule
+			$2$&$\dfrac{62}{32}\ (10)$&\boder{63}&$\dfrac{32}{3}\ (8)$&$\dfrac{\Delta P}{4}\ (2)=\dfrac{1}{3}\ (5)$&$21$&$21+\dfrac{\Delta P}{4}\ (3)=\dfrac{64}{3}\ (6)$
+		\end{bang}
+\Binhluan{
+		\begin{itemize}
+			\item Gọi $U_0$ là điện áp cuộn thứ cấp.
+			\item Khi tỉ số là $k=30$ thì điện áp cuộn sơ cấp là $30{U_0}$.
+			\item Khi tỉ số là k thì điện áp cuộn sơ cấp là $k{U_0}$.
+			\item Khi điện áp truyền đi là U thì hao phí là $\Delta P \Rightarrow P-\Delta P=20\quad (1)$.
+			\item Khi điện áp truyền đi là 2U thì hao phí là $\dfrac{\Delta P}{4} \Rightarrow P-\dfrac{\Delta P}{4}=21\quad (2)$. 
+			\item Từ $(1)$ và $(2)$ suy ra $P=\dfrac{64}{3}$ và $\Delta P=\dfrac{4}{3}$
+			\begin{align*}
+				&\Rightarrow {H_1}=\dfrac{P-\Delta P}{P}=0,9375=\dfrac{30{U_0}}{U}\Rightarrow \dfrac{U_0}{U}=\dfrac{1}{32}\quad (3)\\ &\Rightarrow {H_2}=\dfrac{P-\dfrac{\Delta P}{4}}{P}=\dfrac{63}{64}=\dfrac{n{U_0}}{2U}\quad (4).
+			\end{align*}
+			\item Thay $(3)$ vào $(4)$ suy ra $n=63$. 
+			\item Vậy tỉ số máy biến áp là 63.
+		\end{itemize}
+	}
+{Đây là bài toán khó kiểm soát dữ liệu. Hiện tại tác giả chưa có thêm cách giải tốt hơn cho tình huống này}
+	}
+\end{vidu}
+\loai{$\cos \varphi <1$}
+

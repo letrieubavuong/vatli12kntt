@@ -1,0 +1,238 @@
+\loai{Không dùng bảo toàn động lượng}
+\begin{vidu}%[3P7-4.4K][Loai1]
+\nguon{QG - 2016} Người ta dùng hạt proton có động năng $1,6\ MeV$ bắn vào hạt nhân $\Hn{3}{7}{Li}$ đứng yên, sau phản ứng thu được hai hạt giống nhau có cùng động năng. Giả sử phản ứng không kèm theo bức xạ $\gamma$. Biết năng lượng tỏa ra của phản ứng là $17,4\ MeV$. Động năng của mỗi hạt sinh ra bằng
+\choice
+{7,9 MeV}
+{\True 9,5 MeV}
+{8,7 MeV}
+{0,8 MeV}
+\loigiai{
+\begin{itemize}
+\item Theo định luật bảo toàn năng lượng toàn phần: $W+K_p=K_1+K_2$.
+\item Theo đề bài: $K_1 = K_2$.
+\item Suy ra: $K_1=K_2=\dfrac{{W+K_p}}{2}=\dfrac{{17,4+1,6}}{2}=9,5\ MeV$.
+\end{itemize}
+}
+\end{vidu}
+\loai{2 Hạt sinh ra bay vuông góc - tính động năng}
+\begin{vidu}%[3P7-4.4K][Loai2]
+Người ta dùng proton có động năng $4,5\ MeV$ bắn phá hạt nhân Berili $(\Hn{4}{9}{Be})$ đứng yên. Hai hạt sinh ra là helium $(\Hn{2}{4}{He})$ và $X$. Giả sử phản ứng không kèm theo bức xạ $\gamma$. Hạt helium có vận tốc vuông góc với vận tốc của hạt proton và phản ứng tỏa ra một năng lượng là $3,0\ MeV$. Lấy khối lượng của mỗi hạt nhân (đo bằng đơn vị $u$) bằng số khối $A$ của nó. Động năng của hạt $X$ bằng
+\choice
+{4,05 MeV}
+{1,65 MeV}
+{1,35 MeV}
+{\True 3,45 MeV}
+\loigiai{immini[thm]{\begin{itemize}
+\item Bảo toàn năng lượng toàn phần cho phản ứng hạt nhân
+\begin{align*}
+W=K_\alpha +K_X-K_p\Leftrightarrow K_\alpha +K_X=7,5\ MeV\quad (1).
+\end{align*}
+\item Bảo toàn động lượng cho phản ứng hạt nhân
+\begin{align*}
+&\vec{{p_p}}=\vec{{p_X}}+\vec{{p_\alpha}}\Rightarrow p_X^2=p_p^2+p_\alpha^2.\\
+\Leftrightarrow\,\,\, &m_XK_X=m_pK_p+m_\alpha K_\alpha \Leftrightarrow 6K_X=4,5+4.K_\alpha\quad (2)
+\end{align*}
+\end{itemize}
+Từ $(1)$ và $(2)$ ta tìm được $K_X=3,45$ MeV.
+}	
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o}
+\draw [very thick,->] (o)--++(0:2)coordinate(b);
+\draw [very thick,->] (o)--++(90:2)coordinate(c);
+\draw [very thick,->] (c)--(b);
+\node at (b)[below]{$\vec{P}_{p}$};
+\node at (c)[above right]{$\vec{P}_{\alpha}$};
+\node at (b)[above right]{$\vec{P}_{X}$};
+\end{tikzpicture}}
+}
+\end{vidu}
+\loai{2 Hạt sinh ra bay theo 2 phương bất kì - tính động năng}
+\begin{vidu} %[3P7-4.4G][Loai3]
+\nguon{QG - 2019} Dùng hạt $\alpha$ có động năng K bắn vào hạt $_7^{14}N$ đứng yên gây ra phản ứng $_2^4He+_7^{14}N\to X+_1^1H$ phản ứng này thu năng lượng 1,21 MeV và không kèm theo bức xạ gamma. Lấy khối lượng các hạt nhân tính theo đơn vị u bằng số khối của chúng. Hạt nhân X và hạt nhân $_1^1H$ bay ra theo các hướng hợp với hướng chuyển động của hạt $\alpha$ các góc lần lượt là $23^\circ$ và $67^\circ$. Động năng của hạt nhân $_1^1H$ là
+\choice
+{1,75 MeV}
+{1,27 MeV}
+{0,775 MeV}
+{\True 3,89 MeV}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Áp dụng định luật bảo toàn động lượng $\vec{P_{\alpha}}=\vec{P_X}+\vec{P_H}$.
+\item Theo hình vẽ ta có: $\dfrac{P_H}{\sin 23^\circ}=\dfrac{P_{\alpha}}{\sin 90^\circ}=\dfrac{P_X}{\sin 67^\circ}$. 
+\item Mặt khác: $K=\dfrac{P^2}{2m}\Rightarrow P=\sqrt{2.m.K}\\
+\Rightarrow\dfrac{\sqrt{2m_HK_H}}{\sin 23^\circ}=\dfrac{\sqrt{2.m_{\alpha}K_{\alpha}}}{\sin 90^\circ}=\dfrac{\sqrt{2.m_XK_X}}{\sin 67^\circ}$.
+\item Theo bảo toàn năng lượng: $K_{\alpha}-1,21=K_X+K_H\\
+\Rightarrow K_{\alpha}-1,21=4.\sin^223^\circ.K_{\alpha}+\dfrac{4.{\sin}^267^\circ}{17}.K_{\alpha}\\\Rightarrow  K_H=3,89\ MeV$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 4/0/b}
+\tkzDefShiftPoint[o](23:0.4){o1}
+\tkzDefShiftPoint[b](113:0.4){b1}
+\tkzInterLL(o,o1)(b,b1)
+\tkzGetPoint{c}
+\tkzDefPointBy[translation=from c to o](b)
+\tkzGetPoint{d}
+\draw [very thick,blue,->] (o)--(c);
+\draw [very thick,blue,->] (o)--(d);
+\draw [very thick,red,->] (o)--(b);
+\tkzDrawSegments[dashed](b,c b,d)
+\node at (b)[right]{$\vec{p}_{\alpha}$};
+\node at (c)[above right]{$\vec{p}_{X}$};
+\node at (d)[below right]{$\vec{p}_{H}$};
+\tkzMarkAngles[size=0.5cm](d,o,b)
+\path (o) ++(-30:0.8)node{$67^{\circ}$};
+\tkzMarkAngles[size=0.6cm](b,o,c)
+\path (o) ++(10:1)node{$23^{\circ}$};
+\end{tikzpicture}}
+}
+\end{vidu}
+
+\begin{vidu}%[3P7-4.4G][Loai3]
+\nguon{ĐH - 2014} Bắn hạt $\alpha $ vào hạt nhân nguyên tử nhôm đang đứng yên gây ra phản ứng: $\Hn{2}{4}{He}+\Hn{13}{27}{Al} \rightarrow \Hn{15}{30}{P}+\Hn{0}{1}{n}$. Biết phản ứng thu năng lượng là 2,70 MeV; giả sử hai hạt tạo thành bay ra với cùng vector vận tốc và phản ứng không kèm bức xạ $\gamma $. Lấy khối lượng của các hạt tính theo đơn vị u có giá trị bằng số khối của chúng. Động năng của hạt $\alpha $ là
+\choice
+{2,70 MeV}
+{\True 3,10 MeV}
+{1,35 MeV}
+{1,55 MeV}
+\loigiai{
+\begin{itemize}
+\item Áp dụng định luật bảo toàn năng lượng toàn phần: $K_P+K_n=K_{\alpha}+W\quad (1)$.
+\item Áp dụng định luật bảo toàn động lượng: 
+\begin{align*}
+&\vec p_{\alpha}=\vec{p}_P+\vec{p}_n \Leftrightarrow m_{\alpha}\vec {v}_{\alpha}=m_P \vec {v}_P+m_n\vec {v}_n=(m_P+m_n)\vec v\\
+\Rightarrow &m_{\alpha}v_{\alpha}=(m_P+m_n)v\Rightarrow v=v_P=v_n=\dfrac{m_{\alpha}}{m_P+m_n}v_{\alpha}=\dfrac{4}{31}v_{\alpha}.
+\end{align*}
+\item Ta có: $\dfrac{K_P}{K_{\alpha}}=\dfrac{m_P}{m_{\alpha}}\left(\dfrac{v_P}{v_{\alpha}}\right)^2=\dfrac{30}{4}\left(\dfrac{4}{31}\right)^2\Rightarrow K_P=\dfrac{120}{961}K_{\alpha}\quad (2)$.
+\item $\dfrac{K_n}{K_{\alpha}}=\dfrac{m_n}{m_{\alpha}}\left(\dfrac{v_n}{v_{\alpha}}\right)^2=\dfrac{1}{4}\left(\dfrac{4}{31}\right)^2\Rightarrow K_n=\dfrac{4}{961}K_{\alpha}\quad (3)$.
+\item Thay $(2)$ và $(3)$ vào $(1)$, ta được:
+\begin{align*}
+\dfrac{120}{961}K_{\alpha}+\dfrac{4}{961}K_{\alpha}=K_{\alpha}+W\Leftrightarrow -\dfrac{27}{31}K_{\alpha}=W=-2,70\Rightarrow K_{\alpha}=3,10\ MeV.
+\end{align*}
+\end{itemize}
+}
+\end{vidu}
+\loai{Tính góc giữa các hạt}
+\begin{vidu}%[3P7-4.4G][Loai4]
+Dùng một hạt $\alpha$ có động năng $4\ MeV$ bắn vào hạt nhân $\Hn{13}{27}{Al}$ đang đứng yên gây ra phản ứng: $\alpha +\Hn{13}{27}{Al}\to\Hn{0}{1}{n}+\Hn{15}{30}{P}$. Phản ứng này thu năng lượng là $1,2\ MeV$. Hạt neutron bay ra theo phương vuông góc với phương bay tới của hạt $\alpha$. Coi khối lượng của các hạt nhân bằng số khối (tính theo đơn vị $u$). Giả sử phản ứng không kèm theo bức xạ $\gamma$. Hạt $\Hn{15}{30}{P}$ bay theo phương hợp với phương bay tới của hạt $\alpha$ một góc \textbf{gần nhất} với giá trị nào sau đây?
+\choice
+{\True $20^\circ$}
+{$10^\circ$}
+{$40^\circ$}
+{$30^\circ$}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Áp dụng định luật bảo toàn năng lượng toàn phần
+\begin{align*}
+W=K_n+K_p-K_\alpha \Rightarrow K_n+K_p=K_\alpha+W=4-1,2=2,8\ MeV\quad (1).
+\end{align*}
+\item Mặt khác theo giản đồ, ta có
+\begin{align*}
+p_P^2=p_n^2+p_\alpha^2\Rightarrow m_PK_P=m_nK_n+m_\alpha K_\alpha \Rightarrow 30K_P=K_n+16\quad (2).
+\end{align*}
+\item Từ $(1)$ và $(2)$ suy ra $K_n=2,19\ MeV$ và $K_P=0,61\ MeV$.
+\item Gọi góc giữa hạt P và hạt $\alpha$ là $\varphi $, ta có: \\$\tan \varphi =\dfrac{p_n}{p_\alpha}=\sqrt{{\dfrac{m_nK_n}{m_\alpha K_\alpha}}}=0,53\Rightarrow \varphi \approx 20^\circ$.
+\item Gần với giá trị $20^\circ$ nhất.
+\end{itemize}}	{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 3/0/b}
+\tkzDefShiftPoint[o](30:0.4){o1}
+\tkzDefShiftPoint[b](90:0.4){b1}
+\tkzInterLL(o,o1)(b,b1)
+\tkzGetPoint{c}
+\tkzDefPointBy[translation=from c to o](b)
+\tkzGetPoint{d}
+
+\draw [very thick,->] (o)--(c);
+\draw [very thick,->] (o)--(d);
+\draw [very thick,->] (o)--(b);
+\tkzDrawSegments[dashed](b,c b,d)
+\node at (b)[right]{$\vec{p}_{\alpha}$};
+\node at (c)[above right]{$\vec{p}_{P}$};
+\node at (d)[below right]{$\vec{p}_{n}$};
+\end{tikzpicture}}
+}
+\end{vidu}
+\loai{Tính năng lượng toả ra}
+\begin{vidu}%[3P7-4.4G][Loai5]
+\nguon{QG - 2015} Bắn hạt proton có động năng 5,5 MeV vào hạt nhân $\Hn{3}{7}{Li}$ đang đứng yên, gây ra phản ứng hạt nhân $p+\Hn{3}{7}{Li}\rightarrow 2\alpha $. Giả sử phản ứng không kèm theo bức xạ $\gamma $, hai hạt $\alpha $ có cùng động năng và bay theo hai hướng tạo với nhau góc $160^\circ$. Coi khối lượng của mỗi hạt tính theo đơn vị u gần đúng bằng số khối của nó. Năng lượng mà phản ứng tỏa ra là
+\choice
+{\True 17,3 MeV}
+{14,6 MeV}
+{10,2 MeV}
+{20,4 MeV}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Phương trình phản ứng hạt nhân: $\Hn{1}{1}{H}+\Hn{3}{7}{Li}\rightarrow 2\Hn{2}{4}{He}$.
+\item Áp dụng định luật bảo toàn động lượng: $\vec p_p=\vec p_{1\alpha}+\vec p_{2\alpha}.$\\
+$\Rightarrow p_p^2=p_{1\alpha}^2+p_{2\alpha}^2+2p_{1\alpha}.p_{2\alpha}.cos\varphi \Rightarrow p_p^2=2p_{\alpha}^2(1+cos\varphi)\\\Rightarrow m_pK_p=2m_{\alpha}K_{\alpha}(1+cos\varphi).$\\
+$\Rightarrow K_{\alpha}=\dfrac{m_pK_p}{2m_{\alpha}(1+cos\varphi)}=\dfrac{1.5,5}{2.4.(1+cos160\circ)}=11,4\ MeV.$
+\item Áp dụng định luật bảo toàn năng lượng toàn phần:
+\begin{align*}
+K_p+W=2K_{\alpha}\Rightarrow W=2K_{\alpha}-K_p=2.11,4-5,5=17,3\ MeV.
+\end{align*}
+\end{itemize}
+}
+{\begin{tikzpicture}
+\tkzDefPoints{0/0/o}
+\tkzDefShiftPoint[o](0:2cm){p}
+\tkzDefShiftPoint[o](60:2cm){a}
+\tkzDefShiftPoint[o](-60:2cm){b}
+\tkzDrawSegments[dashed](a,p b,p)
+\tkzDrawSegments[red,->](o,p)
+\tkzDrawSegments[blue,->](o,a o,b)
+\tkzLabelPoint[above](a){$\vec{p}_{\alpha_1}$}
+\tkzLabelPoint[below](b){$\vec{p}_{\alpha_2}$}
+\tkzLabelPoint[right](p){$\vec{p}_p$}
+\tkzMarkAngles[size=0.4cm](p,o,a)
+\tkzLabelAngles[pos=0.8](p,o,a){$\varphi/2$}
+\end{tikzpicture}}}
+\end{vidu}
+\loai{Tính động năng tối thiểu để phản ứng xảy ra}
+\begin{vidu}%[3P7-4.4K][Loai6]
+\nguon{CĐ - 2011} Dùng hạt $\alpha$ bắn phá hạt nhân nitrogen đang đứng yên thì thu được một hạt proton và hạt nhân oxygen theo phản ứng: $\Hn{2}{4}{\alpha} +\Hn{7}{14}{N}\rightarrow\Hn{8}{17}{O}+\Hn{1}{1}{p}$. Giả sử phản ứng không kèm theo bức xạ $\gamma$. Biết khối lượng các hạt trong phản ứng trên là: $m_ {\alpha} = 4,0015$u; $m_ {N} = 13,9992$u; $m_ {O} = 16,9947$u; $m_p= 1,0073$u. Cho $1uc^2=931,5\ MeV$. Động năng tối thiểu của hạt $\alpha$ để phản ứng xảy ra là
+\choice
+{1,503 MeV}
+{29,069 MeV}
+{\True 1,211 MeV}
+{3,007 Mev}
+\loigiai{
+Áp dụng định luật bảo toàn năng lượng: 
+\begin{align*}
+K_{\alpha min} + m_ \text{trước} c^ {2} = m_ \text{sau} c^ {2} \Rightarrow K_{\alpha min} = m_ \text{sau} c^ {2} - m_ \text{trước} c^ {2} = 1,211\ MeV.
+\end{align*}
+}
+\end{vidu}
+\loai{Phản ứng hạt nhân có sự tham gia của bức xạ gamma}
+\begin{vidu}%[3P7-4.4K][Loai7]
+Dưới tác dụng của bức xạ $\gamma$ hạt nhân $C12$ biến thành 3 hạt $\alpha$. Biết $m_{\alpha}=4,0015u$, $m_C=11,9968u$, $1u=931,5\ MeV/c^2$, $h=6,{625.10}^{- 34}\ Js$, $c={3.10}^{8}\ m/s$. Bước sóng dài nhất của photon $\gamma$ để phản ứng \textit{có thể} xảy ra là
+\choice
+{$3,{01.10}^{- 14}\ m$}{$2,{96.10}^{- 14}\ m$}
+{$2,{96.10}^{- 13}\ m$}{\True $1,{7.10}^{- 13}\ m$}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\dfrac{hc}{\lambda} + {m_C}.{c^2} = 3{m_{He}}{c^2} + 3K_\alpha$.
+\item Để $\lambda_{\max}$ thì $K_\alpha=0$: $\Rightarrow \dfrac{hc}{\lambda_{\max}}=\left(3m_{\alpha} - m_C\right)c^2=7,17255\ MeV$ $\Rightarrow \lambda_{\max} =1,73.10^{- 13}\ m.$
+\end{itemize}
+}
+\end{vidu}
+\loai{Tổng hợp}
+\begin{vidu}%[3P7-4.4G][Loai8]
+\nguon{QG - 2018} Dùng hạt $\alpha$ có động năng 5,00 MeV bắn vào hạt nhân $\Hn{7}{14}{N}$ đứng yên thì gây ra phản ứng: $\Hn{2}{4}{He}+\Hn{7}{14}{N}\rightarrow \Hn{Z}{A}{X}+\Hn{1}{1}{H}$. Phản ứng này thu năng lượng 1,21 MeV và không kèm theo bức xạ gamma. Lấy khối lượng các hạt nhân tính theo đơn vị u bằng số khối của chúng. Khi hạt nhân X bay ra theo hướng lệch với hướng chuyển động của hạt $\alpha$ một góc lớn nhất thì động năng của hạt $\Hn{1}{1}{H}$ có giá trị \textbf{gần nhất} với giá trị nào sau đây?
+\choice
+{2,75 MeV}
+{2,58 MeV}
+{\True 2,96 MeV}
+{2,43 MeV}
+\loigiai{
+\begin{itemize}
+\item $\Hn{2}{4}{He}+\Hn{7}{14}{N}\rightarrow \Hn{Z}{A}{X}+\Hn{1}{1}{H}\Rightarrow\Hn{Z}{A}{X}=\Hn{8}{17}{O}$
+\item Năng lượng thu vào của phản ứng:  $W=K_X+K_H-K_{\alpha}\Rightarrow K_X+K_H=3,79\Rightarrow K_H=3,79-K_X $.
+\item Định luật bảo toàn động lượng: 
+\begin{align*}
+\cos \beta =\dfrac{p_X^2+p_{\alpha}^2-p_H^2}{2p_Xp_{\alpha}}=\dfrac{17K_X+20-3,79+K_X}{4\sqrt{85}\sqrt{K_X}}=\dfrac{18\sqrt{K_X}+\dfrac{16,21}{\sqrt{K_X}}}{4\sqrt{85}}\quad (1)
+\end{align*}
+(với $\beta$ là góc hợp bởi hướng lệch của hạt X so với hướng chuyển động của hạt $\alpha$).
+\item Để $\beta$ đạt giá trị lớn nhất khi tử số $(1)$ phải nhỏ nhất.
+\item Áp dụng bất đẳng thức Cô-si cho tử số của $(1)$ ta có: $18\sqrt{K_X}+\dfrac{16,21}{\sqrt{K_X}}\ge 34,16$.
+\item Dấu “=” xảy ra khi: $K_X = 0,9 \ MeV \Rightarrow K_H = 2,89 \ MeV$.
+\end{itemize}
+}
+\end{vidu}
+

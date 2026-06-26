@@ -1,0 +1,138 @@
+\loai{Vận dụng đơn giản công thức định luật BM}
+\begin{vidu} %[1P5-2.2B][Loai1]
+	Một lượng khí xác định ở áp suất 3 atm có thể tích là $10\ \ell$. Tính thể tích của khối khí khi nén đẳng nhiệt đến áp suất 6 atm.
+	\choice
+	{\True $5\ \ell$}
+	{$10\ \ell$}
+	{$20\ \ell$}
+	{$3\ \ell$}
+	
+	\loigiai{
+		Áp dụng định luật Bôi-lơ - Ma-ri-ốt: 
+		\begin{align*}
+			p_1.V_1=p_2.V_2\Rightarrow V_2=\dfrac{p_1.V_1}{p_2}=\dfrac{3.10}{6}=5\ \ell.
+		\end{align*}
+	}
+	\begin{note}
+		Khi áp dụng các định luật về đẳng quá trình ta không cần đổi đơn vị của p và V ra đơn vị SI. Chỉ cần chúng cùng đơn vị là được.
+	\end{note}
+\end{vidu}
+
+\begin{vidu} %[1P5-2.2B][Loai1]
+	Nén khí đẳng nhiệt từ thể tích $9\ \ell$  đến thể tích $6\ \ell$  thì áp suất khí thay đổi một lượng $50\ kPa$. Áp suất ban đầu của khí là	
+	\choice
+	{40 kPa}
+	{\True 100 kPa}
+	{60 kPa}
+	{80 kPa}
+	
+	\loigiai{
+		\begin{itemize}
+			\item Gọi áp suất ban đầu là p.
+			\item Theo định luật Bôi-lơ - Ma-ri-ốt: $p_1V_1=p_2V_2 \Leftrightarrow 9p = 6\left(p + \Delta p\right)\Rightarrow p = 2\Delta p = 2.50 = 100\ kPa$.
+		\end{itemize}
+		\begin{note}
+			Khi nén đẳng nhiệt làm thể tích giảm thì áp suất sẽ tăng: $p_2=p_1+\Delta p$
+		\end{note}
+	}
+\end{vidu}
+
+\begin{vidu} %[1P5-2.2K][Loai1]
+	immini[thm]{Một khối khí khi đặt ở điều kiện nhiệt độ không đổi thì có sự biến thiên của thể tích theo áp suất như hình vẽ. Khi áp suất có giá trị $0,5\ kN/m^2$ thì thể tích của khối khí bằng
+		\choice[2]
+		{\True $4,8\ m^3$}
+		{$14,4\ m^3$}
+		{$3,6\ m^3$}
+		{$7,2\ m^3$}}{\begin{tikzpicture}[scale=0.8,thick,>=stealth']
+			\tkzDefPoints{0/0/o, 1.5/3/b, 3/1.5/a, 1.5/1.5/c , 1.2/3.8/e, 4/1.2/f}
+			\tkzLabelPoint[below left](o){$O$}
+			\draw[->] (0,0)--(5,0)node[below]{$p \; (kN/m^{2})$}; 
+			\draw[->] (0,0)--(0,4.5)node[left]{$V \; (m^{3})$};
+			\draw[dashed](0,1.5)--(a)--(3,0)(b)--(1.5,0);
+			\draw[blue, very thick](f) to [bend left =30](e);
+			\node at (0,1.5)[left]{\small $2,4$};
+			\node at (1.5,0)[below]{\small $0,5$};
+			\node at (3,0)[below]{\small $1$};
+		\end{tikzpicture}
+	}
+	
+	\loigiai{
+		\Binhluan{
+			\begin{itemize}
+				\item Đồ thị biểu diễn đường đẳng nhiệt.
+				\item Định luật Bôi-lơ - Ma-ri-ốt: 
+				\begin{align*}
+					p_1.V_1=p_2.V_2\Rightarrow V_2=\dfrac{p_1.V_1}{p_2}=\dfrac{1.2,4}{0,5}= 4,8\ m^3.
+				\end{align*}
+			\end{itemize}
+		}
+		{Không cần đổi đơn vị áp suất}
+	}
+\end{vidu}
+\begin{vidu}%[1P5-2.2G][Loai1]
+	Nếu áp suất của một lượng khí lí tưởng xác định giảm $2. 10^5$ Pa thì thể tích giảm 3 lít. Nếu áp suất của lượng khí đó giảm $5. 10^5$ Pa thì thể tích giảm 5 lít. Biết nhiệt độ không đổi. Áp suất và thể tích ban đầu của khí là
+	\choice
+	{$4.10^5$ Pa; 12 $\ell$}
+	{$2.10^5$ Pa; 8 $\ell$}
+	{\True $4. 10^5$ Pa; 9 $\ell$}
+	{$2. 10^5$ Pa; 12 $\ell$}
+	\loigiai{
+		\Binhluan{
+			\begin{bang}[tabularx=X|X|X|X]{}
+				$p_0$&$V_0$ \\\hline
+				$p_1=p_0-2.10^5$&$V_1=V_0-3$\\\hline
+				$p_2=p_0-5.10^5$&$V_2=V_0-5$
+			\end{bang}
+		}
+		{Áp dụng định luật BM ta giải hệ phương trình 2 ẩn}
+		\begin{itemize}
+			\item Sau lần biến đổi thứ nhất ta có:
+			\begin{align*}
+				&\dfrac{V_0}{V_1}=\dfrac{p_1}{p_0}\Leftrightarrow \dfrac{V_0-V_1}{V_1}=\dfrac{p_1-p_0}{p_0}\\
+				&\dfrac{\Delta V}{V_0-V}=\dfrac{\Delta p}{p_0}\Rightarrow \Delta p. (V_0-\Delta V)=p_0.\Delta V
+			\end{align*}
+			\item Thay số ta được: $2.10^5(V_0-3)=3p_0$ (1)
+			\item Tương tự sau lần biến đổi thứ hai ta có: $2.10^5(V_0-5)=5p_0$ (2)
+			\item Giải (1) và (2) $\Rightarrow V_0=9$ lít; $p_0=4.10^5$ Pa.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Bài toán bơm khí vào lốp}
+\begin{vidu}%[1P5-2.2G][Loai2]
+	Một quả bóng có dung tích 2,5 lít. Người ta bơm không khí ở áp suất $10^5$ Pa vào bóng. Mỗi lần bơm được $125\ cm^3$ không khí. Tính áp suất của không khí trong quả bóng sau 45 lần bơm. Coi quả bóng trước khi bơm không có không khí và nhiệt độ trong quả bóng không thay đổi. 
+	\choice
+	{$25. 10^5$ Pa}
+	{$22,5 .10^5$ Pa}
+	{$2,5. 10^5$ Pa}
+	{\True $2,25. 10^5$ Pa}
+	\loigiai{
+		\begin{itemize}
+			\item Sau 45 lần bơm trong quả bóng có $45. 125 = 5625\ cm^3=5,625$ lít khí với áp suất $10^5$ Pa.
+			\item Nhưng dung tích của quả bóng là 2,5 lít nên khối khí trên bị nén chỉ còn 2,5 lít.
+			\item Áp suất thay đổi thành:  $p_2=\dfrac{p_1V_1}{V_2}=\dfrac{5,625.10^5}{2,5}=2,25.10^5$ Pa.
+		\end{itemize}
+	}
+\end{vidu}
+\begin{vidu}%[1P5-2.2G][Loai2]
+	Để bơm đầy một khí cầu đến thể tích $100\ m^3$ có áp suất 0,1 atm ở nhiệt độ không đổi người ta dùng các ống khí hêli có thể tích 50 lít ở áp suất 100 atm. Số ống khí hêli cần để bơm khí cầu bằng
+	\choice
+	{1}
+	{\True 2}
+	{3}
+	{4}
+	\loigiai{
+		\Binhluan{
+			\begin{itemize}
+				\item Trạng thái 1: $V_1=100\ m^3$; $p_1=0,1\ atm$
+				\item Trạng thái 2: $V_2$; $p_2=100\ atm$
+				\item Quá trình đẳng nhiệt. Áp dụng định luật Bôi-lơ - Ma-ri-ốt: 
+				\begin{align*}
+					p_1V_1=p_2V_2 \Rightarrow V_2=0,1\ m^3=100\ dm^3.
+				\end{align*}
+				\item Vậy số ống khí cần bơm: $n=\dfrac{V_2}{50}=2.$
+			\end{itemize}
+		}
+		{Ta có thể đặt $V_2=nV_0$.\\  
+			$V_0$ là thể tích của 1 ống khí Heli}
+	}
+\end{vidu}

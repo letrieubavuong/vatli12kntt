@@ -1,0 +1,451 @@
+%mac
+
+
+\TieudeT{PHONG TỎA VẬT LÍ}
+\subsubsection*{PHẦN I. Thí sinh trả lời câu hỏi từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án}
+\setcounter{ex}{0}
+\begin{ex}%book%SBT12.2
+Một quả bóng đặt trên mặt bàn được truyền một vận tốc theo phương nằm ngang. Hình nào dưới đây mô tả đúng quỹ đạo của quả bóng khi rời khỏi mặt bàn?
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\draw(-2.5,0)--(0,0)--(0,-2.5);
+\draw[->,red,very thick](-2,0.2)--++(0:1);
+\shade[ball color=Mapcolor] (-2,0.2) circle (0.2cm);
+\node at (-1,-3){$A)$};
+\begin{scope}[shift={(4,0)},rotate=0]
+\draw(-2.5,0)--(0,0)--(0,-2.5);
+\draw[->,red,very thick](-2,0.2)--++(0:1);
+\shade[ball color=Mapcolor] (-2,0.2) circle (0.2cm);
+\draw[->,red,very thick] (0.01,0.2) .. controls (1.06,0.2) and (1.56,-0.38) .. (1.56,-1.18);
+\shade[ball color=blue] (0,0.2) circle (0.2cm);
+\node at (-1,-3){$B)$};
+\end{scope}
+\begin{scope}[shift={(9,0)},rotate=0]
+\draw(-2.5,0)--(0,0)--(0,-2.5);
+\draw[->,red,very thick](-2,0.2)--++(0:1);
+\shade[ball color=Mapcolor] (-2,0.2) circle (0.2cm);
+\draw[->,red,very thick] (0.51,0.2) .. controls (1.56,0.2) and (2.06,-0.38) .. (2.06,-1.18);
+\shade[ball color=Mapcolor] (0.5,0.2) circle (0.2cm);
+\node at (-1,-3){$C)$};
+\end{scope}
+\begin{scope}[shift={(14,0)},rotate=0]
+\draw(-2.5,0)--(0,0)--(0,-2.5);
+\draw[->,red,very thick](-2,0.2)--++(0:1);
+\shade[ball color=Mapcolor] (-2,0.2) circle (0.2cm);
+\draw[->,red,very thick] (0.51,0.2) --(0.51,-1.18);
+\shade[ball color=Mapcolor] (0.5,0.2) circle (0.2cm);
+\node at (-1,-3){$D)$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\choice
+{$A$}
+{\True $B$}
+{$C$}
+{$D$}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Vật chuyển động ném ngang từ độ cao $h$ và vận tốc ban đầu $v_0$. Thời gian rơi đến khi chạm đất được tính theo công thức nào sau đây?
+\choice
+{\True $t=\sqrt{\dfrac{2 h}{g}}$}
+{$t=\sqrt{\dfrac{h}{2 g}}$}
+{$t=\sqrt{\dfrac{h}{g}}$}
+{$t=\sqrt{2 h g}$}
+\loigiai{
+}
+\haidong{7} \end{ex}
+
+\begin{ex}%book
+Một vật được ném từ độ cao $h$ so với mặt đất theo phương nằm ngang với vận tốc ban đầu $v$. Gọi $g$ là gia tốc rơi tự do và bỏ qua lực cản của không khí. Tầm xa $L$ trên mặt đất được tính bởi công thức nào sau đây?
+\choice
+{\True $L=v.\sqrt{\dfrac{2 h}{g}}$}
+{$L=v.\sqrt{2 g h}$}
+{$L=v.\sqrt{h g}$}
+{$L=v.\sqrt{\dfrac{h}{g}}$}
+\loigiai{
+}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Một vật được ném theo phương nằm ngang với vận tốc $v_0$. Bỏ qua sức cản không khí. Nếu $v_0$ tăng gấp $2$ lần thì thời gian vật chạm đất
+\choice
+{tăng gấp $2$ lần}
+{\True không đổi}
+{tăng gấp $4$ lần}
+{giảm xuống còn một nửa}
+\loigiai{
+Thời gian vật chạm đất không phụ thuộc vào $v_0$}
+\haidong{7} \end{ex}
+
+\begin{ex}%book%SBT12.1
+Bi $A$ có khối lượng lớn gấp $4$ lần bi $B$. Tại cùng một lúc và ở cùng một độ cao, bi $A$ được thả rơi còn bi $B$ được ném theo phương nằm ngang. Nếu coi sức cản của không khí là không đáng kể thì
+\choice
+{bi $A$ rơi chạm đất trước bi $B$}
+{bi $A$ rơi chạm đất sau bi $B$}
+{cả hai đều rơi chạm đất cùng một lúc với vận tốc bằng nhau}
+{\True cả hai đều rơi chạm đất cùng một lúc với vận tốc khác nhau}
+\haidong{7} %<MyLT1>
+\end{ex}
+
+\begin{ex}%book
+Từ một độ cao, ném đồng thời hai vật theo phương ngang (cùng hướng) với vận tốc khác nhau $v_1>v_2$ thì
+\choice
+{vật $1$ chạm đất trước vật $2$}
+{\True vật $1$ sẽ rơi xa hơn vật $2$}
+{tầm xa của hai vật như nhau}
+{vật $2$ chạm đất trước vật $1$}
+\loigiai{
+$
+L=v t \Rightarrow v_1>v_2 \Rightarrow L_1>L_2
+$
+}
+\haidong{7} \end{ex}
+
+\begin{ex}%book%SBT12.3
+Một vật được ném từ độ cao $H$ với vận tốc ban đầu $v_0$ theo phương nằm ngang. Nếu bỏ qua sức cản của không khí thì tầm xa $L$
+\choice
+{tăng $4$ lần khi $v_0$ tăng $2$ lần}
+{tăng $2$ lần khi $H$ tăng $2$ lần}
+{\True giảm $2$ lần khi $H$ giảm $4$ lần}
+{giảm $2$ lần khi $v_0$ giảm $4$ lần}
+\haidong{7} \end{ex}
+
+
+%\loai{Tính thời gian chạm đất}
+
+\begin{ex}%book %[1P2G9-2][Loai1]
+Một máy bay bay với vận tốc không đổi theo phương nằm ngang ở độ cao $h = 2,5\ km$ so với mặt đất và thả một vật. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Thời gian từ lúc thả vật đến lúc chạm đất là
+\choice
+{$5\sqrt 2\ s$}
+{\True $10\sqrt 5\ s$}
+{$16\ s$}
+{$8\ s$}
+\haidong{4}
+\loigiai{ 
+Thời gian cần tính: $h = \dfrac{1}{2}gt^2 \Rightarrow t = \sqrt {\dfrac{2h}{g}} = \sqrt {\dfrac{{2.2,5.10^3 }}{10}} = 10\sqrt 5 \ s.$
+}
+\haidong{7} \end{ex}
+
+%\loai{Tính vận tốc}
+\begin{ex}%book %[1P2-9.2G][Loai1]
+Một vật ném theo phương nằm ngang từ độ cao $h = 20\ m$ so với mặt đất. Vật rơi xuống cách chỗ ném một đoạn $L = 30\ m$ tính theo phương ngang. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$.  Vận tốc lúc chạm đất là
+\choice
+{$15\ m/s$}
+{$20\ m/s$}
+{\True $25\ m/s$}
+{$30\ m/s$}
+\haidong{5}
+\loigiai{      
+\begin{itemize}
+\item Thời gian vật rơi xuống đất là: $t = \sqrt{\dfrac{2h}{g}} = \sqrt {\dfrac{{2.20}}{10}} = 2\ s$
+\item Vận tốc dọc theo trục Ox là: $v_x = v_0 = L.\sqrt {\dfrac{g}{2h}} = 30.\sqrt{\dfrac{10}{2.20}} = 15\ m/s$
+\item Vận tốc dọc theo trục Oy là: $v_y = gt = 10.2 = 20\ m/s$
+\item Tại mặt đất: $v_t = \sqrt {v_x^2 + v_y^2 } = 25\ m/s$.
+\end{itemize}
+}
+\haidong{7} \end{ex}
+
+\begin{ex}%book %[1P2G9-2][Loai1]
+Một vật được ném ngang với vận tốc $v_0 = 30\ m/s$, ở độ cao $80\ m$.  Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Vận tốc của vật lúc chạm đất là
+\choice
+{$30\ m/s$}
+{$40\ m/s$}
+{\True $50\ m/s$}
+{$70\ m/s$}
+\haidong{5}
+\loigiai{ 
+\begin{itemize}
+\item Phương trình vận tốc của vật: $\left\{ \begin{array}{l}v_x = v_0 = 30\ m/s \\v_y = gt = 10t\ m/s \\\end{array} \right.$
+\item Phương trình chuyển độn của vật: $y = h - \dfrac{{gt^2 }}{2} = 80 - 5t^2$
+\item Vật chạm đất khi: $y = 0 \Rightarrow t = 4s \Rightarrow v_y = 40\ m/s$
+\item Vậy vận tốc của vật khi chạm đất là: $v_t = \sqrt {v_x^2 + v_y^2 } = \sqrt {30^2 + 40^2 } = 50\ m/s$.
+\end{itemize}
+}
+\haidong{7} \end{ex}
+
+%\loai{Tính vận tốc ném}
+\begin{ex}%book %[1P2G9-2][Loai1]
+Một vật được ném ngang ở độ cao $20\ m$ phải có vận tốc ban đầu bao nhiêu để trước lúc chạm đất, vận tốc của nó là $25\ m/s$? Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$.
+\choice
+{\True $15\ m/s$}
+{$20\ m/s$}
+{$5\ m/s$}
+{$0\ m/s$}
+\haidong{7}
+\loigiai{ 
+\begin{itemize}
+\item Công thức tính vận tốc khi vật chạm đất: $v_t^2 = v_x^2 + v_y^2 $
+\item Với $v_x = v_0$ và $v_y = \sqrt {2gh}$
+\item Vận tốc ban đầu của vật: $v_0 = \sqrt {v^2 - 2gh} = \sqrt {25^2 - 2.10.20} = 15\ m/s$.
+\end{itemize}}
+\haidong{7} \end{ex}
+\begin{ex}%book %[1P2K9-2][Loai1]
+Một vận động viên môtô địa hình chuyển động theo phương nằm ngang rời khỏi một điểm cao $1,25\ m$ so với mặt đất và chạm đất tại điểm cách đó $10\ m$. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Vận tốc tại điểm bắt đầu bay bằng
+\choice
+{$5\ m/s$}
+{\True $20\ m/s$}
+{$10\ m/s$}
+{$15\ m/s$}
+\haidong{7}
+\loigiai{ 
+\begin{itemize}
+\item Gọi $v_0$ là vận tốc ban đầu, theo bài ra ta có: $x = 10$ m; $h = 1,25$ m; 
+\item $x = v_0t$; $y = \dfrac{gt^2}{2}$ 
+$\Rightarrow x^2 = v_0^2 \dfrac{2h}{g} \Rightarrow v_0 = \sqrt {\dfrac{{gx^2 }}{2h}} = \sqrt {\dfrac{{10.10^2 }}{2.1,25}} = 20\ m/s$.
+\end{itemize}
+}
+\haidong{7} \end{ex}
+\begin{ex}%book%[1P2-9.2K][Loai1] 
+Từ một máy bay đang chuyển động thẳng đều với vận tốc $v_0$  người ta thả rơi một vật nhỏ. Biết độ cao của máy bay là $720\ m$ và điểm rơi cách điểm thả vật là $600\ m$. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Vận tốc $v_0$  của máy bay là
+\choice
+{\True $180\ km/h$}
+{$280\ km/h$}
+{$380\ km/h$}
+{$480\ km/h$}
+\haidong{6}
+\loigiai
+{
+\begin{itemize}
+\item Thời gian vật rơi: $t=\sqrt{\dfrac{2h}{g}}=12\ s$
+\item Tầm xa của vật khi chạm đất: $L=v_0t\Leftrightarrow 600=v_0.12\Rightarrow v_0=50\ m/s$
+\item Vậy vận tốc của máy bay là $v_0=50\ m/s=180\ km/h$. 
+\end{itemize}
+}
+\haidong{7} \end{ex}
+
+%\loai{Tính tầm ném}
+\begin{ex}%book %[1P2K9-2][Loai1]
+Một vật được ném ngang với vận tốc $v_0 = 30\ m/s$, ở độ cao $80\ m$. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Tầm bay xa của vật là
+\choice
+{\True $120\ m$}
+{$80\ m$}
+{$100\ m$}
+{$170\ m$}
+\haidong{5}
+\loigiai{ 
+\begin{itemize}
+\item Phương trình chuyển động của vật: 
+$\left\{ \begin{array}{l}x = v_0 t \\y = h - \dfrac{{gt^2 }}{2}\\\end{array} \right.$
+\item Thay t từ phương trình của x vào y, ta có: 
+$y = h - \dfrac{gx^2}{2v_0^2} = 80 - \dfrac{x^2}{180}$
+\item Thay số và cho $y = 0$; giải ra $x = L = 120$ m.
+\end{itemize}}
+\haidong{7} \end{ex}
+%\loai{Tính độ cao}
+\begin{ex}%book
+Ném một vật nhỏ theo phương ngang với vận tốc ban đầu là $5\ m/s$, tầm xa của vật là $15\ m$. Bỏ qua sức cản của không khí và lấy $g = 10\ m/s^2$. Độ cao của vật so với mặt đất là
+\choice
+{$75\ m$}
+{\True $45\ m$}
+{$50\ m$}
+{$30\ m$}
+\haidong{4}
+
+\loigiai{
+}
+\haidong{7} \end{ex}
+\begin{ex}%book %[1P2K9-2][Loai1]
+Một quả bóng được ném theo phương ngang với vận tốc ban đầu $v_0 = 25\ m/s$ và rơi xuống đất sau $3\ s$. Bỏ qua lực cản của không khí và lấy $g = 9,8\ m/s^2$. Quả bóng đã được ném từ độ cao nào và tầm ném xa của quả bóng là
+\choice
+{$H=49\ m;\ L=72\ m$}
+{$H=45\ m;\ L=75\ m$}
+{\True $H=44,1\ m;\ L=75\ m$}
+{$H=50\ m;\ L=75\ m$}
+\haidong{8}
+\loigiai{ 
+\begin{itemize}
+\item Độ cao cần tính: $h = \dfrac{1}{2}gt^2 = \dfrac{1}{2}.9,8.9 = 44,1\ m$
+\item Tầm xa $x = v_0.t = 25.3 = 75$ m.
+\end{itemize}}
+%<MyLT>
+\haidong{7} \end{ex}
+%\loai{Tính độ dịch chuyển}
+
+\begin{ex}%book
+Từ đỉnh một ngọn tháp cao $80\ m$, một quả cầu được ném theo phương ngang với vận tốc đầu $20\ m/s$. Bỏ qua lực cản của không khí và lấy $g = 10\ m/s^2$.  Độ dịch chuyển thành phần của quả cầu sau khi ném $2\ s$ là
+\choice
+{\True $d_x=40\ cm;\ d_y=20\ cm$}
+{$d_x=40\ cm;\ d_y=40\ cm$}
+{$d_x=50\ cm;\ d_y=20\ cm$}
+{$d_x=50\ cm;\ d_y=40\ cm$}
+\haidong{7}
+\loigiai{
+\immini{Độ dịch chuyển của quả cầu:
+$
+\left\{\begin{array} {l} 
+{d_x = v _ {0} t} \\
+{d_y = \frac {1} {2} g t ^ {2}}
+\end{array}\right. \Rightarrow \left\{\begin{array}{l}
+d_x=20 t \\
+d_y=5 t^2
+\end{array}\right.$. \\Lúc $t=2 s:\left\{\begin{array}{l}
+d_x=40\ m \\
+d_y=20\ m
+\end{array}\right.
+$}{\includegraphics[width=5cm]{images/10_2}}
+}
+\haidong{7} %<MyLT1>
+\end{ex}
+\begin{ex}%book
+Một vật được ném ngang ở độ cao $80\ m$ với vận tốc ban đầu là $30\ m/s$.  Bỏ qua lực cản của không khí và lấy $g = 10\ m/s^2$.  Độ dịch chuyển của vật khi chạm đất là
+\choice
+{$80\ m$}
+{$100,5\ m$}
+{\True $144, 22\ m$}
+{$140,22\ m$}
+\haidong{10}
+\loigiai{
+$
+\begin{aligned}
+L & =v_0 \sqrt{\dfrac{2 h}{g}}=120 m \\
+d & =\sqrt{h^2+L^2}=144,22\ m
+\end{aligned}
+$
+}
+\haidong{7} \end{ex}
+
+
+\subsubsection*{PHẦN 2. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.}
+\setcounter{ex}{0}
+\begin{ex}%book
+Từ đỉnh một ngọn tháp cao $80\ m$, một quả cầu được ném theo phương ngang với vận tốc ban đầu $20\ m/s$. Lấy $g=10\ m/s^2$.
+\choiceTF[t]
+{Chuyển động của quả cầu theo phương nằm ngang là chuyển động thẳng nhanh dần đều}
+{\True Chuyển động của quả câu theo phương thẳng đứng là chuyển động rơi tự do}
+{\True CQuả cầu sẽ chạm đất sau 4 giây kể từ thời gian ném}
+{Tầm xa của quả cầu là $40\ m/s$}		
+
+\loigiai{\immini{\begin{itemchoice}
+\itemch Sai. Chuyển động của quả cầu theo phương nằm ngang là chuyển động thẳng đều.
+\itemch Đúng.
+\itemch Sai. Quả cầu sẽ chạm đất sau khoảng thời gian: $t=\sqrt{\dfrac{2 h}{g}}=\sqrt{\dfrac{2.80}{10}}=4\ (s)$
+\itemch Đúng. Tầm xa của quả cầu là $L=v_{0} . t=20.4=80\ (m / s)$
+\end{itemchoice}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 3.2/-1.3/a}
+\tkzDrawPoints[size=3,fill=white](o)
+\draw[->,thin] (0,0) -- (5.5,0);
+\draw[->,thin] (0,0) -- (0,-5.5);
+\draw[->,red] (0,0) -- (1,0);
+\draw[->,blue] (0,0) -- (0,-1);
+\draw[line width=4pt, gray!50] (0,-4.5) -- (5.5,-4.5);
+\draw[thin] (0,0) .. controls (3,-0.5) and (4.5,-2) .. (5,-4.5);
+\draw[<->, dashed,thin] (-0.5,0)--node[midway,fill=white]{\normalsize{h}}(-0.5,-4.5);
+\draw[<->, dashed,thin] (5,-5)--node[midway,fill=white]{\normalsize{L}}(0,-5);
+\node at (1,0.5) {$\vec v_0$};
+\node at (0.5,-1) {$\vec P$};
+\node at (5.5,0.5) {$x$};
+\node at (0.5,-5.5) {$y$};
+\draw[->,red] (3.2,-1.3) -- (4.3,-2);
+\draw[->] (3.2,-1.3) -- (3.2,-2);
+\draw[->] (3.2,-1.3) -- (4.3,-1.3);
+\draw[dashed,thin] (3.2,-2) -- (4.3,-2) -- (4.3,-1.3);
+\draw (3.5,-1.3) .. controls (3.6,-1.37) and (3.58,-1.43) .. (3.48,-1.49);
+\node at (3.8,-1.5) {$\alpha$};
+\node at (4.3,-1.1) {$\vec v_x$};
+\node at (2.9,-2) {$\vec v_y$};
+\node at (4.5,-2.1) {$\vec v$};
+\shade[ball color=blue] (a) circle (1.3ex);
+\shade[ball color=blue] (o) circle (1.3ex);
+\end{tikzpicture}}
+}
+
+\haidong{10} \end{ex}
+\begin{ex}%Tailieuchuan
+Từ một máy bay đang chuyển động thẳng đều với vận tốc $v_0$ người ta thả rơi tự do một vật nhỏ. Biết độ cao của máy bay là $720\ m$ và điểm rơi cách điểm thả vật là $937\ m$. Lấy $g=10 \ m/s^2$.
+\choiceTF[t]
+{Thời gian rơi của vật là $10\ s$} 
+{\True Tốc độ của máy bay xấp xỉ là $78 \ m/s$} 
+{Tốc độ vật rơi theo phương thằg đứng ngay trước khi chạm đất là $100 \ m/s$} 
+{Tốc độ của vật ngay trước khi chạm đất là $111,8\ m/s$} 
+\loigiai{
+\begin{itemchoice}
+\itemch 
+\itemch 
+\itemch 
+\itemch 
+\end{itemchoice}
+}
+\end{ex}
+\begin{ex}%Tailieuchuan
+Tại điểm $A$ cách mặt đất một đoạn $h$, người ta đồng thời thả một vật rơi tự do (vật $(1)$) và ném một vật theo phương ngang (vật $(2)$). Sau $3\ s$ thì vật rơi tự do chạm đất, khi chạm đất hai vật cách nhau $27\ m$. Lấy $g=10 \ m/s^2$, bỏ qua lực cản.
+\choiceTF[t]
+{\True Tốc độ của vật $1$ khi chạm đất là $30 \ m/s$} 
+{\True Tầm ném xa của vật $(2)$ là $27\ m$} 
+{Độ cao ban đầu của hai vật là $h=50\ m$} 
+{\True Tốc độ ban đầu của vật $(2)$ là $9 \ m/s$} 
+\loigiai{
+\begin{itemchoice}
+\itemch 
+\itemch 
+\itemch 
+\itemch 
+\end{itemchoice}
+}
+\end{ex}
+\begin{ex}
+\immini[thm]{Một quả bóng được ném theo phương ngang với vận tốc đầu $10\ m/s$, ở độ cao $4\ m$. Lấy $g=9,8\ m/s^2$.}{\begin{tikzpicture}[line cap=round, line join=round, scale=.75, font=\footnotesize, >=stealth, draw=Mapcolor]
+\path
+(0,0)coordinate(O)
+(6.5,0)coordinate(x)
+(0,-5.5)coordinate(y)
+;
+\draw [->](O)--(x);
+\draw [->](O)--(y);
+
+\node at (0,-6) {$y$};
+\node at (7,0) {$x$};
+\node[above left] at (0,0) {$O$};
+
+\draw[very thick,Mapcolor] (0,0) .. controls (2.8,-0.4) and (5.2,-3) .. (6,-4.8);
+
+\draw[line width =2pt] (0,-4.8) -- (6.4,-4.8);
+\node at (-0.4,-2.2) {$h$};
+\node at (3.2,-5.2) {$L=x_{\max}$};
+\shade[ball color=Mapcolor] (O) circle (1.3ex);
+\end{tikzpicture}}
+\choiceTF[t]
+{\True Theo phương ngang $Ox$ thì vật chuyển động thẳng đều}
+{\True Thời gian quả bóng chạm đất $0,9\ s$}
+{Quả bóng đi được $4\ m$ theo phương nằm ngang rồi khi chạm đất}
+{Tốc độ ngay trước khi chạm đất là $8,82\ m/s$}
+\loigiai{
+\begin{itemchoice}
+\itemch
+\itemch
+\itemch
+\itemch
+\end{itemchoice}}
+\end{ex}
+
+\subsubsection*{PHẦN 3. Thí sinh trả lời từ câu 1 đến câu 6.}
+\setcounter{ex}{0} 
+
+\textit{Sử dụng thông tin sau cho Câu 1 và Câu 2:} Một máy bay đang bay với vận tốc không đổi $v_0$ theo phương ngang ở độ cao h so với mặt đất và thả rơi một vật. Nếu $h=3000\ m$; $v_0=100\ m/s$. Bỏ qua sức cản của không khí. Lấy $g=9,8\ m/s^2$.
+\begin{ex}%Tailieuchuan
+Thời gian rơi của máy bay là bao nhiêu giây (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{24,7}
+\loigiai{}
+\end{ex}
+\begin{ex}%Tailieuchuan
+Tầm bay xa của máy bay là bao nhiêu mét (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{2474}
+\end{ex}
+\textit{Sử dụng thông tin sau cho Câu 3 và Câu 4:} Một vật được ném ngang từ độ cao $h=45\ m$ với vận tốc đầu $v_0=30\ m/s$. Lấy $g=10\ m/s^2$. Coi sức cản không khí không đáng kể.
+\begin{ex}%Tailieuchuan
+Thời gian rơi của vật là bao nhiêu giây?
+\shortans[oly]{3}
+\loigiai{}
+\end{ex}
+\begin{ex}%Tailieuchuan
+Tầm bay xa của vật là bao nhiêu mét?
+\shortans[oly]{90}
+\end{ex}
+\textit{Sử dụng thông tin sau cho Câu 5 và Câu 6:} Một vật được ném theo phương ngang ở độ cao $25\ m$ với vận tốc đầu $20\ m/s$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$.
+\begin{ex}%Tailieuchuan
+Tầm ném xa của vật là bao nhiêu mét (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{44,7}
+\loigiai{}
+\end{ex}
+\begin{ex}%Tailieuchuan
+Vận tốc của vật ngay trước lúc chạm đất có độ lớn bao nhiêu mét/giây?
+\shortans[oly]{30}
+\end{ex}

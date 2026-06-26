@@ -1,0 +1,131 @@
+\loai{Động cơ mắc nối tiếp với điện trở}
+\begin{vidu} %[3P3-13.2G][Loai1]
+	\nguon{ĐH - 2010} Trong giờ học thực hành, học sinh mắc nối tiếp một quạt điện xoay chiều với điện trở R rồi mắc hai đầu đoạn mạch này vào điện áp xoay chiều có giá trị hiệu dụng 380 V. Biết quạt điện này có các giá trị định mức: $220\ V - 88\ W$ và khi hoạt động đúng công suất định mức thì độ lệch pha giữa điện áp ở hai đầu quạt và cường độ dòng điện qua nó là $\varphi$, với $\cos\varphi = 0,8$. Để quạt điện này chạy đúng công suất định mức thì R bằng
+	\choice
+	{354 $\Omega$}
+	{\True 361 $\Omega$}
+	{267 $\Omega$}
+	{180 $\Omega$}
+	\loigiai{
+		immini[thm]{
+			\begin{bang}[tabularx={X|X|X|X}]{Tóm tắt dữ kiện}
+		U	& $U_q$ & $P_q$ & $\cos \varphi_q$ \\\hline
+		380 V & 220 V & 88 W & 0,8		
+	\end{bang}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+	\tkzInit[ymin=-1,ymax=2,xmin=-1,xmax=5]\tkzClip
+	\tkzDefPoints{0/0/o, 4.5/0/i}
+	\tkzDefShiftPoint[o](0:2){uR}
+	\tkzDefShiftPoint[uR](37:3){u}
+	\tkzDrawSegments[->](o,i)
+	\tkzDrawSegments[very thick,blue,->](o,uR uR,u)
+	\tkzDrawSegments[very thick,red,->](o,u)
+	\tkzDrawPoints[size=3,fill=white](o,uR)
+	\tkzLabelPoint[left](o){$A$}
+	\tkzLabelPoint[below](uR){$M$}
+	\tkzLabelPoint[right](u){$B$}
+	\tkzLabelSegment[below,sloped,xshift=10pt](uR,u){$220$}
+	\tkzLabelSegment[above,sloped](o,u){$380$}
+	\tkzLabelSegment[below](o,uR){$\vec{U}_R$}
+	\tkzLabelPoint[below](i){$\vec{I}$}
+	\tkzMarkAngles[size=0.5cm](i,uR,u)
+	\tkzLabelAngles[pos=0.8](i,uR,u){$\varphi_d$}
+	\end{tikzpicture}}
+	\Binhluan{
+			\begin{itemize}
+				\item Khi quạt hoạt động bình thường thì: Giản đồ vector của đoạn mạch AB như hình vẽ.
+				\item Trong đó $\varphi_q$ là độ lệch pha giữa điện áp hai đầu quạt và dòng điện. Với $\cos \varphi_q = 0,8$.
+			\item Áp dụng định lí hàm số cos trong tam giác AMB ta suy ra: Điện áp giữa hai đầu điện trở là: $U_R = 180,34$ V.
+			\item Vì quạt hoạt động bình thường nên khi đó, các thông số thực tế của quạt đúng bằng giá trị định mức của nó.
+			\item Ta có: $88 = 220.I.0,8$. Suy ra $I = 0,5$ A. Dòng điện đi qua R cũng có giá trị hiệu dụng 0,5 A.
+			\item Giá trị của $R = \dfrac{180,34}{0,5} = 360,68\ \Omega$.
+		\end{itemize}
+	}
+{Đề bài cho hệ số công suất của quạt là $\cos \varphi$ nên dễ gây hiểu nhầm thành hệ số công suất của toàn mạch. Ta nên kí hiệu lại để tránh nhầm lẫn}
+	}
+\end{vidu}
+\begin{vidu} %[3P3-13.2K][Loai1]
+	Cho mạch điện xoay chiều gồm bóng đèn dây tóc mắc nối tiếp với động cơ xoay chiều một pha. Biết các giá trị định mức của đèn là $120\ V - 240\ W$, điện áp định mức của động cơ là 220 V. Khi đặt vào hai đầu đoạn mạch điện áp xoay chiều có giá trị hiệu dụng 331 V thì cả đèn và động cơ đều hoạt động đúng công suất định mức. Công suất định mức của động cơ là
+	\choice
+	{\True 389,675 W}
+	{305,025 W}
+	{543,445 W}
+	{485,888 W}
+	\loigiai{
+			immini[thm]{
+				\begin{bang}[tabularx={X|X|X|X}]{Tóm tắt dữ kiện}
+			U	& $U_q$ & $U_R$ & $P_R$ \\\hline
+			331 V & 220 V & 120 W & 240		
+		\end{bang}}
+	{
+		\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\tkzInit[ymin=-1,ymax=2,xmin=-1,xmax=5]\tkzClip
+			\tkzDefPoints{0/0/o, 4.5/0/i}
+			\tkzDefShiftPoint[o](0:2){uR}
+			\tkzDefShiftPoint[uR](37:3){u}
+			\tkzDrawSegments[->](o,i)
+			\tkzDrawSegments[very thick,blue,->](o,uR uR,u)
+			\tkzDrawSegments[very thick,red,->](o,u)
+			\tkzDrawPoints[size=3,fill=white](o,uR)
+			\tkzLabelPoint[left](o){$A$}
+			\tkzLabelPoint[below](uR){$M$}
+			\tkzLabelPoint[right](u){$B$}
+			\tkzLabelSegment[below,sloped,xshift=10pt](uR,u){$220$}
+			\tkzLabelSegment[above,sloped](o,u){$331$}
+			\tkzLabelSegment[below](o,uR){$120$}
+			\tkzLabelPoint[below](i){$\vec{I}$}
+			\tkzMarkAngles[size=0.5cm](i,uR,u)
+			\tkzLabelAngles[pos=0.8](i,uR,u){$\varphi_d$}
+			\end{tikzpicture}}
+			\Binhluan{
+		\begin{itemize}
+			\item Ta có: $I = \dfrac{P_R}{U_R} = \dfrac{240}{120} = 2\ A$.
+			\item Từ $\vec{U}=\vec{U}_R+\vec{U}_d \Rightarrow U^2 = U_R^2 + U_d^2 + 2U_RU_d\cos \varphi_d \\
+			\Leftrightarrow 331^2 = 220^2 + 120^2 + 2.220.120.\cos\varphi_d$.
+			\item Vậy $\cos \varphi_d = \dfrac{1417}{1600} \Rightarrow P_d = U_dI\cos \varphi_d = 220.2.\dfrac{{1417}}{{1600}} = 389,675\ W$.
+		\end{itemize} 
+	}
+{Bóng đèn thực chất chính là một điện trở thuần R}
+	}
+\end{vidu}
+\loai{Động cơ mắc nối tiếp với cuộn cảm}
+\begin{vidu} %[3P3-13.2G][Loai2]
+	Một động cơ điện xoay chiều sản ra công suất cơ học 7,5 kW và có hiệu suất 80\%. Mắc động cơ nối tiếp với một cuộn cảm rồi mắc chúng vào mạng điện xoay chiều. Giá trị hiệu điện thế hiệu dụng ở hai đầu động cơ là $U_M$ biết rằng dòng điện qua động cơ có cường độ hiệu dụng $I = 40$ A và trễ pha với $u_M$ một góc $30^\circ$. Hiệu điện thế ở hai đầu cuộn cảm là 125 V và sớm pha so với dòng điện là $60^ \circ$. Hiệu điện thế hiệu dụng của mạng điện và độ lệch pha của nó so với dòng điện lần lượt là
+	\choice
+	{384 V và $40^\circ$}
+	{834 V và $45^\circ$}
+	{\True 384 V và $39^\circ$}
+	{184 V và $39^\circ$}
+	\loigiai{
+			\begin{bang}[tabularx={X||X||X||X||X||X}]{Tóm tắt dữ kiện}
+			$P_{ci}$	& $H$ & $I$ & $\varphi_{\text{động cơ}}=\varphi_1$ &$\varphi_{\text{dây}}=\varphi_2$ & $U_{\text{dây}}=U_2$  \\\midrule
+			7,5 kW V & 0,8 V & 40 A & $\dfrac{\pi}{6}$ & $\dfrac{\pi}{3}$& 125 V 		
+		\end{bang}
+	\Binhluan{
+	\begin{align*}
+			&P = \dfrac{{{P_{ci}}}}{H} = 9375\ W= {U_1}I\cos {\varphi _1} \Rightarrow {U_1} = \dfrac{{9375}}{{40.\cos 30^\circ }} \approx 270,6\ V.\\
+			&{U^2} = U_1^2 + U_2^2 + 2{U_1}{U_2}\cos \left( {{\varphi _2} - {\varphi _1}} \right) = 270,{6^2} + {125^2} + 2.270,6.125.\cos 30^\circ\\ 
+			\Rightarrow\ &U \approx 384\ V\ \ct{và}\ \tan \varphi = \dfrac{{{U_1}\sin {\varphi _1} + {U_2}\sin {\varphi _2}}}{{{U_1}\cos {\varphi _1} + {U_2}\cos {\varphi _2}}} \Rightarrow \varphi = 39^\circ.
+		\end{align*} 	
+	}
+{
+Lưu ý rằng cuộn cảm này \textbf{không thuần cảm}.
+}
+	}
+\end{vidu}
+\loai{Động cơ mắc nối tiếp với tụ điện}
+\begin{vidu} %[3P3-13.2G][Loai3]
+	Một quạt điện mà dây quấn có điện trở thuần $16\ \Omega$, được mắc vào nguồn điện xoay chiều $u_1=110\sqrt{2}\cos\left(100\pi t\right)\ V$ thì chạy bình thường và sản ra công cơ học $40\ W$, trong điều kiện đó hệ số công suất của động cơ là 0,8. Mắc nối tiếp quạt với tụ điện và mắc vào nguồn điện mới $u_2=220\sqrt{2}\cos\left(100\pi t\right)\ V$ thì quạt vẫn chạy bình thường. Biết quạt chỉ chịu được cường độ dòng điện tối đa qua nó là 4 A. Điện dung của tụ điện \textbf{gần nhất} với giá trị nào sau đây?
+	\choice
+	{$7\ \mu F$}
+	{\True $6\ \mu F$}
+	{$5\ \mu F$}
+	{$8\ \mu F$}
+	\loigiai{
+	\begin{itemize}
+		\item Khi chỉ có động cơ: $U_1I_1\cos\varphi=I^2r+P_{CH}\Rightarrow 110.0,8.I=16I^2 +40\Rightarrow I=0,5\ A\ (\ct{thoả mãn})$ và $I=5\ A>4\ A$ (loại).
+		\item Khi mắc động cơ với tụ điện thì động cơ hoạt động bình thường nên: $I_2=I_1=0,5\ A$ và $U_{\text{ĐC}}=U_1=110\ V$.
+		\item Ta có: $\vec{U}_2=\vec{U}_{\text{ĐC}}+\vec{U}_C\Rightarrow\vec{U}_C =\vec{U}_2-\vec{U}_{\text{ĐC}}\Rightarrow 220^2=110^2+U_C^2-2.110.U_C.\sin\varphi_{\text{ĐC}}\Rightarrow U_C\approx 268\ V\Rightarrow C\approx 6\ \mu F$.
+	\end{itemize}
+}
+\end{vidu}

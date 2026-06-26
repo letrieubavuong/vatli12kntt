@@ -1,0 +1,4 @@
+\ProvidesFile{t1es03font.fd}
+\DeclareFontFamily{T1}{es03font}{}
+\DeclareFontShape{T1}{es03font}{m}{n}{ <-> es03font}{}
+\pdfmapline{+es03font\space <es03font.ttf\space <T1-WGL4.enc}

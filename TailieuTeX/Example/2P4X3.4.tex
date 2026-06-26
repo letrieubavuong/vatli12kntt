@@ -1,0 +1,48 @@
+\begin{vidu} %[2P4-3.4K][Loại 1]
+	Một dây dẫn rất dài được căng thẳng trừ một\\
+	\Textbox{0.6}{đoạn ở giữa dây uốn thành một vòng tròn bán kính 1,5 cm. Cho dòng điện 3 A chạy trong dây dẫn. Xác định cảm ứng từ tại tâm của vòng tròn nếu vòng tròn và phần dây thẳng cùng nằm trong một mặt phẳng:}
+	\Picbox{0.3}{[scale=1,thick,>=stealth’]
+		\coordinate (a) at (0,0);
+		\draw [very thick,->](a)--++(0:0.7)node[above=3pt]{\normalsize{\bth{I}}};
+		\draw [very thick](a)--++(0:1.4)coordinate (c);
+		\draw [very thick,dashed](a)--++(180:0.5);
+		\path (c) ++(270:1)++(0:0.1)coordinate (o);
+		\filldraw[black] (o) circle(0.02)node[right=3pt]{\normalsize{\bth{O}}};
+		\draw [very thick,-<](o)++(88:1) arc (88:270:1) ;
+		\draw [very thick](o)++(265:1) arc (265:452:1) coordinate (d);
+		\draw [very thick,->](d)--++(0:0.9);
+		\draw [very thick](d)--++(0:1.4)coordinate (e);
+		\draw [very thick,dashed](e)--++(0:0.5);}
+	\choice
+	{$5,6.10^{-5}\ T$}
+	{$6,6.10^{-5}\ T$}
+	{$7,6.10^{-5}\ T$}
+	{\True $8,6.10^{-5}\ T$}
+	\loigiai{\begin{itemize}
+			\item Cảm ứng từ do các dòng điện gây ra tại tâm O:
+			\begin{align*}
+				\begin{cases}
+					B_1=2\pi.10^{-7}.\dfrac{I}{R}\\
+					B_2=2 .10^{-7}.\dfrac{I}{R}
+				\end{cases}
+			\end{align*}
+			\item Do $\vec{B_1}\ \text{cùng chiều}\ \vec{B_2} \Rightarrow B=B_1+B_2 = 2.10^{-7}.\dfrac{I}{R}.(\pi+1)=8,6.10^{-5}$ T.
+	\end{itemize}}
+\haidong{6}
+\end{vidu}
+\begin{vidu} %[2P4-3.4G][Loại 1]
+	Một vòng dây dẫn tròn bán kính $R=5$ cm, có dòng điện $I=1,6$ A đi qua, đặt thẳng đứng song song với từ trường $\vec{B_0} $ của Trái đất có độ lớn $B_0=2.10^{-5}\ T$. Tìm góc quay của kim nam châm nhỏ đặt tại tâm vòng dây khi ngắt dòng điện I.
+	\choice
+	{$30^\circ$}
+	{\True $45^\circ$}
+	{$60^\circ$}
+	{$75^\circ$}
+	\loigiai{\begin{itemize}
+			\item Tìm $\vec{B} =\vec{B_0}+\vec{B_1} $ (với $\vec{B_1}$ là véctơ cảm ứng từ do vòng dây ra tại tâm vòng dây).
+			\item Ta thấy góc giữa $\vec{B} $ và $\vec{B_0} $ là góc $\alpha$ với $\tan \alpha =\dfrac{B_1}{B_0}\approx 1 \rightarrow \alpha =45^\circ $.
+			\item Khi chưa ngắt dòng điện, kim nam châm hướng theo $\vec{B} $.
+			\item Khi ngắt dòng điện (không có $\vec{B_1} $), kim nam châm hướng theo $\vec{B_0} $.
+			\item Như vậy khi ngắt dòng điện, kim nam châm quay một góc bằng $\alpha=45^\circ$.
+	\end{itemize}}
+\haidong{6}
+\end{vidu}

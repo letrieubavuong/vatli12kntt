@@ -1,0 +1,141 @@
+\loai{Tính độ sụt áp}
+\begin{vidu} %[3P3-15.2B][Loai1] 
+	Người ta cần truyền một công suất điện 200 kW từ nguồn điện có điện áp 5000 V trên đường dây có điện trở tổng cộng $20\ \Omega$. Coi hệ số công suất của mạch truyền tải điện bằng 1. Độ giảm thế trên đường dây truyền tải là
+	\choice
+	{40 V}
+	{400 V}
+	{80 V}
+	{\True 800 V}
+	\loigiai{
+		\begin{bang}[tabularx={X||X||X||X||X}]{Tóm tắt dữ liệu}
+			$P=UI\cos \varphi$ & $U$ & $R$ & $\cos \varphi$ & $\Delta U=IR$ \\\midrule
+			200 kW & 5000 V& 20 $\Omega$& 1& ?
+		\end{bang}
+	\Bookmark\ \textbf{Cách 1:}
+	\begin{itemize}
+		\item Ta có: $P=UI\cos \varphi \Rightarrow I=\dfrac{P}{U\cos \varphi}=40\ A.$
+		\item Lại có: $\Delta U=IR=40.20=800\ V$.
+	\end{itemize}
+	\Bookmark\ \textbf{Cách 2:}
+		\begin{itemize}
+			\item Công suất hao phí trên đường dây tải điện: $\Delta P=\dfrac{{{P}^2}}{{U^2}}. R=\dfrac{P}{U}. \Delta U$.
+			\item Độ giảm thế trên đường dây truyền tải là: $\Delta U=\dfrac{P}{U}. R=\dfrac{200000}{5000}. 20=800\ V$.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Tính điện trở}
+\begin{vidu} %[3P3-15.2K][Loai2] 
+	Truyền từ nơi phát một công suất điện $\mathcal{P}= 40$ kW với điện áp hiệu dụng 2000 V, người ta dùng dây dẫn bằng đồng, biết điện áp nơi tiêu thụ cuối đường dây là ${U_2}=1800\ V$. Coi hệ số công suất của mạch truyền tải điện bằng 1. Điện trở đường dây là
+	\choice
+	{$50\ \Omega$}
+	{$40\ \Omega$}
+	{\True $10\ \Omega$}
+	{$1\Omega$}
+	\loigiai{
+		\begin{bang}[tabularx={X||X||X||X||X}]{Tóm tắt dữ liệu}
+		$P=UI\cos \varphi$ & $U$ & $U'$ & $\cos \varphi$ & R \\\midrule
+	40 kW & 2000 V& 1800 V & 1 & ? 
+\end{bang}
+\begin{itemize}
+\item \textbf{Cách 1:}
+		\begin{itemize}
+			\item Ta có: $\Delta P=\dfrac{{{P}^2}}{{U^2}}. R=\dfrac{P}{U}. \Delta U\Rightarrow \Delta U=\dfrac{P}{U}.R$.
+			\item Trong đó độ giảm thế là: $\Delta U$ = 2000 – 1800 = 200 \ V$\Rightarrow R=\Delta U. \dfrac{U}{P}=200. \dfrac{2000}{40000}=10\ \Omega$.
+		\end{itemize}
+\item \textbf{Cách 2:}
+\begin{itemize}
+	\item Ta có: $\Delta U=U'-U=2000-1800=200\ V$.
+	\item Lại có: $P=UI\cos \varphi \Rightarrow I=\dfrac{P}{U\cos \varphi}=20\ A.$
+	\item Và $\Delta U=IR \Rightarrow R=\dfrac{\Delta U}{I}=\dfrac{200}{20}=10\ \Omega$.
+\end{itemize}
+\end{itemize}
+	}
+\end{vidu}
+\loai{Tính hiệu suất truyền tải}
+\begin{vidu} %[3P3-15.2B][Loai3] 
+	Người ta truyền tải điện xoay chiều một pha từ một trạm phát điện cách nơi tiêu thụ 5 km. Dây dẫn làm bằng kim loại có điện trở suất $2,5.10^{-8}\ \Omega. m$, tiết diện $0,4\ cm^2$, hệ số công suất của mạch điện là 0,9. Điện áp và công suất truyền đi ở trạm phát điện là 10 kV và 500 kW. Hiệu suất truyền tải điện là
+	\choice
+	{\True 96,14\%}
+	{92,28\%}
+	{93,75\%}
+	{96,88\%}
+	\loigiai{
+		\begin{bang}[tabularx={X||X||X||X||X||X}]{Tóm tắt dữ liệu}
+			d & $\rho$ & $S$ & $\cos \varphi$ & P & U \\\midrule
+			$5.10^3$ m & $2,5.10^{-8}\ \Omega.m$ & $0,4.10^{-4}\ m^2$ & 0,9 & $10^4\ V$ & $5.10^5\ W$ 
+		\end{bang}
+				\Binhluan{
+			\begin{itemize}
+			\item Điện trở của dây tải điện là: $R=\rho \dfrac{\ell}{S}=2,{{5. 10}^{-8}}. \dfrac{10000}{0,{{4. 10}^{-4}}}=6,25\ \Omega$.
+			\item Hiệu suất truyền tải: 
+			\begin{align*}
+			 H=1-\dfrac{P_{hp}}{P}=1-\dfrac{PR}{\left( U\cos \varphi \right)^2}=1-\dfrac{500000. 6,25}{\left( 10000. 0,9 \right)^2}=96,14\%.
+			 \end{align*}
+	\end{itemize}
+}
+{
+Lưu ý là $\ell=2d=10\ km.$\\
+Vì ta có hai dây truyền tải.
+}
+}
+\end{vidu}
+\begin{vidu} %[3P3-15.2K][Loai3] 
+	Một máy phát điện xoay chiều công suất 10 MW, điện áp hai cực máy phát 10 kV. Truyền tải điện năng từ nhà máy điện đến nơi tiêu thụ bằng dây dẫn có tổng điện trở 40 $\Omega$. Nối hai cực máy phát với cuộn sơ cấp của máy tăng thế, còn nối hai đầu cuộn thứ cấp với đường dây. Số vòng dây của cuộn thứ cấp của máy biến áp gấp 40 lần số vòng dây của cuộn sơ cấp. Hiệu suất của máy biến áp là 90\%. Biết hệ số công suất đường dây bằng 1. Công suất hao phí trên đường dây là
+	\choice
+	{20,05 kW}
+	{20,15 kW}
+	{\True 20,25 kW}
+	{20,35 kW}
+	\loigiai{
+		\begin{bang}[tabularx={X|X|X|X|X|X||X|X|X}]{Tóm tắt dữ liệu}
+			$k=\dfrac{N_2}{N_1}$& $U_1$ &U&$P_1$ & H&P&R&$\cos \varphi$& $\Delta P$ \\\midrule
+			40& $10^4\ V$ & ? &$10^7\ W$ &0,9&?&$40\ \Omega$&1& ?		
+\end{bang}	
+			\Binhluan{
+	\begin{itemize}
+		\item Điện áp giữa hai đầu cuộn thứ cấp: $U=U_1.k=4.10^8\ V$.
+		\item Công suất truyền đi (sau khi qua máy biến áp): 
+		\begin{align*}
+		H=\dfrac{P}{P_1}\Rightarrow P=H.P_1=0,9.10^7=9.10^6\ W.
+		\end{align*}
+	\item Hao phí điện năng khi truyền tải: 
+	\begin{align*}
+	\Delta P=\dfrac{P^2R}{U^2\cos^2\varphi}=\dfrac{\left(9.10^6\right)^2.40}{\left(4.10^8\right)^2}\approx20,25\ kW.
+	\end{align*}
+	\end{itemize}			
+	}
+{
+Ta xử lí gọn gàng dữ kiện MBA rồi mới chuyển sang công thức truyền tải điện năng.\\
+Lưu ý $H=0,9$ là hiệu suất của MBA chứ không phải hiệu suất truyền tải.
+}
+ }
+\end{vidu}
+
+
+
+
+\loai{Hiệu số chỉ công tơ điện}
+
+\begin{vidu} %[3P3-15.2B][Loai4] 
+	Điện năng ở một trạm phát điện được truyền đi dưới với công suất 200 kW. Hiệu số chỉ của các công tơ điện ở trạm phát và ở nơi tiêu thụ sau mỗi ngày đêm chênh lệch nhau thêm 480 kWh. Hiệu suất của quá trình truyền tải điện là
+	\choice
+	{$H = 95\%$}
+	{\True $H = 90\%$}
+	{$H = 85\%$}
+	{$H = 80\%$}
+	\loigiai{
+		\Binhluan{
+			\begin{bang}[tabularx={X|X|X|X}]{}
+				P & t & $A_{hp}$ & $H=1-\dfrac{A_{hp}}{A}$ \\\midrule 
+			200 kW & 24 giờ & 480 kWh & ? 
+		\end{bang}
+		\begin{itemize}
+		\item Hiệu số chỉ công tơ điện chính là phần điện năng hao phí: $A_{hp}=480\ kWh$.
+		\item Hiệu suất truyền tải: $ H=1-\dfrac{A_{hp}}{A}=1-\dfrac{480}{200. 24}=90\%$.
+		\end{itemize}
+	}
+{
+Hiệu suất truyền tải có thể được tính theo năng lượng hoặc công suất đều được.
+}
+}
+\end{vidu}

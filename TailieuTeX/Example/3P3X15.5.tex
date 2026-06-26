@@ -1,0 +1,73 @@
+\begin{vidu} %[3P3-15.5T][Loai4] 
+	\nguon{QG - 2017} Điện năng được truyền từ một trạm phát điện đến nơi tiêu thụ bằng đường dây tải điện một pha. Biết đoạn mạch tại nơi tiêu thụ (cuối đường dây tải điện) tiêu thụ điện với công suất không đổi và có hệ số công suất luôn bằng 0,8. Để tăng hiệu suất của quá trình truyền tải từ 80\% lên 90\% thì cần tăng điện áp hiệu dụng ở trạm phát điện lên
+	\choice
+	{1,33 lần}
+	{\True 1,38 lần}
+	{1,41 lần}
+	{1,46 lần}
+	\loigiai{
+		immini[thm]{
+			\begin{bang}[tabularx={X|X|X}]{$P_{tt},\ R =const$}
+				$\cos \varphi_t=0,8$&$H_1=0,8$ & $H_2=0,9$
+			\end{bang}
+			\begin{itemize}
+				\item Từ giản đồ, ta có:
+				\begin{align*}
+					&\dfrac{U_t}{\sin \varphi}=\dfrac{U}{\sin \left(\pi -\varphi\right)}\Leftrightarrow U_t\sin\varphi_t=U\sin \varphi\\
+					\Leftrightarrow\ &U_tI\cos \varphi_t\tan \varphi_t=UI\cos \varphi\tan \varphi.
+				\end{align*}
+			\end{itemize}
+		}
+		{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\tkzInit[ymin=-1.5,ymax=3,xmin=-1,xmax=5]\tkzClip
+			\tkzDefPoints{0/0/o, 4.5/0/i}
+			\tkzDefShiftPoint[o](0:3){uR}
+			\tkzDefShiftPoint[uR](0:1.5){ur}
+			\tkzDefShiftPoint[uR](60:3){uab}
+			\tkzDrawSegments[->](o,i)
+			\tkzDrawSegments[very thick,blue,->](o,uR)
+			\tkzDrawSegments[very thick,green,->](uR,uab)
+			\tkzDrawSegments[very thick,red,->](o,uab)
+			\tkzDrawPoints[size=3,fill=white](o,uR)
+			\tkzLabelSegment[above,sloped](uR,uab){$\vec{U}_t$}
+			\tkzLabelSegment[below](o,uR){$\Delta \vec{U}$}
+			\tkzLabelSegment[above,sloped](o,uab){$\vec{U}$}
+			\tkzLabelPoint[below](i){$\vec{I}$}
+			\tkzMarkAngles[size=0.5cm](ur,o,uab)
+			\tkzLabelAngles[pos=1](ur,o,uab){$\varphi$}
+			\tkzMarkAngles[size=0.4cm](ur,uR,uab)
+			\tkzLabelAngles[pos=0.8](ur,uR,uab){$\varphi_t$}
+			\end{tikzpicture}
+		}		
+%		\Binhluan{
+			\begin{itemize}
+				\item $P_t\tan \varphi_t=P\tan \varphi \xrightarrow{H=\dfrac{P_t}{P}}H=\dfrac{\tan \varphi}{\tan \varphi_t}
+				\xrightarrow{{\cos}^2\varphi =\dfrac{1}{1+{\tan}^2\varphi}}\\
+				\cos^2\varphi =\dfrac{1}{1+H^2{\tan}^2\varphi}$
+				\item $H=1-\dfrac{RP_t}{HU^2{\cos}^2\varphi}\Rightarrow H.(1-H)=\dfrac{RP_t}{U^2{\cos}^2\varphi}\Rightarrow \dfrac{U_2^2}{U_1^2}=\dfrac{\left(1-H_1\right)H_1}{\left(1-H_2\right)H_2}\dfrac{{\cos}^2\varphi_1}{{\cos}^2\varphi_2}$.
+				\item Hay $\dfrac{U_2^2}{U_1^2}=\dfrac{\left(1-H_1\right)H_1}{\left(1-H_2\right)H_2}\left(\dfrac{1+H_2^2{\tan}^2\varphi_t}{1+H_1^2{\tan}^2\varphi_t}\right)$.
+				\item Áp dụng cho bài toán, ta thu được $\dfrac{U_2}{U_1}\approx 1,38$.
+			\end{itemize}
+		%}
+		%{
+		%	Bẫy trong đề này là đề bài cho $\cos\varphi_t=0,8=const$ nhưng hệ số công suất của toàn mạch lại thay đổi.
+		%}
+	}
+\end{vidu}
+\begin{vidu}%[3P3-15.5K][Loai1] 
+	Điện năng được truyền tải từ trạm phát điện đến nơi tiêu thụ bằng đường dây truyền tải điện một pha. Cho công suất truyền đi không đổi và hệ số công suất ở nơi tiêu thụ (cuối đường dây tải điện) luôn bằng 0,8. Để tăng hiệu suất của quá trình truyền tải từ 60\% lên 90\% thì cần tăng điện áp hiệu dụng ở trạm phát điện lên bao nhiêu lần?
+	\choice
+	{2,0}
+	{2,1}
+	{2,3}
+	{\True 2,2}
+	\loigiai{
+		\begin{itemize}
+			\item $\dfrac{U_t}{sin\varphi}=\dfrac{U_p}{sin\left(\pi -\varphi_t\right)}=\dfrac{U_p}{sin\varphi_t}\Rightarrow U_tsin\varphi_t=U_psin\varphi \Rightarrow U_tI\cos \varphi_t\tan \varphi_t=U_pI\cos \varphi \tan \varphi \Rightarrow P_t\tan \varphi_t=P_p.\tan \varphi$.
+			\item $\Rightarrow H\tan \varphi_t=\tan \varphi \Rightarrow \xrightarrow{cos^2\varphi =\dfrac{1}{1+{\tan}^2\varphi}}cos^2\varphi =\dfrac{1}{1+H^2{\tan}^2\varphi_t}$.
+			\item Lại có: $H=\dfrac{P_t}{P}=\dfrac{P-\Delta P}{P}=1-\dfrac{I^2R}{P}=1-\dfrac{PR}{U^2{\cos}^2\varphi}=1-\dfrac{PR}{U^2{\cos}^2\varphi}\Rightarrow 1-H=\dfrac{PR}{U^2{\cos}^2\varphi}$.
+			\item $\dfrac{U_2^2}{U_1^2}=\dfrac{\left(1-H_1\right){\cos}^2\varphi_1}{\left(1-H_2\right){\cos}^2\varphi_2}=\dfrac{\left(1-H_1\right)\left(1+H_2^2{\tan}^2\varphi_t\right)}{\left(1-H_2\right)\left(1+H_1^2{\tan}^2\varphi_t\right)}$.
+			\item Thay số: $\left(\dfrac{U_2}{U_1}\right)^2=\dfrac{\left(1-0,6\right)\left(1+0,9^2\dfrac{0,6^2}{0,8^2}\right)}{\left(1-0,9\right)\left(1+0,6^2\dfrac{0,6^2}{0,8^2}\right)}=4,84\Rightarrow \dfrac{U_2}{U_1}=2,2$.
+		\end{itemize}
+	}
+	\end{vidu}

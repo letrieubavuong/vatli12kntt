@@ -1,0 +1,209 @@
+
+%mac
+%\loai{So sánh thời gian và tầm xa}
+\begin{vidu}
+Một người nhảy xa với vận tốc ban đầu $7,5\ m/s$ theo phương xiên $30^\circ$ với phương nằm ngang. Bỏ qua sức cản của không khí và lấy $g=9,8\ m/s^2$.
+\begin{vdc} 
+Vận tốc ban đầu của người nhảy theo phương thẳng đứng là bao nhiêu $m/s$?
+\shortans[oly]{3,75}
+\loigiai{
+Chọn hệ toạ độ Oxy với O là vị trí trên mặt đất mà người đó đặt chân vào để nhảy lên, chiều dương là chiều từ dưới lên (Oy) và chiều từ trái sang phải (Ox), gốc thời gian là thời điểm nhảy.
+
+Vận tốc ban đầu:
+$V_{0y}=v_0\sin 30^\circ=3,75\ m/s$ (từ dưới lên)
+}
+\end{vdc}
+
+\begin{vdc} 
+Vận tốc ban đầu của người nhảy theo phương nằm ngang là bao nhiêu $m/s$ (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{6,5}
+\loigiai{
+$v_{0x}=v_0\cos 30^\circ=6,50\ m/s$ (trái sang phải)
+}
+\end{vdc}
+
+\begin{vdc} 
+Tầm cao $H$ mà vật đạt được là bao nhiêu mét (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{0,72}
+\loigiai{
+Khi đạt tầm cao H thì vận tốc của người nhảy theo phương thẳng đứng bằng 0:\\
+$v_y=0;\ v_{0y}=3,75\ m/s;\ a=-g;\ H=?$\\
+$v_y^2-v_{0y}^2=2a.H=-2.g.H$\\
+$H=\dfrac{v_{0y}^2}{2.g}=0,717\ m$.
+}
+\end{vdc}
+
+\begin{vdc} 
+Thời gian từ khi bắt đầu nhảy tới khi đạt tầm cao là bao nhiêu giây (làm tròn kết quả đến chữ số hàng phần trăm)?
+\shortans[oly]{0,38}
+\loigiai{
+Thời gian từ lúc bắt đầu nhảy tới khi đạt tầm cao: \\
+$v_y=v_{0y}-g.t\Rightarrow t=\dfrac{3,75}{9,8}=0,383\ s$.
+}
+\end{vdc}
+
+\begin{vdc} 
+Thời gian từ khi bắt đầu nhảy lên tới lúc rơi xuống hố nhảy là bao nhiêu giây?
+\shortans[oly]{0,77}
+\loigiai{
+Thời gian từ lúc bắt đầu nhảy lên tới lúc rơi xuống hố nhảy:
+\begin{align*}
+t'=2t=2.0,383=0,766\ s.
+\end{align*}
+}
+\end{vdc}
+
+\begin{vdc} 
+Tầm xa $L$ là bao nhiêu mét (làm tròn kết quả đến chữ số hàng phần trăm)?
+\shortans[oly]{4,98}
+\loigiai{
+Tầm xa: $v_{0x}=6,5\ m/s;\ t'=0,766\ s;\ L=?$\\
+$L=d_{x\max}=v_{0x}.t'=4,98\ m$.	
+}
+\end{vdc}
+
+\end{vidu}
+
+
+
+
+
+
+
+
+
+
+
+\begin{vidu}%SBT12.10
+Một vật được ném xiên từ mặt đất với vận tốc ban đầu có độ lớn $v_0=50\ m/s$. Khi lên tới điểm cao nhất, vận tốc của vật có độ lớn là $40\ m/s$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$.
+
+\begin{vdc} 
+Góc ném $\alpha$ là bao nhiêu độ (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{36,9}
+\loigiai{
+\begin{itemize}
+\item Tại điểm cao nhất thì vận tốc theo phương thẳng đứng $v_y=0\Rightarrow v_x=40\ m/s$.
+\end{itemize}
+}
+\end{vdc}
+
+\begin{vdc} 
+Tầm cao của vật là bao nhiêu mét (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{45}
+\loigiai{
+$H=\dfrac{v_0^2\sin^2\alpha}{2g}=45\ m.$
+}
+\end{vdc}
+
+
+\begin{vdc} 
+Tầm xa của vật là bao nhiêu mét  (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{240}
+\loigiai{
+$L=\dfrac{v_0^2\sin2\alpha}{g}=240\ m$
+}
+\end{vdc}
+\end{vidu}
+
+
+
+\begin{vidu}%SBT12.12
+\immini[thm]{Một diễn viên biểu diễn mô tô bay đang phóng xe trên mặt dốc nằm nghiêng $30^\circ$ để bay qua các ô tô như trong hình. Biết vận tốc của xe mô tô khi rời khỏi đỉnh dốc là $14\ m/s$. Chiều cao của ô tô bằng chiều cao của dốc, chiều dài của ôtô là $3,2\ m$. Lấy $g=10\ m/s^2$.}
+{\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzInit[ymin=-1,ymax=1.5,xmin=-0.5,xmax=6.5]\tkzClip
+\tkzDefPoints{0/0/o, 6/0/a}
+\tkzDefShiftPoint[o](30:1.5cm){m}
+\tkzDefPointBy[projection=onto o--a](m) \tkzGetPoint{h}
+\tkzDrawSegments[](o,a o,m h,m)
+\tkzMarkAngles[size=0.4cm](h,o,m)
+\tkzLabelAngles[pos=1](h,o,m){$30^\circ$}
+\node[rotate=30] (russell) at (0.7,0.74){\includegraphics[width=1cm]{images/Motorcycle}};
+\node[] (russell) at (2.25,0.4){\includegraphics[width=2cm]{images/Car1}};
+\node[] (russell) at (4.15,0.4){\includegraphics[width=2cm]{images/Car1}};
+%\node at (3,-0.5){Hình 12.3};
+\end{tikzpicture}}
+
+\begin{vdc} 
+Thời gian từ khi xe rời đỉnh dốc tới khi đạt độ cao cực đại là bao nhiêu giây? 
+\shortans[oly]{0,7}
+\loigiai{
+Chuyển động của mô tô bay được coi như chuyển động ném xiên góc $30^\circ$ so với phương nằm ngang, với vận tốc ban đầu $v_0=14\ m/s$.
+
+ Thời gian từ khi xe rời đỉnh dốc tới khi đạt độ cao cực đại: 
+\begin{align*}
+t=\dfrac{v_0\sin\alpha}{g}=\dfrac{14.\sin 30^\circ}{10}=0,7\ s.
+\end{align*}
+}
+\end{vdc}
+
+\begin{vdc} 			
+Môtô có thể bay qua được nhiều nhất bao nhiêu ô tô?
+\shortans[oly]{5}
+\loigiai{
+Tầm xa của mô tô bay tính từ vị trí xe rời đỉnh dốc: 
+\begin{align*}
+L=\dfrac{v_0^2\sin 2\alpha}{g}=\dfrac{14^2\sin(2.30^\circ)}{10}\approx 16,97\ m
+\end{align*}
+Vậy mô tô có thể bay qua nhiều nhất 5 xe ô tô (vì mỗi xe ô tô dài 3,2 m)
+}
+\end{vdc}
+\end{vidu}
+%\end{comment}
+
+
+
+\begin{vidu}%SBTII.8
+\immini[thm]{Hình bên vẽ quỹ đạo của một quả cầu lông được đánh lên với vận tốc ban đầu $v_0=10\ m/s$ ở độ cao $2\ m$ so với mặt đất. Bỏ qua sức cản của không khí và lấy $g=9,8\ m/s^2$.	}
+{\begin{tikzpicture}[scale=1,thick,>=stealth',Mapcolor]
+\tkzDefPoints{-4.5/0.5/o}
+\tkzDefShiftPoint[o](45:2cm){m}
+\tkzDefShiftPoint[o](0:2cm){n}
+\tkzMarkAngles[size=0.4cm](n,o,m)
+\tkzLabelAngles[pos=0.7](n,o,m){$\alpha$}
+\node[] (russell) at (-4.7,-0.4){\includegraphics[width=1cm]{images/CauLong}};
+\draw[red,very thick,->](-4.5,0.5)--++(45:1.2);
+\draw[Mapcolor,dashed](-4.5,0.5)node[above left,black]{$A$}--(5.7,0.5)node[above right,black]{$C$};
+\draw[red,very thick,<->](0.5,0.5)--node[midway,right,black]{$4\ m$}(0.5,3.5)node[above,black]{$B$};
+\draw[red,very thick,<->](0.5,-1)--node[midway,right,black]{$2\ m$}(0.5,0.5);
+\draw[very thick, blue, smooth, domain=-3.6:6.8,dashed]
+plot(\x,{(-0.12)*(\x)^2+0.15*(\x)+3.5})node[above right,black]{$D$};
+\draw[](-4.5,-1)--++(0:11.3);
+%\node at (0.5,-1.4){Hình II.4};
+\end{tikzpicture}}
+
+\begin{vdc} 
+Góc $\alpha$ bằng bao nhiêu độ  (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{62}
+\loigiai{
+\begin{itemize}
+\item Khi đạt độ cao cực đại thì $v_{yB}=0$.\\
+$v_{yB}^2-v_{0y}^2=-2gh_1\Rightarrow -v_0^2\sin^2\alpha=-2gh_1\Rightarrow \sin\alpha=\sqrt{\dfrac{2.9,8.4}{10^2}}=0,885\Rightarrow \alpha\approx62^\circ$.
+\end{itemize}
+}
+\end{vdc}
+
+\begin{vdc} 		
+Vận tốc của quả cầu ở vị trí $B$ có độ lớn là bao nhiêu $m/s$ (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{4,7}
+\loigiai{
+\begin{itemize}
+\item $\vec v_B=\vec v_{xB}+\vec v_{yB}\Rightarrow v_B=v_0\cos\alpha+0\approx 4,7\ m/s$.
+\end{itemize}
+}
+\end{vdc}
+
+\begin{vdc} 		
+Khoảng cách giữa vị trí rơi chạm đất của quả cầu và vị trí đứng của người đánh cầu là bao nhiêu mét (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{9,4}
+\loigiai{
+\begin{itemize}
+\item $L=L_1+L_2=v_xt_1+v_xt_2=v_X(t_1+t_2)$\\
+Thời gian $t_1$ bằng thời gian để quả cầu chuyển động từ A tới B bằng thời gian để quả cầu rơi từ độ cao B tới độ cao A. Do đó: \\
+$t_1=\sqrt{\dfrac{2h_1}{g}}=\sqrt{\dfrac{2.4}{9,8}}=0,9\ s$.\\
+Thời gian $t_2$ bằng thời gian để quả cầu tơi từ độ cao B tới mặt đất:\\
+$t_2=\sqrt{\dfrac{2h_2}{g}}=\sqrt{\dfrac{2.(4+2)}{9,8}}=1,1\ s$.\\
+Do đó: $L=4,7.(0,9+1,1)=9,4\ m$,
+\end{itemize}
+}
+\end{vdc}
+\end{vidu}

@@ -1,0 +1,247 @@
+\loai{Thanh kim loại chuyển động trên ray nằm ngang}
+\begin{vidu} %[2P4-4.4G][Loại1]
+immini[thm]{Thanh $\ell$ có chiều dài $10\ cm$ nặng 40 g, điện trở $1,9\ \Omega$, tựa trên hai thanh MN và PQ có điện trở không đáng kể. Suất điện động của nguồn bằng 4 V, điện trở trong bằng $0,1\ \Omega$. Mạch điện đặt trong từ trường đều có cảm ứng từ $B = 0,1\ T$ và vuông góc với mặt phẳng khung. Bỏ qua mọi ma sát. Thanh $\ell$ chuyển động với gia tốc là
+\choice
+{$0,05\ m/s^2$}
+{\True $0,5\ m/s^2$}
+{$0,1\ m/s^2$}
+{$1,0\ m/s^2$}}{
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(270:1.4)coordinate (e1);
+\draw (e1)--++(0:0.15);
+\draw (e1)--++(180:0.15);
+\path (a) ++(270:3)coordinate (c); 
+\draw (c) -- ($(c)!1.4cm!0:(a)$)coordinate (e2);
+\draw (e2)--++(0:0.3);
+\draw (e2)--++(180:0.3)node[above left]{\normalsize{\bth{\mathcal{E},r}}};
+\draw (a)node[above]{\normalsize{\bth{M}}}--++(0:4.5)node[above]{\normalsize{\bth{N}}};
+\draw (c)node[below]{\normalsize{\bth{P}}}--++(0:4.5)node[below]{\normalsize{\bth{Q}}};
+\path (a)--++(1:1.7)--++(270:1.6)coordinate (b);
+\draw (b)circle (0.2)node[above=6pt]{\normalsize{\bth{\vec{B}}}};
+\draw (b)--++(45:0.2);
+\draw (b)--++(135:0.2);
+\draw (b)--++(225:0.2);
+\draw (b)--++(315:0.2);
+\path (a) ++(0:3.5)coordinate (m); 
+\path (c) ++(0:3.5)coordinate (n); 
+\draw [line width=2pt] (m)--(n);
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\path (n) --++(90:1.5)coordinate (v);
+\end{tikzpicture}}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Ta có cường độ dòng điện qua thanh là: $I=\dfrac{\mathcal{E}}{R+r}=\dfrac{4}{1,9+0,1}=2\ A$.
+\item Thanh sẽ trượt trên MN và PQ với gia tốc a:
+\begin{align*}
+\Rightarrow F_t=ma;\ F_t=BI\ell=ma\Rightarrow a=\dfrac{0,1.2.0,1}{0,04}=0,5\ \dfrac{m}{s^2}.
+\end{align*}
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate  (c)  at  (0,0)node[below left]{\normalsize{\bth{P}}};
+\draw (c)--++(0:4)node[below right]{\normalsize{\bth{Q}}};
+\path  (c)  ++(0:3)++(90:0.2)coordinate  (i);
+\draw (i) circle(0.2)node[below right=5pt]{\normalsize{\bth{I}}};
+\draw (i) --++(45:0.2);
+\draw (i) --++(135:0.2);
+\draw (i) --++(225:0.2);
+\draw (i) --++(315:0.2);
+\draw [very thick,->](i)--++(180:1.4)node[above]{\normalsize{\bth{\vec{F}}}};
+\path  (c)  ++(0:0.5)++(90:2)coordinate  (b);
+\draw [very thick,->](b)--++(-90:1.4)node[left]{\normalsize{\bth{\vec{B}}}};
+\end{tikzpicture}}}
+\end{vidu}
+\begin{vidu} %[2P4-4.4G][Loại1] 
+\impicinpar{Hai thanh ray nằm ngang, song song và cách nhau $\ell = 20$ cm đặt trong từ trường đều có vector cảm ứng từ thẳng đứng hướng lên với $B = 0,2$ T. Một thanh kim loại MN đặt trên ray vuông góc với hai thanh ray AB và CD với hệ số ma sát bằng 0,1. Nối ray với nguồn điện có $\mathcal{E} = 12$ V, $r = 0,2$ $\Omega$. Biết điện trở của thanh kim loại là $R = 1$ $\Omega$ và khối lượng của thanh kim loại là $m = 100$ g. Bỏ qua điện trở của ray và dây nối. Lấy $g = 10\  m/s^2$. Độ lớn gia tốc chuyển động của thanh MN là}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above left]{\normalsize{\bth{A}}};
+\draw (a)--++(225:1.4)coordinate (e1);
+\draw (e1)--++(0:0.15);
+\draw (e1)--++(180:0.15);
+\path (a) ++(225:3)coordinate (c)node[below left]{\normalsize{\bth{C}}}; 
+\draw (c) -- ($(c)!1.4cm!0:(a)$)coordinate (e2);
+\draw (e2)--++(0:0.3);
+\draw (e2)--++(180:0.3)node[above left]{\normalsize{\bth{\mathcal{E}, \;r}}};
+
+\draw (a)--++(0:4.5)node[above right]{\normalsize{\bth{B}}};
+\draw (c)--++(0:4.5)node[below right]{\normalsize{\bth{D}}};
+
+\path (a) ++(0:3.5)coordinate (m); 
+\path (c) ++(0:3.5)coordinate (n); 
+
+\draw [line width=2pt] (m)node[above right]{\normalsize{\bth{M}}}--(n)node[below left]{\normalsize{\bth{N}}};
+
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+
+\draw [very thick,->](o)--++(90:1.5)node[right]{\normalsize{\bth{\vec{B}}}};
+
+\end{tikzpicture}
+}
+\choice
+{1,6 $m/s^2$}
+{1,4 $m/s^2$}
+{0,8 $m/s^2$}
+{\True 3 $m/s^2$}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Thanh MN chịu tác dụng của các lực $\vec P$ ,$\vec{F}_t$ ,$\vec{f}_{ms}$, $\vec{N}$ như hình vẽ.
+\item Ta có $F_t=BI\ell=0,2.\dfrac{12}{0,2 + 1}.0,2 = 0,4$ N; $f_{ms}= \mu .mg = 0,1.0,1.10 = 0,1$ N
+\item Xét theo phương chuyển động ta có: $F_t-f_{ms}=ma\to a = \dfrac{F_t - f_{ms}}{m} = \dfrac{0,4 - 0,1}{0,1} = 3\ m/s^2$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate  (c)  at  (0,0)node[below left]{\normalsize{\bth{C}}};
+\draw (c)--++(0:4);
+\path  (c)  ++(0:3)++(90:0.2)coordinate  (i);
+\draw (i) circle(0.2)node[below right=5pt]{\normalsize{\bth{I}}};
+\draw (i) --++(45:0.2);
+\draw (i) --++(135:0.2);
+\draw (i) --++(225:0.2);
+\draw (i) --++(315:0.2);
+\draw [very thick,->](i)--++(90:1)node[left]{\normalsize{\bth{\vec{N}}}};
+\draw [very thick,->](i)--++(270:1)node[left]{\normalsize{\bth{\vec{P}}}};
+\draw [very thick,->](i)--++(180:0.8)node[above]{\normalsize{\bth{\vec{F}_{ms}}}};
+\draw [very thick,->](i)--++(0:1.4)node[above]{\normalsize{\bth{\vec{F}}}};
+\path  (c)  ++(0:0.5)++(90:0.5)coordinate  (b);
+\draw [very thick,->](b)--++(90:1.4)node[left]{\normalsize{\bth{\vec{B}}}};
+\end{tikzpicture}}}
+\end{vidu}
+\begin{vidu} %[2P4-4.4G][Loại2]
+Hai thanh ray Xx và Yy nằm ngang, song song và cách nhau $\ell = 20\ cm$ đặt trong từ trường đều có vector cảm ứng từ thẳng đứng hướng xuống dưới với $B = 0,2\ T$. Một thanh kim loại đặt trên ray vuông góc với ray. Nối ray với nguồn điện để trong thanh có dòng điện chạy qua. Biết khối lượng của thanh kim loại là 200 g. Biết thanh MN trượt sang trái với gia tốc $a = 2\ m/s^2$. Bỏ qua mọi ma sát. Độ lớn của cường độ dòng điện trong thanh MN là
+\choice
+{5 A}
+{7,5 A}
+{\True 10 A}
+{12,5 A}
+\loigiai{
+immini[thm]{Ta có: $F_t=ma\Rightarrow BI\ell\sin \alpha =ma\Rightarrow I=\dfrac{ma}{BI\ell\sin \alpha}=\dfrac{0,2.2}{0,2.0,2.\sin 90^\circ}=10\ A$}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate  (c)  at  (0,0)node[below left]{\normalsize{\bth{XY}}};
+\draw (c)--++(0:4)node[below right]{\normalsize{\bth{xy}}};
+\path  (c)  ++(0:3)++(90:0.2)coordinate  (i);
+\draw (i) circle(0.2)node[above=5pt]{\normalsize{\bth{I}}}node[below =5pt]{\normalsize{\bth{MN}}};
+\draw (i) --++(45:0.2);
+\draw (i) --++(135:0.2);
+\draw (i) --++(225:0.2);
+\draw (i) --++(315:0.2);
+\draw [very thick,->](i)--++(180:1.4)node[above]{\normalsize{\bth{\vec{F}}}};
+\path  (c)  ++(0:0.5)++(90:2)coordinate  (b);
+\draw [very thick,->](b)--++(-90:1.4)node[left]{\normalsize{\bth{\vec{B}}}};
+\end{tikzpicture}}}
+\end{vidu}
+\begin{vidu} %[2P4-4.4T][Loại2] 
+\impicinpar{Một thanh nhôm dài 1,6 m, khối lượng 0,2 kg chuyển động trong từ trường đều và luôn tiếp xúc với hai thanh ray đặt nằm ngang như hình vẽ bên. Từ trường có phương vuông góc với mặt phẳng hình vẽ, hướng ra ngoài mặt phẳng hình vẽ. Hệ số ma sát giữa thanh nhôm MN và hai thanh ray là $\mu =0,4$, cảm ứng từ $B=0,05\ T$. Biết thanh nhôm chuyển động đều. Coi rằng trong khi thanh nhôm chuyển động điện trở của mạch điện không đổi. Lấy $g=10\ m/s^2$ và coi vận tốc của thanh nhôm là không đổi. Hỏi thanh nhôm chuyển động về phía nào. Tính cường độ dòng điện trong thanh nhôm}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\path (a) ++(270:3)coordinate (c); 
+\draw (a)--++(0:4.5);
+\draw (c)--++(0:4.5);
+\path (a)--++(0:1.5)--++(270:2)coordinate (b);
+\draw[fill=white] (b)circle (0.2)node[above=6pt]{\normalsize{\bth{\vec{B}}}};
+\draw[fill=black] (b)circle (0.05);
+\path (a) ++(0:3.5)coordinate (m); 
+\path (c) ++(0:3.5)coordinate (n); 
+\draw [line width=2pt,arrow data={0.75}{stealth}] (n)node[below]{\normalsize{\bth{M}}}--(m)node[above]{\normalsize{\bth{N}}};
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\path (n) --++(90:1.5)coordinate (v);
+\tkzLabelSegment[left](m,v){$I$}
+\end{tikzpicture}}
+\choice
+{\True Thanh nhôm chuyển động sang phải, $I = 10$ A}
+{Thanh nhôm chuyển động sang trái, $I = 10$ A}
+{Thanh nhôm chuyển động sang trái, $I = 6$ A}
+{Thanh nhôm chuyển động sang phải, $I = 6$ A}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Thanh nhôm chuyển động đều sang phải, khi đó lực ma sát sẽ cân bằng với lực điện tác dụng lên thanh hướng sang phải có dòng điện tổng hợp chạy từ M đến (dòng điện do nguồn và hiện tượng cảm ứng gây ra).
+\item Ta có $F=F_{ms}\Rightarrow IB\ell=\mu mg\Rightarrow I=\dfrac{\mu mg}{Bl}=\dfrac{0,4.0,2.10}{0,05.1,6}=10$ A.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\path (a) ++(270:3)coordinate (c); 
+\draw (a)--++(0:4.5);
+\draw (c)--++(0:4.5);
+\path (a)--++(0:1.5)--++(270:2)coordinate (b);
+\draw[fill=white] (b)circle (0.2)node[above=6pt]{\normalsize{\bth{\vec{B}}}};
+\draw[fill=black] (b)circle (0.05);
+\path (a) ++(0:3.5)coordinate (m); 
+\path (c) ++(0:3.5)coordinate (n); 
+\draw [line width=2pt,arrow data={0.75}{stealth}] (n)node[below]{\normalsize{\bth{M}}}--(m)node[above]{\normalsize{\bth{N}}};
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\path (n) --++(90:1.5)coordinate (v);
+\draw [very thick,->](v)--++(0:1.2)node[above]{\normalsize{\bth{\vec{F}}}};
+\draw [very thick,->](v)--++(180:1.2)node[above]{\normalsize{\bth{\vec{F}_{ms}}}};
+\tkzLabelSegment[left](m,v){$I$}
+\end{tikzpicture}}
+}
+\end{vidu}
+\loai{Thanh kim loại chuyển động trên ray dốc}
+\begin{vidu} %[2P4-4.4T][Loại2]
+\impicinpar{Hai thanh ray nằm ngang, song song và cách nhau $\ell =20$ cm, khối lượng $m=100$ g đặt trong từ trường đều $\vec{B}$ thẳng đứng hướng xuống với $B=0,2$ T. Một thanh kim loại đặt trên ray vuông góc với ray. Nối ray với nguồn điện để trong thanh có dòng điện $I=10\ A$ chạy qua. Hệ số ma sát giữa thanh kim loại với ray là $\mu =0,1$. Lấy $g=10\ m/s^2$. Bỏ qua điện trở các thanh ray, điện trở nơi tiếp xúc và dòng điện cảm ứng trong mạch. Nâng hai đầu A, C lên một góc $\alpha =30^\circ$ so với mặt ngang và cho thanh bắt đầu chuyển động. Gia tốc chuyển động của thanh là}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+	\coordinate (a) at (0,0)node[above left]{\normalsize{\bth{A}}};
+	\draw (a)--++(225:1.4)coordinate (e1);
+	\draw (e1)--++(0:0.15);
+	\draw (e1)--++(180:0.15);
+	\path (a) ++(225:3)coordinate (c)node[below left]{\normalsize{\bth{C}}}; 
+	\draw (c) -- ($(c)!1.4cm!0:(a)$)coordinate (e2);
+	\draw (e2)--++(0:0.3);
+	\draw (e2)--++(180:0.3)node[above left]{\normalsize{}};
+	
+	\draw (a)--++(0:4.5)node[above right]{\normalsize{\bth{B}}};
+	\draw (c)--++(0:4.5)node[below right]{\normalsize{\bth{D}}};
+	
+	\path (a) ++(0:3.5)coordinate (m); 
+	\path (c) ++(0:3.5)coordinate (n); 
+	
+	\draw [line width=2pt] (m)node[above right]{\normalsize{\bth{M}}}--(n)node[below left]{\normalsize{\bth{N}}};
+	
+	\tkzInterLL(a,n)(c,m)
+	\tkzGetPoint{o}
+	
+	\draw [very thick,<-](o)--++(90:1.5)node[right]{\normalsize{\bth{\vec{B}}}};
+	
+	\end{tikzpicture}}	
+\choice
+{0,25 $m/s^2$}
+{\True 0,47 $m/s^2$}
+{0,36 $m/s^2$}
+{0,54 $m/s^2$}
+\loigiai{immini[thm]{
+Theo định luật II Newton, ta có:
+$\vec{P}+\vec{N}+\vec{F}+\vec{F}_{ms}=m\vec{a}$ (1)
+\begin{itemize}
+\item Chiếu (1) lên Oy:
+$N-P_y-F_y=0 \Rightarrow N=P_y+F_y=mg\cos\alpha+BI\ell \sin\alpha=\dfrac{\sqrt{3}}{2}+0,2\ (N)$
+\item Độ lớn lực ma sát trượt: $F_{mst}=\mu N=0,05\sqrt{3}+0,02\ (N)$
+\item Ta có: $P_x=mg\sin \alpha =0,5\ N$
+\item $F_x=\left({BI\ell}\right)\cos \alpha =0,2\sqrt{3}\ N$
+\item Vì $P_x>F_x+F_{mst}$ nên thanh MN sẽ trượt dọc theo thanh ray đi xuống, lực ma sát là ma sát trượt hướng dọc theo thanh ray đi lên.
+\item Chiếu (1) lên Ox:
+\begin{align*}
+&P_x-F_x-F_{ms}=ma\\
+\Rightarrow\ a=&\dfrac{mg\sin \alpha -\left({BI\ell}\right)\cos \alpha -\mu \left({mg\cos \alpha +BI\ell \sin \alpha}\right)}{m}\\
+=&\dfrac{0,5-0,2\sqrt{3}-0,1\left({0,5\sqrt{3}+0,2}\right)}{0,1}\approx 0,47\ m/s^2.
+\end{align*}
+\end{itemize}
+}
+{\begin{tikzpicture}
+\coordinate (c) at (0,0)node[below left]{\normalsize{\bth{C}}};
+\draw (c)--++(-30:5)coordinate (d);
+\draw (d)++(150:0.4) arc (150:180:0.4) ;
+\path (d) ++(165:0.8) node{\normalsize{\bth{\alpha}}};
+\draw [dashed](d)--++(180:3);
+\path (c) ++(-30:2)++(60:0.2)coordinate (i);
+\draw (i) circle(0.2);
+\draw (i) --++(45:0.2);
+\draw (i) --++(135:0.2);
+\draw (i) --++(225:0.2);
+\draw (i) --++(315:0.2);
+\draw [very thick,->](i)--++(60:0.86)node[right]{\normalsize{\bth{\vec{N}}}};
+\draw [very thick,->](i)--++(270:1)node[below left]{\normalsize{\bth{\vec{P}}}};
+\draw [very thick,->](i)--++(150:0.8)node[above]{\normalsize{\bth{\vec{F}_{ms}}}};
+\draw [very thick,->](i)--++(180:1.4)node[below]{\normalsize{\bth{\vec{F}}}};
+\path (c) ++(-30:5)++(90:3)coordinate (b);
+\draw [very thick,->](b)--++(270:1.4)node[left]{\normalsize{\bth{\vec{B}}}};
+\draw [dashed](i)--++(60:2);
+\draw [dashed](i)--++(240:2);
+\draw [dashed](i)--++(150:2);
+\draw [dashed](i)--++(330:2);\end{tikzpicture}}}
+\end{vidu}

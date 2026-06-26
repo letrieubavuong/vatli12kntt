@@ -1,0 +1,941 @@
+%mac
+
+
+
+
+
+
+
+
+
+
+
+\begin{vidu}
+\immini[thm]{Giả sử lực kéo của mỗi tàu kéo ở hình đều có độ lớn bằng 8000 N và góc giữa hai dây cáp bằng $30^\circ$.
+\begin{itemize}
+\item[a)] Tính độ lớn của hợp lực của hai lực kéo.
+\item[b)] Xác định phương và chiều của hợp lực.
+\item[c)] Nếu góc giữa hai dây cáp bằng $90^\circ$ thì hợp lực của hai lực kéo có phương, chiều và độ lớn như thế nào?
+\end{itemize}}{\begin{tikzpicture}
+\node[] at (0,0){\includegraphics[width=6cm]{images/tr56}};
+\end{tikzpicture}}	
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Biểu diễn các lực kéo của mỗi tàu và hợp lực tác dụng vào tàu chở hàng:
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (o) at (0,0);
+\draw[->,very thick,black](o)--++(0:3)coordinate(f2)node[below]{\normalsize{\bth{\vec{F}_1}}};
+\draw[->,very thick,black](o)--++(30:3)coordinate(f1)node[above]{\normalsize{\bth{\vec{F}_2}}};
+\draw[dashed,black](f1)--++(0:3)coordinate(f) node[right]{\normalsize{\bth{\vec{F}}}};
+\draw[black,dashed] (f)--(f2);
+\draw[->,very thick,black](o)--++(f);
+\draw[thick,black](o)--++(0:0.6) arc (0:30:0.6);
+\path(o)--++(20:1.2) node{\normalsize{\bth{30^\circ}}};
+\end{tikzpicture}
+\caption{}
+\label{fig:905}
+\end{figure}
+\item[a)] Độ lớn của hợp lực là:
+\begin{align*}
+&F=\sqrt{F_1^2+F_2^2+2F_1F_2\cos(F_1,F_2)}\\
+\Leftrightarrow&F=\sqrt{8000^2+8000^2+2.8000.8000.\cos 30^\circ}=15455\ N.
+\end{align*}
+\item[b)] Hợp lực có:
+\item[-] Chiều: hướng về phía trước
+\item[-] Phương: hợp với $\vec F_1$ góc $15^\circ$.
+\item[c)] Nếu góc giữa hai dây cáp bằng $90^\circ$ thì hợp lực có:
+\item[-] Phương: xiên
+\item[-] Chiều hợp với mỗi lực 1 gó $45^\circ$.
+\item[-] Độ lớn: $F=\sqrt{F_1^2+F_2^2}=8000\sqrt{2}\ N$.
+\end{itemize}
+}
+\haidong{7} \end{vidu}
+\begin{vidu}%SBT-KNTT-13.11
+\immini[thm]{Một vật chịu tác dụng đồng thời của bốn lực như hình vẽ. Độ lớn của các lực lần lượt là $F_1=10\ N$, $F_2=20\ N$, $F_3=22\ N$, $F_4=36\ N$. Xác định phương, chiều và độ lớn của hợp lực do các lực này tác dụng lên vật}{\begin{tikzpicture}[draw=Mapcolor]
+\tkzDefPoints{0/0/o, -1/0/d, 2.2/0/t,0/0.22/i}
+\tkzDefShiftPoint[o](40:3.6cm){n}
+\tkzDefShiftPoint[o](-140:2cm){b}
+\tkzDrawSegments[very thick,->](o,d o,t o,n o,b)
+\tkzLabelPoint[below](b){Bắc}
+\tkzLabelPoint[above](n){Nam}
+\tkzLabelPoint[left](d){Đông}
+\tkzLabelPoint[right](t){Tây}
+\tkzMarkRightAngle[size=0.5](t,o,n)
+\shade[ball color=Mapcolor] (i) circle (1.3ex);
+\tkzDrawPoints[size=3,fill=white](o)
+\end{tikzpicture}}	
+\haidong{6}
+\loigiai{
+\immini{\begin{itemize}
+\item $\vec F=\vec F_1+\vec F_2+\vec F_3+\vec F_4=\vec F_{13}+\vec F_{24}$.
+\item Vì $\vec F \uparrow \downarrow \vec F_3\Rightarrow F_{13}=\left|F_1-F_3\right|=12\ N$
+\item Và $\vec F_2 \uparrow \downarrow \vec F_4\Rightarrow F_{24}=\left|F_2-F_4\right|=16\ N\Rightarrow \vec F_{13}\perp F_{24}$.
+\item Độ lớn hợp lực là: $F=\sqrt{F_{13}^2+F_{24}^2}\sqrt{12^2+16^2}=20\ N$
+\end{itemize}}{\begin{tikzpicture}
+\tkzDefPoints{0/0/o, -1/0/d, 2.2/0/t,0/0.22/i, 1.2/0/c, 0/1.6/e, 1.2/1.6/f}
+\tkzDefShiftPoint[o](90:3.6cm){n}
+\tkzDefShiftPoint[o](-90:2cm){b}
+\tkzDrawSegments[very thick,->](o,d o,t o,n o,b o,c o,e o,f)
+\tkzDrawSegments[dashed](c,f e,f)
+\tkzLabelPoint[below](b){Bắc}
+\tkzLabelPoint[above](n){Nam}
+\tkzLabelPoint[left](d){Đông}
+\tkzLabelPoint[right](t){Tây}
+\tkzLabelPoint[right](b){$\vec{F}_2$}
+\tkzLabelPoint[right](n){$\vec{F}_4$}
+\tkzLabelPoint[below](d){$\vec{F}_1$}
+\tkzLabelPoint[below](t){$\vec{F}_3$}
+\tkzLabelPoint[below](c){$\vec{F}_{13}$}
+\tkzLabelPoint[left](e){$\vec{F}_{24}$}
+\tkzLabelPoint[above right](f){$\vec{F}$}
+\tkzMarkRightAngle[size=0.5](t,o,n)
+\tkzDrawPoints[size=3,fill=white](o)
+\end{tikzpicture}}		
+}
+\haidong{7} \end{vidu}
+\begin{vidu}%SBT KNTT 17.5
+Tính trọng lượng của một nhà du hành vũ trụ có khối lượng $80\ kg$ khi người đó ở	
+\begin{itemize}
+\item[a)] trên Trái Đất (lấy $g_{\ct{TĐ}}=9,80\ m/s^2$) 
+\item[b)] trên Mặt Trăng (lấy $g_{\ct{MT}}=1,67\ m/s^2$)
+\item[c)] trên Kim Tinh (lấy $g_{\ct{KT}}=8,70\ m/s^2$)
+\end{itemize}
+\haidong{6}\loigiai{
+\begin{itemize}
+\item[a)] 784 N.
+\item[b)] 133,6 N 
+\item[c)] 696 N 
+\end{itemize}
+}
+\haidong{10} \end{vidu}
+\begin{vidu}%SBT KNTT 17.6
+Đo trọng lượng của một vật trên Trái Đất, ta được $P_1=19,6\ N$. 
+\begin{enumerate}[label=\alph*)]
+\item Tính khối lượng của vật, biết gia tốc rơi tự do của vật trên mặt đất là $g_1=9,8\ m/s^2$. 
+\item Nếu đem vật lên Mặt Trăng có $g_2=1,67\ m/s^2$ và đo trọng lượng của nó thì được bao nhiêu?
+\end{enumerate}
+\haidong{5}\loigiai{
+\begin{itemize}
+\item Ta có: $P_1=mg_1\Rightarrow m=\dfrac{P_1}{g_1}=\dfrac{19,6}{9,8}=2\ kg$.
+\item $P_2=mg_2=2.1,67=3,34\ N$
+\end{itemize}
+}
+\haidong{10} \end{vidu}
+%\loai{Tổng hợp hai lực cùng chiều - Tìm độ lớn hợp lực}
+\begin{vidu}%[1P2-1.2Y][Loai1]
+Cho hai lực đồng quy có độ lớn $F_1 = F_2 = 20\ N$. Độ lớn hợp lực của hai lực khi chúng hợp với nhau một góc $0^\circ$ là
+\choice
+{\True $40\ N$}
+{$20\ N$}
+{$20\sqrt{3}\ N$}
+{$0\ N$}
+\haidong{2}
+\loigiai{
+Với $\alpha = 0^\circ$ thì $\vec{F}_1\uparrow \uparrow \vec{F}_2 \Rightarrow F_{12} = F_1 + F_2 = 20 + 20 = 40$ N.
+}
+\haidong{7} \end{vidu}
+%\loai{Tổng hợp hai lực ngược chiều - Tìm độ lớn hợp lực}
+\begin{vidu}
+\immini[thm]{Một ô tô chịu một lực $F_1=400\ N$ hướng về phía trước và một lực $F_2=300\ N$ hướng về phía sau. Hỏi hợp lực tác dụng lên ô tô có độ lớn bằng bao nhiêu và hướng về phía nào?}{\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzInit[ymin=-1,ymax=1.5,xmin=-2.5,xmax=3.5]\tkzClip
+\tkzDefPoints{0/0.25/o}
+\node[] (russell) at (0,0.3){\includegraphics[width=3cm]{images/Car1}};
+%			\node at (0,-0.5){Hình 13.6};
+\draw[very thick,Mapcolor,->](o)--++(0:3)node[above,black]{$\vec{F}_1$};
+\draw[very thick,Mapcolor,->](o)--++(180:2)node[above,black]{$\vec{F}_2$};
+\tkzDrawPoints[size=3,fill=white](o)
+\end{tikzpicture}}
+\haidong{3}
+\loigiai{
+\begin{itemize}
+\item Ta thấy: $\vec F_1 \uparrow \downarrow \vec F_2\Rightarrow F=\left|F_1-F_2\right|=\left|400-300\right|=100\ N$.
+\item Và có chiều hướng về phía trước.
+\end{itemize}}
+\haidong{7} \end{vidu}
+
+
+%\loai{Tổng hợp hai lực vuông góc - Tìm độ lớn lực thành phần}
+\begin{vidu}%[1P2-1.2K][Loai1]
+Cho hai lực  $\vec{F}_1$, $\vec{F}_2$ là hai lực vuông góc nhau. Biết độ lớn của hợp lực $F = 50\ N$  và $F_1 = 40\ N$ thì độ lớn của $F_2$ là
+\choice
+{\True $30\ N$}
+{$45\ N$}
+{$10\ N$}
+{$90\ N$}
+\haidong{4}
+\loigiai{
+Độ lớn lực $F_2$ là: $F_2 = \sqrt {F^2 - F_1^2}  = \sqrt{50^2-40^2}=30$ N.
+}
+\haidong{7} \end{vidu}
+%\loai{Tổng hợp hai lực hợp với nhau góc $\alpha$ bất kì - Tìm góc}
+\begin{vidu} %[1P2-1.2B][Loai1]
+Cho hai lực đồng quy có cùng độ lớn $10\ N$. Góc giữa hai lực bằng bao nhiêu thì hợp lực cũng có độ lớn bằng $10\ N$?
+\choice
+{$90^\circ$}
+{\True $120^\circ$}
+{$60^\circ$}
+{$0^\circ$}
+\haidong{3}
+\loigiai{      
+\begin{itemize}
+\item Ta có: $F_1 = 10$ N, $F = 10$ N, $F_2 = ?$
+\item Gọi $\alpha$ là góc hợp bởi hai lực $F_1$ và $F_2$:
+\begin{align*}
+F = \sqrt {F_1^2 + F_2^2 + 2.F_1 .F_2 \cos \alpha}\Rightarrow F_2^2 + 2.F_1 .F_2 \cos \alpha = 0  \Rightarrow \cos \alpha = - \dfrac{1}{2} \Rightarrow  \alpha = 120^\circ.
+\end{align*}
+\end{itemize}
+}
+\haidong{7} \end{vidu}
+\begin{vidu}
+Cho hai lực đồng quy có độ lớn $F_1=6\ N$ và $F_2=8\ N$. Nếu hợp lực có độ lớn $F=10\ N$ thì góc giữa hai lực $\vec F_1$ và $\vec F_2$ bằng bao nhiêu? Vẽ hình minh hoạ.
+\haidong{4}
+\loigiai{
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (o) at (0,0);
+\draw[->,very thick,black](o)--++(0:1.5)coordinate(f2)node[right]{\normalsize{\bth{\vec{F}_1}}};
+\draw[->,very thick,black](o)--++(90:3)coordinate(f1)node[left]{\normalsize{\bth{\vec{F}_2}}};
+\draw[dashed,black](f1)--++(0:1.5)coordinate(f) node[right]{\normalsize{\bth{\vec{F}}}};
+\draw[black,dashed] (f)--(f2);
+\draw[->,very thick,black](o)--++(f);
+\end{tikzpicture}
+%\caption{}
+\label{fig:903}
+\end{figure}
+\begin{itemize}
+\item Ta thấy: $10^2=\sqrt{6^2+8^2}\Rightarrow F^2=\sqrt{F_1^2+F_2^2}$
+\item Suy ra: $\vec F_1$ vuông góc $\vec F_2$.
+\end{itemize}}
+\haidong{7} \end{vidu}
+
+
+
+%\loai{Tổng hợp ba lực}
+\begin{vidu} %[1P2-1.2K][Loai1] 
+Cho ba lực đồng quy cùng nằm trong một mặt phẳng, có độ lớn bằng nhau và từng đôi một làm thành góc $120^\circ$. Độ lớn hợp lực của chúng là
+\choice
+{$10\ N$}
+{\True $0\ N$}
+{$20\ N$}
+{chưa đủ dữ kiện để kết luận}
+\haidong{5}
+\loigiai{
+\immini[thm]{\begin{itemize}
+\item Ta có: $F_1=F_2=F_3=a$
+\item Hợp lực: $\vec{F}=\vec{F}_1+\vec{F}_2+\vec{F}_2=\vec{F}_{12}+\vec{F}_{3}$
+\item Lại có: 
+$
+\begin{cases}
+{F}_{12}=\sqrt{F_1^2+F_2^2+2F_1F_2\cos120^\circ}=a\\
+\cos \left(\widehat{{F}_{12}OF_2}\right)=\dfrac{F_1^2-\left(F_2^2+F_{12}^2\right)}{-2F_2{F}_{12}}=0,5\\
+\end{cases}$
+$\Rightarrow \widehat{{F}_{12}OF_2}={60}^{\circ}\Rightarrow \widehat{{F}_{12}OF_{3}}={180}^{\circ}$
+\item Do đó: $\vec{{F}_{12}}\uparrow \downarrow \vec{{F}_{3}}$ và cùng độ lớn nên $\vec{F}_{12}+\vec{{F}_{3}}=0\Rightarrow \vec{F_1}+\vec{F_2}+\vec{{F}_{3}}=\vec{0}$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 2/0/a, -0.5/-1/i}
+\tkzDefShiftPoint[o](120:2){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,d)
+\tkzDrawSegments[very thick,red,->](o,c)
+\tkzDrawSegments[dashed](a,c b,c)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzMarkAngles[size=0.4cm](a,o,b)
+\tkzLabelAngle[pos=0.9](c,o,b){$120^{\circ}$}
+\tkzLabelPoint[below](a){$\vec{F}_1$}
+\tkzLabelPoint[above](b){$\vec{F}_2$}
+\tkzLabelPoint[above right](c){$\vec{F}_{12}$}
+\tkzLabelPoint[below left](d){$\vec{F}$}
+\end{tikzpicture}}
+}
+\haidong{7} \end{vidu}
+\begin{vidu}%[1P2K1-2][Loai1]
+\immini[thm]{Cho ba lực đồng quy (tại điểm O), đồng phẳng. $\vec{F}_1,\vec{F}_2,\vec{F}_3$ lần lượt hợp với trục Ox những góc $0^\circ,\ 60^\circ,\ 120^\circ$ và có độ lớn tương ứng là $F_1=F_3=2F_2=10\ N$ như trên hình vẽ. Độ lớn hợp lực của ba lực trên là
+\haicot
+{$10\ N$}
+{\True $15\ N$}
+{$20\ N$}
+{$25\ N$}
+}{\begin{tikzpicture}[scale=0.6,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, 3/0/a, 4/0/x}
+\tkzDefShiftPoint[o](60:1.5){b}
+\tkzDefShiftPoint[o](120:3){c}
+\tkzDrawSegments[very thick,Mapcolor,->](o,a o,b o,c)
+\tkzDrawSegments[->](o,x)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzLabelPoint[below](a){$\vec{F}_1$}
+\tkzLabelPoint[above left](b){$\vec{F}_2$}
+\tkzLabelPoint[left](c){$\vec{F}_3$}
+\tkzLabelPoint[below](x){$x$}
+\tkzLabelPoint[below](o){$O$}
+\end{tikzpicture}}
+\haidong{6}
+\loigiai{
+\immini{\begin{itemize}
+\item Gọi $\vec{F}_{13}$ là hợp của 2 lực $\vec{F}_1,\vec{F}_3$. 
+\item Từ đề suy ra góc tạo bởi hai lực $\vec{F}_1,\vec{F}_3$ là $\alpha = 120^\circ$
+\item Độ lớn của hợp 2 lực $\vec{F}_1,\vec{F}_3$ là:\\ 
+$F_{13}=\sqrt{F_1^2+F_3^2+2F_1F_3\cos \alpha }=10N$
+\item Gọi $\beta$ là góc giữa hợp lực $\vec{F}_{13}$ và $\vec{F}_1$. 
+\item Theo định lý hàm cos ta có:\\
+$\cos \beta =\dfrac{F_{13}^2+F_1^2-F_3^2}{2F_{13}F_1}=\dfrac{1}{2}\Rightarrow \beta =60^\circ C$
+\item Vậy $\vec{F}_2$ và $\vec{F}_{13}$ cùng tạo với $\vec{F}_1$ một góc $\beta =60^\circ C$ $\Rightarrow \vec{F}_2$ và $\vec{F}_{13}$ cùng chiều nhau
+\end{itemize}}{\begin{tikzpicture}[scale=0.9,thick,>=stealth']
+\tkzDefPoints{0/0/o, 3/0/a, 4/0/x}
+\tkzDefShiftPoint[o](60:1.5){b}
+\tkzDefShiftPoint[o](60:3){d}
+\tkzDefShiftPoint[o](60:4.5){e}
+\tkzDefShiftPoint[o](120:3){c}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,c)
+\tkzDrawSegments[very thick,blue,->](o,d o,e)
+\tkzDrawSegments[dashed](a,d c,d)
+\tkzDrawSegments[->](o,x)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzLabelPoint[below](a){$\vec{F}_1$}
+\tkzLabelPoint[above left](b){$\vec{F}_2$}
+\tkzLabelPoint[left](c){$\vec{F}_3$}
+\tkzLabelPoint[above left](d){$\vec{F}_{13}$}
+\tkzLabelPoint[above left](e){$\vec{F}$}
+\tkzLabelPoint[below](x){$x$}
+\tkzLabelPoint[below](o){$O$}
+\end{tikzpicture}}
+\begin{itemize}
+\item Gọi $\vec{F}$là hợp của 2 lực $\vec{F}_{13}$ và $\vec{F}_2$
+\item Vì $\vec{F}_2$ và $\vec{F}_{13}$cùng chiều nhau $\Rightarrow F = F_{13} + F_2 = 10 + 5 = 15$ N
+\item Vậy $\vec{F}$ có phương và chiều là phương và chiều của $\vec{F}_2$ và có độ lớn là $F = 15$ N.
+\end{itemize}
+}
+\haidong{7} \end{vidu}
+
+%\loai{Tổng hợp 4 lực}
+
+
+\begin{vidu}%SBT KNTT III.4
+Chất điểm chịu tác dụng của lực có độ lớn là $F_1$ và $F_2=6\ N$. Biết hai lực này hợp với nhau góc $150^\circ$ và hợp lực của chúng có giá trị nhỏ nhất. Giá trị của $F_1$ là
+\choice
+{$2\ N$}
+{\True $3\sqrt{3}\ N$}
+{$3\ N$}
+{$5\ N$}
+\haidong{6}
+\loigiai{
+\begin{itemize}
+\item Ta có: $F^2=F_1^2+F_2^2+2F_1F_2\cos 150^\circ \Leftrightarrow F_1^2-6\sqrt{3}F_1+36-F^2=0\quad (*)$
+\item $(*)$ là phương trình bậc 2 đối với $F_1$ có: $\Delta =\left(6\sqrt{3}\right)^2-4\left(32-F^2\right)$
+\item Để phương trình có nghiệm thì: $\Delta >0\Leftrightarrow \left(6\sqrt{3}\right)^2-4.\left(32-F^2\right)\geq 0\Rightarrow F_{\min}=\sqrt{5}\ N$
+\item Dấu "=" xảy ra khi $F_1=3\sqrt{3}\ N$.
+\end{itemize}
+}
+\haidong{7} \end{vidu}
+
+
+
+
+
+
+
+
+
+
+
+
+%mac
+%\loai{Tìm góc}
+\begin{vidu}%[1P2-1.3K][Loai1]
+Một chất điểm đứng yên dưới tác dụng của ba lực $6\ N$, $8\ N$ và $10\ N$. Góc giữa hai lực $6\ N$ và $8\ N$ bằng
+\choice
+{$30^\circ$}
+{$60^\circ$}
+{$45^\circ$}
+{\True $90^\circ$}
+\haidong{10}
+\loigiai{
+Do ba số 6, 8, 10 là bộ ba số Pitago  $\Rightarrow$ góc giữa hai lực 6 N và 8 N là $90^\circ$.
+}
+\end{vidu}
+%\loai{Bỏ 1 lực}
+\begin{vidu}%[1P2-1.3B][Loai1]
+Một chất điểm đứng yên dưới tác dụng của ba lực $4\ N$, $5\ N$ và $6\ N$. Nếu bỏ đi lực $6\ N$ thì hợp lực của hai lực còn lại bằng
+\choice
+{$9\ N$}
+{$1\ N$}
+{\True $6\ N$}
+{Chưa đủ dữ kiện để xác định}
+\haidong{10}
+\loigiai{
+Ta có ba lực 4 N, 5 N, 6 N cân bằng nhau do đó hợp lực của hai lực 4 N và 5 N có độ lớn là 6 N (cùng phương nhưng ngược chiều với lực này).
+}
+\end{vidu}
+%\newpage
+%\loai{Tìm độ lớn của 2 lực}
+\begin{vidu}%[1P2-1.3B][Loai1]
+\immini[thm]{Một vật cân bằng chịu tác dụng của ba lực $\vec F_1$, $\vec F_2$ và $\vec F_3$ như hình. Cho biết  $F_3 = 40\ N$. Độ lớn của các lực $F_1$, $F_2$  là
+\motcot
+{\True $F_1= 23\ N$, $F_2 = 46\ N$}
+{$F_1= 20\ N$, $F_2 = 60\ N$}
+{$F_1= 40\ N$, $F_2 = 40\ N$}
+{$F_1= 25\ N$, $F_2 = 45\ N$}}{\begin{tikzpicture}[scale=0.5,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, 1.5/0/a, -0.5/-1/i}
+\tkzDefShiftPoint[o](120:3){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,Mapcolor,->](o,a o,b o,d)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzMarkAngles[size=0.4cm](a,o,b)
+\tkzLabelAngle[pos=1](a,o,b){$120^{\circ}$}
+\tkzLabelPoint[below](a){$\vec{F}_1$}
+\tkzLabelPoint[above](b){$\vec{F}_2$}
+\tkzLabelPoint[below left](d){$\vec{F}_{3}$}
+\end{tikzpicture}}
+\haidong{10}
+\loigiai{
+\immini{\begin{itemize}
+\item Vật cân bằng $\Rightarrow F_{12} = F_3 = 40$ N
+\item Từ hình vẽ, áp dụng định lý sin, cos, tan cho các cạnh trong tam giác vuông, ta có:
+\begin{align*}
+\begin{cases}
+\cos {30^\circ} = \dfrac{F_{12}}{F_2} \Rightarrow F_2 = \dfrac{F_{12}}{\cos {30^\circ}} = \dfrac{40}{\cos {30^\circ}} = 46\ N.\\
+\tan {30^\circ} = \dfrac{F_1}{F_{12}} \Rightarrow F_1 = {F_{12}}\tan {30^\circ} = 40\tan {30^\circ} = 23\ N.
+\end{cases}
+\end{align*}
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 1.5/0/a, -0.5/-1/i}
+\tkzDefShiftPoint[o](-90:2.6){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,d)
+\tkzDrawSegments[very thick,red,->](o,c)
+\tkzDrawSegments[dashed](a,c b,c)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzMarkAngles[size=0.4cm](a,o,d)
+\tkzLabelAngle[pos=0.9](a,o,d){$120^{\circ}$}
+\tkzLabelPoint[above](a){$\vec{F}_1$}
+\tkzLabelPoint[left](b){$\vec{F}_3$}
+\tkzLabelPoint[above right](c){$\vec{F}_{13}$}
+\tkzLabelPoint[left](d){$\vec{F}_2$}
+\end{tikzpicture}}
+}
+\end{vidu}
+
+%\loai{Tổng hợp}
+\begin{vidu}%[1P2-1.3B][Loai1]
+\immini[thm]{Một vật chịu tác dụng của hai lực $\vec{F}_1$ và $\vec{F}_2$ vuông góc với nhau như hình vẽ. Biết 
+$F_1=5\ N$, $F_2=12\ N$. Lực $\vec{F}_3$ tác dụng lên vật để vật cân bằng có
+\choice
+{\True độ lớn $F_3=13\ N$, hướng chếch lên hợp với $\vec{F}_1$ góc $112^{\circ}37'$}
+{độ lớn $F_3=12\ N$, hướng chếch lên hợp với $\vec{F}_1$ góc $130^{\circ}37'$}
+{độ lớn $F_3=15\ N$, hướng chếch lên hợp với $\vec{F}_1$ góc $145^{\circ}37'$}
+{độ lớn $F_3=20\ N$, hướng chếch lên hợp với $\vec{F}_1$ góc $110^{\circ}37'$}
+}{\begin{tikzpicture}[scale=0.7,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, -1.4/0/a}
+\tkzDefShiftPoint[o](-90:3){b}
+\tkzDrawSegments[very thick,Mapcolor,->](o,a o,b)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzLabelPoint[above](a){$\vec{F}_1$}
+\tkzLabelPoint[right](b){$\vec{F}_2$}
+\end{tikzpicture}} 
+\haidong{16}
+\loigiai{
+\immini{\begin{itemize}
+\item Gọi ${\vec{F}}_{12}$ là hợp lực của 2 lực $\vec{F}_1$ và $\vec{F}_2$.
+\item Ta có: 
+\begin{align*}
+{\vec{F}}_{12}=\vec{F}_1+\vec{F}_2\xrightarrow{\vec{F}_1\bot \vec{F}_2}{F}_{12}=\sqrt{F_{1}^{2}+F_{2}^{2}}=13\ N.
+\end{align*}
+\item Điều kiện để vật cân bằng là lực $\vec{F}_3$ cân bằng với hợp lực $\vec{F}_{12}$.
+\item Do đó ta có: $F_3={F}_{12}=13\ N$.
+\item Gọi $\alpha$ là góc tạo bởi hợp lực $\vec{F}_{12}$ và phương ngang. 
+\item Từ hình ta có: $\tan \alpha =\dfrac{F_2}{F_1}=\dfrac{12}{5}\Rightarrow \alpha ={67}^{\circ}{23}'$.\\
+$\Rightarrow$ $\vec{F}_3$ hợp với $\vec{F}_1$ một góc ${112}^{\circ}{37}'$.
+\end{itemize}}{\begin{tikzpicture}[scale=0.7,thick,>=stealth']
+\tkzDefPoints{0/0/o, -1.4/0/a}
+\tkzDefShiftPoint[o](-90:3){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,d)
+\tkzDrawSegments[very thick,red,->](o,c)
+\tkzDrawSegments[dashed](a,c b,c)
+\tkzDrawPoints[size=3,fill=black](o)
+\tkzMarkAngles[size=0.4cm](a,o,c)
+\tkzLabelAngle[pos=-0.7](a,o,c){$\alpha$}
+\tkzLabelPoint[above](a){$\vec{F}_1$}
+\tkzLabelPoint[right](b){$\vec{F}_2$}
+\tkzLabelPoint[below left](c){$\vec{F}_{12}$}
+\tkzLabelPoint[above right](d){$\vec{F}_3$}
+\end{tikzpicture}}
+}
+\end{vidu}
+\begin{vidu}%[1P2B1-3][Loai1]
+Một vật được cân bằng dưới tác dụng của ba lực, hai lực có độ lớn $6\ N $ và $4\ N $. Lực thứ ba \textbf{không} thể có độ lớn bằng
+\choice
+{$2\ N $}
+{$3,5\ N $}
+{$10\ N $}
+{\True $15\ N $}
+\haidong{8}
+\loigiai{
+Để vật cân bằng thì hợp của hai lực còn lại phải cân bằng với lực đầu tiên nên lực đầu tiên phải có giá trị nằm trong khoảng từ 2 N đến 10 N.
+}
+\end{vidu}
+\begin{vidu}
+Ba lực $F_1=3\ N$, $F_2=4\ N$ và $F_3$ tác dụng đồng thời lên một chất điểm. Giá trị ${F}_3$ \textbf{không} thể làm cho chất điểm đứng yên là
+\choice
+{$7\ N$}
+{$5\ N$}
+{$1\ N$}
+{\True $9\ N$}
+\haidong{10}
+\loigiai{\begin{itemize}
+\item Chất điểm đứng yên khi $\overrightarrow{{F}}_1+\overrightarrow{{F}}_2+\overrightarrow{{F}}_3=\overrightarrow{0}$ hay $\overrightarrow{{F}}_3=-\left(\overrightarrow{{F}}_1+\overrightarrow{{F}}_2\right)$
+\item Độ lớn của ${F}_3$ bằng độ lớn của hợp lực ${F}_1, {F}_2$ thỏa mãn. $\left|{F}_1-{F}_2\right| \leq {F}_3 \leq {F}_1+{F}_2$
+\item Chọn D
+\end{itemize}
+} \end{vidu}
+\begin{vidu}%SBT-KNTT-13.10
+\immini[thm]{Một con nhện đang treo mình dưới một sợi tơ theo phương thẳng đứng thì bị một cơn gió thổi theo phương ngang làm dây treo lệch đi so với phương thẳng đứng một góc $30^\circ$. Biết trọng lượng của con nhện là $P=0,1\ N$. Độ lớn của lực mà gió tác dụng lên con nhện ở vị trí cân bằng là
+\choice
+{$0,078\ N$}
+{\True $0,058\ N$}
+{$0,046\ N$}
+{$0,098\ N$}}{\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/i, 0/0.5/m, 0/-4/n', -0.1/-4/p, -0.1/0.5/q}
+\tkzDefShiftPoint[i](-60:3){o}
+\tkzDefPointBy[projection=onto m--n'](o)\tkzGetPoint{h}
+\tkzInterLC(i,o)(o,h)\tkzGetPoints{o1}{o2}
+\fill[pattern=north east lines](m)--(n')--(p)--(q);
+\tkzDrawSegments(i,o1 m,n')
+\tkzDrawSegments[](o,o1)
+\tkzMarkAngles[size=0.8cm](h,i,o)
+\tkzLabelAngles[pos=1](h,i,o){$30^\circ$}
+\tkzDefPointBy[homothety=center o ratio 0.6](i)\tkzGetPoint{t}
+\tkzDefPointBy[homothety=center o ratio -0.6](h)\tkzGetPoint{n}
+\tkzDefPointBy[translation=from o to t](n)\tkzGetPoint{p'}
+\tkzDefPointBy[symmetry=center o](p')\tkzGetPoint{p}
+\tkzDefPointBy[symmetry=center o](t)\tkzGetPoint{t'}
+\tkzDrawSegments[very thick, Mapcolor,->](o,n o,p)
+\tkzDrawPoints[size=3,fill=white](o)
+\tkzLabelPoint[right](n){$\vec{F}$}
+\tkzLabelPoint[left](p){$\vec{P}$}
+\end{tikzpicture}}	
+\haidong{6}
+\loigiai{
+\immini{\begin{itemize}
+\item Khi con nhện và sợi tơ cân bằng như hình.
+\item Ta có: $\tan 30^\circ=\dfrac{F}{P}\Rightarrow F=P\tan 30^\circ =\dfrac{0,1}{\sqrt{3}}\approx 0,058\ N$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/i, 0/0.5/m, 0/-4/n', -0.1/-4/p, -0.1/0.5/q}
+\tkzDefShiftPoint[i](-60:3){o}
+\tkzDefPointBy[projection=onto m--n'](o)\tkzGetPoint{h}
+\tkzInterLC(i,o)(o,h)\tkzGetPoints{o1}{o2}
+\fill[pattern=north east lines](m)--(n')--(p)--(q);
+\tkzDrawSegments(i,o1 m,n')
+\tkzDrawSegments[dashed,thin](o,o1)
+\tkzMarkAngles[size=0.8cm](h,i,o)
+\tkzLabelAngles[pos=1](h,i,o){$30^\circ$}
+\tkzDefPointBy[homothety=center o ratio 0.6](i)\tkzGetPoint{t}
+\tkzDefPointBy[homothety=center o ratio -0.6](h)\tkzGetPoint{n}
+\tkzDefPointBy[translation=from o to t](n)\tkzGetPoint{p'}
+\tkzDefPointBy[symmetry=center o](p')\tkzGetPoint{p}
+\tkzDefPointBy[symmetry=center o](t)\tkzGetPoint{t'}
+\tkzDrawSegments[very thick, blue,->](o,t o,n o,p)
+\tkzDrawSegments[very thick, red,->](o,t') 
+\tkzDrawSegments[dashed,thin](n,t' p,t')
+\tkzDrawPoints[size=3,fill=white](o)
+\tkzLabelPoint[above right](t){$\vec{T}$}
+\tkzLabelPoint[right](t'){$-\vec{T}$}
+\tkzLabelPoint[right](n){$\vec{F}$}
+\tkzLabelPoint[left](p){$\vec{P}$}
+\tkzMarkAngles[size=0.8cm](p,o,t')
+\tkzLabelAngles[pos=1](p,o,t'){$30^\circ$}
+\end{tikzpicture}}	
+}
+\end{vidu}
+\begin{vidu}%SBT-KNTT-13.12
+\immini[thm]{Một cái đèn được treo vào hai sợi dây giống nhau như hình vẽ. Biết trọng lượng của đèn là $25\ N$, hai dây làm thành góc $60^\circ$. Lực căng của dây là
+\choice
+{$12,4\ N$}
+{$15,6\ N$}
+{$8,9\ N$}
+{\True $14,4\ N$}}{\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/a}
+\tkzDefShiftPoint[a](-60:3){b}
+\tkzDefShiftPoint[b](60:3){c}
+\tkzDefShiftPoint[b](-90:1){m}
+\fill[pattern=north east lines] (-0.5,0) rectangle (3.5,0.1);
+\draw (-0.5,0)--(3.5,0);
+\tkzDrawSegments(a,b b,c b,m)
+\tkzDrawPoints[size=3,fill=white](b)
+\draw[fill=gray!30] (m) ellipse (0.2cm and 0.3cm);
+\node  at  (1.5,-3.25)  [shape=rectangle,draw=black,fill=Mapcolor!30,minimum height=0.05cm,minimum width=0.1cm]  {};
+\tkzMarkAngles[size=0.4cm](c,b,a)
+\tkzLabelAngles[pos=0.7](c,b,a){$60^\circ$}
+\end{tikzpicture}}	
+\haidong{6}
+\loigiai{
+\immini{\begin{itemize}
+\item Khi đèn và dây treo cân bằng, các lực tác dụng lên đèn được biểu diễn như hình vẽ.
+\item Ta có: $\vec T_1+\vec T_2=-\vec P$
+\item Suy ra: $T=\dfrac{P}{\sqrt 3}=\dfrac{25}{\sqrt{3}}\approx 14,4\ N$,
+\end{itemize}}{}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o}
+\tkzDefShiftPoint[o](60:1.5){a}
+\tkzDefShiftPoint[o](120:1.5){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,d)
+\tkzDrawSegments[very thick,red,->](o,c)
+\tkzDrawSegments[dashed](a,c b,c)
+\tkzDrawPoints[size=3,fill=white](o)
+\tkzLabelPoint[right](a){$\vec{T}_1$}
+\tkzLabelPoint[left](b){$\vec{T}_2$}
+\tkzLabelPoint[above right](c){$-\vec{P}$}
+\tkzLabelPoint[right](d){$\vec{P}$}
+\end{tikzpicture}}		
+}
+\end{vidu}
+
+
+
+%mac
+
+
+\begin{vidu}%SBT KNTT 17.7
+Biết khối lượng của một hòn đá là $2\ kg$, gia tốc rơi tự do là $9,8\ m/s^2$. Lực hút của hòn đá lên Trái Đất là
+\choice
+{$2\ N$}
+{$9,8\ N$}
+{\True $19,6\ N$}
+{$4,9\ N$}
+\loigiai{
+\begin{itemize}
+\item Theo định luật 3 Newton, lực hút của hòn đá lên Trái Đất bằng lực Trái Đất hút hòn đá và bằng trọng lượng của vật: $P=mg=19,6\ N$.
+\end{itemize}
+}
+\haidong{10} \end{vidu}
+
+\begin{vidu}
+Tại cùng một nơi trên Trái Đất, ba vật có khối lượng lần lượt là $m_1$, $m_2$, $m_3$ có trọng lượng tương ứng là $P_1=60 \ N$, $P_2=40 \ N$ và $P_3$. Nếu khối lượng $m_3=2 m_1+3 m_2$ thì trọng lượng $P_3$ là
+\choice
+{$50 \ N$}
+{$100 \ N$}
+{\True $240 \ N$}
+{$20 \ N$}
+\loigiai{
+
+Chọn C
+
+$P_3=2 P_1+3 P_2=2.60+3.40=240 \ N$
+
+}
+\haidong{10} \end{vidu}
+
+\begin{vidu}%[1P3-1.2B][Loai1]
+\immini[thm]{
+Cho vật nặng có khối lượng $m=200\  g$ được treo vào một đầu dây treo như hình vẽ. Lấy $g=10\  m/s^2$. Độ lớn lực căng dây treo là
+\choice
+{$T=2000\  N$}
+{$T=200\  N$}
+{\True $T=2\  N$}
+{$T=0,2\  N$}
+}
+{\begin{tikzpicture}[draw=Mapcolor]
+\fill[pattern=north east lines] (-0.5,0)rectangle(0.5,0.1);
+\draw[] (-0.5,0)--(0.5,0);
+\draw[] (0,0)--(0,-2);
+\shade[ball color=Mapcolor] (0,-2) circle (1.3ex);
+\end{tikzpicture}
+}
+\haidong{4}\loigiai{
+\begin{itemize}
+\item Có 2 lực tác dụng lên vật là: trọng lực $\vec{P}$ và lực căng dây $\vec{T}$.
+\item Khi vật cân bằng thì $\vec{P}+\vec{T}=\vec{0}\Rightarrow \begin{cases}\vec{P}\ \text{ngược chiều}\ \vec{T}.\\ T=P=mg=0,2.10=2\ N. \end{cases}$
+\end{itemize}
+}
+\haidong{10} \end{vidu}
+
+\begin{vidu}%[1P3-2.2K][Loai1]
+\immini[thm]{Cho vật có trọng lượng $P = 20\ N$ được treo vào vòng nhẫn $O$ (coi là chất điểm). Vòng nhẫn dược giữ cân bằng bởi hai dây $OA$ và $OB$ như hình vẽ, $OA$ theo phương ngang và hợp với $OB$ góc $120^\circ$. Tìm lực căng dây $OA$, $OB$.
+\choice
+{\True $T_A=\dfrac{20}{\sqrt{3}}\ N$; $T_B=\dfrac{40}{\sqrt{3}}\ N$}
+{$T_A=\dfrac{20}{\sqrt{3}}\ N$; $T_B=\dfrac{30}{\sqrt{3}}\ N$}
+{$T_A=\dfrac{25}{\sqrt{3}}\ N$; $T_B=\dfrac{40}{\sqrt{3}}\ N$}
+{$T_A=\dfrac{28}{\sqrt{2}}\ N$; $T_B=\dfrac{60}{\sqrt{3}}\ N$}
+}
+{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\draw (-0.5,0)-- (3.5,0)-- (3.5,-4);
+\fill[pattern=north east lines] (-0.5,0)-- (3.5,0)-- (3.5,-4)-- (3.75,-4)-- (3.75,0.25)-- (-0.5,0.25);
+\draw (1.5,-2)[very thick,fill=white] circle(0.11) coordinate (o)node[black, left=5pt]{\normalsize{O}};
+\draw (o)--++(0:2) coordinate (a)node[right=6pt]{\normalsize{A}};
+\draw (o)--++(120:2.3) coordinate (b) node[below left]{\normalsize{B}};
+\draw (o)--++(270:1.5) coordinate (m);
+\shade[ball color=Mapcolor] (m) circle (1.5ex);
+\node[white] at (m) {\normalsize{m}};
+\fill (1.5,-2)[white] circle(0.11);
+\draw (o)++(0:0.25)--++(270:0.25)--++(180:0.25);
+\draw (o)++(0:0.4) arc (0:120:0.4) ;
+\path (o) ++(60:0.7) node{\normalsize{\bth{120^{\circ}}}};
+\end{tikzpicture}\end{hinhanh}}
+
+\haidong{10}\loigiai{
+\immini[thm]{
+\begin{itemize}
+\item Vòng nhẫn O chịu tác dụng của các lực: trọng lực $\vec{P}$, lực căng $\vec{T}_A$, lực căng $\vec{T}_B$.
+\item Điều kiện cân bằng: $\vec{P}+\vec{T_A}+\vec{T_B}=\vec{0}$\\ 
+\item Theo dữ kiện đề cho ta có: $P = T = 20 \ N$.\\
+\item Theo hình: 
+\begin{itemize}
+\item $T_A=T\tan 30^\circ=\dfrac{20}{\sqrt{3}}\ N$.
+\item $T_B=\dfrac{T}{\cos30^\circ}=\dfrac{40}{\sqrt{3}}\ N$.
+\end{itemize}
+\end{itemize}} 
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\draw (-0.5,0)-- (3.5,0)-- (3.5,-4);
+\fill[pattern=north east lines] (-0.5,0)-- (3.5,0)-- (3.5,-4)-- (3.75,-4)-- (3.75,0.25)-- (-0.5,0.25);
+\draw (1.5,-2)[very thick,fill=white] circle(0.11) coordinate (o)node[black, left=5pt]{\normalsize{O}};
+\draw (o)--++(0:2) coordinate (a)node[right=6pt]{\normalsize{A}};
+\draw (o)--++(120:2.3) coordinate (b) node[below left]{\normalsize{B}};
+\draw (o)--++(270:2) coordinate (m);
+\shade[ball color=black] (m) circle (1.3ex);
+\node[white] at (m) {\normalsize{m}};
+\fill (1.5,-2)[white] circle(0.11);
+\draw (o)++(0:0.25)--++(270:0.25)--++(180:0.25);
+\draw[very thick,->] (o)--++(90:1.6) coordinate (t) node[above right=-6pt]{\normalsize{\bth{\vec{T}}}};
+\draw[very thick,->] (o)--++(270:1.6) coordinate (p) node[left]{\normalsize{\bth{\vec{P}}}};
+\draw (t)++(270:0.4) arc (270:300:0.4) ;
+\path (t) ++(330:0.7) node{\normalsize{\bth{30^{\circ}}}};
+\draw[very thick,->] (o)--++(0:0.93) coordinate (d) node[below]{\normalsize{\bth{\vec{T}_{A}}}};
+\draw[dashed] (t)--++(300:1.86);
+\draw[dashed] (t)--++(180:0.93);
+\draw[very thick,->] (o)--++(120:1.86) coordinate (e) node[below left=-6pt]{\normalsize{\bth{\vec{T}_{B}}}};
+\end{tikzpicture}
+}
+}
+\haidong{10} \end{vidu}
+%\newpage
+
+
+\begin{vidu}%SBT KNTT 17.11
+\immini[thm]{Một ngọn đèn có khối lượng $m=1,2\ kg$ được treo dưới trần nhà bằng một sợi dây. Biết dây chỉ chịu được lực căng lớn nhất là $10\ N$. Lấy $g=10\ m/s^2$. Người ta đã treo đèn này bằng cách luồn sợi dây qua một cái móc của đèn và hai đầu dây được gắn chặt trên trần nhà. Hai đầu dây có chiều dài bằng nhau và hợp với nhau một góc $60^\circ$. Lực căng của mỗi nửa sợi dây là bao nhiêu niutơn (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{14,4} }{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/a}
+\tkzDefShiftPoint[a](-60:3){b}
+\tkzDefShiftPoint[b](60:3){c}
+\tkzDefShiftPoint[b](-90:1){m}
+\fill[pattern=north east lines] (-0.5,0) rectangle (3.5,0.1);
+\draw (-0.5,0)--(3.5,0);
+\tkzDrawSegments(a,b b,c b,m)
+\tkzDrawPoints[size=3,fill=white](b)
+\draw[fill=gray!30] (m) ellipse (0.2cm and 0.3cm);
+\node  at  (1.5,-3.25)  [shape=rectangle,draw=black,fill=Mapcolor!30,minimum height=0.05cm,minimum width=0.1cm]  {};
+\tkzMarkAngles[size=0.4cm](c,b,a)
+\tkzLabelAngles[pos=0.7](c,b,a){$60^\circ$}
+\end{tikzpicture}\end{hinhanh}}
+\haidong{10}\loigiai{
+\immini{\begin{itemize}
+\item[a)] Trọng lượng của ngọn đèn $P=12\ N$. Khi treo ngọn đèn vào một đầu dây thì lực căng dây $T=P=12\ N$ (lớn hơn 10 N), nên không thể treo ngọn đèn này vào một đầu dây. 
+\item[b)] Khi đèn cân bằng, các lực tác dụng lên đèn được biểu diễn như hình vẽ. 
+\item Ta có: $T=\dfrac{P}{2\cos 30^\circ}=4\sqrt 3\ N$.
+\item Khi đèn và dây treo cân bằng, các lực tác dụng lên đèn được biểu diễn như hình vẽ.
+\item Ta có: $\vec T_1+\vec T_2=-\vec P$
+\item Suy ra: $T=\dfrac{P}{\sqrt 3}=\dfrac{25}{\sqrt{3}}\approx 14,4\ N$,
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o}
+\tkzDefShiftPoint[o](60:1.5){a}
+\tkzDefShiftPoint[o](120:1.5){b}
+\tkzDefPointBy[translation=from o to b](a) \tkzGetPoint{c}
+\tkzDefPointBy[symmetry=center o](c)\tkzGetPoint{d}
+\tkzDrawSegments[very thick,blue,->](o,a o,b o,d)
+\tkzDrawSegments[very thick,red,->](o,c)
+\tkzDrawSegments[dashed](a,c b,c)
+\tkzDrawPoints[size=3,fill=white](o)
+\tkzLabelPoint[right](a){$\vec{T}_1$}
+\tkzLabelPoint[left](b){$\vec{T}_2$}
+\tkzLabelPoint[above right](c){$-\vec{P}$}
+\tkzLabelPoint[right](d){$\vec{P}$}
+\end{tikzpicture}}
+}
+\haidong{10} \end{vidu}
+\begin{vidu}%[1P3-2.2G][Loai1]
+\immini[thm]{
+Một đèn tín hiệu giao thông ba màu được treo ở một ngã tư đường nhờ một dây cáp có trọng lượng không đáng kể. Hai dây cáp được giữ bằng hai cột đèn cách nhau $AC=8\ m$. Đèn có khối lượng $6\ kg$ được treo vào điểm giữa $O$ của dây cáp, làm dây cáp võng xuống một đoạn $OI = 0,5\ m$. Lấy $g = 10\ m/s^2$. Độ lớn lực căng của mỗi dây là
+\choice
+{$250\ N$}
+{$342\ N$}
+{\True $242\ N$}
+{$600\ N$}}{\begin{tikzpicture}[scale=0.5,very thick,>=stealth',draw=Mapcolor]
+\newcommand{\translight}[1]{\begin{scope}[#1]
+\shade[top color=gray,bottom color=black] (0,0) -- ++ (1.9,0) -- ++ (0,-1.9) -- ++(-0.8,0) to
+[out=90,in=-90] ++(-1.1,1.7) -- cycle;
+\draw[fill=black!80!gray] (1.9,0.3) -- ++(0.2,0) -- ++(0,-2.4) -- ++(-0.2,0) -- cycle;
+\end{scope}
+}
+\newcommand{\bulb}[2][]{\begin{scope}[#1]
+\draw[thick,fill=black!80!gray] (-1.2,-1.4) coordinate (bl) rectangle ++(2.4,2.2)
+coordinate (tr);
+\shade[ball color=#2] (0,-0.2) circle (0.9);
+\draw[fill=black!97!gray] (bl) -- ++ (-0.12,-0.12) -- ++(2.64,0) -- (bl-|tr) -- cycle;
+\draw[fill=black!98!gray] (bl-|tr) -- ++ (0.12,-0.12) -- ++(0,2.44) -- (tr) -- cycle;
+\draw[fill=black!50!gray] (tr-|bl) -- ++ (-0.12,0.12) -- ++(2.64,0) -- (tr) -- cycle;
+\draw[fill=black!50!gray] (tr-|bl) -- ++ (-0.12,0.12) -- ++(0,-2.44)
+-- (bl) -- cycle;
+\end{scope}
+}
+\tkzDefPoints{0/0/a, 5/0/c, 10/0/b, 5/-2/d, 5/-4/e}
+\tkzDrawSegments[blue](a,d b,d d,e)
+\tkzDrawSegments[dashed](a,b c,d)
+\draw(a)--++(90:0.5)--++(-90:1);
+\fill[pattern=north east lines](a)--++(90:0.5)--++(180:0.15)--++(270:1)--++(0:0.15)--cycle;
+\draw(b)--++(90:0.5)--++(-90:1);
+\fill[pattern=north east lines](b)--++(90:0.5)--++(0:0.15)--++(270:1)--++(180:0.15)--cycle;
+\tkzLabelSegment[above](c,b){$4\ m$}
+\tkzLabelSegment[left](c,d){$0,5\ m$}
+\tkzLabelPoint[left=3pt](a){$A$}
+\tkzLabelPoint[right=3pt](b){$C$}
+\tkzLabelPoint[above](c){$O$}
+\tkzLabelPoint[below right](d){$I$}
+\begin{scope}[scale=0.2,shift={(25,-20)}]
+\draw[fill=black!90!gray] (-1.5,-4.3) rectangle (1.5,3.6);
+\bulb[shift={(0,2.4)}]{orange!10!red}
+\bulb[shift={(0,0)}]{orange!50!yellow}
+\bulb[shift={(0,-2.4)}]{green!70!black}
+\translight{shift={(-3.6,3.2)}}
+\translight{shift={(-3.6,0.7)}}
+\translight{shift={(-3.6,-1.9)}}
+%\translight{shift={(3.6,3.2)},xscale=-1}
+\begin{scope}[shift={(3.6,3.2)},xscale=-1]
+\draw[fill=black!80!gray] (1.9,0.3) -- ++(0.2,0) -- ++(0,-2.4) -- ++(-0.2,0) -- cycle;
+\shade[top color=gray,bottom color=black,clip] (0,0) -- ++ (1.9,0) -- ++ (0,-1.9) -- ++(-0.8,0) to
+[out=90,in=-90] ++(-1.1,1.7) -- cycle;
+\fill[gray!20!black,opacity=0.3] (1.9,0) -- ++(-0.2,0) -- ++ (-1.8,-1.8) -- ++ (2,0) -- cycle;
+\end{scope}
+%\translight{shift={(3.6,0.7)},xscale=-1}
+\begin{scope}[shift={(3.6,0.7)},xscale=-1]
+\draw[fill=black!80!gray] (1.9,0.3) -- ++(0.2,0) -- ++(0,-2.4) -- ++(-0.2,0) -- cycle;
+\shade[top color=gray,bottom color=black,clip] (0,0) -- ++ (1.9,0) -- ++ (0,-1.9) -- ++(-0.8,0) to
+[out=90,in=-90] ++(-1.1,1.7) -- cycle;
+\fill[gray!20!black,opacity=0.3] (1.9,0) rectangle ++ (-2,-2);
+\end{scope}
+%\translight{shift={(3.6,-1.9)},xscale=-1}
+\begin{scope}[shift={(3.6,-1.9)},xscale=-1]
+\draw[fill=black!80!gray] (1.9,0.3) -- ++(0.2,0) -- ++(0,-2.4) -- ++(-0.2,0) -- cycle;
+\shade[top color=gray,bottom color=black,clip] (0,0) -- ++ (1.9,0) -- ++ (0,-1.9) -- ++(-0.8,0) to
+[out=90,in=-90] ++(-1.1,1.7) -- cycle;
+\fill[gray!20!black,opacity=0.3] (1.9,0) rectangle ++ (-2,-2);
+\end{scope}
+%
+\shade[ball color=gray!50!black] (1.1,3.6) -- (-1.1,3.6) to[out=90,in=90] cycle;
+\end{scope}
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item   Các lực gồm trọng lực $\vec{P}$, lực căng dây AI $\vec{T}_{AI}$, lực căng dây CI $\vec{T}_{CI}$ được biểu diễn như hình vẽ.
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/a, 5/0/c, 10/0/b, 5/-2/d, 5/-4/e}
+\tkzDefPointBy[homothety=center a ratio 0.5](d)\tkzGetPoint{1}
+\tkzDefPointBy[homothety=center b ratio 0.5](d)\tkzGetPoint{2} 
+\tkzInterLL(1,2)(c,d)\tkzGetPoint{3}
+\tkzDefPointBy[translation=from 3 to 1](d) \tkzGetPoint{4}
+\tkzDefPointBy[translation=from 3 to 2](d) \tkzGetPoint{5}
+\tkzDrawSegments[red](a,d b,d)
+\tkzDrawSegments[dashed](a,b c,d 1,2 1,4 2,5)
+\tkzDrawSegments[very thick,blue,->](d,1 d,2 d,3 d,4 d,5 d,e)
+\draw(a)--++(90:0.5)--++(-90:1);
+\fill[pattern=north east lines](a)--++(90:0.5)--++(180:0.15)--++(270:1)--++(0:0.15)--cycle;
+\draw(b)--++(90:0.5)--++(-90:1);
+\fill[pattern=north east lines](b)--++(90:0.5)--++(0:0.15)--++(270:1)--++(180:0.15)--cycle;
+\tkzLabelPoint[left=3pt](a){$A$}
+\tkzLabelPoint[right=3pt](b){$C$}
+\tkzLabelPoint[above](c){$O$}
+\tkzLabelPoint[below right](d){$I$}
+\tkzLabelPoint[above](1){$\vec{T}_{AI}$}
+\tkzLabelPoint[above](2){$\vec{T}_{CI}$}
+\tkzLabelPoint[above left=-3pt](3){$\vec{T}_{1A}$}
+\tkzLabelPoint[above right=-3pt](3){$\vec{T}_{1C}$}
+\tkzLabelPoint[below](4){$\vec{T}_{2A}$}
+\tkzLabelPoint[below](5){$\vec{T}_{2C}$}
+\tkzLabelPoint[right](e){$\vec{P}$}
+\end{tikzpicture}
+\end{center}
+\item Phân tích lực căng của mỗi sợi dây: 
+$\begin{cases}
+{\vec{T}}_{AI}={\vec{T}}_{1A}+{\vec{T}}_{2A}\left({\vec{T}}_{1A}\uparrow \downarrow \vec{P},{\vec{T}}_{2A}\bot \vec{P}\right)\\
+{\vec{T}}_{CI}={\vec{T}}_{1C}+{\vec{T}}_{2C}\left({\vec{T}}_{1C}\uparrow \downarrow \vec{P},{\vec{T}}_{2C}\bot \vec{P}\right)\\
+\end{cases}$
+Với: $\begin{cases}
+{T}_{AI}={T}_{CI}=T\\
+{T}_{1A}={T}_{1B}={T}_{1}\\
+{T}_{2A}={T}_{2B}={T}_{2}\\
+\end{cases}$
+\item Vì đèn nằm cân bằng nên: $\vec{P}+{\vec{T}}_{AI}+{\vec{T}}_{CI}=\vec 0\Leftrightarrow \vec{P}+{\vec{T}}_{1A}+{\vec{T}}_{2A}+{\vec{T}}_{1C}+{\vec{T}}_{2C}=\vec 0$
+\item Do $\begin{cases}
+{\vec{T}}_{2A}\uparrow \downarrow {\vec{T}}_{2C}\\
+{T}_{2A}={T}_{2C}\\
+\end{cases}\Rightarrow {\vec{T}}_{2A}+{\vec{T}}_{2C}=0\Rightarrow \vec{P}+{\vec{T}}_{1A}+{\vec{T}}_{1C}=\vec 0$
+\item Mà: ${\vec{T}}_{1A}+{\vec{T}}_{1B}=2{\vec{T}}_{1}\Rightarrow \vec{P}+2{\vec{T}}_{1}=0\Rightarrow {T}_{1}=\dfrac{P}{2}\Rightarrow {T}_{1A}={T}_{1C}=\dfrac{P}{2}$
+\item Từ hình có: $\sin \alpha =\dfrac{OI}{\sqrt{A{O}^{2}+O{I}^{2}}}=\dfrac{{T}_{1A}}{{T}_{AI}}=\dfrac{P}{2T}$
+$\Leftrightarrow \dfrac{0,5}{\sqrt{{4}^{2}+0,{5}^{2}}}=\dfrac{60}{2T}\Rightarrow T\approx 242\ N$.
+\end{itemize}
+}
+\haidong{10} \end{vidu}
+\begin{vidu}%SBT KNTT 17.10
+\immini[thm]{Một chú khỉ diễn xiếc treo mình cân bằng trên dây thừng như hình vẽ. Lấy $g=9,8\ m/s^2$. Biết chú khỉ có khối lượng $7\ kg$. Xác định lực căng xuất hiện trên các đoạn dây $OA$, $OB$.}{\begin{tikzpicture}[draw=Mapcolor]
+\tkzInit[ymin=-2.5,ymax=2,xmin=-5.5,xmax=3.5]\tkzClip
+\tkzDefPoints{0/0/o}
+\tkzDefShiftPoint[o](0:2cm){o1}
+\tkzDefShiftPoint[o](180:3cm){o2}
+\tkzDefShiftPoint[o](26:3cm){b}
+\tkzDefShiftPoint[o](162:5cm){a}
+\tkzDefShiftPoint[a](-90:4cm){d}
+\tkzDefShiftPoint[d](180:1cm){e}
+\tkzDefShiftPoint[e](0:9.5cm){f}
+\tkzDefPointBy[projection=onto e--f](b) \tkzGetPoint{c}
+\tkzDrawSegments[](a,o o,b e,f o1,o2)
+\tkzDrawSegments[line width=4pt,Mapcolor](a,d b,c)
+\tkzMarkAngles[size=0.7cm](a,o,o2)
+\tkzLabelAngles[pos=1.3](a,o,o2){$18^\circ$}
+\tkzMarkAngles[size=0.7cm](o1,o,b)
+\tkzLabelAngles[pos=1.1](o1,o,b){$26^\circ$}
+\tkzLabelPoint[above](a){$A$}
+\tkzLabelPoint[above](b){$B$}
+\tkzLabelPoint[above](o){$O$}
+\node at (0.13,-0.28){\includegraphics[width=1cm]{images/monkey}};
+\end{tikzpicture}} 
+\loigiai{
+\immini[thm]{\begin{itemize}
+\item $P=mg=68,6\ N$
+\item Khi vật cân bằng: $\vec T_1+\vec T_2+\vec P=\vec 0$
+\item Các lực thành phần theo trexục Oy cân bằng nhau: \\
+$T_1\sin 18^\circ +T_2\sin 26^\circ-P=0\quad (1)$
+\item Các lực theo phương Ox cân bằng nhau: \\
+$T_1\cos 18^\circ =T_2\cos 26^\circ\quad (2)$
+\item Từ (1) và (2): $T_1=88,6\ N;\ T_2=93,9\ N$.
+\end{itemize}}{\begin{tikzpicture}
+\tkzInit[ymin=-1.5,ymax=2.5,xmin=-5.5,xmax=3.5]\tkzClip
+\tkzDefPoints{0/0/o}
+\tkzDefShiftPoint[o](0:2cm){o1}
+\tkzDefShiftPoint[o](180:3cm){o2}
+\tkzDefShiftPoint[o](26:3cm){b}
+\tkzDefShiftPoint[o](162:5cm){a}
+\tkzDefShiftPoint[a](-90:4cm){d}
+\tkzDefShiftPoint[d](180:1cm){e}
+\tkzDefShiftPoint[e](0:9.5cm){f}
+\tkzDefPointBy[projection=onto e--f](b) \tkzGetPoint{c}
+\tkzMarkAngles[size=0.7cm](a,o,o2)
+\tkzLabelAngles[pos=1.3](a,o,o2){$18^\circ$}
+\tkzMarkAngles[size=0.7cm](o1,o,b)
+\tkzLabelAngles[pos=1.1](o1,o,b){$26^\circ$}
+\draw[->](o)--++(0:3)node[below]{$x$};
+\draw[->](o)--++(90:2)node[right]{$y$};
+\draw[](o)--++(180:3);
+\draw[](o)--++(-90:2);
+\draw[->,very thick,red](o)--++(26:2)node[right,black]{$\vec{T}_2$};
+\draw[->,very thick,red](o)--++(162:3)node[left,black]{$\vec{T}_2$};
+\draw[->,very thick,red](o)--++(-90:1.2)node[right,black]{$\vec{P}$};
+\end{tikzpicture}}
+}
+\haidong{10} \end{vidu}

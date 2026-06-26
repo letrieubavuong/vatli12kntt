@@ -1,0 +1,242 @@
+%mac
+\begin{vidu}
+\immini[thm]{Dùng một thước có ĐCNN là $1\ mm$ và một đồng hồ đo thời gian có ĐCNN $0,01\ s$ để đo $5$ lần quãng đường đi và thời gian chuyển động của chiếc xe đồ chơi chạy bằng pin từ điểm $A$ đến điểm $B$.}{\begin{tikzpicture}
+\node[] at (0,0){\vspace*{-1 cm} \includegraphics[width=5cm]{images/3-1}};
+\end{tikzpicture}}
+\immini{\begin{itemize}	
+\item[a)] Nguyên nhân nào gây ra sự sai khác giữa các lần đo?
+\item[b)] Tính sai số tuyệt đối của phép đo $s$, $t$ và điền vào bảng. Lấy sai số dụng cụ bằng nửa độ chia nhỏ nhất của dụng cụ.
+\item[c)] Viết kết quả đo?
+\item[d)] Tính sai số tỉ đối của s và t?
+\end{itemize}}{\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Lần đo&  s (mm)&  $\Delta s\ (mm)$&  t (s)&$\Delta t\ (s)$  \\ 
+\hline 
+1&649  &  &3,49  &  \\ 
+\hline 
+2&651  &  &3,51  &  \\ 
+\hline 
+3&654  &  &3,54  &  \\ 
+\hline 
+4&653  &  &3,53  &  \\ 
+\hline 
+5&650  &  &3,50  &  \\ 
+\hline 
+Trung bình&  & & & \\ 
+\hline 
+\end{tabular}}	
+\haidong{12}
+\loigiai{
+
+\begin{itemize}
+\item[a)] Nguyên nhân gây ra sự sai khác giữa các lần đo là:
+\begin{itemize}
+\item Do đặc điểm và cấu tạo của dụng cụ đo
+\item Do điều kiện làm thí nghiệm chưa được chuẩn
+\item Do thao tác khi đo
+\end{itemize}
+\item[b)] Ta có:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Lần đo&  s (mm)&  $\Delta s\ (mm)$&  t (s)&$\Delta t\ (s)$  \\ 
+\hline 
+1&649  &2,4  &3,49  & 0,024 \\ 
+\hline 
+2&651  &0,4  &3,51  &0,004  \\ 
+\hline 
+3&654  &2,6  &3,54  &0,026  \\ 
+\hline 
+4&653  &1,6  &3,53  &0,016  \\ 
+\hline 
+5&650  &1,4  &3,50  &0,014  \\ 
+\hline 
+Trung bình&651,4  &1,68 &3,514 &0,0168 \\ 
+\hline 
+\end{tabular}
+\end{center}
+\begin{align*}
+&\overline{\Delta s}=\dfrac{|\overline{s}-s_1|+|\overline{s}-s_2|+...+|\overline{s}-s_5|}{5}=1,68\\
+&\overline{\Delta t}=\dfrac{|\overline{t}-t_1|+|\overline{t}-t_2|+...+|\overline{t}-t_5|}{5}=0,0168
+\end{align*}
+\item[c)] Viết kết quả đo:\\
+Ta có:
+\begin{align*}
+& \Delta s=\overline{\Delta s}+\Delta s_{dc}=1,68+0,5=2,18\ mm\approx 2,2 \ mm \ \ct{hoặc}\ \ 2\ mm\\
+& \Delta t=\overline{\Delta t}+\Delta t_{dc}=0,0168+\dfrac{0,01}{2}=0,0218\approx 0,022\ (s) \ \ct{hoặc}\ \ 0,02\ s
+\end{align*}
+Suy ra
+\begin{align*}
+&s=\overline{s}\pm \Delta s=651,4\pm 2,2\ (mm) \ \ct{hoặc}\ \ s=651\pm 2\ (mm) \\
+&t=\overline{t}\pm \Delta t=3,514\pm 0,022\ (s) \ \ct{hoặc}\ \ t=3,51\pm 0,02\ (mm)
+\end{align*}
+\item[d)] Tính sai số tỉ đối
+\begin{align*}
+&\delta t=\dfrac{\Delta t}{\overline{t}}.100\%=\dfrac{0,022}{3,514}.100\%\approx 0,63\%  \ \ct{hoặc}\ \ \delta t=\dfrac{0,02}{3,51}.100\%\approx 0,57\%\\
+&\delta s=\dfrac{\Delta s}{\overline{s}}.100\%=\dfrac{2,2}{651,4}.100\%\approx 0,34\%  \ \ct{hoặc}\ \ \delta s=\dfrac{2}{651}.100\%\approx 0,31\%
+\end{align*}
+\end{itemize}
+}
+\haidong{10}\end{vidu}
+%\loai{Tính giá trị trung bình}
+\begin{vidu}
+Đường kính của một viên bi trong $5$ lần đo bằng $2,620\ cm$; $2,625\ cm$; $2,630\ cm$; $2,628\ cm$ và $2,626\ cm$. Đường kính trung bình của viên bi là
+\choice
+{\True $2,6258\ cm$}
+{$2,6271\ cm$}
+{$2,6251\ cm$}
+{$2,6249\ cm$}
+\haidong{2}
+\loigiai{
+
+}
+\haidong{10}\end{vidu}
+%\loai{Tính sai số tuyệt đối của mỗi lần đo}
+\begin{vidu}
+Kết quả ba lần đo quãng đường chuyển động của viên bi từ $A$ đến $B$ lần lượt là $0,048\ m$; $0,050\ m;\ 0,050\ m$, quãng đường trung bình là $0,049\ m$. Khi đó sai số tuyệt đối của quãng đường chuyển động của viên bi qua ba lần đo có giá trị lần lượt là
+\choice
+{\True $0,001\ m;\ 0,001\ m;\ 0,001\ m$}
+{$-0,001\ m;\ 0,001\ m;\ 0,001\ m$}
+{$0,001\ m;\ -0,001\ m;\ -0,001\ m$}
+{$0,001\ m;\ 0,000\ m;\ 0,002\ m$}
+\haidong{9}
+\loigiai{
+}
+\haidong{10}\end{vidu}
+%%\loai{Xác định sai số dụng cụ}
+%\begin{vidu}
+%	Một cây thước có độ chia nhỏ nhất là $1,0\ cm$. Sai số dụng cụ của thước thường được lấy bằng
+%	\choice
+%	{$0,25\ cm$}
+%	{\True $0,5\ cm$}
+%	{$2,0\ cm$}
+%	{$1,5\ cm$}
+%	\haidong{1}
+%	\loigiai{
+%	}
+%\haidong{10}\end{vidu}
+%\loai{Xác định sai số ngẫu nhiên}
+\begin{vidu}
+Để xác định thời gian đi của bạn $A$ trên quãng đường $s$, người ta sử dụng đồng hồ bấm giây, ta có bảng số liệu dưới đây:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Lần đo & $1$ & $2$ & $3$ \\
+\hline
+Thời gian $(s)$ & $35,20$ & $36,15$ & $35,75$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Coi tốc độ đi không đổi trong suốt quá trình chuyển động, sai số ngẫu nhiên trong phép đo này là bao nhiêu?
+\choice
+{$0,30\ s$}
+{$0,31\ s$}
+{$0,32\ s$}
+{\True $0,33\ s$}
+\haidong{5}
+\loigiai{
+}
+\haidong{10}\end{vidu}
+
+%\loai{Tính sai số tuyệt đối và sai số tỉ đối}
+\begin{vidu} %[1P1-11.2B][Loai1] 
+Dùng thước thẳng có giới hạn đo $20\ cm$ và độ chia nhỏ nhất $0,5\ cm$ để đo chiều dài chiếc bút máy. Lấy sai số dụng cụ bằng một nửa độ chia nhỏ nhất. Bỏ qua sai số ngẫu nhiên. Nếu chiếc bút có độ dài trung bình $15\ cm$ thì phép đo này có sai số tuyệt đối và sai số tỉ đối là
+\choice
+{$0,5\ cm$ và $2,5\%$}
+{$0,5\ cm$ và $1,7\%$}
+{$0,25\ cm$ và $2,5\%$}
+{\True $0,25\ cm$ và $1,7\%$}
+\haidong{7}
+\loigiai{
+
+\begin{itemize}
+\item Độ chia nhỏ nhất của thước là 0,5 cm nên sai số tuyệt đối của phép đo là $\dfrac{{0,5}}{2}=0,25\ cm$
+\item Sai số tỉ đối của phép đo là $\delta A = \dfrac{{\Delta A}}{{\overline A}}\cdot 100\%= \dfrac{{0,25}}{{15}} \cdot 100\%\approx 1,7\% $
+\end{itemize}}
+\haidong{10}\end{vidu}
+%\loai{Viết kết quả phép đo trực tiếp có tính sai số dụng cụ}
+\begin{vidu} %[1P1-11.2B][Loai1] 
+\immini[thm]{Dùng thước kẹp có độ chia nhỏ nhất $0,1\ mm$ để đo $5$ lần đường kính $d$ của một trụ thép. Lấy sai số dụng cụ bằng một độ chia nhỏ nhất. Cho kết quả như trong bảng dưới. Hãy cho biết kết quả phép đo $d$.
+\choice
+{\True $d=(30,06\pm 0,15)\ mm$}
+{$d=(30,1\pm 0,15)\ mm$}
+{$d=(30\pm 0,1)\ mm$}
+{$d=(30,00\pm 0,15)\ mm$}}{	\begin{tabular}{|c|c|}
+\hline 
+Lần đo&d (mm)  \\ 
+\hline 
+1&30,0  \\ 
+\hline 
+2&30,1  \\ 
+\hline 
+3&30,0  \\ 
+\hline 
+4&30,1  \\ 
+\hline 
+5&30,1  \\ 
+\hline 
+\end{tabular} 
+}
+\haidong{16}
+\loigiai{
+\begin{itemize}
+\item Giá trị trung bình: $\overline{d}=\dfrac{30.2+30,1.3}{5}=30,06\ mm$. 
+\item Sai số ngẫu nhiên: $\overline{\Delta d}=\dfrac{0,06.2+0,04.3}{5}=0,048\ mm$.
+\item Sai số dụng cụ: $\Delta  d'=0,1\ mm\Rightarrow\Delta d=\Delta  d'+\overline{\Delta d}=0,148\ mm$.
+\item Kết quả phép đo: $d=(30,06\pm 0,15)\ mm$.
+\end{itemize}
+}
+\haidong{10}\end{vidu}
+%\loai{Viết kết quả phép đo trực tiếp có tính do dụng cụ}
+\begin{vidu} %[1P1KB-2][Loai1]
+Một học sinh dùng đồng hồ bấm giây để đo chu kì chuyển động tròn của một vật bằng cách đo thời gian vật quay hết một vòng. Năm lần đo cho kết quả thời gian vật quay hết một vòng lần lượt là $2,00\ s$; $2,05\ s$; $2,00\ s$; $2,05\ s$; $2,05\ s$. Thang chia nhỏ nhất của đồng hồ là $0,01\ s$. Lấy sai số dụng cụ là một độ chia nhỏ nhất. Kết quả của phép đo chu kì được biểu diễn bằng
+\choice
+{$T = 2,030 \pm  0,02\ s$}
+{$T = 2,030 \pm  0,024\ s$}
+{\True $T = 2,030 \pm  0,034\ s$}
+{$T = 2,03 \pm  0,03\ s$}
+\haidong{8}
+\loigiai{
+\begin{itemize}
+\item $\overline T  = \dfrac{2,00 + 2,05 + 2,00 + 2,05 + 2,05}{5} = 2,03\ s$.
+\item Thang chia nhỏ nhất của đồng hồ là 0,01 s $\Rightarrow \Delta {T_{DC}} = 0,01$.
+\item Ta có: $\overline {\Delta T}  = \dfrac{{\left| {2,00 - 2,03} \right| + \left| {2,05 - 2,03} \right| + \left| {2,00 - 2,03} \right| + \left| {2,05 - 2,03} \right| + \left| {2,05 - 2,03} \right|}}{5} = 0,024$ 
+\item Sai số của phép đo là $\Delta T = \overline {\Delta T}  + \Delta {T_{DC}} = 0,01 + 0,024 = 0,034 \Rightarrow T = 2,030 \pm  0,034$ s.
+\end{itemize}
+}
+%<MyLT>
+\haidong{10}\end{vidu}
+%\loai{Xác định sai số tuyệt đối gián tiếp}
+\begin{vidu}
+Nhiệt độ đầu và nhiệt độ cuối của một lượng nước được ghi bởi một người quan sát trên nhiệt kế là $(42,4 \pm 0,2)^\circ C$ và $(80,6 \pm 0,3)^\circ C$. Bỏ qua sai số dụng cụ, nhiệt độ của nước đã tăng
+\choice
+{$(39,2 \pm 0,5)^\circ C$}
+{$(38,2 \pm 0,1)^\circ C$}
+{\True $(38,2 \pm 0,5)^\circ C$}
+{$(39,2 \pm 0,1)^\circ C$}
+\haidong{5}
+\loigiai{
+
+\begin{itemize}
+\item Độ tăng nhiệt độ:
+$t=t_2-t_1 \Rightarrow t=\overline{t}_2-\overline{t}_1=80,6-42,4=38,2^\circ C$
+\item Sai số tuyệt đối của t là
+$\Delta t=\Delta t_1+\Delta t_2=0,2+0,3=0,5^\circ C$
+\item Vậy $t=(38,2 \pm 0,5)^\circ C$
+\end{itemize}
+
+}
+\haidong{10}\end{vidu}
+%\loai{Xác định sai số tỉ đối gián tiếp}
+\begin{vidu}
+Điện trở của dây dẫn bằng kim loại được xác định theo định luật Ohm $R=\dfrac{U}{I}$. Trong một mạch điện hiệu điện thế $U$ giữa hai đầu điện trở $U=(8 \pm 0,4)\ V$ và dòng điện qua điện trở $I=(4 \pm 0,2)\ A$. Giá trị của điện trở cùng sai số tỉ đối bằng
+\choice
+{$(2 \pm 5\%)\ \Omega$}
+{$(2 \pm 7\%)\ \Omega$}
+{\True $(2 \pm 10\%)\ \Omega$}
+{$(2 \pm 28\%)\ \Omega$}
+\haidong{5}
+\loigiai{
+}
+\haidong{10}\end{vidu}

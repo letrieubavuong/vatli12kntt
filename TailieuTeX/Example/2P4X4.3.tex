@@ -1,0 +1,296 @@
+\loai{Dòng điện treo trên dây có phương thẳng đứng}
+\begin{vidu} %[2P4-4.3G][Loại1]
+immini[thm]{Một đoạn dây dẫn thẳng dài MN có chiều dài $\ell = 25$ cm, khối lượng $m = 0,01$ kg được treo vào hai điểm C, D bằng hai dây dẫn nhẹ thẳng đứng và đặt trong từ trường đều có $\vec B$ vuông góc với mặt phẳng chứa MN và dây treo có độ lớn 0,04 T và chiều như hình vẽ. Cho $I = 16$ A có chiều N đến M. Xác định độ lớn lực căng mỗi dây. Cho biết thanh MN vẫn cân bằng. Lấy $g = 10\ m/s^2$.
+\choice
+{\True 0,13 N}
+{0,26 N}
+{0,15 N}
+{0,1 N}}
+{\begin{tikzpicture}[scale=0.9,thick,>=stealth']
+\coordinate (a) at (0,0)node[below left]{\normalsize{\bth{C}}};
+\draw (a)--++(270:2)coordinate (m)node[below left]{\normalsize{\bth{M}}};
+\draw [gray,line width=3pt](m)--++(0:3)coordinate (n)node[below right,black]{\normalsize{\bth{N}}};
+\draw (n)--++(90:2)coordinate (b)node[below right]{\normalsize{\bth{D}}};
+\draw (a)--++(0:0.4);
+\draw (a)--++(180:0.4)coordinate (a1);
+\path (a) ++(0:0.4)++(90:0.1)coordinate (a2);
+\fill[pattern=north east lines] (a1)rectangle(a2);
+\draw (b)--++(0:0.4);
+\draw (b)--++(180:0.4)coordinate (b1);
+\path (b) ++(0:0.4)++(90:0.1)coordinate (b2);
+\fill[pattern=north east lines] (b1)rectangle(b2);
+\path (a) ++(0:1.5)++(270:0.3)coordinate (o);
+\draw (o) circle(0.2)node[left=5pt]{\normalsize{\bth{\vec{B}}}};
+\draw (o) --++(45:0.2);
+\draw (o) --++(135:0.2);
+\draw (o) --++(225:0.2);
+\draw (o) --++(315:0.2);
+\end{tikzpicture}}
+\loigiai{immini[thm]{Khi $I'=16$ A, ta có:
+\begin{itemize}
+\item Lực từ $\vec{F}'$ tác dụng lên thanh có độ lớn: $F'=BI'\ell =0,16$ N.
+\item Trọng lực $\vec{P}$ tác dụng lên thanh: $P=mg=0,1$ N.
+\item Do $I'$ có chiều từ N đến M nên $\vec{F}'$ cùng phương, cùng chiều $\vec{P}$
+Lực căng mỗi dây: $T=\dfrac{P+F'}{2}=\dfrac{0,1+0,16}{2}=0,13\ N.$
+\end{itemize}}
+{\begin{tikzpicture}
+\coordinate (a) at (0,0)node[below left]{\normalsize{\bth{C}}};
+\draw (a)--++(270:2)coordinate (m)node[below left]{\normalsize{\bth{M}}};
+\draw [gray,line width=3pt](m)--++(0:3)coordinate (n)node[below right,black]{\normalsize{\bth{N}}};
+\draw (n)--++(90:2)coordinate (b)node[below right]{\normalsize{\bth{D}}};
+\draw (a)--++(0:0.4);
+\draw (a)--++(180:0.4)coordinate (a1);
+\path (a) ++(0:0.4)++(90:0.1)coordinate (a2);
+\fill[pattern=north east lines] (a1)rectangle(a2);
+\draw (b)--++(0:0.4);
+\draw (b)--++(180:0.4)coordinate (b1);
+\path (b) ++(0:0.4)++(90:0.1)coordinate (b2);
+\fill[pattern=north east lines] (b1)rectangle(b2);
+\path (a) ++(0:1.5)++(270:0.3)coordinate (o);
+\draw (o) circle(0.2)node[left=5pt]{\normalsize{\bth{\vec{B}}}};
+\draw (o) --++(45:0.2);
+\draw (o) --++(135:0.2);
+\draw (o) --++(225:0.2);
+\draw (o) --++(315:0.2);
+\path (m) ++(0:1.45)coordinate (g1);
+\draw [very thick,->](g1)--++(270:1.4)node[left]{\normalsize{\bth{\vec{F}’}}};
+\filldraw [black] (g1) circle (1.2pt);
+\path (m) ++(0:1.55)coordinate (g2);
+\draw [very thick,->](g2)--++(270:1)node[right]{\normalsize{\bth{\vec{P}}}};
+\filldraw [black] (g2) circle (1.2pt);
+\draw [very thick,->](m)--++(90:1.2)node[below left]{\normalsize{\bth{\vec{T}}}};
+\draw [very thick,->](n)--++(90:1.2)node[below right]{\normalsize{\bth{\vec{T}}}};
+\filldraw [black] (m) circle (1.2pt);
+\filldraw [black] (n) circle (1.2pt);
+\end{tikzpicture}}}
+\end{vidu}
+\begin{vidu} %[2P4-4.3G][Loại1]
+immini[thm]{Một dây dẫn thẳng MN có chiều dài $\ell$, khối lượng của một đơn vị chiều dài của dây là $D = 0,04$ kg/m và $g = 9,8$ $m/s^2$. Dây được treo cân bằng nhờ hai dây nhẹ theo phương thẳng đứng và đặt trong từ trường đều có vector cảm ứng từ vuông góc với mặt phẳng chứa MN và dây treo với $B = 0,04$ T. Cho dòng điện I chạy qua dây. Để lực căng của dây treo bằng 0 thì chiều và độ lớn của I là
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(270:2)coordinate (m)node[below left]{\normalsize{\bth{M}}};
+\draw [gray,line width=3pt](m)--++(0:3)coordinate (n)node[below right,black]{\normalsize{\bth{N}}};
+\draw (n)--++(90:2)coordinate (b);
+
+\draw (a)--++(0:0.4);
+\draw (a)--++(180:0.4)coordinate (a1);
+\path (a) ++(0:0.4)++(90:0.1)coordinate (a2); 
+\fill[pattern=north east lines] (a1)rectangle(a2);
+
+\draw (b)--++(0:0.4);
+\draw (b)--++(180:0.4)coordinate (b1);
+\path (b) ++(0:0.4)++(90:0.1)coordinate (b2); 
+\fill[pattern=north east lines] (b1)rectangle(b2);
+
+\path (a) ++(0:1.5)++(270:0.3)coordinate (o);
+\draw (o) circle(0.2)node[left=5pt]{\normalsize{\bth{\vec{B}}}};
+\draw (o) --++(45:0.2);
+\draw (o) --++(135:0.2);
+\draw (o) --++(225:0.2);
+\draw (o) --++(315:0.2);
+\end{tikzpicture}
+}
+\choice
+{I chạy từ N tới M và $I = 10$ A}
+{\True I chạy từ M tới N và $I = 9,8$ A}
+{I chạy từ N tới M và $I = 7,5$ A}
+{I chạy từ M tới N và $I = 7,5$ A}	
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Thanh MN chịu tác dụng của các lực $\vec P ,\vec T ,\vec F$ như hình vẽ.
+\item Để lực căn dây bằng 0 thì $\vec P + \vec F = 0 \to \vec P = - \vec F \Rightarrow F = P$
+\item Dựa vào quy tắc bàn tay trái $\Rightarrow$ để F ngược chiều trọng lực thì dòng điện phải có chiều từ M đến N. $F = P \Rightarrow BIl\sin \alpha = mg \Rightarrow I = \dfrac{mg}{Bl\sin \alpha} = \dfrac{D.g}{B\sin \alpha} = \dfrac{0,04.9,8}{0,04} = 9,8$ A.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(270:2)coordinate (m)node[below left]{\normalsize{\bth{M}}};
+\draw [gray,line width=3pt](m)--++(0:3)coordinate (n)node[below right,black]{\normalsize{\bth{N}}};
+\draw (n)--++(90:2)coordinate (b);
+
+\draw (a)--++(0:0.4);
+\draw (a)--++(180:0.4)coordinate (a1);
+\path (a) ++(0:0.4)++(90:0.1)coordinate (a2); 
+\fill[pattern=north east lines] (a1)rectangle(a2);
+
+\draw (b)--++(0:0.4);
+\draw (b)--++(180:0.4)coordinate (b1);
+\path (b) ++(0:0.4)++(90:0.1)coordinate (b2); 
+\fill[pattern=north east lines] (b1)rectangle(b2);
+
+\path (a) ++(0:1.5)++(270:0.3)coordinate (o);
+\draw (o) circle(0.2)node[left=5pt]{\normalsize{\bth{\vec{B}}}};
+\draw (o) --++(45:0.2);
+\draw (o) --++(135:0.2);
+\draw (o) --++(225:0.2);
+\draw (o) --++(315:0.2);
+
+\path (m) ++(0:1.5)coordinate (g);
+\draw [very thick,->](g)--++(90:1)node[right]{\normalsize{\bth{\vec{F}}}};
+\draw [very thick,->](g)--++(270:1)node[right]{\normalsize{\bth{\vec{P}}}};
+\filldraw [black] (g) circle (1.2pt);
+\end{tikzpicture}
+}}
+\end{vidu}
+\loai{Dòng điện treo trên dây lệch với phương thẳng đứng}
+\begin{vidu} %[2P4-4.3G][Loại2]
+immini[thm]{Thanh dây dẫn thẳng MN có chiều dài 20 cm, khốí lượng 10 g, được treo trên hai sợi dây mảnh sao cho MN nằm ngang. Cả hệ thống được đặt trong từ trường đều có cảm ứng từ $B = 0,25$ T và vector $\vec{B}$ hướng lên trên theo phương thẳng đứng. Nếu cho dòng điện $I = 2\sqrt{3}$ A chạy qua, người ta thấy thanh MN được nâng lên vị trí cân bằng mới và hai sợi dây treo bây giờ lệch một góc $\alpha$ so với phương thẳng đứng. Cho $g = 10\ m/s^2$. Góc lệch $\alpha$ là
+\choice
+{$50,{5^\circ}$}
+{$30\degree$}
+{\True $60\degree$}
+{$45\degree$}
+}
+{\begin{tikzpicture}[scale=0.7,thick,>=stealth']
+\coordinate (o) at (0,0);
+\filldraw[black] (4,-0.2) circle(1.8pt)coordinate (c)node[below right=-2pt,black]{\normalsize{\bth{M}}};
+\draw [line width=4pt](c)--++(50:2.2)coordinate (d)node[below right=-3pt,black]{\normalsize{\bth{N}}};
+\filldraw[black] (d) circle(1.8pt);
+\draw (d)--++(120:5)coordinate (e)node[above=4pt]{\normalsize{\bth{B}}};
+\fill[pattern=north east lines] (e)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (e)--++(0:0.5);
+\draw (e)--++(180:0.5);
+\draw [dashed](e)--++(270:5)coordinate (h);
+\draw (c)--++(120:5)coordinate (f)node[above=4pt]{\normalsize{\bth{A}}};
+\fill[pattern=north east lines] (f)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (f)--++(0:0.5);
+\draw (f)--++(180:0.5);
+\draw [dashed](f)--++(270:5)coordinate (g);
+\path (c) ++(50:0.5)coordinate (i);
+\draw [->,white](i)--++(50:1)node[above=6pt,black]{\normalsize{\bth{I}}};
+\draw (f)++(-60:0.5) arc (-60:-90:0.5) ;
+\path (f) ++(-75:0.8) node{\normalsize{\bth{\alpha}}};
+\path (c) ++(90:1.5)coordinate (o);
+\draw [very thick,->](o)--++(90:1.5)node[left]{\normalsize{\bth{\vec{B}}}};
+\end{tikzpicture}
+}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Áp dụng quy tắc bàn tay trái ta xác định được chiều lực từ như hình.
+\item Ta có $\tan \alpha = \dfrac{F}{P} = \dfrac{0,25.2\sqrt 3 .0,2}{0,01.10} = \sqrt 3 \to \alpha = 60^\circ$.
+\end{itemize}}
+{\begin{tikzpicture}[scale=0.7,thick,>=stealth']
+\coordinate (o) at (0,0);
+\filldraw[black] (4,-0.2) circle(1.8pt)coordinate (c)node[left=5pt,black]{\normalsize{\bth{MN}}};
+\draw (c)--++(120:5)coordinate (f)node[above=4pt]{\normalsize{\bth{A}}};
+\fill[pattern=north east lines] (f)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (f)--++(0:0.5);
+\draw (f)--++(180:0.5);
+\draw [dashed](f)--++(270:5)coordinate (g);
+\draw (f)++(-60:0.5) arc (-60:-90:0.5) ;
+\path (f) ++(-75:0.8) node{\normalsize{\bth{\alpha}}};
+\path (c) ++(90:1)coordinate (o);
+\draw [very thick,->](o)--++(90:1.5)node[right]{\normalsize{\bth{\vec{B}}}};
+\draw [very thick,->](c)--++(-60:2)node[right]{\normalsize{\bth{-\vec{T}}}}coordinate (t);
+\draw [very thick,->](c)--++(120:2)node[right]{\normalsize{\bth{\vec{T}}}};
+\draw [dashed] (t)--++(180:1)coordinate (p);
+\draw [very thick,->](c)--(p)node[left=5pt]{\normalsize{\bth{\vec{P}}}};
+\draw [very thick,->](c)--++(0:1)node[right=5pt]{\normalsize{\bth{\vec{F}}}}coordinate (f);
+\draw [dashed] (t)--(f);
+\draw (c)++(-60:0.5) arc (-60:-90:0.5);
+\path (c) ++(-75:0.8) node{\normalsize{\bth{\alpha}}};
+\draw [fill=white](c)circle (0.2);
+\draw [very thick](c)--++(45:0.2);
+\draw [very thick](c)--++(135:0.2);
+\draw [very thick](c)--++(225:0.2);
+\draw [very thick](c)--++(-45:0.2);
+\end{tikzpicture}}
+}
+\end{vidu}
+\begin{vidu} %[2P4-4.3G][Loại2]
+immini[thm]{Treo một thanh đồng có chiều dài $\ell = 5$ cm và có khối lượng $m = 5$ g vào hai sợi dây thẳng đứng cùng chiều dài trong một từ trường đều có $B = 0,5$ T như hình vẽ. Cho dòng điện một chiều có cường độ dòng điện $I = 2$ A chạy qua thanh đồng thì thấy dây treo bị lệch so với phương thẳng đứng một góc $\alpha $. Xác định góc lệch $\alpha $ của thanh đồng so với phương thẳng đứng.
+\choice
+{\True $45^\circ$}
+{$35^\circ$}
+{$25^\circ$}
+{$15^\circ$}}
+{\begin{tikzpicture}[scale=0.7,thick,>=stealth']
+\coordinate (o) at (0,0);
+\fill[white,draw=black] (o)++(180:1.2) arc (180:270:1.2)--++(0:4)coordinate (a)node[below left=-3pt,black]{\normalsize{\bth{S}}}--++(50:2)--++(180:4)arc (270:180:1.2cm and 1.2cm)--++(180:0.4)--++(230:2)arc (180:270:1.6cm and 1.6cm)--++(0:4)--++(50:2)--++(90:0.4);
+\draw (a)--++(270:0.4);
+\draw [white,draw=black] (o)++(180:1.2) arc (180:270:1.2)--++(0:4)--++(50:2)--++(180:4)arc (270:180:1.2cm and 1.2cm)--++(180:0.4)--++(230:2)arc (180:270:1.6cm and 1.6cm)--++(0:4)--++(50:2)--++(90:0.4);
+\filldraw[black] (4,-0.2) circle(1.8pt)coordinate (c)node[below right=-2pt,black]{\normalsize{\bth{N}}};
+\draw [line width=4pt](c)--++(50:2.2)coordinate (d)node[below right=-3pt,black]{\normalsize{\bth{M}}};
+\filldraw[black] (d) circle(1.8pt);
+\draw (d)--++(120:5)coordinate (e)node[above=4pt]{\normalsize{\bth{B}}};
+\fill[pattern=north east lines] (e)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (e)--++(0:0.5);
+\draw (e)--++(180:0.5);
+\draw [dashed](e)--++(270:5)coordinate (h);
+\filldraw[black] (h) circle(1.8pt);
+\fill [gray!20,draw=black] (o)++(180:1.2) arc (180:90:1.2)--++(0:4)--++(50:2)--++(90:0.4)--++(180:4)arc (90:140:1.6cm and 1.6cm)--++(230:2);
+\fill [gray!20] (o)++(180:1.2) arc (180:90:1.2)--++(0:4)--++(90:0.4)coordinate (b)node[below left=-4pt,black]{\normalsize{\bth{N}}}--++(180:4)arc (90:180:1.6cm and 1.6cm)--++(0:0.4)--++(50:2)--++(180:0.4)--++(230:2);
+\fill [gray!20,draw=black] (o)++(180:1.2) arc (180:90:1.2)--++(0:4)--++(90:0.4)coordinate (b)node[below left=-4pt,black]{\normalsize{\bth{N}}}--++(180:4)arc (90:180:1.6cm and 1.6cm);
+\draw (b)--++(50:2);
+\draw (c)--++(120:5)coordinate (f)node[above=4pt]{\normalsize{\bth{A}}};
+\fill[pattern=north east lines] (f)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (f)--++(0:0.5);
+\draw (f)--++(180:0.5);
+\draw [dashed](f)--++(270:5)coordinate (g);
+\draw [line width=4pt](g)--++(50:2.2);
+\filldraw[black] (g) circle(1.8pt);
+\path (c) ++(50:1.5)coordinate (i);
+\draw [->,white](i)--++(230:1)node[above=6pt,black]{\normalsize{\bth{I}}};
+\draw (f)++(-60:0.4) arc (-60:-90:0.4) ;
+\path (f) ++(-75:0.7) node{\normalsize{\bth{\alpha}}};
+\draw [->](f)++(-85:5) arc (-85:-65:5) ;
+\end{tikzpicture}}
+\loigiai{immini[thm]{\begin{itemize}
+\item Lực từ $\vec F$ nằm ngang (xác định theo quy tắc bàn tay trái).
+\item Lực căng dây $\vec T$.
+\item Khi đoạn dây $\ell $ cân bằng, dây treo hợp với phương thẳng đứng góc $\alpha $.
+\item Theo định luật II Newton ta có: $\vec P + \vec F + \vec T = \vec 0$.
+\item Hợp lực $\vec P + \vec F$ trực đối với $\vec T$.
+\item Ta có: $\tan \alpha = \dfrac{F}{P} = \dfrac{{BI\ell}}{{mg}} = \dfrac{0,5.2.0,05}{0,005.10} = 1 \Rightarrow \alpha = 45^\circ $.
+\item Vậy góc $\alpha = 45^\circ $.
+\end{itemize}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (o) at (0,0);
+\filldraw[black] (4,-0.2) circle(1.8pt)coordinate (c)node[left=5pt,black]{\normalsize{\bth{M}}};
+\draw (c)--++(120:5)coordinate (f)node[above=4pt]{\normalsize{\bth{A}}};
+\fill[pattern=north east lines] (f)--++(0:0.5)--++(90:0.2)--++(180:1)--++(270:0.2);
+\draw (f)--++(0:0.5);
+\draw (f)--++(180:0.5);
+\draw [dashed](f)--++(270:5)coordinate (g);
+\filldraw[black] (g) circle(1.8pt);
+\draw (f)++(-60:0.5) arc (-60:-90:0.5) ;
+\path (f) ++(-75:0.8) node{\normalsize{\bth{\alpha}}};
+\path (c) ++(90:3)coordinate (o);
+\draw [very thick,->](o)--++(270:1.5)node[right]{\normalsize{\bth{\vec{B}}}};
+\draw [very thick,->](c)--++(-60:2)node[right]{\normalsize{\bth{-\vec{T}}}}coordinate (t);
+\draw [very thick,->](c)--++(120:2)node[right]{\normalsize{\bth{\vec{T}}}};
+\draw [dashed] (t)--++(180:1)coordinate (p);
+\draw [very thick,->](c)--(p)node[left=5pt]{\normalsize{\bth{\vec{P}}}};
+\draw [very thick,->](c)--++(0:1)node[right=5pt]{\normalsize{\bth{\vec{F}}}}coordinate (f);
+\draw [dashed] (t)--(f);
+\draw (c)++(-60:0.5) arc (-60:-90:0.5) ;
+\path (c) ++(-75:0.8) node{\normalsize{\bth{\alpha}}};
+\draw [fill=white](c)circle (0.2);
+\filldraw[black] (c)circle(0.05);\end{tikzpicture}}}
+\end{vidu}
+
+\loai{Dòng điện đặt trên ray}
+\begin{vidu} %[2P4-4.3G][Loại3]
+Hai thanh ray nằm ngang và cách nhau một khoảng 20 cm. Một thanh kim loại MN, khối lượng 100 g đặt lên trên, vuông góc với hai thanh ray. Dòng điện qua thanh MN là 5 A. Hệ thống đặt trong từ trường đều thẳng đứng, hướng lên với $B = 0,2$ T, thanh ray MN nằm yên. Lấy $g = 10$ $m/s^2$. Hệ số ma sát giữa thanh MN và hai thanh ray phải thỏa mãn điều kiện là
+\choice
+{$\mu \le 0,2$}
+{$\mu \le 0,02$}
+{\True $\mu \geq 0,2$}
+{$\mu \geq 0,02$}
+\loigiai{immini[thm]{Thanh MN chịu tác dụng của lực từ được biểu diễn như hình.Để thanh đứng yên thì lực từ phải thỏa mãn điều kiện $F \le {f_{ms}} \Rightarrow BI\ell \le \mu mg \to \mu \ge \dfrac{BIl}{mg} = 0,2$}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\path (a) ++(270:3)coordinate (c); 
+\draw (a)--++(0:4.5);
+\draw (c)--++(0:4.5);
+\path (a)--++(0:1.5)--++(270:2)coordinate (b);
+\draw[fill=white] (b)circle (0.2)node[above=6pt]{\normalsize{\bth{\vec{B}}}};
+\draw[fill=black] (b)circle (0.05);
+\path (a) ++(0:3.5)coordinate (m); 
+\path (c) ++(0:3.5)coordinate (n); 
+\draw [line width=2pt,arrow data={0.75}{stealth}] (n)node[below]{\normalsize{\bth{M}}}--(m)node[above]{\normalsize{\bth{N}}};
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\path (n) --++(90:1.5)coordinate (v);
+\draw [very thick,->](v)--++(0:1.2)node[above]{\normalsize{\bth{\vec{F}}}};
+\draw [very thick,->](v)--++(180:1.2)node[above]{\normalsize{\bth{\vec{F}_{ms}}}};
+\tkzLabelSegment[left](m,v){$I$}
+\end{tikzpicture}}}
+\end{vidu}

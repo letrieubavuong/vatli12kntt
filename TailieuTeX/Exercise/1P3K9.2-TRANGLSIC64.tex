@@ -1,0 +1,449 @@
+\begin{ex}%Câu 22
+\immini[thm]{Dưới tác dụng của lực $\vec{F}$, thanh AB có thể quay quanh điểm A.  Xác định cánh tay đòn của lực $\vec{F}$ trong trường hợp này (biết $AB=5\ cm$).
+\choice
+{3 cm}
+{4 cm}
+{\True 5 cm}
+{6 cm}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-0.5,ymax=4,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3.5/0/n, 3.5/-0.1/p, 0/-0.1/q, 0.5/0/o}
+\tkzDefShiftPoint[o](60:0.6){g}
+\tkzDefShiftPoint[o](30:3){a}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n)
+\tkzDrawSegments[gray, line width=3pt](a,o)
+\tkzMarkAngles[size=0.7cm](n,o,a)
+\tkzLabelAngles[pos=1.0](n,o,a){$30^\circ$}
+\draw [very thick,blue,->](a) -- ($(a)!1cm!-90:(o)$)node[above]{$\vec{F}$}coordinate(f);
+\tkzMarkRightAngle(f,a,o)
+\tkzDrawPoints[size=3,fill=white](o,a)
+\tkzLabelPoint[above left](o){$A$}
+\tkzLabelPoint[right](a){$B$}
+\end{tikzpicture}}
+\haidong{5}
+\loigiai{$AB=5\ cm.$}
+\end{ex}
+%\newpage
+\begin{ex}%Câu 23
+\immini[thm]{Tính moment của lực F đối với trục quay O. Cho biết $F=100\ N,\ OA=100\ cm$. Bỏ qua trọng lượng của thanh.
+\choice
+{$50\sqrt{5}\ N.m$}
+{$50\sqrt{2}\ N.m$}
+{\True $50\sqrt{3}\ N.m$}
+{$50\ N.m$}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-0.5,ymax=4,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3/0/n, 3/-0.1/p, 0/-0.1/q, 0.5/0/o}
+\tkzDefShiftPoint[o](60:0.6){g}
+\tkzDefShiftPoint[o](60:3){a}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n)
+\tkzDrawSegments[black, line width=3pt](a,o)
+\draw [very thick,blue,->](a) -- ($(a)!1cm!-60:(o)$)node[above]{$\vec{F}$}coordinate(f);
+\tkzDrawPoints[size=3,fill=white](o,a)
+\tkzDefPointBy[projection=onto m--n](a) \tkzGetPoint{h}
+\tkzDrawSegments[dashed](a,h)
+\tkzMarkAngles[size=0.7cm](o,a,h)
+\tkzLabelAngles[pos=1.2](o,a,h){$30^\circ$}
+\tkzMarkRightAngle[size=0.25](a,h,o)
+\tkzLabelPoint[right](a){$A$}
+\tkzLabelPoint[below](o){$O$}
+\tkzLabelPoint[below](h){$H$}
+\end{tikzpicture}}
+\haidong{5}	\loigiai{$50\sqrt{3}\ N.m$}
+\end{ex}
+\begin{ex}%Câu 179
+\immini[thm]{Xác định moment do lực $\vec{F}$ có độ lớn $10\ N$ tác dụng vuông góc lên mỏ lết để làm xoay bu lông. Biết mỏ lết có chiều dài $25\ cm$ và khoảng cách từ điểm đặt của lực đến bu lông vào cỡ $21\ cm$.
+\choice
+{\True $2,1\ N.m$}
+{$1,1\ N.m$}
+{$3,3\ N.m$}
+{$5,2\ N.m$}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-0.5,ymax=2.5,xmin=-1,xmax=5]\tkzClip
+\tkzDefPoints{0/1/o, 2.7/1/a}
+\node[inner sep=0pt,rotate=00] (russell) at (-0.3,1.02){\includegraphics[width=0.58cm]{images/ecu.pdf}};
+\node[inner sep=0pt,rotate=20] (russell) at (1.7,1){\includegraphics[width=5cm]{images/cole.pdf}};
+\tkzDrawPoints[size=2,fill=black](o,a)
+\tkzDrawSegments[dashed,blue](o,a)
+\draw[very thick,blue,->](a)--++(-90:1.2)coordinate(f)node[right,black]{$\vec{F}$};
+\tkzLabelPoint[left=15pt](o){$O$}
+\tkzDrawArc[R,arrows=<-,color=black](o,1.2cm)(30,140)
+\tkzDefPointBy[projection=onto a--f](o)\tkzGetPoint{h}
+\tkzDrawSegments[dashed,thin](o,h)
+\tkzLabelSegment(o,h){$d$}
+\end{tikzpicture}}
+\haidong{5}	\loigiai{$M=F.d=2,1\ N.m$}
+\end{ex}
+\begin{ex}%Câu 180
+\immini[thm]{Một xe cẩu có chiều dài cần trục $\ell=20\ m$ và nghiêng $30^\circ $ so với phương thẳng đứng. Đầu cần trục có treo một thùng hàng nặng 2 tấn như hình. Xác định moment lực do thùng hàng tác dụng lên đầu cần trục đối với trục quay đi qua đầu còn lại của cần trục gắn với thân máy. Lấy $g=9,8\ m/s^2.$
+\choice
+{\True $196000\ N.m$}
+{$296000\ N.m$}
+{$10000\ N.m$}
+{$96000\ N.m$}}{\includegraphics[width=4cm]{"images/img-76"}
+}
+\haidong{8}	\loigiai{$196000\ N.m$
+\begin{itemize}
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\end{itemize}	
+}
+\end{ex}
+\begin{ex}%Câu 175
+Một bu lông nối khung chính và khung sau của xe đạp leo núi cần moment lực $15\ N.m$ để siết chặt. Nếu bạn có khả năng tác dụng lực $40\ N$ lên cờ lê theo một hướng bất kì thì chiều dài tối thiểu của cờ lê để tạo ra moment lực cần thiết là
+\choice
+{\True $0,375\ m$}
+{$0,325\ m$}
+{$\dfrac{8}{3}\ m$}
+{$600\ m$}
+\haidong{8}\loigiai{Chiều dà tối thiểu của cờ lê: $d=\dfrac{M}{F}=0,375\ m$}
+\end{ex}
+\loai{Điều kiện cân bằng khi biết cụ thể các lực và cánh tay đòn}
+\begin{ex}%[1P3B3-2][Loai1] 
+Một người dùng búa để nhổ một chiếc đinh, khi người đó tác dụng một lực lớn hơn 50 N vào đầu búa thì đinh bắt đầu chuyển động. Biết cánh tay đòn của lực tác dụng của người đó là 20 cm và cánh tay đòn của lực của gỗ tác dụng vào đinh là 2 cm. Hãy tính lực cản lớn nhất của gỗ tác dụng vào đinh.
+\choice
+{ \True 500 N}
+{350 N}
+{200 N}
+{400 N}
+\haidong{6}	\loigiai{
+Điều kiện cân bằng: $M_{\text{thuận}} = M_{\text{nghịch}} \Leftrightarrow F_1d_1 = F_2d_2 \Rightarrow F_2=F_1\dfrac{d_1}{d_2}= 50. \dfrac{20}{2} = 500\ N$.
+} 
+\end{ex}
+\begin{ex}%[1P3B3-2][Loai1] 
+Một cánh cửa chịu tác dụng của một lực có moment $M_1 = 60$ N.m đối với trục quay đi qua các bản lề. Lực $F_2$ tác dụng vào cửa có moment quay theo chiều ngược lại và có cánh tay đòn $d_2 = 1,5$ m. Lực $F_2$ có độ lớn bằng bao nhiêu thì cửa không quay?
+\choice
+{60 N}
+{\True 40 N}
+{90 N}
+{120 N}
+\haidong{7}	\loigiai{
+Để cánh cửa không quay thì: $M_1 = F_2d_2 \Leftrightarrow 60 = 1,5.F_2 \Rightarrow F_2 = 40\ N$.
+} 
+\end{ex}
+%\loai{Điều kiện cân bằng khi biết cụ thể các lực và cánh tay đòn}
+\begin{ex}%Câu 3
+\immini[thm]{Một thanh đồng chất có chiều dài L, trọng lượng 200 N, treo một vật có trọng lượng 450 N vào thanh như hình. Lực $\vec{F}_1$ của thanh tác dụng lên điểm tựa có độ lớn là
+\choice
+{\True 213 N}
+{231 N}
+{238 N}
+{439 N}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o1, 5/0/o2, 3.475/0.15/c, 2.25/0.15/g, 3.475/-1.5/m, 3.475/-1.25/m'}
+\draw(-0.05,0.3)--(-0.05,0)--(5.05,0)--(5.05,0.3)--cycle;
+\draw[fill=gray](o1)--++(-60:0.4)--++(180:0.4)--cycle;
+\draw[fill=gray](o2)--++(-60:0.4)--++(180:0.4)--cycle;
+\tkzDrawPoints[size=3,fill=black](c)
+\tkzDrawPoints[size=3,fill=black](g)
+\tkzDrawSegments(c,m')
+\node at (m) [shape=rectangle,draw=red,pattern=dots,minimum height=0.5cm,minimum width=0.7cm, rounded corners=1pt,label=left:] {};
+\draw[dashed,<->](0,0.5)--node[midway,above]{$\dfrac{L}{2}$}(2.25,0.5);
+\draw[dashed,<->](2.25,0.5)--node[midway,above]{$\dfrac{L}{4}$}(3.475,0.5);
+\draw[->,very thick,blue](o1)++(90:0.3)--++(90:1)node[right,black]{$\vec{F}_1$};
+\draw[->,very thick,blue](o2)++(90:0.3)--++(90:1.6)node[left,black]{$\vec{F}_2$};
+\end{tikzpicture}}
+\haidong{5}\end{ex}
+\newpage
+%\loai{Người nâng một đầu của tấm gỗ}
+
+\begin{ex}%[1P3K3-2][Loai1] 
+\immini[thm]{Một người nâng một tấm gỗ dài 1,5 m, nặng 30 kg và giữ cho nó hợp với mặt đất nằm ngang một góc $60^\circ$. Biết trọng tâm của tấm gỗ cách đầu mà người đó nâng 120 cm, lực nâng vuông góc với tấm gỗ. Lấy $g=10\ m/s^2$. Lực nâng của người đó là
+\choice
+{ \True 30 N}
+{240 N}
+{51,96 N}
+{300 N}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-0.5,ymax=4,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3.5/0/n, 3.5/-0.1/p, 0/-0.1/q, 0.5/0/o}
+\tkzDefShiftPoint[o](60:0.6){g}
+\tkzDefShiftPoint[o](60:3){a}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n)
+\tkzDrawSegments[gray, line width=3pt](a,o)
+\tkzMarkAngles[size=0.4cm](n,o,a)
+\tkzLabelAngles[pos=0.6](n,o,a){$\alpha$}
+\draw [very thick,blue,->](a) -- ($(a)!1cm!-90:(o)$)node[above]{$\vec{F}$}coordinate(f);
+\tkzMarkRightAngle(f,a,o)
+\tkzDrawPoints[size=3,fill=white](o,a)
+\end{tikzpicture}}
+\haidong{8}	\loigiai{
+\immini[thm]{Điều kiện cân bằng: $M_{\text{thuận}} = M_{\text{nghịch}}\\
+\Rightarrow P.d = F. OA \Leftrightarrow mg. OG. \cos 60^\circ = F. OA
+\Rightarrow 30.10.30.0,5 = F.150
+\Rightarrow F = 30\ N$}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-2,ymax=4,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3.5/0/n, 3.5/-0.1/p, 0/-0.1/q, 0.5/0/o}
+\tkzDefShiftPoint[o](60:0.6){g}
+\tkzDefShiftPoint[o](60:3){a}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n)
+\tkzDrawSegments[gray, line width=3pt](a,o)
+\tkzMarkAngles[size=0.4cm](n,o,a)
+\tkzLabelAngles[pos=0.6](n,o,a){$\alpha$}
+\draw [very thick,blue,->](a) -- ($(a)!1cm!-90:(o)$)node[above]{$\vec{F}$}coordinate(f);
+\tkzMarkRightAngle(f,a,o)
+\draw[very thick,blue,->](g)--++(-90:1.8)node[right]{$\vec{P}$};
+\tkzDrawPoints[size=3,fill=white](o,a,g)
+\tkzLabelPoint[below](o){O}
+\tkzLabelPoint[right](a){A}
+\tkzLabelPoint[above left](g){G}
+\end{tikzpicture}}
+} 
+\end{ex}
+%\loai{Vật treo vào tường}
+\begin{ex}%[1P3K3-2][Loai1] 
+\immini[thm]{Đặt thanh AB có khối lượng không đáng kể nằm ngang, đầu A gắn vào tường nhờ một bản lề, đầu B nối với tường bằng dây BC. Treo vào B một vật có khối lượng 5 kg. Cho $AB = 40$ cm, $AC = 60$ cm như hình vẽ. Lấy $g = 10\ m/s^2$. Lực căng T của dây BC nhận giá trị nào sau đây?
+\motcot
+{$T = 50$ N}
+{ \True $T = 60$ N}
+{$T = 33,3$ N}
+{$T = 80$ N}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/c, 0/0.5/m, 0/-4/n, -0.1/-4/p, -0.1/0.5/q}
+\tkzDefShiftPoint[c](-90:3){a}
+\tkzDefShiftPoint[a](0:2){b}
+\tkzDefShiftPoint[b](-90:1){d}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(b,c b,d m,n)
+\tkzDrawSegments[gray, line width=3pt](a,b)
+\tkzDrawPoints[size=3,fill=white](a,b)
+\shade[ball color=blue] (d) circle (1.3ex);
+\node[white] at (d) {\normalsize{m}};
+\tkzLabelPoint[left](c){C}
+\tkzLabelPoint[left](a){A}
+\tkzLabelPoint[right](b){B}
+\end{tikzpicture} }
+\haidong{10}	\loigiai{
+\immini[thm]{\begin{itemize}
+\item Ta có: $BC=\sqrt{AB^2+AC^2}=\sqrt{40^2+60^2}=72\ cm$.
+\item Điều kiện cân bằng:\\ $M_P=M_T \Rightarrow T.AH=P.AB \Rightarrow T=P.\dfrac{AB}{AH}=P.\dfrac{BC}{AC}=5.10.\dfrac{72}{60}=60\ N$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-5,ymax=0.5,xmin=-0.5,xmax=3]\tkzClip
+\tkzDefPoints{0/0/c, 0/0.5/m, 0/-4/n, -0.1/-4/p, -0.1/0.5/q}
+\tkzDefShiftPoint[c](-90:3){a}
+\tkzDefShiftPoint[a](0:2){b}
+\tkzDefShiftPoint[b](-90:1){d}
+\tkzDefPointBy[projection=onto b--c](a)\tkzGetPoint{h}
+\tkzDefPointBy[homothety=center b ratio 0.25](c)\tkzGetPoint{t}
+\tkzDefPointBy[projection=onto b--d](t)\tkzGetPoint{t'}
+\tkzDefPointBy[translation=from t' to b](d)\tkzGetPoint{p'}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(b,c b,d m,n)
+\tkzDrawSegments[dashed,thin](h,a)
+\tkzMarkRightAngle(c,h,a)
+\tkzDrawSegments[gray, line width=3pt](a,b)
+\tkzDrawPoints[size=3,fill=white](a,b)
+\shade[ball color=black] (d) circle (1.3ex);
+\tkzDrawSegments[blue,very thick,->](b,t d,p')
+\node[white] at (d) {\normalsize{m}};
+\tkzLabelPoint[left](c){C}
+\tkzLabelPoint[left](a){A}
+\tkzLabelPoint[right](b){B}
+\tkzLabelPoint[above,xshift=5pt](h){H}
+\tkzLabelPoint[right](t){$\vec{T}$}
+\tkzLabelPoint[right](p'){$\vec{P}$}
+\end{tikzpicture} }
+} 
+\end{ex}
+
+\begin{ex}%Câu 6
+\immini[thm]{Một tấm ván nặng 150 N được bắc qua một con mương. Biết trọng tâm G của tấm ván cách điểm tựa A một khoảng là 2 m và cách điểm tựa B một khoảng 1 m. Hãy xác định lực mà tấm ván tác dụng lên hai bờ mương}{\begin{tikzpicture}[scale=1.3,thick,>=stealth']
+\coordinate (a) at (0,0)node[above=6pt]{A};
+\draw[] (a)rectangle(4,0.15);
+\path (a)--++(0:4) coordinate(b)node[above=6pt]{B};
+\draw (-0.5,0)-- (a)-- (0,-0.5);
+\fill[pattern=north east lines] (-0.5,0)-- (a)-- (0,-0.5)-- (-0.1,-0.5)-- (-0.1,-0.1)-- (-0.5,-0.1);
+\draw (4,-0.5)-- (b)-- (4.5,0);
+\fill[pattern=north east lines] (4,-0.5)-- (b)-- (4.5,0)-- (4.5,-0.1)-- (4.1,-0.1)-- (4.1,-0.5);
+\draw(2.5,0.07)circle(0.05cm)node[above=6pt]{G};
+\end{tikzpicture}}
+\choice
+{\True $F_A=50$ N; $F_B=100$ N}
+{$F_A=50$ N; $F_B=150$ N}
+{$F_A=60$ N; $F_B=100$ N}
+{$F_A=60$ N; $F_B=150$ N}
+\haidong{10}	\loigiai{
+\begin{itemize}
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\item 
+\end{itemize}
+}
+\end{ex}
+
+%\loai{Treo một vật lên trần nhà}
+\begin{ex}%[1P3K3-2][Loai1] 
+\immini[thm]{Một thanh gỗ dài 1,8 m nặng 30 kg, một đầu được gắn vào trần nhà nhờ một bản lề, đầu còn lại được buộc vào một sợi dây và gắn vào trần nhà sao cho phương của sợi dây thẳng đứng và giữ cho tấm gỗ nằm nghiêng hợp với trần nhà nằm ngang một góc $45^\circ$. Biết trọng tâm của thanh gỗ cách đầu gắn sợi dây 60 cm. Lấy $g=10\ m/s^2$. Tính lực căng của sợi dây.
+\choice
+{240 N}
+{\True 200 N}
+{300 N}
+{100 N}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-2.5,ymax=0.5,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3.5/0/n, 3.5/0.1/p, 0/0.1/q, 3/0/o}
+\tkzDefShiftPoint[o](225:1){g}
+\tkzDefShiftPoint[o](225:3){a}
+\tkzDefPointBy[projection=onto m--n](a)\tkzGetPoint{h}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n a,h)
+\tkzDrawSegments[gray, line width=3pt](a,o)
+\tkzDrawPoints[size=3,fill=white](o,a)
+\tkzMarkAngles[size=0.4cm](h,o,a)
+\tkzLabelAngles[pos=-0.8](h,o,a){$45^\circ$}
+\end{tikzpicture}} 
+\haidong{8}		\loigiai{
+\immini[thm]{Điều kiện cân bằng $M_{\text{thuận}} = M_{\text{nghịch}}\\
+\Rightarrow T.d' = P.d
+\Rightarrow T. OA.\cos 45^\circ = P. OG. \cos 45^\circ
+\Rightarrow T.1,8 = 30.10.1,2
+\Rightarrow T = 200\ N$}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3.5,ymax=0.5,xmin=-0,xmax=4]\tkzClip
+\tkzDefPoints{0/0/m, 3.5/0/n, 3.5/0.1/p, 0/0.1/q, 3/0/o}
+\tkzDefShiftPoint[o](225:1){g}
+\tkzDefShiftPoint[o](225:3){a}
+\tkzDefPointBy[projection=onto m--n](a)\tkzGetPoint{h}
+\fill[pattern=north east lines](m)--(n)--(p)--(q);
+\tkzDrawSegments(m,n a,h)
+\tkzDrawSegments[gray, line width=3pt](a,o)
+\tkzMarkAngles[size=0.4cm](h,o,a)
+\tkzLabelAngles[pos=-0.8](h,o,a){$45^\circ$}
+\draw[very thick,blue,->](g)--++(-90:1.8)node[right]{$\vec{P}$};
+\draw[very thick,blue,->](a)--++(90:0.6)node[left]{$\vec{T}$};
+\tkzDrawPoints[size=3,fill=white](o,a,g)
+\tkzLabelPoint[above](o){O}
+\tkzLabelPoint[left](a){A}
+\tkzLabelPoint[below right](g){G}
+\end{tikzpicture}}
+} 
+\end{ex}
+
+%\loai{Tổng hợp}
+\begin{ex}%[1P3B3-2][Loai1]
+\immini[thm]{Một thanh nhẹ gắn vào sàn tại B. Tác dụng lên đầu A lực kéo $ F=100 $ N theo phương ngang. Thanh được giữ cân bằng nhờ dây AC. Áp dụng quy tắc moment tìm lực căng của dây. Biết $ \alpha=30^\circ $
+\choice
+{\True 200 N}
+{300 N}
+{400 N}
+{500 N}	}{\begin{tikzpicture}[scale=0.8,thick,>=stealth']
+\coordinate (a) at (0,0) node[above]{\normalsize{A}};
+\filldraw[black] (a) circle(1.2pt);  
+\coordinate (b) at (0,-4) node[above]{\normalsize{}};
+\filldraw[black] (b) circle(1.2pt)node[above right]{\normalsize{B}}; 
+\draw[pattern=north east lines] (-0.1,0) rectangle (0.1,-4); 
+\fill[pattern=north east lines] (-2.5,-4) rectangle (2.5,-4.2);
+\draw (-2.5,-4)--(2.5,-4);
+\draw[very thick] (a)--++(240:4.62) coordinate (c) node[above left]{\normalsize{C}};
+\draw[very thick,->, blue] (a)--++(0:1.2) coordinate (t) node[above left]{\normalsize{\bth{\vec{F}}}};
+\draw (a)++(240:0.6) arc (240:270:0.6) ;
+\path (a) ++(252:0.9) node{\normalsize{\bth{\alpha}}};
+\end{tikzpicture} }
+\haidong{9}	
+\loigiai{
+\immini[thm]{Áp dụng quy tắc moment lực với trục quay qua B ta có:
+$ M_F=M_T \Rightarrow F.AB=T.AB.sin\alpha \Rightarrow T=200\ N.$ }{\begin{tikzpicture}[scale=0.8,thick,>=stealth']
+\coordinate (a) at (0,0) node[above]{\normalsize{A}};
+\filldraw[black] (a) circle(1.2pt);  
+\coordinate (b) at (0,-4) node[above]{\normalsize{}};
+\filldraw[black] (b) circle(1.2pt)node[above right]{\normalsize{B}}; 
+\draw[dashed] (b)--++(150:2) coordinate (d);
+\draw (d)++(60:0.25)--++(330:0.25)--++(240:0.25);
+\draw[pattern=north east lines] (-0.1,0) rectangle (0.1,-4); 
+\fill[pattern=north east lines] (-2.5,-4) rectangle (2.5,-4.2);
+\draw (-2.5,-4)--(2.5,-4);
+\draw [very thick,->](0,-4)--(0,-1.825)node[right=5pt]{\normalsize{\bth{\vec{N}}}};
+\draw[very thick] (a)--++(240:4.62) coordinate (c) node[above left]{\normalsize{C}};
+\draw[very thick,->] (a)--++(240:2.4) coordinate (t) node[above left]{\normalsize{\bth{\vec{T}}}};
+\draw[very thick,->] (a)--++(0:1.2) coordinate (t) node[above left]{\normalsize{\bth{\vec{F}}}};
+\draw (a)++(240:0.6) arc (240:270:0.6) ;
+\path (a) ++(252:0.9) node{\normalsize{\bth{\alpha}}};
+\end{tikzpicture} }
+}
+\end{ex}
+
+
+
+
+
+\begin{ex}%[1P3K3-2][Loai1]
+Một thanh sắt dài, đồng chất, tiết diện đều, được đặt trên bàn sao cho $ \dfrac 1 4 $ chiều dài của nó nhô ra khỏi bàn. Tại đầu nhô ra, người ta đặt một lực $ \vec{F} $ hướng thẳng đứng xuống dưới. Khi lực đạt tới giá trị lớn hơn 40 N thì đầu kia của thanh sắt bắt đầu bênh lên. Lấy $ g=10\;m/s^2 $. Tính khối lượng của thanh.
+\choice
+{\True 4 kg}
+{5 kg}
+{6 kg}
+{7 kg}
+\haidong{10}	\loigiai{
+\immini[thm]{\begin{itemize}\item Xét trục quay là điểm tiếp xúc O giữa mép bàn và thanh sắt. 
+\item Thanh sắt đồng chất, tiết diện đều: 
+$ AG=GB\; \Rightarrow GO=OB=\dfrac 1 4AB $
+\item Khi đầu kia của thanh sắt bắt đầu bênh lên, ta có: 
+$ M_F=M_P\Rightarrow F.OB=P.OG=mg.OG $ 
+$ \Rightarrow m=\dfrac {F.OB}{g.OG}=4\ kg.$ 
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\draw[pattern=north east lines](0,0)node[above=3pt]{\normalsize{A}} rectangle (4,0.1) node[above=0pt]{\normalsize{B}};
+\draw[fill=gray](-0.5,-0.04) rectangle (3,-0.24);
+\draw[fill=gray](2.5,-0.24) rectangle (2.7,-1);
+\node[above=3pt] at (2,0){\normalsize{G}};
+\node[above=3pt,above] at (3,0){\normalsize{O}};
+\coordinate (o) at (3,0.05);
+\draw[fill=black] (o) node[left]{}circle(0.05);
+\draw[->] (2,0)--++(270:1) coordinate(m) node[left]{\normalsize{\bth{\vec{P}}}};
+\draw[->] (4,0)--++(270:1) coordinate(m2) node[right]{\normalsize{\bth{\vec{F}}}};
+\end{tikzpicture} }}
+\end{ex}
+\newpage
+\begin{ex}
+Thanh AB đồng chất, tiết diện đều có trọng lượng $P=10 ~N$. Người ta treo các vật có trọng lượng $P_{1}=20 ~N$ và $P_{2}=30 ~N$ lần lượt tại $A,\ B$ và đặt giá đỡ tại O để thanh cân bằng. Biết $AB=1,2 ~m$. Xét tính đúng sai của các mệnh đề sau:
+\choiceTF[t]
+{Trọng lực $\vec{P}_1$ của vật và trọng lực $\overrightarrow{{P}}$ của thanh làm thanh quay ngược chiều kim\\ đồng hồ quanh trục O}
+{Trọng lực $\overrightarrow{P_2}$ làm thanh quay quanh cùng chiều kim đồng hồ quanh trục O}
+{Momen của phản lực có giá đi qua O là $10\ N.m$}
+{Giá đỡ cách đầu A một khoảng bằng $0,6{~m}$ thì hệ cân bằng}
+\loigiai{\begin{itemize}
+\item \immini[thm]{Đúng.
+Lực tác dụng lên thanh AB như hình bên
+
+Từ hình vẽ ta thấy: Trọng lực $\vec{P}_{1}$ của vật và trọng lực
+
+$\overrightarrow{P}$ của thanh làm thanh quay ngược chiều kim đồng hồ quanh trục O}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\draw(0,0) rectangle (4,0.2);
+\node [above=3pt] at (0,0){\normalsize{A}};
+\node [above right=3pt] at (2.5,0){\normalsize{O}};
+\node [above=3pt] at (4,0){\normalsize{B}};
+\node [above=3pt] at (2,0){\normalsize{G}};
+\draw[pattern=north west lines] (2.5,0)--++(-60:0.5)--++(180:0.5)--cycle;
+\draw[->] (0,0)--++(270:0.8) coordinate(m) node[right]{\normalsize{\bth{\vec{P}_1}}};
+\draw[->] (2,0)--++(270:0.6) coordinate(m) node[left]{\normalsize{\bth{\vec{P}}}};
+\draw[->] (4,0)--++(270:1.6) coordinate(m) node[right]{\normalsize{\bth{\vec{P}_2}}};
+\draw[->] (2.5,0)--++(90:3) coordinate(m2) node[right]{\normalsize{\bth{\vec{N}}}};
+\end{tikzpicture}}
+
+\item Đúng.
+Từ hình vẽ ta thấy: Trọng lực $\vec{P}_{2}$ làm thanh quay quanh cùng chiều kim đồng hồ quanh trục O .
+
+\item Sai. Phản lực $\vec{N}$ có giá đi qua O nên $M_{\bar{N}}=0$
+
+\item Sai. Gọi $M_{\vec{P}_{1}} ; M_{\vec{P}_{2}} ; M_{\vec{P}}$ lần lượt là momen của $\vec{P}_{1}, \vec{P}_{2}$ và $\vec{P}$ đối với trục quay O
+
+Khi hệ cân bằng, áp dụng quy tắc momen, ta có:
+
+$M_{\vec{P}_{1}}+M_{\vec{P}}=M_{\vec{P}_{2}} \Rightarrow P_{1} . O A+P . O I=P_{2} . O B$
+
+Mặc khác: $O I=O A-\dfrac{A B}{2}$ và $O B=A B-O A$
+
+$\Rightarrow P_{1} . O A+P\left(O A-\dfrac{A B}{2}\right)=P_{2} .(A B-O A)$
+
+$\Rightarrow 20 . O A+10 .(O A-0,6)=30 .(1,2-O A) \Rightarrow O A=0,7 ~m$
+
+\end{itemize}		
+}
+\end{ex}

@@ -1,0 +1,243 @@
+
+	\begin{vidu}
+		Một bếp đun nước có công suất $500\ W$ đun một lượng nước $300\ g$ ở $20^\circ C$ (áp suất $1\ atm$). Cho nhiệt dung riêng của nước là $4200\ J/kg.K$ và nhiệt hóa hơi riêng của nước là $2,26.10^6\ J/kg$. Giả sử toàn bộ nhiệt lượng của bếp được dùng để làm nóng nước, bỏ qua sự trao đổi nhiệt với môi trường.
+		
+		\begin{vdc}
+			Thời gian cần thiết để đun nước trong ấm đạt đến nhiệt độ sôi là
+			\choice
+			{$100,8\ s$}
+			{$301,6\ s$}
+			{\True $201,6\ s$}
+			{$250,0\ s$}
+			\dotlineEX{4}
+%			\loigiai{
+%				\begin{itemize}
+%					\item[A] Sai: Tính thiếu nhiệt lượng cần thiết
+%					\item[B] Sai: Cộng nhầm hoặc tính sai từ biểu thức
+%					\item[C] Đúng: $Q = mc\Delta t = 0,3 \cdot 4200 \cdot 80 = 100800\ J$, $\Rightarrow t = \dfrac{100800}{500} = 201,6\ s$
+%					\item[D] Sai: Là giá trị ước lượng gần đúng nhưng không chính xác
+%				\end{itemize}
+%			}
+		\end{vdc}
+		
+		\begin{vdc}
+			Sau khi nước sôi nếu tiếp tục đun trong $2$ phút thì khối lượng nước còn lại là
+			\choice
+			{$300\ g$}
+			{\True $273,5\ g$}
+			{$250,0\ g$}
+			{$226,0\ g$}
+%			\loigiai{
+%				\begin{itemize}
+%					\item[A] Sai: Không xét đến lượng nước đã bay hơi
+%					\item[B] Đúng: Nhiệt lượng $Q = P.t = 500 \cdot 120 = 60000\ J$, $\Rightarrow m = \dfrac{60000}{2,26.10^6} \approx 0,0265\ kg = 26,5\ g$. Khối lượng còn lại: $300 - 26,5 = 273,5\ g$
+%					\item[C] Sai: Giảm quá mức thực tế
+%					\item[D] Sai: Nhầm với nhiệt hóa hơi hoặc tính sai phần trăm bay hơi
+%				\end{itemize}
+%			}
+\dotlineEX{4}
+		\end{vdc}
+	\end{vidu}
+	
+	
+	\loai{Loại 1: Chỉ hóa hơi}
+\begin{vidu}
+	Sau khi đun nóng nước đến $100^\circ C$, tiếp tục đun thêm thì nước bắt đầu sôi. Cho nhiệt hoá hơi riêng của nước là $L=2,3.10^6\ J/kg$. Nhiệt lượng đã cung cấp để làm 0,70 kg nước ở $100^\circ C$ hoá hơi hoàn toàn là
+	\choice	
+	{$1,6.10^3\ J$}
+	{$1,6.10^4\ J$}
+	{$1,6.10^5\ J$}
+	{\True $1,6.10^6\ J$}
+	\loigiai{
+		\begin{itemize}
+			\item Dùng công thức: $Q=mL=0,70.2,3.10^6=1,6.10^6\ J$. 
+		\end{itemize}
+	}
+	\haidong{8}\end{vidu}
+
+
+\begin{vidu} \nguon{2}
+	\immini[thm]{Sự phụ thuộc của nhiệt độ vào nhiệt lượng tỏa ra của $0,2 \ kg$ chất khí ban đầu được thể hiện trên hình. Quá trình này diễn ra ở áp suất không đổi. Nhiệt hóa hơi riêng của chất này là
+	\choice
+	{\True $3 . 10^4 \ J /kg$}
+	{$4 . 10^{5} \ J /kg$}
+	{$4 . 10^4 \ J /kg$}
+	{$3,5 . 10^{5} \ J /kg$}}{\begin{tikzpicture}[scale=1.2,thick,>=stealth']
+			\tkzDefPoints{0/0/o, 3.25/0/x, 0/3/y}
+			\draw  [dashed,thin, xstep=0.5cm,ystep=4cm]  (0,0)  grid  (2.5,3);
+			\tkzDrawSegments[very thick, Mapcolor,->](o,x o,y)
+			%\tkzLabelPoint[below left](o){$O$}
+			\tkzLabelPoint[below](x){$Q\ (kJ)$}
+			\tkzLabelPoint[above](y){$T$}
+			\foreach  \x  in  {1,2,...,4}
+			{\pgfmathtruncatemacro{\label}{2*\x};
+				\node[below]
+				(\label) at (.5*\x,0) {\label};
+				\draw[fill=white](.5*\x,0)circle(0.5pt);}
+			
+			\draw[very thick,blue] (0,2.5) -- (0.5,0.5) -- (2,0.5) -- (2.5,0.25);
+	\end{tikzpicture}}
+	
+	\loigiai{
+		\begin{itemize}
+			\item Trong quá trình ngưng tụ, nhiệt độ của chất không thay đổi.
+			\item Nhiệt lượng tỏa ra khi ngưng tụ là:
+			\begin{align*}
+				Q=8 . 10^3-2 . 10^3=6 . 10^3 \ J
+			\end{align*}
+			\item Do đó, nhiệt hóa hơi riêng của chất này bằng:
+			\begin{align*}
+				L=\dfrac{Q}{m}=\dfrac{6 . 10^3}{0,2}=30 . 10^3 \ J / kg
+			\end{align*}
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Loại 2: Có sự chuyển nhiệt độ và hóa hơi}
+
+\begin{vidu}
+	Biết nhiệt dung riêng của nước là $c=4190\ J/kg.K$ và nhiệt hóa hơi riêng của nước là $L=2,26.10^{6}\ J/kg$. Để làm cho $m=200\ g$ nước lấy ở $t_1=10^\circ C$ sôi ở $t_2=100^\circ C$ và $10 \%$ khối lượng của nó đã hóa hơi khi sôi thì cần cung cấp một nhiệt lượng là
+	\choice
+	{$169 \ kJ$}
+	{\True $121 \ kJ$}
+	{$189 \ kJ$}
+	{$212 \ kJ$}
+	\loigiai{
+		
+		Nhiệt lượng để tăng nhiệt độ $Q=m c \Delta t=0,2.4190.(100-10)=75420\ J$
+		
+		Nhiệt hóa hơi $Q_{h h}=L m_{h h}=2,26.10^{6}.0,1.0,2=45200\ J$
+		
+		Nhiệt lượng cần cung cấp $Q+Q_{h h}=75420+45200=120620 \ J$.
+		
+	}
+	\haidong{8}\end{vidu}
+
+
+\loai{Loại 3: Có nóng chảy và hóa hơi}
+\begin{vidu}
+	 Cho biết nước đá có nhiệt nóng chảy riêng là $3,4.10^{5}\ J/kg$ và nhiệt dung riêng là $2,09.10^3\ J / kg. K$; nước có nhiệt dung riêng là $4,18.10^3\ J/kg.K$ và nhiệt hoá hơi riêng là $2,3.10^{6}\ J/kg$. Nhiệt lượng cần cung cấp cho cục nước đá khối lượng $0,2\ kg$ ở $-20^\circ C$ biến hoàn toàn thành hơi nước ở $100^\circ C$ là
+	\choice
+	{$205,96 \ kJ$}
+	{\True $619,96 \ kJ$}
+	{$159,96 \ kJ$}
+	{$460 \ kJ$}
+	\loigiai{
+		
+		Nhiệt lượng để nước đá tăng nhiệt độ lên $0^\circ C$ là $$Q_{n d}=m c_{n d} \Delta t_{n d}=0,2.2,09.10^3.20=8360\ J$$
+		
+		Nhiệt nóng chảy là $$Q_{n c}=\lambda m=3,4.10^{5}.0,2=68000\ J$$
+		
+		Nhiệt lượng để nước tăng nhiệt độ lên $100^\circ C$ là $$Q_{n}=m c_{n} \Delta t_{n}=0,2 . 4,18 . 10^3 . 100=83600\ J$$
+		
+		Nhiệt hóa hơi là $$Q_{h h}=L m=2,3.10^{6}.0,2=460000\ J$$
+		
+		Nhiệt lượng cần cung cấp là:
+		$$Q_{n d}+Q_{n c}+Q_{n}+Q_{h h}=8360+68000+83600+460000=619960 J \approx 619,96 k J$$
+	}
+	\haidong{6}\end{vidu}
+\loai{Loại 4: Có trao đổi nhiệt, chuyển nhiệt và hóa hơi}
+\begin{vidu}
+	Một ấm nhôm có khối lượng $m_{b}=600\ g$ chứa $1,5$ lít nước ở $t_1=$ $20^\circ C$, sau đó đun bằng bếp điện. Sau $t=35$ phút thì đã có $20 \%$ khối lượng nước đã hóa hơi ở nhiệt độ sôi $t_2=100^\circ C$. Biết rằng, $H=75 \%$ nhiệt lượng mà bếp cung cấp được dùng vào việc đun nước. Cho biết nhiệt dung riêng của nước là $c_{n}=4190\ J / kg . K$, của nhôm là $c_{b}=880\ J / kg . K$, nhiệt hóa hơi riêng của nước ở $100^\circ C$ là $L=2,26.10^{6}\ J/kg$, khối lượng riêng của nước là $1\ kg /$lít. Công suất cung cấp nhiệt của bếp điện là
+	\choice
+	{\True $776,5\ W$}
+	{$796,5\ W$}
+	{$786,5\ W$}
+	{$876,5\ W$}
+	\loigiai{
+		
+		Khối lượng nước $m_{n}=V \rho=1,5.1=1,5\ kg$
+		
+		Nhiệt lượng để tăng nhiệt độ của nhôm $Q_{b}=m_{b} c_{b} \Delta t_{b}=0,6.880.(100-20)=42240$ J
+		
+		Nhiệt lượng để tăng nhiệt độ của nước $Q_{n}=m_{n} c_{n} \Delta t_{n}=1,5.4190.(100-20)=502800\ J$
+		
+		Nhiệt lượng hóa hơi của nước $Q_{h h}=L m_{h h}=2,26.10^{6}.0,2.1,5=678000\ J$
+		
+		Nhiệt lượng có ích $Q=Q_{b}+Q_{n}+Q_{h h}=42240+502800+678000=1223040\ J$
+		
+		Điện năng tiêu thụ $A=\dfrac{Q}{H}=\dfrac{1223040}{0,75}=1630720\ J$
+		
+		Công suất $P=\dfrac{A}{t}=\dfrac{1630720}{35.60} \approx 776,5 \ W$. 
+	}
+	\haidong{8}\end{vidu}
+\begin{vidu} \nguon{4}
+	Để xác định nhiệt hóa hơi riêng của nước, một học sinh làm thí nghiệm sau: đưa $20 \ g$ hơi nước ở $100^\circ C$ vào một nhiệt lượng kế chứa $470 \ g$ nước ở nhiệt độ $20^\circ C$, đến khi cân bằng nhiệt thì nhiệt độ cuối của hệ là $45^\circ C$. Biết nhiệt dung của nhiệt lượng kế là $C=46 \ J /K$ và nhiệt dung riêng của nước là $c=4180 \ J/kg. K$. Bỏ qua sự trao đổi nhiệt với môi trường. Thí nghiệm được thực hiện ở  áp suất $1\ atm$. Giá trị nhiệt hóa hơi riêng của nước mà học sinh này tính được là 
+	\choice
+	{$2,30.10^{6} \ J/kg$}
+	{$2,38.10^{6} \ J/kg$}
+	{\True $2,28.10^{6} \ J/kg$}
+	{$2,25.10^{6} \ J/kg$}
+	\loigiai{
+		\begin{itemize}
+\item Nhiệt lượng $20 \ g$ hơi nước tỏa ra khi ngưng tụ sau đó nguội từ $100^\circ C$ đến $45^\circ C$:
+		$$
+		Q_1=L . m_1+m_1 c \Delta t_1=L . 0,02+0,02.4180.55=0,02. L+4598 \ J
+		$$
+		\item Nhiệt lượng của $470 \ g$ nước hấp thụ để tăng nhiệt độ từ $20^\circ C$ lên đến $45^\circ C$:
+		$$Q_2=m_2 c \Delta t_2=0,47.4180.25=49115 \ J$$
+		\item Nhiệt lượng do nhiệt lượng kế hấp thụ để tăng nhiệt độ từ $20^\circ C$ lên đến $45^\circ C$:
+		$$Q_3=C. \Delta t_2=46.25=1150 \ J$$
+		\item Theo định luật bảo toàn năng lượng: $Q_1=Q_2+Q_3$, tính được $L=2,28.10^{6} \ J/kg$
+\end{itemize}
+	}
+\end{vidu}
+\begin{vidu} \nguon{2}
+	Dẫn $m_1=0,4 \ kg$ hơi nước ở nhiệt độ $t_1=100^\circ C$ từ một lò hơi vào một bình chứa $m_2=0,8 \ kg$ nước đá ở $t_0=0^\circ C$. Cho biết nhiệt dung riêng của nước là $c=4200 \ J /kg.K$; nhiệt hoá hơi riêng của nước là $L=2,3.10^{6} \ J /kg$ và nhiệt nóng chảy của nước đá là $\lambda=3,4 . 10^{5} \ J /kg$. Bỏ qua sự trao đổi nhiệt với bình chứa và môi trường. Thí nghiệm được thực hiện ở  áp suất $1\ atm$. Khi có cân bằng nhiệt, khối lượng và nhiệt độ nước ở trong bình khi đó là 
+	\choice
+	{$1,5 \ kg$ và $95^\circ C$}
+	{$2,06 \ kg$ và $100^\circ C$}
+	{\True $1,06 \ kg$ và $100^\circ C$}
+	{$2,06 \ kg$ và $95^\circ C$}
+	\loigiai{
+		\begin{itemize}
+			\item Giả sử $0,4 \ kg$ hơi nước ngưng tụ hết thành nước ở $100^\circ C$ thì nó tỏa ra nhiệt lượng:
+			\begin{align*}
+				Q_1=mL=0,4 . 2,3 . 10^{6}=920000 \ J
+			\end{align*}
+			Nhiệt lượng để cho $0,8 \ kg$ nước đá nóng chảy hết:
+			\begin{align*}
+				Q_2=\lambda m_2=3,4 . 10^{5} . 0,8=272000 \ J
+			\end{align*}
+			\item Do $Q_1>Q_2$ chứng tỏ nước đá nóng chảy hết và tiếp tục nóng lên, giả sử nóng lên đến $100^\circ C$.
+			\item Nhiệt lượng nó phải thu là: 
+			\begin{align*}
+				& Q_3=m_2 c\left(t_1-t_0\right)=0,8 . 4200(100-0)=336000 \ J\\
+				\Rightarrow\ & Q_2+Q_3=272000+336000=608000 \ J
+			\end{align*}
+			\item Do $Q_1>Q_2+Q_3$ chứng tỏ hơi nước dẫn vào không ngưng tụ hết và nước nóng đến $100^\circ C$.\\
+			$\Rightarrow$ Khối lượng hơi nước đã ngưng tụ: 
+			\begin{align*}
+				m^{\prime}=\dfrac{\left(Q_2+Q_3\right)}{L}=\dfrac{608 000}{2,3 . 10^{6}}=0,26 \ kg
+			\end{align*}
+			\item Vậy khối lượng nước trong bình khi đó là: $0,8+0,26=1,06 \ kg$. \\
+			Và nhiệt độ trong bình là $100^\circ C$.
+		\end{itemize}
+	}
+\end{vidu}
+
+
+
+\begin{vidu}
+	Trong một nhiệt lượng kế bằng nhôm khối lượng $m_1=300\ g$ có một cục nước đá nặng $m_2\ (g)$. Nhiệt độ của nhiệt lượng kế và nước đá là $t_1=-5^\circ C$. Sau đó, người ta cho $m_3\ (g)$ hơi nước ở $t_2=100^\circ C$ vào nhiệt lượng kế và khi đã cân bằng nhiệt độ thì nhiệt độ của nhiệt lượng kế là $t_3=25^\circ C$. Lúc đó, trong nhiệt lượng kế có $500\ g$ nước. Cho biết: nhiệt hóa hơi riêng của nước $L=2,26.10^3\ J /g$; nhiệt nóng chảy riêng của nước đá $\lambda=334\ J /g$; nhiệt dung riêng của nhôm, của nước đá và của nước lần lượt là $c_1=0,88\ J / g.K,\ c_2=2,09\ J / g.K$ và $c_{n}=4,19\ J / g.K$. Thí nghiệm được thực hiện ở  áp suất $1\ atm$. Giá trị của $\left(m_2-3m_3\right)$ là bao nhiêu gam (làm tròn kết quả đến hàng đơn vị)?
+	\shortans[oly]{192}
+	\loigiai{
+		\begin{itemize}
+			\item Ta có phương trình cân bằng nhiệt:
+			\begin{align*}
+				m_2.2,09.5 + m_2.334 + m_2.4,19.25 + 300.0,88.30 &= m_3.2,26.10^3 + m_3.4,19.75
+			\end{align*}
+			\item Suy ra:
+			\begin{align*}
+				m_2.(10,45 + 334 + 104,75) + 7920 &= m_3.(2260 + 314,25)
+			\end{align*}
+			\item Tương đương:
+			\begin{align*}
+				449,2 m_2 + 7920 &= 2574,25 m_3
+			\end{align*}
+			\item Do đó:
+			\begin{align*}
+				m_2 - 3m_3 &= \dfrac{7920}{2574,25 - 3.449,2} \approx 192\ g
+			\end{align*}
+		\end{itemize}
+	}
+	\end{vidu}

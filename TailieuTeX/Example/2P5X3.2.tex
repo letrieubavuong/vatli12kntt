@@ -1,0 +1,187 @@
+\loai{Tính suất điện động}
+\begin{vidu}%[2P5-3.2K][Loai2]
+Một thanh dẫn dài 25 cm, chuyển động trong từ trường đều. Cảm ứng từ $B = 8. 10^{-3}$ T. Vector vận tốc vuông góc với thanh và cũng vuông góc với vector cảm ứng từ, có độ lớn $v = 3\ m/s$. Suất điện động cảm ứng trong thanh là
+\choice
+{\True $6. 10^{-3}$ V}
+{$3. 10^{-3}$ V}
+{$6. 10^{-4}$ V}
+{$6. 10^{-5}$ V}
+\loigiai{
+Suất điện động cảm ứng trong thanh là $e_c=B.\ell.v=6.10^{-3}\ V$.
+}
+\end{vidu}
+\loai{Tính $\ell$, B, v}
+\begin{vidu}%[2P5-3.2K][Loai3]
+Một thanh dẫn điện tịnh tiến trong từ trường đều cảm ứng từ $B = 0,4$ T với vận tốc có hướng hợp với đường sức từ một góc $30\degree$, mặt phẳng chứa vận tốc và đường sức từ vuông góc với thanh. Thanh dài 40 cm, mắc với vôn kế thấy vôn kế chỉ 0,4 V. Bỏ qua điện trở của hệ thống. Vận tốc của thanh là
+\choice
+{3 m/s}
+{4 m/s}
+{\True 5 m/s}
+{6 m/s}
+\loigiai{
+Vận tốc của thanh là: $v = \dfrac{e_c}{B.\ell.\sin\alpha} = 5$ m/s.
+}
+\end{vidu}
+\loai{Khung không chứa nguồn điện. Tính $i_c$}
+\begin{vidu}%[2P5-3.2G][Loai4]
+Một thanh dẫn điện dài 10 cm được nối hai đầu của nó với hai đầu của một đoạn mạch điện có điện trở 0,5 $\Omega$. Cho thanh tịnh tiến trong từ trường đều $B = 0,08$ T với vận tốc 2 m/s có hướng vuông góc với các đường cảm ứng từ. Biết điện trở của thanh không đáng kể. Cường độ dòng điện trong mạch là
+\choice
+{\True 0,032 A}
+{0,016 A}
+{0,096 A}
+{0,048 A}
+\loigiai{
+\begin{itemize}
+\item Ta có: $e_c = B\ell v\sin \alpha = 0,08.0,1.2\sin90 = 0,016$ V.
+\item Áp dụng biểu thức định luật Ôm: $i_c= \dfrac{e_c}{R} = 0,032$ A.
+\end{itemize}
+}
+\end{vidu}
+\loai{Khung không chứa nguồn điện. Thanh di chuyển theo phương ngang}
+\begin{vidu}%[2P5-3.2G][Loai5]
+immini[thm]{
+Thanh dẫn MN trượt trong từ trường đều như hình vẽ. Biết $B = 0,3$ T, thanh MN dài 40 cm, vận tốc 2 m/s, điện kế có điện trở $R = 3\ \Omega$. Cường độ dòng điện và chiều của dòng điện trong thanh $M'N'$ là
+\choice
+{\True 0,08 A; chiều dòng điện từ M' tới N'}
+{0,08 A; chiều dòng điện từ N' tới M'}
+{0,04 A; chiều dòng điện từ M' tới N'}
+{0,04 A; chiều dòng điện từ N' tới M'}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above]{\normalsize{\bth{N}}};
+\path (a) ++(270:3)coordinate (c)node[below]{\normalsize{\bth{M}}};
+\draw (a)--++(0:4.5)--++(270:3);
+\draw (c)--++(0:3)coordinate (g)--++(0:1.5);
+\path (a)--++(0:3.5)--++(270:1)coordinate (b);
+\draw (b)circle (0.2)node[above=6pt]{\normalsize{\bth{\vec{B}}}};
+\draw (b)--++(45:0.2);
+\draw (b)--++(135:0.2);
+\draw (b)--++(225:0.2);
+\draw (b)--++(315:0.2);
+\draw (a)--++(180:0.3);
+\draw (c)--++(180:0.3);
+\draw [dashed,line width=2pt] (a)--(c);
+\path (a) ++(0:1.5)coordinate (m)node[above]{\normalsize{\bth{N}'}};
+\path (c) ++(0:1.5)coordinate (n)node[below]{\normalsize{\bth{M}'}};
+\draw [line width=2pt] (m)--(n);
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\path (n) --++(90:1.5)coordinate (v);
+\draw [very thick,->](v)--++(0:1)node[below]{\normalsize{\bth{\vec{v}}}};
+\draw(g)[fill=white]circle(0.3)node{\normalsize{\bth{A}}};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Áp dụng quy tắc bàn tay phải, suy ra thanh $M’N’$ đóng vai trò như nguồn điện có cực âm ở $M’$, cực dương ở $N’$.
+\item Suất điện động xuất hiện ở hai đầu thanh $M’N’$ là: 
+$e_c =B.\ell.v=0,3.0,4.2=0,24\ V$.
+\item Cường độ dòng điện trong thanh $M’N’$ là: 
+$i_c=\dfrac{e_c}{R}=\dfrac{0,24}{3}=0,08\ A$.
+\end{itemize}
+}
+\end{vidu}
+\loai{Khung chứa nguồn điện. Thanh di chuyển theo phương ngang}
+\begin{vidu}%[2P5-3.2T][Loai6]
+immini[thm]{
+Cho mạch điện như hình vẽ. $\mathcal{E}= 1, 2\ V,\ r = 1\ \Omega,\ MN = \ell = 40\ cm;\ R_{MN} = 3\ \Omega$; vector cảm ứng từ vuông góc với khung dây, $B = 0,4$ T. Bỏ qua điện trở các phần còn lại của khung dây. Thanh MN có thể trượt không ma sát trên hai thanh ray. Thanh MN chuyển động đều sang phải với vận tốc $v = 2$ m/s. Dòng điện chạy qua mạch bằng
+\choice
+{\True 0,38 A}
+{0,32 A}
+{0,16 A}
+{0,24 A}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(225:1.4)coordinate (e1);
+\draw (e1)--++(0:0.15);
+\draw (e1)--++(180:0.15);
+\path (a) ++(225:3)coordinate (c);
+\draw (c) -- ($(c)!1.4cm!0:(a)$)coordinate (e2);
+\draw (e2)--++(0:0.3);
+\draw (e2)--++(180:0.3)node[above left]{\normalsize{\bth{\mathcal{E}, \;r}}};
+\draw (a)--++(0:4.5);
+\draw (c)--++(0:4.5);
+\path (a) ++(0:3.5)coordinate (m)node[above right]{\normalsize{\bth{M}}};
+\path (c) ++(0:3.5)coordinate (n)node[below right]{\normalsize{\bth{N}}};
+\draw [line width=2pt] (m)--(n);
+\tkzInterLL(a,n)(c,m)
+\tkzGetPoint{o}
+\draw [very thick,<-](o)--++(90:1.5)node[right]{\normalsize{\bth{\vec{B}}}};
+\path (n) --++(45:1.5)coordinate (v);
+\draw [very thick,->](v)--++(0:1)node[above]{\normalsize{\bth{\vec{v}}}};
+\path (c)--++(0:1.5)coordinate (g);
+\draw(g)[fill=white]circle(0.3)node{\normalsize{\bth{A}}};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Khi thanh MN chuyển động sang phải thì thanh MN đóng vai trò như nguồn điện với cực âm ở N, cực dương ở M.
+\item Suất điện động do thanh MN tạo ra là $e_c = B\ell v= 0,4.0,4.2 = 0,32$ V.
+\item Dòng điện chạy qua mạch bằng $I = \dfrac{\mathcal{E}  + e_c}{{R_{MN} + r}} = \dfrac{1,2 + 0,32}{1 + 3} = 0,38$ A.
+\end{itemize}
+}
+\end{vidu}
+\loai{Khung không chứa nguồn điện. Thanh rơi từ trên xuống}
+\begin{vidu}%[2P5-3.2T][Loai7]
+immini[thm]{
+Hai thanh ray dẫn điện đặt thẳng đứng, hai đầu trên nối với điện trở $R = 0,5\ \Omega$; phía dưới thanh kim loại MN có thể trượt theo hai thanh ray. Biết MN có khối lượng $m = 10$ gam, dài $\ell = 25$ cm có điện trở không đáng kể. Hệ thống được đặt trong từ trường đều $B = 1$ T có hướng như hình vẽ. Lấy $g = 10\ m/s^2$. Sau khi thả tay cho MN trượt trên hai thanh ray, một lúc sau nó đạt trạng thái chuyển động thẳng đều với vận tốc v bằng
+\choice
+{0,2 m/s}
+{0,4 m/s}
+{0,6 m/s}
+{\True 0,8 m/s}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(90:1)coordinate (m)node[above left]{\normalsize{\bth{M}}}--++(90:2)coordinate (b)--++(0:1.5)--++(90:0.15)--++(0:0.5)coordinate (r)node[above]{\normalsize{\bth{R}}}--++(0:0.5)--++(270:0.15)--++(0:1.5)coordinate (c)--++(270:2)coordinate (n)node[above right]{\normalsize{\bth{N}}}--++(270:1)coordinate (d);
+\draw (b)--++(0:1.5)--++(270:0.15)--++(0:1)--++(90:0.15);
+\draw [line width=2pt](m)--(n);
+\path (r) --++(270:1.15)coordinate (b);
+\draw (b) circle (0.2);
+\filldraw (b) circle (1.2pt)node[above right=3pt]{\normalsize{\bth{\vec{B}}}};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Suất điện động xuất hiện trong khung $e_c = B.\ell.v\sin \alpha= B.\ell.v$
+\item Cường độ dòng điện xuất hiện trong mạch $i = \dfrac{e_c}{R}$.
+\item Lực từ tác dụng lên thanh MN là: $F = B.i.\ell = \dfrac{B.\ell. e_c}{R} =\dfrac{B^2\ell^2v}{R}$.
+\item Khi thanh ray chuyển động thằng đều thì
+\begin{align*}
+F=P\Leftrightarrow B\ell i=mg\Leftrightarrow \dfrac{B\ell e_c}{R}=mg\Leftrightarrow \dfrac{B^2\ell^2v}{R}=mg\Leftrightarrow v=0,8\ m/s.
+\end{align*}
+\end{itemize}
+}
+\end{vidu}
+\loai{Khung chứa nguồn điện. Thanh rơi từ trên xuống}
+\begin{vidu}%[2P5-3.2T][Loai8]
+immini[thm]{
+Hai thanh kim loại đặt song song thẳng đứng, điện trở không đáng kể, hai đầu trên được khép kín bằng một nguồn điện có suất điện động $\mathcal{E}$ và điện trở trong $r = 0,2\  \Omega$. Một đoạn dây dẫn AB có khối lượng $m = 10$ g, dài $\ell = 20$ cm, điện trở $R = 2\ \Omega$, trượt không ma sát theo hai thanh kim loại đó (AB luôn luôn vuông góc với từ trường đều, có $B = 1$ T). Nguồn điện phải có suất điện động bằng bao nhiêu để AB đi xuống thẳng đều với vận tốc 1 m/s?
+\choice
+{1,2 V}
+{1,8 V}
+{\True 0,9 V}
+{3,6 V}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw (a)--++(90:1)coordinate (m)node[above left]{\normalsize{\bth{A}}}--++(90:2)coordinate (b)--++(0:1.8)coordinate (a1)--++(90:0.1);
+\path (b)--++(0:2)coordinate (a2);
+\draw (a2)--++(0:1.8)coordinate (c)--++(270:2)coordinate (n)node[above right]{\normalsize{\bth{B}}}--++(270:1)coordinate (d);
+\draw (a1)--++(270:0.1);
+\draw (a2)--++(90:0.2);
+\draw (a2)--++(270:0.2);
+\draw [line width=2pt](m)--(n);
+\draw [line width=2pt](m)--++(180:0.5);
+\draw [line width=2pt](n)--++(0:0.5);
+\path (b) --++(0:1.9)--++(270:1)coordinate (b1);
+\draw (b1) circle (0.2);
+\filldraw (b1) circle (1.2pt)node[above right=3pt]{\normalsize{\bth{\vec{B}}}};
+\path (b) --++(0:1.9)--++(90:0.2)node[above]{\normalsize{\bth{\mathcal{E},\;r}}};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Khi thanh AB đi xuống thì thanh AB đóng vai trò như một nguồn điện với cực âm ở B, cực dương ở A.
+\item Dòng điện cảm ứng tạo ra có chiều từ B đến A để từ trường tạo ra đi ngược lại chiều của từ trường ngoài $\vec{B}$ để chống lại sự tăng của từ thông.
+\item Sử dụng quy tắc bàn tay trái, ta xác định được chiều của lực từ hướng lên trên.
+\item Dưới sự tác dụng của trọng lực, thanh sẽ rơi càng ngày càng nhanh nên I sẽ tăng lên $\Rightarrow$  lực từ cũng sẽ tăng mãi cho đến khi bằng trọng lực thì nó không tăng được nữa, và thanh sẽ chuyển động đều với vận tốc $v = 1$ m.
+\item Khi đó ${F_t} = P \Rightarrow BI\ell = mg\Rightarrow  I = \dfrac{mg}{B\ell} = \dfrac{0,01.10}{1.0,2} = 0,5$ A.
+\item Suất điện động cảm ứng sinh ra trong khung là $e_c = B\ell v= 1.0,2.1 = 0,2$ V.
+\item Ta có $I = \dfrac{\mathcal{E}  + e_c}{R + r} \Rightarrow \mathcal{E}  = I\left( {R + r} \right) - e_c = 0,5\left( {2 + 0,2} \right) - 0,2 = 0,9$ V.
+\end{itemize}
+}
+\end{vidu}

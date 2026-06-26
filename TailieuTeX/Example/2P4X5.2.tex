@@ -1,0 +1,105 @@
+\begin{vidu} %[2P4-5.2K][Loại 1]
+Cho một khung dây dẫn hình chữ nhật, kích thước 30 cm x 20 cm, trong có dòng điện $I = 5\ A$; khung được đặt trong một từ trường đều có phương vuông góc với mặt phẳng chứa khung và có độ lớn $B = 0,1\ T$. Lực từ tác dụng lên mỗi cạnh của khung là
+\choice
+{\True $F_1 = F_3 = 0,15$ N, $F_2 = F_4 = 0,1$ N}
+{$F_1 = F_3 = 0,2$ N, $F_2 = F_4 = 0,1$ N}
+{$F_1 = F_3 = 0,15$ N, $F_2 = F_4 = 0,3$ N}
+{$F_1 = F_3 = 0,2$ N, $F_2 = F_4 = 0,3$ N}
+\loigiai{Áp dụng công thức tính lực từ, ta có:
+\begin{itemize}
+\item $F_1=F_3=0,1.5.0,3.\sin 90^\circ=0,15\ N$
+\item $F_2=F_3=0,1.5.0,2.\sin90^\circ=0,1\ N$.
+\end{itemize}}
+\end{vidu}
+\begin{vidu} %[2P4-5.2G][Loại 1]
+	immini[thm]{Một khung dây dẫn có dạng tam giác vuông cân ADC như hình vẽ. Khung dây đặt trong từ trường đều có cảm ứng từ $B = 0,1$ T, sao cho vector cảm ứng từ vuông góc với mặt phẳng ADC. Biết $AD = AC = 20$ cm, dòng điện qua khung có cường độ 5 A theo chiều CADC. Bỏ qua trọng lượng khung dây, nếu khung tự do thì hệ lực từ tác dụng lên khung làm cho khung
+	\choice
+	{chuyển động sang phải}
+	{chuyển động xuống dưới}
+	{\True đứng yên}
+	{chuyển động sang trái}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+		\tkzDefPoints{0/0/a, 3/0/c, 0/3/d, 1/1/b}
+		\tkzDrawSegments[](a,d d,c c,a)
+		\tkzLabelPoint[left](a){$A$}
+		\tkzLabelPoint[below left](b){$\vec{B}$}
+		\tkzLabelPoint[below](c){$C$}
+		\tkzLabelPoint[left](d){$D$}
+		\tkzMarkRightAngle[size=0.3](c,a,d)
+		\draw (b) circle(0.2);
+		\draw (b) --++(45:0.2);
+		\draw (b) --++(135:0.2);
+		\draw (b) --++(225:0.2);
+		\draw (b) --++(315:0.2);
+		\end{tikzpicture}}
+	\loigiai{
+		immini[thm]{\begin{itemize}
+			\item Áp dụng quy tắc bàn tay trái xác định được chiều lực từ tác dụng lên 3 canh của khung như hình vẽ.
+			\item Lực từ tác dụng lên một đoạn dây $F = BIl\sin \alpha$
+			\item Do $AC = AD = 20\ cm = 0,2\ m \Rightarrow F_1 = {F_2} = 0,1.5.0,2 = 0,1$ N.
+			\item $DC = \sqrt {AD^2 + AC^2} = 0,2\sqrt 2 m \to F_3 = 0,1.5.0,2.\sqrt 2 = 0,1.\sqrt 2$ N.
+			\item Ba lực ${F_1},{F_2},{F_3}$ đồng phẳng, đồng quy và có $\vec {F_1} + \vec {F_2} + \vec {F_3} = \vec 0 \Rightarrow$ khung dây cân bằng.
+	\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/a, 3/0/c, 0/3/d, 1/1/b}
+\tkzDefMidPoint(a,d)\tkzGetPoint{i}
+\tkzDefMidPoint(d,c)\tkzGetPoint{j}
+\tkzDefMidPoint(a,c)\tkzGetPoint{k}
+\tkzDrawSegments[arrow data={0.3}{stealth}](a,d d,c c,a)
+\tkzLabelPoint[left](a){$A$}
+\tkzLabelPoint[below left](b){$\vec{B}$}
+\tkzLabelPoint[below](c){$C$}
+\tkzLabelPoint[left](d){$D$}
+\tkzMarkRightAngle[size=0.3](c,a,d)
+\draw (b) circle(0.2);
+\draw (b) --++(45:0.2);
+\draw (b) --++(135:0.2);
+\draw (b) --++(225:0.2);
+\draw (b) --++(315:0.2);
+\draw[very thick,->](i)--++(180:1)node[below]{$\vec{F}_2$};
+\draw[very thick,->](j)--++(45:1.41)node[right]{$\vec{F}_3$};
+\draw[very thick,->](k)--++(-90:1)node[left]{$\vec{F}_1$};
+\end{tikzpicture}}}
+\end{vidu}
+\begin{vidu} %[2P4-5.3G][Loại 1]
+immini[thm]{Một khung dây hình chữ nhật MNPQ có các cạnh $MN=25$ cm và $NP=50$ cm đặt trong mặt phẳng thẳng đứng sao cho MN nằm ngang, có thể quay tự do quanh trục xx’ nằm ngang hoặc trục yy’ thẳng đứng. Khung dây mang dòng điện $I=12$ A chạy theo chiều từ N đến M, đặt trong từ trường đều có cảm ứng từ $B=0,20$ T. Xác định lực từ tác dụng lên khung dây và chiều quay của khung khi từ trường có phương ngang, song song với x’x, từ ngoài vào trong.
+\choice
+{$F = 2,4\ N$ và khung quay quanh trục xx'}
+{$F = 0$ và khung quay quanh trục xx'}
+{\True $F = 0$ và khung quay quanh trục yy'}
+{$F = 2,4\ N$ và khung quay quanh trục yy'}}
+{\begin{tikzpicture}[scale=0.8,thick,>=stealth']
+\coordinate (a) at (0,0);
+\draw [very thick,arrow data={0.17}{stealth},
+arrow data={0.45}{stealth}, arrow data={0.67}{stealth},arrow data={0.95}{stealth}] (a)node[above]{\normalsize{\bth{N}}}--++ (45:3)node[above]{\normalsize{\bth{M}}}--++(270:4)node[below]{\normalsize{\bth{Q}}}--++(225:3)node[below]{\normalsize{\bth{P}}}--cycle;
+\path (a)++(270:1)node[left]{\normalsize{\bth{I}}};
+\path (a) ++(45:1.5)coordinate (a1)++(45:1.5)++(270:2)coordinate (b1)++(270:2)++(225:1.5)coordinate (c1)++(225:1.5)++(90:2)coordinate (d1);
+\draw [dashed](a1)--++(90:1)node[right]{\normalsize{\bth{y}}};
+\draw [dashed](a1)--++(270:5)node[right]{\normalsize{\bth{y’}}};
+\draw [dashed](d1)--++(225:1)node[above]{\normalsize{\bth{x}}};
+\draw [dashed](d1)--++(45:4)node[above]{\normalsize{\bth{x’}}};
+\end{tikzpicture}}
+\loigiai{immini[thm]{\begin{itemize}
+\item Lúc này, các đoạn dây MN và PQ song song với $\vec{B}$ nên không có lực từ tác dụng với đoạn dây này.
+\item Đối với các đoạn dây MQ và PN, ta có $\alpha =90^\circ$ nên các lực từ $\vec{F}_{MQ}$ và $\vec{F}_{PN}$ có độ lớn:\\
+$F_{MN}=F_{PQ}=B.I.MQ\sin \alpha =0,20.12.0,5\sin90^\circ=1,20\ N$
+\item Các lực $\vec{F}_{NP}$ và $\vec{F}_{MQ}$ vuông góc với khung dây nên đều nằm trong mặt phẳng ngang, có chiều ngược nhau, hai lực này làm khung quay quanh trục yy' vì mỗi lực có điểm đặt khác nhau. \end{itemize}}
+{\begin{tikzpicture}
+\coordinate (a) at (0,0);
+\draw [very thick,arrow data={0.17}{stealth},
+arrow data={0.45}{stealth}, arrow data={0.67}{stealth},arrow data={0.95}{stealth}] (a)node[above]{\normalsize{\bth{N}}}--++ (45:3)node[above]{\normalsize{\bth{M}}}--++(270:4)node[below]{\normalsize{\bth{Q}}}--++(225:3)node[below]{\normalsize{\bth{P}}}--cycle;
+\path (a)++(270:1)node[left]{\normalsize{\bth{I}}};
+\path (a) ++(45:1.5)coordinate (a1)++(45:1.5)++(270:2)coordinate (b1)++(270:2)++(225:1.5)coordinate (c1)++(225:1.5)++(90:2)coordinate (d1);
+\draw [dashed](a1)--++(90:1.5)node[right]{\normalsize{\bth{y}}};
+\draw [dashed](a1)--++(270:5)node[right]{\normalsize{\bth{y’}}};
+\draw [dashed](d1)--++(225:1)node[below]{\normalsize{\bth{x}}};
+\draw [dashed](d1)--++(45:4.5)node[right]{\normalsize{\bth{x’}}};
+\draw [very thick,->](b1)--++(45:1)node[above left]{\normalsize{\bth{\vec{B}}}};
+\draw [very thick,->](b1)--++(0:1)node[below ]{\normalsize{\bth{\vec{F}_{MQ}}}};
+\draw [very thick,->](d1)--++(45:1)node[below]{\normalsize{\bth{\vec{B}}}};
+\draw [very thick,->](d1)--++(180:1)node[above]{\normalsize{\bth{\vec{F}_{PN}}}};
+\draw (b1)++(90:0.15)--++(45:0.25)--++(270:0.15);
+\draw (b1)++(0:0.25)--++(45:0.25)--++(180:0.25);
+\draw (b1)++(90:0.15)--++(0:0.25)--++(270:0.15);
+\draw (d1)++(90:0.25)--++(180:0.25)--++(270:0.25);
+\draw (d1)++(90:0.25)--++(45:0.25)--++(270:0.25);
+\draw (d1)++(45:0.25)--++(180:0.25)--++(225:0.25);\end{tikzpicture}}}
+\end{vidu}

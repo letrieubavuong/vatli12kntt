@@ -1,0 +1,76 @@
+immini[thm]{\subsection*{I. Các thông số trạng thái của một lượng khí}
+\newghichu{
+$\bullet$ Một lượng khí đựng trong một bình kín được xác định bởi bốn đại lượng là
+\begin{itemize}
+	\item khối lượng m [kg]
+	\item thể tích V [$m^3$]
+	\item nhiệt độ T [K]
+	\item áp suất p [$Pa$]
+\end{itemize}
+$\bullet$ $(V,\ T,\ p)$ là các thông số trạng thái của một khối lượng khí xác định.
+}}{includegraphics[width=4cm]{Images/KNTT91T}}
+\Binhluan{\begin{itemize}
+	\item Khí chuyển từ trạng thái này sang trạng thái khác bằng các quá trình biến đổi trạng thái, gọi tắt là các quá trình.
+	\begin{center}
+		includegraphics[width=8cm]{Images/KN92T}
+	\end{center}\end{itemize}}{Áp suất chất khí được hiểu là áp suất trung bình của các phân tử khí tác dụng lên thành bình}
+
+\begin{itemize}	\item Trong hầu hết các quá trình biến đổi trạng thái của một khối lượng khí xác định thì cả ba thông số $(p,\ V,\ T)$ đều có thể biến đổi.
+	\item Những quá trình đơn giản mà chỉ có hai thông số biến đổi còn một thông số không đổi gọi là các \textit{đẳng quá trình}.
+\end{itemize}
+
+\begin{note}
+\textbf{Áp suất} là độ lớn của áp lực trên một đơn vị diện tích bị ép.
+\begin{align*}
+	\boder{p=\dfrac{F}{S}}\quad \ct{trong đó}\ 
+	\begin{cases}
+		F:\ \ct{áp lực}\quad (N)\\
+		S:\ \ct{diện tích mặt bị ép}\quad (m^2)\\
+		p:\ \ct{áp suất}\quad (N/m^2\ \ct{hay}\ Pa)
+	\end{cases}
+\end{align*}
+\end{note}
+\begin{bang}[tabularx=l|l|X|X|X|X]{Những đơn vị đổi trong chất khí}
+	&\textbf{SI}&Công thức&&&\\\hline
+	\textbf{p}&$Pa$&&$1\ Pa=1\ N/m^2$&$1\ atm=1,03.10^5\ Pa$&$1\ mmHg=133,3\ Pa$\\\hline
+	\textbf{T}&$K$&$T=t+273$&$0^\circ C=273\ K$&$0\ K=-273^\circ C$&\\\hline
+	\textbf{V}&$m^3$&&$1\ l=1\ dm^3$&$1\ ml=1\ cm^3$&$1\ cc=1\ cm^3$
+\end{bang}
+\newpage 
+immini[thm]{\subsection*{II. Định luật Boyle}
+\subsubsection{Quá trình đẳng nhiệt}
+\newghichu{
+Quá trình đẳng nhiệt là quá trình biến đổi trạng thái của chất khí trong đó nhiệt độ được giữ không đổi.
+}
+\subsubsection{Định luật Boyle}
+\begin{itemize}
+	\item Trong quá trình đẳng nhiệt của một khối lượng khí xác định, áp suất tỉ lệ nghịch với thể tích
+	\begin{center}
+		\boder{
+			p\sim \dfrac{1}{V}\ \text{hay}\ pV = \ct{hằng số}
+		}
+	\end{center}
+	\item Vậy, khi nhiệt độ khối khí không đổi thì ta có hệ quả:
+	\begin{center}
+		\boder{
+			p_{1}V_{1} = p_{2}V_{2} = p_{3}V_{3} =\ldots
+		}
+	\end{center}
+\end{itemize}}{includegraphics[width=4cm]{Images/BoyleLaw}}
+\subsubsection{Đường đẳng nhiệt}
+immini[thm]{
+	\begin{itemize}
+		\item Đường biểu diễn sự biến thiên của áp suất theo thể tích khi nhiệt độ không đổi gọi là đường đẳng nhiệt.
+		\item Dạng đường đẳng nhiệt:\\
+		Trong hệ toạ độ (p, V) đường đẳng nhiệt là một nhánh của đường hyperbol.
+		\begin{note}
+			Trong các hệ trục tọa độ (V, T) và (p, T) thì đường đẳng nhiệt là đường thẳng vuông góc với trục T.
+		\end{note}
+	\end{itemize}
+}{	\begin{tikzpicture}[scale=1,thick,>=stealth']
+		\draw[->] (0,0)--(3.5,0)node[below]{$V$}; 
+		\draw[->] (0,0)--(0,3)node[right]{p};
+		\draw [blue, thick] (0.75,2.5) to [bend right=30] (2.8,0.75)node[right,black]{$T_2$};
+		\draw [blue, thick] (0.25,2.5) to [bend right=35] (2.8,0.25)node[right,black]{$T_1$};
+		\node at (2,2){$T_2>T_1$};
+\end{tikzpicture}}

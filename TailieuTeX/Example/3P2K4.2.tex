@@ -1,0 +1,296 @@
+\loai{Biết cụ thể các thông số, tìm thông số còn lại}
+\begin{vidu} %[1P5-5.2B][Loai1]
+	Một lượng khí đựng trong một xilanh pít-tông chuyển động được. Các thông số trạng thái của lượng khí này là 1,5 atm, 20 lít, $-23^\circ C$. Khi pít-tông nén khí, áp suất của khí tăng lên tới 3 atm, thể tích giảm còn 16 lít. Nhiệt độ của khí nén là
+	\choice
+	{200 K}
+	{100 K}
+	{300 K}
+	{\True 400 K}
+	\loigiai{
+		\begin{itemize}
+			\item Trạng thái 1: $\begin{cases} p_1 = 1,5\ atm\\ V_1 = 20\ \ell\\ T_1 = 250\ K \end{cases}$.
+			\quad Trạng thái 2: $\begin{cases} p_2 = 3\ atm\\ V_2= 16\ \ell\\  T_2=? \end{cases}$.
+			\item Áp dụng: $\dfrac{p_1V_1}{T_1}=\dfrac{p_2V_2}{T_2}\Leftrightarrow \dfrac{1,5.20}{250} = \dfrac{3.16}{T_2} \Rightarrow T_2 = 400\ K$.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Các thông số thay đổi một lượng so với trước}
+\begin{vidu} %[1P5-5.2K][Loai2]
+	Tính nhiệt độ ban đầu của một khối khí xác định biết rằng khi nhiệt độ tăng thêm $16\doC$ thì thể tích khí giảm đi 10\% so với thể tích ban đầu, áp suất tăng thêm 20\% so với áp suất ban đầu.
+	
+	\choice
+	{184 K}
+	{289 K}
+	{178 K}
+	{\True 200 K}
+	\loigiai{
+		\begin{itemize}
+			\item Trạng thái 1: $\begin{cases} p_1\\ V_1\\ T_1 \end{cases}$.
+			\quad Trạng thái 2: $\begin{cases} p_2 = p_1+0,2p_1\\ V_2= V_1-0,1V_1\\  T_2=T_1+16 \end{cases}$.
+			\item Phương trình trạng thái: 
+			\begin{align*}
+				\dfrac{p_1V_1}{T_1} = \dfrac{p_2V_2}{T_2} \Rightarrow \dfrac{p_1V_1}{T_1} = \dfrac{{1,2p_1.0,9V_1}}{T_1 + 16}\Rightarrow T_1 = 200\ K.
+			\end{align*}
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Bài toán liên quan khối lượng riêng của lượng khí}
+\begin{vidu} %[1P5-5.2G][Loai3]
+	Tính khối lượng riêng của không khí ở 100\doC, áp suất $2.10^5\ Pa$. Biết khối lượng riêng của không khí ở 0\doC, áp suất $10^5\ Pa$ là $1,29\ kg/m^3$.
+	\choice
+	{$0,85\ kg/m^3$}
+	{$2,55\ kg/m^3$}
+	{\True $1,89\ kg/m^3$}
+	{$2,15\ kg/m^3$}
+	\loigiai{
+		\Binhluan{
+			\begin{itemize}
+				\item Ở điều kiện chuẩn, nhiệt độ $T_0 = 273\ K$ và áp suất $p_0 = 1,01. 10^5$ Pa, 1 kg không khí có thể tích là 
+				$V_0 = \dfrac{m}{D_0}= \dfrac{1}{1,29}= 0,78\ m^3$.
+				\item Ở điều kiện $T_2 = 373\ K$, áp suất $p_2 = 2. 10^5\ Pa$, 1 kg không khí có thể tích là $V_2$.
+				\item Áp dụng phương trình trạng thái
+				\begin{align*}
+					\dfrac{p_0.V_0}{T_0}=\dfrac{p_2.V_2}{T_2}
+					\Rightarrow  V_2 = \dfrac{p_0.V_0.T_2}{T_0.p_2}= 0,54\ m^3.
+				\end{align*}
+				\item Vậy khối lượng riêng không khí là $D_2 = \dfrac{1}{0,54} = 1,89\  kg/m^3$.
+			\end{itemize}
+		}
+		{Để đơn giản ta xét một lượng khí nhất định có khối lượng 1 kg}
+	}
+\end{vidu}
+\loai{Bài toán dùng bình khí nén bơm bóng}
+\begin{vidu} %[1P5-5.2T][Loai4]
+	Một bình kín dung tích không đổi 60 lít chứa khí hydrogen ở áp suất 6 MPa và nhiệt độ 40\doC, dùng bình này để bơm bóng bay, mỗi quả bóng bay được bơm đến áp suất $10^5\ Pa$, dung tích mỗi quả là 10 lít, nhiệt độ khí nén trong bóng là 15\doC. Bình đó bơm được bao nhiêu quả bóng bay?
+	\choice
+	{331}
+	{150}
+	{\True 325}
+	{188}
+	\loigiai{
+		\Binhluan{
+			\begin{itemize}
+				\item Trạng thái 1 có: $\begin{cases}
+					V_1 = 60\ \text{lít} \\
+					p_1 = 6.10^6\ Pa \\
+					T_1=40+273=313\ K
+				\end{cases}$\\
+				Trạng thái 2 có: $\begin{cases}
+					V_2 = ?\ \text{lít} \\
+					p_2 = 10^5\ Pa \\
+					T_2=15+273=288\ K
+				\end{cases}$
+				\item Ở nhiệt độ 15\doC và áp suất $10^5$ Pa thì thể tích khí của lượng hydrogen chứa trong bình là:
+				\begin{align*}
+					\dfrac{p_1V_1}{T_1}=\dfrac{p_2V_2}{T_2}\Leftrightarrow V_2=\dfrac{p_1V_1T_2}{T_1p_2}=\dfrac{6.10^6.60.288}{313.10^5}\approx 3312\quad\text{lít}.
+				\end{align*}
+				\item Vì không thể lấy hết lượng khí ở trong bình nên ta phải trừ bớt 60 lít, khi đó số bóng bơm được là
+				\begin{align*}
+					n=\dfrac{3312-60}{10}\approx 325\ \text{quả}.
+				\end{align*}
+			\end{itemize}
+		}
+		{Lưu ý là cuối cùng vẫn còn lại 60 lít khí hydrogen $10^5\ Pa;\ 15^\circ C$ ở trong bình.\\
+			Hoặc ta cũng có thể đặt 
+			\begin{align*}
+				V_2=nV_0+V_1=10n+60
+			\end{align*}
+			Rồi bấm Shift Solve ra kết quả n}
+	}
+\end{vidu}
+\loai{Xác định các thông số từ đồ thị các đẳng quá trình}
+\begin{vidu} %[1P5-5.2K][Loai5]
+	immini[thm]{Sự biến đổi trạng thái của một khối khí lí tưởng được mô tả như hình vẽ. Cho $V_1 = 4$ lít, $T_1 = 200\ K$, $p_1 = 1\ atm$, $p_2 = 2\ atm$. Tính $T_2$, $V_3$.  
+		\motcot
+		{$T_2 = 600\ K$, $V_3 = 2$ lít}
+		{\True $T_2 = 400\ K$, $V_3 = 8$ lít}
+		{$T_2 = 200\ K$, $V_3 = 1$ lít}
+		{$T_2 = 300\ K$, $V_3 = 4$ lít}}{\begin{tikzpicture}[scale=0.9,thick,>=stealth']
+			\tkzDefPoints{0/0/o, 4/3/a, 4/1.5/b, 2/1.5/c}
+			\draw[->] (0,0)--(5,0)node[below]{$T$}; 
+			\draw[->] (0,0)--(0,3.5)node[right]{$p\ (atm)$};
+			\draw[dashed](0,1.5)--(c)--(2,0)(0,3)--(a)(b)--(4,0)(o)--(a);
+			\tkzDrawSegments[blue,very thick,arrow data={0.5}{stealth}](a,b b,c c,a)
+			\node at (a)[above right]{\small(2)};
+			\node at (b)[right]{\small(3)};
+			\node at (c)[above left]{\small (1)};
+			\node at (o) [below left]{\normalsize{O}};
+			\node at (0,3)[left]{\small $p_{2}$};
+			\node at (0,1.5)[left]{\small $p_{1}$};
+			\node at (2,0)[below]{\small $T_{1}$};
+			\node at (4,0)[below]{\small $T_2$};
+	\end{tikzpicture}}
+	
+	\loigiai{
+		\Binhluan{
+			\begin{bang}[tabularx={X|X|X|X}]{}
+				&$p\ (atm)$&$V\ (l)$&$T\ (K)$\\\hline
+				Trạng thái $(1)$&$p_1=1$&$V_1=4$&$T_1=200$\\\hline
+				Trạng thái $(2)$&$p_2$&$V_2=V_1$&$T_2$\\\hline
+				Trạng thái $(3)$&$p_3=p_1$&$V_3$&$T_3=T_2$
+			\end{bang}
+		}
+		{Ta có thể dựa vào bảng số liệu và áp dụng PTTT cho 2 trong 3 quá trình}		
+		\begin{itemize}
+			\item Từ $(1) \to (2)$: đẳng tích $\Rightarrow {V_2} = {V_1} = 4\ \ell$ .
+			\item Từ $(2) \to (3)$: đẳng nhiệt $\Rightarrow {T_3} = {T_2} = 400\ K$.
+			\item Từ $(3) \to (1)$: đẳng áp $\Rightarrow {p_1} = {p_3} = 1\ atm$.
+			\item Quá trình từ $(1) \to (2)$ là đẳng tích $\Rightarrow \dfrac{p_1}{T_1} = \dfrac{p_2}{T_2} \Leftrightarrow \dfrac{1}{200} = \dfrac{2}{T_2} \Rightarrow T_2 = 400\ K$.
+			\item Quá trình từ $(2) \to (3)$ là đẳng nhiệt $\Rightarrow {p_2}{V_2} = {p_3}V{_3} \Leftrightarrow 2.4 = 1.{V_3} \Rightarrow V_3 = 8$ lít.
+		\end{itemize}
+	}
+\end{vidu}
+\loai{Bài toán pittông hoặc giọt thuỷ ngân dịch chuyển}
+\begin{vidu} %[1P5-5.2G][Loai7]
+	immini[thm]{Một xilanh kín chia làm hai phần bằng nhau bởi một pít-tông cách nhiệt. Mỗi phần có chiều dài 30 cm chứa một lượng khí giống nhau ở 27\doC. Nung nóng một phần lên thêm 10\doC, còn phần kia làm lạnh bớt đi 10\doC thì pít-tông dịch chuyển một đoạn là
+		\choice
+		{4 cm}
+		{2 cm}
+		{\True 1 cm}
+		{0,5 cm}
+	}
+	{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\draw(0,0)--++(0:4)--++(-90:1)--++(180:4)--cycle;
+			\draw[pattern=north east lines](1.9,0)--++(0:0.2)--++(-90:1)--++(180:0.2)--cycle;
+			\draw[<->] (0,-1.5)--node[midway,above]{$\ell_0$}(1.9,-1.5);
+			\draw[<->] (2.1,-1.5)--node[midway,above]{$\ell_0$}(4,-1.5);
+			\node at (1,-0.5){$p_0;V_0;T_0$};
+			\node at (3,-0.5){$p_0;V_0;T_0$};
+			\begin{scope}[shift={(0,-2.5)}]
+				\draw(0,0)--++(0:4)--++(-90:1)--++(180:4)--cycle;
+				\draw[<->] (1,0.3)--node[midway,above]{$x$}(1.9,0.3);
+				\draw[<->] (0,-1.5)--node[midway,above]{$\ell_1$}(1,-1.5);
+				\draw[<->] (1.2,-1.5)--node[midway,above]{$\ell_2$}(4,-1.5);
+				\draw[pattern=north east lines](1,0)--++(0:0.2)--++(-90:1)--++(180:0.2)--cycle;
+				\draw[dashed,pattern=north east lines,opacity=0.1](1.9,0)--++(0:0.2)--++(-90:1)--++(180:0.2)--cycle;
+				\node at (0.5,-0.5){$(1)$};
+				\node at (2.6,-0.5){$(2)$};
+			\end{scope}
+	\end{tikzpicture}}
+	\loigiai{
+		%	\Binhluan{
+			\begin{bang}[tabularx={X|l|X|X}]{}
+				&p&V&T\\\hline
+				Trạng thái $(0)$&$p_0$&$V_0$&$T_0=300\ K$\\\hline
+				Trạng thái $(1)$&$p_1$&$V_1=S\left(\ell_0+x\right)$&$T_1=310\ K$\\\hline
+				Trạng thái $(2)$&$p_2=p_1$&$V_2=S\left(\ell_0-x\right)$&$T_2=290\ K$
+			\end{bang}
+			%}
+		%{Có thể áp dụng phương trình trạng thái cho lượng khí ở mỗi bên xilanh qua quá trình $(1)\to (2)$}
+		\begin{itemize}
+			\item Khi pít-tông đứng yên (trước và sau khi di chuyển) nên áp suất của khí hai bên pít-tông là như nhau.
+			\item Áp dụng phương trình trạng thái cho khí trong mỗi phần xilanh:
+			\begin{itemize}\item Phần khí bị nung nóng:
+				$\dfrac{p_0V_0}{T_0}=\dfrac{p_1V_1}{T_1}\quad(1)$
+				\item Phần khí bị làm lạnh: 
+				$\dfrac{p_0V_0}{T_0}=\dfrac{p_2V_2}{T_2}\quad(2)$
+			\end{itemize}
+			\item Từ phương trình $(1),\ (2)$ và $p_1=p_2\Rightarrow  \dfrac{V_1}{T_1}=\dfrac{V_2}{T_2}$
+			\item Gọi x là khoảng pit-tông dịch chuyển ta có
+			\begin{align*} \dfrac{(\ell_0+x).S}{T_1}=\dfrac{(\ell_0-x).S}{T_2}\Rightarrow \dfrac{30+x}{27+273+10}=\dfrac{30-x}{27+273-10}\Rightarrow x=1\ cm. 
+			\end{align*}
+		\end{itemize}
+	}
+\end{vidu}
+\begin{vidu} %[1P5-5.2G][Loai7]
+	immini[thm]{Một bình thủy tinh hình trụ tiết diện $100\ cm^2$ chứa khí lí tưởng bị chặn với tấm chắn có khối lượng không đáng kể, áp suất, nhiệt độ, chiều cao của cột không khí bên trong bình lần lượt là 76 cmHg, $20\doC$ và 60\ cm. Đặt lên tấm chắn vật có trọng lượng 408 N, cột khí bên trong bình có chiều cao 50\ cm. Cho $760\ mmHg=1,013.10^5\ N/m^2$. Nhiệt độ của khí bên trong bình là
+	}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+			\fill[pattern=north east lines](-0.5,0)--++(0:3)--++(-90:0.1)--++(180:3)--cycle;
+			\draw[](-0.5,0)--(2.5,0) (0,0)--(0,3) (2,0)--(2,3);
+			\draw[pattern=north east lines](0,2.5)--++(0:2)--++(90:0.1)--++(180:2)--cycle;
+			\draw[<->](-0.25,0)--node[midway,left]{$\ell_1$}(-0.25,2.5);
+			\draw[dashed](-0.5,2.5)--(0,2.5);
+			\begin{scope}[shift={(4,0)}]
+				\fill[pattern=north east lines](-0.5,0)--++(0:3)--++(-90:0.1)--++(180:3)--cycle;
+				\draw[](-0.5,0)--(2.5,0) (0,0)--(0,3) (2,0)--(2,3);
+				\draw[pattern=north east lines](0,1.5)--++(0:2)--++(90:0.1)--++(180:2)--cycle;
+				\draw[pattern=dots](0.5,1.62)--++(0:1)--++(90:1)--++(180:1)--cycle;
+				\draw[<->](-0.25,0)--node[midway,left]{$\ell_2$}(-0.25,1.5);
+				\draw[dashed](-0.5,1.5)--(0,1.5);
+			\end{scope}
+	\end{tikzpicture}} 
+	\choice
+	{324 K}
+	{\True 342,5 K}
+	{69 K}
+	{354 K} 
+	\loigiai{
+		%		\Binhluan{
+			\begin{itemize}
+				\item Trạng thái 1: $T_1 = 293\ K,\ p_1 = 1,013.10^5\ Pa,\ V_1 =\ \ell _1S$.
+				\item Trạng thái 2: $T_2,\ {p_2} = {p_1} + \dfrac{F}{S} = 1,421.10^5\ Pa,\ {V_2} =\ \ell _2S$.
+				\item Phương trình trạng thái: 
+				\begin{align*}
+					\dfrac{p_1V_1}{T_1} = \dfrac{p_2V_2}{T_2} \Rightarrow \dfrac{{1,013.10^5.60.S}}{293} = \dfrac{1,421.10^5.50.S}{T_2}\Rightarrow T_2 = 342,5\ K.
+				\end{align*}
+			\end{itemize}
+			%	}
+		%{Khi tính toán áp suất có sự tham gia của áp suất do ngoại lực F gây ra thì ta phải đổi đơn vị áp suất ra $N/m^2$ hay $Pa$.
+			%}
+	}
+\end{vidu}
+\loai{Xác định các thông số từ đồ thị các không phải đẳng quá trình}
+\begin{vidu} %[1P5-5.2G][Loai6] 
+	immini[thm]{Đường biểu diễn quá trình biến đổi trạng thái của một mol khí lí tưởng trong hệ tọa độ (p, V) như hình vẽ. Nhiệt độ ở trạng thái $1$ và trạng thái $3$ là $T_1 = 300\ K$ và $T_3 = 400\ K$. Tìm nhiệt độ ở trạng thái $2$.
+		\choice
+		{200 K}
+		{567 K}
+		{233 K}
+		{\True 346 K}
+	}{
+		\Vehinh{0.7}{
+			\coordinate (o) at (0,0);
+			\node at (o) [below left]{\normalsize{O}};
+			\draw [->](o)--++(0:5)node[below]{\normalsize{V}};
+			\draw [->](o)--++(90:4)node[left]{\normalsize{p}};
+			\path(o)--++(35:5)coordinate(a);
+			\path(o)--++(63:5)coordinate(b);
+			\path(o)--++(0:1.5)coordinate(c)--++(90:4)coordinate(d);
+			
+			\tkzInterLL(o,a)(c,d)
+			\tkzGetPoint{2}
+			\tkzInterLL(o,b)(c,d)
+			\tkzGetPoint{4}
+			
+			\path (4)--++(0:2)coordinate(e);
+			\path (2)--++(180:1)coordinate(f);
+			\tkzInterLL(o,a)(4,e)
+			\tkzGetPoint{3}
+			\tkzInterLL(o,b)(2,f)
+			\tkzGetPoint{1}
+			
+			\draw [dashed](o)--(2);
+			\draw [very thick,blue,
+			arrow data={0.15}{stealth},           arrow data={0.4}{stealth},arrow data={0.85}{stealth}](2)--(4)--(3)--cycle;
+			
+			\node at (2) [below right]{\normalsize{(1)}};
+			\node at (3) [above]{\normalsize{(3)}};
+			\node at (4) [above]{\normalsize{(2)}};
+		}
+	}
+	
+	\loigiai{
+		\Binhluan{
+			\begin{bang}[tabularx={X|X|X|X}]{}
+				&$p\ (atm)$&$V\ (l)$&$T\ (K)$\\\hline
+				Trạng thái $(1)$&$p_1$&$V_1$&$T_1=300$\\\hline
+				Trạng thái $(2)$&$p_2$&$V_2=V_1$&$T_2$\\\hline
+				Trạng thái $(3)$&$p_3=p_2$&$V_3$&$T_3=400\ K$
+			\end{bang}
+		}
+		{Đường thẳng $(1) \to (3)$ đi qua gốc toạ độ nên $p=aV$ hay 
+			\begin{align*}
+				\dfrac{p_3}{p_1}=\dfrac{V_3}{V_1}.
+			\end{align*}
+		}		
+		\begin{itemize}
+			\item Quá trình $1 - 2$ là đẳng tích nên $V_1 = V_2 $ và $\dfrac{p_1}{p_2} = \dfrac{T_1}{T_2}\ (1)$.
+			\item Quá trình $2 - 3$ là đẳng áp nên $p_2 = p_3$ và $\dfrac{V_2}{V_3} = \dfrac{T_2}{T_3}\ (2)$.
+			\item Vì $1 - 3$ là đường thẳng đi qua gốc tọa độ nên: $\dfrac{p_1}{p_3} = \dfrac{V_1}{V_3} $ hay $\dfrac{p_1}{p_2} = \dfrac{V_2}{V_3}\ (3)$.
+			\item So sánh $(1),\ (2)$ và $(3)$ ta được: $\dfrac{T_1}{T_2} = \dfrac{T_2}{T_3} $ hay $T_2 = \sqrt{T_1T_3} $.	
+			\item Thay số ta được $T_2 = 346,4\ K.$
+		\end{itemize}
+	}
+\end{vidu}
+
+

@@ -1,0 +1,378 @@
+%mac
+\begin{vidu}
+Bạn $A$ đi xe đạp từ nhà qua trạm xăng, tới siêu thị mua đồ rồi quay về nhà cất đồ, sau đó đi xe đến trường.
+\begin{center}
+\begin{tikzpicture}
+\node[] at (0,0){\includegraphics[width=14cm]{images/4-7}};
+\end{tikzpicture}
+\end{center}
+Chọn hệ tọa độ có gốc là vị trí nhà bạn $A$, trục $Ox$ trùng với đường đi từ nhà bạn $A$ tới trường.
+\begin{itemize}
+\item[a)]  Tính quãng đường đi được và độ dịch chuyển của bạn $A$ đi từ trạm xăng tới siêu thị.
+\item[b)] Tính quãng đường đi được và độ dịch chuyển của bạn $A$ trong cả chuyến đi trên.
+\end{itemize} 
+\haidong{10}
+\loigiai{
+Quãng đường đi được bằng tổng tất cả các chặng\\
+Độ dịch chuyển bằng khoảng cách vị trí điểm đầu và điểm cuối. 
+\begin{itemize}
+\item[a)] Quãng đường bạn A đi từ trạm xăng đến siêu thị là: $800 - 400 = 400\ m$.
+\item Độ dịch chuyển của bạn A từ trạm xăng đến siêu thị là: $800 - 400 = 400\ m$.
+\item[b)] Quãng đường đi được của bạn A trong cả chuyến đi:
+\item Quãng đường bạn A đi từ nhà đến siêu thị là: 800 m
+\item Quãng đường bạn A quay về nhà cất đồ là: 800 m
+\item Quãng đường bạn A đi từ nhà đến trường là: 1200 m
+\item Quãng đường đi được của bạn A trong cả chuyến đi là: $800 + 800 + 1200 = 2800\ m$.
+\item Điểm đầu xuất phát của bạn A là nhà, điểm cuối của bạn A là trường
+\item Độ dịch chuyển của bạn A là 1200 m.
+\end{itemize}
+
+}
+\end{vidu}
+
+\loai{Quãng đường theo 1 phương}
+\begin{vidu}
+Bạn Phong bơi trong bể bơi dài $40\ m$. Phong bắt đầu xuất phát từ đầu bể bơi đến cuối bể bơi thì quay lại bơi tiếp về đầu bể rồi nghỉ. Quãng đường mà bạn Phong bơi được là
+\choice
+{$0\ m$}
+{\True $80\ m$}
+{$40\ m$}
+{$-80\ m$}
+\haidong{12}
+\loigiai{
+}
+\end{vidu}
+\begin{vidu}
+\immini[thm]{Xác định vị trí của vật $A$ trên trục $Ox$ ở hình tại thời điểm $12\  h$. Biết vật xuất phát từ $O$ tại thời điểm $8\ h$, đi theo chiều của trục $Ox$, mỗi giờ đi được $40\ km$.}{\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, 7/0/x}
+\tkzDrawSegments[very thick,->,Mapcolor](o,x)
+\foreach  \x  in  {0,1,...,6}
+{\draw[very thick]  (\x,-0.1)  --  (\x,0.1);}
+\draw[very thick](0,-0.5)--(1,-0.5);
+\foreach  \x  in  {0,1}
+{\draw[very thick]  (\x,-0.6)  --  (\x,-0.4);}
+\tkzLabelPoint[left](o){$O$}
+\tkzLabelPoint[below](x){$x\ (km)$}
+\tkzLabelPoint[above](0.5,0.2){$t_0=8h$}
+\tkzLabelPoint[below](0.5,-0.5){$20\ km$}
+\end{tikzpicture}}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Thời gian đi của vật = Thời điểm đến – Thời điểm gốc.
+\item Thời gian vật di chuyển là: $12 – 8 = 4$ h.
+\item 1 giờ vật di chuyển được 40 km. 4 giờ vật di chuyển được: $4.40 = 160$ km.
+\end{itemize}
+}
+\end{vidu}
+
+\loai{Quãng đường theo nhiều phương}
+\begin{vidu}%4.3a
+Một người đi xe máy từ nhà đến bến xe bus cách nhà $6\ km$ về phía Đông. Đến bến xe, người đó lên xe bus đi tiếp $20\ km$ về phía Bắc. Quãng đường đi được trong cả chuyến đi là
+\choice
+{$23\ km$}
+{$24\ km$}
+{$25\ km$}
+{\True $26\ km$}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Quãng đường đi được: $s=s_1+s_2=6+20=26\ km$.
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}
+Một người lái mô tô đi thẳng $3\ km$ theo hướng Tây, sau đó rẽ trái đi thẳng theo hướng Nam $2\ km$ rồi quay sang hướng Đông $3\ km$. Quãng đường đi được của người đó là
+\choice
+{$6\ km$}
+{$2\ km$}
+{\True $8\ km$}
+{$3\ km$}
+\haidong{12}
+\loigiai{
+}
+\end{vidu}
+\loai{Độ lớn Độ dịch chuyển theo 1 phương}
+
+
+\begin{vidu}
+\immini[thm]{Một thang máy mang một người từ tầng trệt đi xuống tầng hầm sâu $5\ m$, rồi lên đến tầng $3$. Biết rằng mỗi tầng cách nhau $4\ m$. Trục toạ độ có gốc và chiều dương như hình vẽ. Độ dịch chuyển từ hầm lên đến tầng $3$ của thang máy là
+\choice
+{$7\ m$}
+{$5\ m$}
+{\True $17\ m$}
+{$10\ m$}}
+{\begin{tikzpicture}[scale=0.5,thick,>=stealth',draw=Mapcolor]
+\draw[Mapcolor](0,0)--++(90:1)--++(0:0.8)--++(-90:1);
+\node[left] at (0,0.5){Tầng trệt};
+\draw[Mapcolor](0,1)--++(90:1)--++(0:0.8)--++(-90:1);
+\node[left] at (0,1.5){Tầng 1};
+\draw[Mapcolor](0,2)--++(90:1)--++(0:0.8)--++(-90:1);
+\node[left] at (0,2.5){Tầng 2};
+\draw[Mapcolor](0,3)--++(90:1)--++(0:0.8)--++(-90:1);
+\node[left] at (0,3.5){Tầng 3};
+\draw[dashed,Mapcolor](0,0)--++(-90:1.2)--++(0:0.8)--++(90:1.2);
+\node[left] at (0,-0.6){Tầng hầm};
+\draw[Mapcolor](-3,0)--++(0:8);
+\draw[->,Mapcolor](2,-2)--++(90:7)node[right]{$x$};
+\draw[fill=white](2,0)circle(1.5pt)node[below right]{$O$};
+\draw[fill=white](2,-1.2)circle(1.5pt)node[right]{$-5m$};
+\draw[fill=white](2,1)circle(1.5pt)node[right]{$4m$};
+\draw[fill=white](2,2)circle(1.5pt)node[right]{$8m$};
+\draw[fill=white](2,3)circle(1.5pt)node[right]{$12m$};
+\end{tikzpicture}}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Độ dịch chuyển khi từ hầm lên đến tầng 3: $s_3=x_T-x_H=12-(-5)=17\ m$
+\end{itemize}
+}
+\end{vidu}
+\loai{Giá trị Độ dịch chuyển theo 1 phương}
+\begin{vidu}%4.5a
+Biết $\vec d_1$ là độ dịch chuyển $10\ m$ về phía Đông, còn $\vec d_2$ là độ dịch chuyển $6\ m$ về phía Tây. Độ dịch chuyển tổng hợp $\vec d$ khi $\vec d=\vec d_1+\vec d_2$ là
+\choice
+{$4\ m$ (Tây)}
+{$16\ m$ (Đông)}
+{\True $4\ m$ (Đông)}
+{$16\ m$ (Tây)}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item $d=d_1-d_2=4\ m$ (Đông)
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}%.4.5b
+Biết $\vec d_1$ là độ dịch chuyển $10\ m$ về phía Đông, còn $\vec d_2$ là độ dịch chuyển $6\ m$ về phía Tây. Độ dịch chuyển tổng hợp $\vec d$ khi $\vec d=\vec d_1+3\vec d_2$ là
+\choice
+{$16\ m$ (Tây)}
+{$16\ m$ (Đông)}
+{$8\ m$ (Đông)}
+{\True $8\ m$ (Tây)}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item $d=d_1-3d_2=-8\ m \Rightarrow d=8\ m$ (Tây). 
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}
+Xét quãng đường $AB$ dài $1500\ m$ với $A$ là vị trí nhà của em và $B$ là vị trí của bưu điện. Tiệm tạp hóa nằm tại vị trí $C$ là trung điểm của $AB$. Nếu chọn nhà em làm gốc tọa độ và chiều dương hướng từ nhà em đến bưu điện. Độ dịch chuyển của em trong trường hợp đi từ tiệm tạp hóa đến bưu điện rồi quay về nhà là
+\choice
+{$1500\ m$}
+{$0\ m$}
+{$-1500\ m$}
+{\True $-750\ m$}
+
+\haidong{12}
+\loigiai{
+\Note{Nếu độ dịch chuyển $\vec d$ hướng theo chiều dương ta lấy $d>0$.\\ 
+Nếu độ dịch chuyển $\vec d$ hướng ngược chiều dương ta lấy $d<0$} 
+}
+\end{vidu}
+
+\loai{Độ lớn Độ dịch chuyển theo nhiều phương}
+\begin{vidu}%4.3b
+Một người đi xe máy từ nhà đến bến xe bus cách nhà $6\ km$ về phía Đông. Đến bến xe, người đó lên xe bus đi tiếp $20\ km$ về phía Bắc. Độ dịch chuyển tổng hợp của người đó là
+\choice
+{\True $20,88\ km$}
+{$26,00\ km$}
+{$14,00\ km$}
+{$30,90\ km$}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Độ dịch chuyển: $d=\sqrt{d_1^2+d_2^2}=\sqrt{6^2+20^2}\approx 20,88\ km$.
+\end{itemize}
+}
+\end{vidu}
+
+\begin{vidu}
+Một người bơi ngang từ bờ bên này sang bờ bên kia của một dòng sông rộng $50\ m$ có dòng chảy theo hướng từ Bắc xuống Nam. Do nước sông chảy mạnh nên khi sang đến bờ bên kia thì người đó đã trôi xuôi theo dòng nước $50\ m$. Xác định độ dịch chuyển của người đó.
+\haidong{12}
+\loigiai{
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.7\linewidth]{images/21C7}
+%\end{figure}
+\begin{itemize}
+\item Người bơi ngang từ bờ bên này sang bên kia theo dự định là $OA = 50\ m$.
+\item Thực tế, do nước sông chảy mạnh nên vị trí của người đó ở vị trí B, ta có $AB = 50\ m$.
+\item Độ dịch chuyển: $OB=\sqrt{OA^2+AB^2}=\sqrt{50^2+50^2}=50\sqrt{2}\ m$.
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}
+An chạy bộ qua cầu đi thẳng $120\ m$ theo hướng Đông, sau đó rẽ trái chạy thẳng theo hướng Bắc $60\ m$ rồi quay sang hướng Tây đi $40\ m$. Độ dịch chuyển của An là
+\choice
+{$0\ m$}
+{$220\ m$}
+{\True $100\ m$}
+{$72\ m$}
+\haidong{8}
+\loigiai{
+}
+\end{vidu}
+
+\begin{vidu}
+Một con kiến bò trên miệng của một cái chén đi được $\dfrac{1}{2}$ vòng. Bán kính của miệng chén là $6\ cm$. Lấy $\pi=3,14$. Độ dịch chuyển của kiến là
+\choice
+{\True $12\ cm$}
+{$18,84\ cm$}
+{$0\ m$}
+{$6\ cm$}
+\haidong{12}
+\loigiai{
+}
+\end{vidu}
+\loai{Giá trị Độ dịch chuyển theo nhiều phương}
+\begin{vidu}%4.6
+Biết $\vec d_1$ là độ dịch chuyển $3\ m$ về phía Đông, còn $\vec d_2$ là độ dịch chuyển $4\ m$ về phía Bắc. Độ lớn, phương và chiều của độ dịch chuyển tổng hợp $\vec d$ là
+\choice
+{$5\ m$ (hướng Đông - Nam $43^\circ$)}
+{\True $5\ m$ (hướng Đông - Bắc $53^\circ$)}
+{$7\ m$ (hướng Đông - Bắc $43^\circ$)}
+{$7\ m$ (hướng Đông - Nam $53^\circ$)}
+\haidong{7}
+\loigiai{
+\begin{itemize}
+\item $d=5\ m$ (hướng Đông - Bắc $53^\circ$).
+\end{itemize}
+}
+\end{vidu}
+
+\begin{vidu}
+Một người chuyển động $30\ m$ theo hướng Bắc, sau đó đi $20\ m$ theo hướng Đông và cuối cùng là $20 \sqrt{2}\ m$ theo hướng Tây Nam một góc $45^\circ$ so với hướng Tây. Sự dịch chuyển của người từ vị trí đầu sẽ là
+\choice
+{\True $10\ m$ dọc theo phía Bắc}
+{$10\ m$ về phía Nam}
+{$10\ m$ dọc theo phía Tây}
+{$10\ m$ về phía Đông}
+\haidong{12}
+\loigiai{
+}
+\end{vidu}
+\loai{Tổng hợp}
+\begin{vidu}
+Một xe ô tô xuất phát từ tỉnh $A$ đi đến tỉnh $B$ cách $A$ $10\ km$ sau đó đi theo chiều ngược lại tới vị trí cách tỉnh $A$ $2\ km$ (chưa đi qua tỉnh A) thì dừng lại. Phát biểu nào sau đây là đúng?
+\choice
+{Quãng đường mà ô tô đó đi được là $12\ km$. Độ dịch chuyển là $8\ km$}
+{Quãng đường mà ô tô đó đi được là $20\ km$. Độ dịch chuyển là $0\ km$}
+{\True Quãng đường mà ô tô đó đi được là $18\ km$. Độ dịch chuyển là $2\ km$}
+{Quãng đường mà ô tô đó đi được là $12\ km$. Độ dịch chuyển là $2\ km$}
+\haidong{12}
+\loigiai{
+}
+\end{vidu}
+
+
+\begin{vidu}
+\immini[thm]{Hai người đi xe đạp từ $A$ đến $C$, người thứ nhất đi theo đường từ $A$ đến $B$, rồi từ $B$ đến $C$; người thứ hai đi thẳng từ $A$ đến $C$. Cả hai đều về đích cùng một lúc. Tính quãng đường đi được và độ dịch chuyển của người thứ nhất và người thứ hai.}{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1.1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/a, 4/0/b, 4/4/c}
+\tkzDrawPolygon[Mapcolor](a,b,c)
+\draw[->,Mapcolor](a)++(135:0.1)--++(45:2);
+\draw[->,Mapcolor](a)++(-90:0.1)--++(0:2);
+\node[rotate=45] at (0.5,1){Người thứ 2};
+\node[] at (1.3,-0.5){Người thứ nhất};
+\tkzLabelPoint[below left](a){$A$}
+\tkzLabelPoint[right](b){$B$}
+\tkzLabelPoint[right](c){$C$}
+\tkzMarkRightAngle[size=0.3](c,b,a)
+\tkzLabelSegment[above](a,b){$4\ km$}
+\tkzLabelSegment[right](c,b){$4\ km$}
+\begin{scope}[shift={(0,3.5)},rotate=45,scale=0.4]
+\tkzDefPoints{0/0/o, 1/0/d, -1/0/t, 0/1/b, 0/-1/n}
+\tkzDefShiftPoint[o](45:0.2cm){db}
+\tkzDefShiftPoint[o](135:0.2cm){tb}
+\tkzDefShiftPoint[o](225:0.2cm){tn}
+\tkzDefShiftPoint[o](315:0.2cm){dn}
+\fill[red](o)--(d)--(db)--cycle;
+\fill[red](o)--(b)--(tb)--cycle;
+\fill[red](o)--(t)--(tn)--cycle;
+\fill[red](o)--(n)--(dn)--cycle;
+\fill[black](o)--(d)--(dn)--cycle;
+\fill[black](o)--(b)--(db)--cycle;
+\fill[black](o)--(t)--(tb)--cycle;
+\fill[black](o)--(n)--(tn)--cycle;
+\end{scope}
+\begin{scope}[shift={(0,3.5)},rotate=0,scale=0.6]
+\tkzDefPoints{0/0/o, 1/0/d, -1/0/t, 0/1/b, 0/-1/n}
+\tkzDefShiftPoint[o](45:0.2cm){db}
+\tkzDefShiftPoint[o](135:0.2cm){tb}
+\tkzDefShiftPoint[o](225:0.2cm){tn}
+\tkzDefShiftPoint[o](315:0.2cm){dn}
+\fill[red](o)--(d)--(db)--cycle;
+\fill[red](o)--(b)--(tb)--cycle;
+\fill[red](o)--(t)--(tn)--cycle;
+\fill[red](o)--(n)--(dn)--cycle;
+\fill[black](o)--(d)--(dn)--cycle;
+\fill[black](o)--(b)--(db)--cycle;
+\fill[black](o)--(t)--(tb)--cycle;
+\fill[black](o)--(n)--(tn)--cycle;
+\tkzLabelPoint[right](d){Đ}
+\tkzLabelPoint[left](t){T}
+\tkzLabelPoint[below](n){N}
+\tkzLabelPoint[above](b){B}
+\end{scope}
+\end{tikzpicture}\end{hinhanh}}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Quãng đường đi được của người thứ nhất:
+\begin{align*}
+s_1=AB+BC=4+4=8\ km
+\end{align*}
+\item Vì ABC là tam giác vuông nên độ lớn của độ dịch chuyển $\vec{AC}$ của người thứ nhất được tính bằng công thức: 
+\begin{align*}
+d_1=\sqrt{AB^2+BC^2}=\sqrt{4^2+4^2}\approx 5,7\ km
+\end{align*}
+\item Vì ABC là tam giác vuông cân nên $\widehat{CAB}=45^\circ$. Hướng của độ dịch chuyển là hướng $45^\circ$ Đông - Bắc. Độ dịch chuyển của người thứ nhất là: $d_1=5,7\ km$ (hướng $45^\circ$ Đông - Bắc).
+\item Quãng đường đi được của người thứ hai là:
+\begin{align*}
+s_2=AC=5,7\ km
+\end{align*}
+\item Độ dịch chuyển của người thứ hai là:
+\begin{align*}
+d_2=5,7\ km,\ \text{hướng}\ 45^\circ\ \text{Đông - Bắc} 
+\end{align*}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+&  Người thứ nhất&Người thứ hai  \\ 
+\hline 
+Quãng đường đi được&$s_1=8\ km$  &$s_2=5,7\ km$  \\ 
+\hline 
+Độ dịch chuyển&$d_1=5,7\ km$  &$d_2=5,7\ km$  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}
+\immini[thm]{Một xe bắt đầu chuyển động theo chiều kim đồng hồ từ điểm $P$ đến điểm $Q$ theo đường tròn bán kính $r=8\ m$ như hình vẽ bên. Biết $OP$ vuông góc với $OQ$. Tính quãng đường đi được và độ dịch chuyển của xe.}{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1.1,draw=Mapcolor]
+\tkzDefPoints{0/0/o, 2/0/q, 0/2/p, -2/0/s, 0/-2/r}
+\tkzDrawCircle[radius,Mapcolor](o,q)
+\tkzDefShiftPoint[o](30:2cm){m}
+\tkzDrawSegments[dashed,Mapcolor](o,m)
+\tkzDrawPoints[size=3,fill=white](o,p,s)
+\tkzLabelPoint[above](p){$P$}
+\tkzLabelPoint[left](s){$Q$}
+\tkzLabelPoint[below](o){$O$}
+\tkzLabelSegment[above left](o,m){$r$}
+\end{tikzpicture}\end{hinhanh}
+}
+\haidong{12}
+\loigiai{
+\begin{itemize}
+\item Quãng đường đi được bằng $\dfrac{3}{4}$ chu vi đường tròn: $s=\dfrac{3C}{4}=\dfrac{3.2\pi.r}{4}=12\pi\ m$
+\item Độ dịch chuyển: $SP=r\sqrt 2=8\sqrt 2\ m$
+\item 
+\item 
+\end{itemize}
+}
+\end{vidu}
+
+
+

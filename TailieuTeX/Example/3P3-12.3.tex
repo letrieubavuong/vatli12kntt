@@ -1,0 +1,220 @@
+\loai{Tính n}
+\begin{vidu} %[3P3-12.3G][Loai1] 
+	Nối hai cực của một máy phát điện xoay chiều một pha vào hai đầu đoạn mạch A, B mắc nối tiếp gồm điện trở R, cuộn cảm thuần có độ tự cảm L = 5 H và tụ điện có điện dung 180 $\mu$F. Bỏ qua điện trở thuần của các cuộn dây của máy phát. Biết rôto máy phát có ba cặp cực. Khi rôto quay đều với tốc độ bao nhiêu thì trong đoạn mạch AB có cộng hưởng điện?
+	\choice
+	{2,7 vòng/s}
+	{3 vòng/s}
+	{4 vòng/s}
+	{\True 1,8 vòng/s}
+	\loigiai{
+%		\Binhluan{
+		Mạch cộng hưởng khi: 
+		\begin{align*}
+			&\omega L = \dfrac{1}{{\omega C}} \Rightarrow \omega = \dfrac{1}{{\sqrt {LC} }} \Rightarrow f = \dfrac{\omega }{{2\pi }} = \dfrac{1}{{2\pi \sqrt {LC} }}\\
+			\Rightarrow\ &n = \dfrac{f}{p} = \dfrac{1}{{2\pi p\sqrt {LC} }} = \dfrac{1}{{2\pi .3.\sqrt {{{5.180.10}^{ - 6}}} }} \approx 1,8\ \ct{vòng/giây}.
+		\end{align*} 
+%}
+%{
+%Bài toán thay đổi tốc độ quay của rôto thì các đại lượng R, L, C, p được giữ nguyên.
+%}
+	}
+\end{vidu}
+\loai{Lập tỉ lệ - Tính I}
+\begin{vidu} %[3P3-12.3G][Loai3] 
+	Một máy phát điện xoay chiều một pha có điện trở trong không đáng kể. Nối 2 cực máy phát với một cuộn dây thuần cảm. Khi rôto của máy quay với vận tốc góc n vòng/s thì cường độ dòng điện đi qua cuộn dây có cường độ hiệu dụng I. Nếu rôto quay với vận tốc góc 2n vòng/s thì cường độ hiệu dụng của dòng điện trong mạch là
+	\choice
+	{\True I}
+	{2I}
+	{3I}
+	{$I\sqrt{3}$}
+	\loigiai{
+%		\Binhluan{
+		\begin{itemize}
+			\item Tốc độ là n vòng/s thì $I_1=\dfrac{E_1}{Z_{L1}}$.
+			\item Tốc độ là 2n vòng/s thì $I_2=\dfrac{E_2}{Z_{L2}}$.
+			\item Lập tỉ lệ: $\dfrac{I_2}{I_1}=\dfrac{E_2}{E_1}.\dfrac{Z_{L1}}{Z_{L2}}=\dfrac{n_2}{n_1}.\dfrac{n_1}{n_2}=1$. Vậy $I_2=I_1=I$.
+	\end{itemize}
+%}
+%{
+%Khi ta thay đổi n thì $E\sim n$ và $Z_L\sim n;\ Z_C\sim \dfrac{1}{n}$.
+%}
+}
+\end{vidu}
+\loai{Lập tỉ lệ - Tính R}
+\begin{vidu} %[3P3-12.3G][Loai4] 
+	Nối hai cực của máy phát điện xoay chiều một pha vào hai đầu đoạn mạch gồm điện trở R và cuộn cảm thuần. Khi rôto quay với tốc độ n vòng/phút thì cường độ dòng điện qua mạch là 1 A. Khi rôto quay với tốc độ 3n vòng/phút thì cường độ là $\sqrt{3}$ A và cảm kháng của mạch khi đó là
+	\choice
+	{$\dfrac{R}{\sqrt{3}}$}
+	{$\dfrac{2R}{\sqrt{3}}$}
+	{$2R\sqrt{3}$}
+	{\True $R\sqrt{3}$}
+	\loigiai{
+	%	\Binhluan{
+		\begin{itemize}
+			\item Khi rôto quay với tốc độ n: $ I=\dfrac{E}{\sqrt{{ R^2}+Z_{L}^2}}=1 $ A.
+			\item Khi rôto quay với tốc độ 3n: $E'=3E $.
+			\item Và $ Z'_L=3Z_L \Rightarrow  I'=\dfrac{E'}{Z'}=\dfrac{3E}{\sqrt{{ R^2}+9Z_{L}^2}}=\sqrt{3}\ A \Rightarrow  R^2+9Z_{L}^2=3\left( R^2+Z_{L}^2 \right) \Rightarrow  Z_L=\dfrac{R}{\sqrt{3}}\Rightarrow Z_{L}=R\sqrt{3} $.
+		\end{itemize}
+%	}
+%{Kinh nghiệm là ta chỉ để ý đến 3 yếu tố $E,\ Z_L,\ Z_C$ bị thay đổi do n thay đổi.
+%Theo dõi bảng số liệu ta thấy có thể lập ngay tỉ lệ $\dfrac{I_2}{I_1}$ để giải quyết nhanh}
+%\begin{bang}[tabularx={X||X||X||X||X}]{}
+%&$n$ & $Z_L\sim n$ & $E\sim n$ & $I=\dfrac{E}{\sqrt{R^2+Z_L^2}}$ \\\midrule
+%\textbf{Lần 1} & $n$ & $Z_L$ & $E$ &  $I_1=\dfrac{E}{\sqrt{R^2+Z_L^2}}=1$ \\\midrule
+%\textbf{Lần 2} & $3n$ & $3Z_L$ & $3E$ & $I_2=\dfrac{3E}{\sqrt{R^2+9Z_L^2}}$
+%\end{bang}
+}
+\end{vidu}
+\loai{Lập bảng chuẩn hoá - Tính $Z_L$}
+\begin{vidu*} %[3P3-12.3T][Loai5] 
+	\nguon{ĐH - 2010} Nối hai cực của một máy phát điện xoay chiều một pha vào hai đầu đoạn mạch AB gồm điện trở thuần R mắc nối tiếp với cuộn cảm thuần. Bỏ qua điện trở các cuộn dây của máy phát. Khi rôto của máy quay đều với tốc độ n vòng/phút thì cường độ dòng điện hiệu dụng trong đoạn mạch là 1 A. Khi rôto của máy quay đều với tốc độ 3n vòng/phút thì cường độ dòng điện hiệu dụng trong đoạn mạch là $\sqrt{3}$ A. Nếu rôto của máy quay đều với tốc độ 2n vòng/phút thì cảm kháng của đoạn mạch AB là
+	\choice
+	{$2R \sqrt{3}$}
+	{\True $\dfrac{2R}{\sqrt{3}}$}
+	{$R \sqrt{3}$}
+	{$\dfrac{R}{\sqrt{3}}$}
+	\loigiai{
+\begin{bang}[tabularx={l||l||l||l||l||l|l}]{Bảng chuẩn hoá $Z_L=1$}
+	&$n$ & R & $Z_L\sim n$& $E\sim n$ & $I=\dfrac{E}{\sqrt{R^2+Z_L^2}}$& \\\midrule
+	\textbf{Lần 1} & n & R & $Z_L=1$ & $E$ & $I_1=\dfrac{E}{\sqrt{R^2+1}}=1$ &  \multirow{3}{*}{$\dfrac{I_3}{I_1}=\sqrt{3}\Leftrightarrow R=\sqrt{3}$} \\ \cline{1-6}
+	\textbf{Lần 3} & 3n & R & 3 & 3E &  $I_3=\dfrac{3E}{\sqrt{R^2+9}}=\sqrt{3}$&  	
+		\\\midrule
+	\textbf{Lần 2} & 2n & R & 2 & 2E & $I_2=\dfrac{2E}{\sqrt{R^2+4}}$& $\dfrac{Z_{L2}}{R}=\dfrac{2}{\sqrt{3}}$
+	\end{bang}
+
+}
+\end{vidu*}
+\loai{Lập bảng chuẩn hoá - Tính I}
+\begin{vidu*} %[3P3-12.3T][Loai7] 
+	Hai đầu ra của máy phát điện xoay chiều một pha được nối với một đoạn mạch nối tiếp gồm tụ điện và điện trở thuần. Bỏ qua điện trở thuần của các cuộn dây của máy phát. Khi rôto quay với tốc độ $600$ vòng/phút thì cường độ dòng điện trong mạch là $I_1\approx 3,16\ A$. Khi rôto quay với tốc độ $1200$ vòng/phút thì cường độ dòng điện trong mạch là $I_2=8\ A$. Khi rôto quay với tốc độ $1800$ vòng/phút thì cường độ dòng điện hiệu dụng \textbf{gần nhất} với giá trị nào  sau đây?
+	\choice
+	{\True $12,5\ A$}
+	{$10,5\ A$}
+	{$11,5\ A$}
+	{$13,5\ A$}
+	\loigiai{
+%		\Binhluan{
+		\begin{itemize}
+			\item Khi rôto quay với tốc độ $600$ vòng/phút, suất điện động của máy phát là E, ta chuẩn hóa $R=1,\ Z_{C1}=n$.
+			\item Khi rôto quay với tốc độ $1200$ vòng/phút $\Rightarrow E_2=2E$ và 
+			\begin{align*}
+				\begin{cases}
+					R=1\\
+					Z_{C2}=\dfrac{Z_{C1}}{2}=\dfrac{n}{2}\\
+				\end{cases}
+				\Rightarrow \dfrac{I_2}{I_1}=\dfrac{E_2}{E_1}\dfrac{Z_1}{Z_2}.=2\sqrt{\dfrac{1+x^2}{1+{\left(\dfrac{x}{2}\right)}^2}}=\dfrac{8}{3,16}\Rightarrow x=1.
+			\end{align*}
+			\item Khi rôto quay với tốc độ 1800 vòng /phút thì $E_3=3E$: 
+			\begin{align*}
+				\begin{cases}
+					R=1\\
+					Z_{C3}=\dfrac{Z_{C1}}{3}=\dfrac{n}{3}=\dfrac{1}{3}\\
+				\end{cases}
+				\Rightarrow I_3=\dfrac{E_3}{E_1}\dfrac{Z_3}{Z_2}I_1= . 3\sqrt{\dfrac{1+1^2}{1+{\left(\dfrac{1}{3}\right)}^2}}3.16=12,72\ A.
+			\end{align*}
+	\end{itemize}
+%}
+%{Để cho "an toàn" ta chỉ nên chuẩn hoá 1 trong 3 đại lượng R; $Z_L$; $Z_C$.\\
+%Ở bảng phía dưới ta chuẩn hoá $Z_C=1$ và kiểm soát số liệu tốt hơn khi lập thành bảng.
+%}
+%\begin{bang}[tabularx={l||l||l||l||l||l|l}]{Bảng chuẩn hoá $Z_C=1$}
+%	&$n$ & R & $Z_C\sim \dfrac{1}{n}$& $E\sim n$ & $I=\dfrac{E}{\sqrt{R^2+Z_C^2}}$& \\\midrule
+%	\textbf{Lần 1} & n & R & $Z_C=6$ & $E$ & $I_1=\dfrac{E}{\sqrt{R^2+36}}=3,16$ &  \multirow{3}{*}{$\dfrac{I_2}{I_1}=\dfrac{8}{3,16}\Leftrightarrow R\approx 6$} \\ \cline{1-6}
+%	\textbf{Lần 2} & 2n & R & 3 & 2E &  $I_2=\dfrac{2E}{\sqrt{R^2+9}}=8$&  	
+%	\\\midrule
+%	\textbf{Lần 3} & 3n & R & 2 & 3E & $I_3=\dfrac{3E}{\sqrt{R^2+4}}$& $\dfrac{I_3}{I_1}\approx 4 \Rightarrow I_3=4.3,16=12,72\ A.$
+%\end{bang}
+}
+\end{vidu*}
+\loai{Lập bảng chuẩn hoá - Tính P}
+\begin{vidu*} %[3P3-12.3T][Loai8] 
+	Mạch RLC mắc vào máy phát điện xoay chiều. Khi tốc độ quay của rôto là n (vòng/phút) thì công suất là $\mathcal{P}$, hệ số công suất là 0,5$\sqrt{3}$ . Khi tốc độ quay của rôto là 2n (vòng/phút) thì công suất là $4\mathcal{P}$. Khi tốc độ quay của rôto là n$\sqrt{2}$ (vòng/phút) thì công suất bằng
+	\choice
+	{$\dfrac{16\mathcal{P}}{7}$}
+	{$\mathcal{P}\sqrt{3}$}
+	{\True $\dfrac{8\mathcal{P}}{3}$}
+	{$\dfrac{24\mathcal{P}}{13}$}
+	\loigiai{
+		\begin{itemize} 
+			\item Từ các công thức $P = {I^2}R = \dfrac{{{E^2}R}}{{{R^2} + {{\left( {{Z_L} - {Z_C}} \right)}^2}}}$ và $\cos \varphi = \dfrac{R}{{\sqrt {{R^2} + {{\left( {{Z_L} - {Z_C}} \right)}^2}} }}$.
+		%	\item \noindent Đối với trường hợp RLC nối với máy phát điện xoay chiều một pha luôn luôn có quan hệ tỉ lệ thuận: $n \sim p \sim \omega \sim {Z_L} \sim \dfrac{1}{{{Z_C}}} \sim E$ nên ta có thể chuẩn hóa như sau:
+			\begin{bang}[tabularx={l||l|l|l|c}]{Bảng chuẩn hoá số liệu}
+				\textbf{Tốc độ rôto} & \textbf{E} & $Z_L$ & $Z_C$ & \textbf{P,} $\cos \varphi$ \\\midrule 
+				n & 1 & 1 & x & $\left\{ \begin{array}{l}
+				{P_1} = \dfrac{{{1^2}.R}}{{{R^2} + {{\left( {1 - x} \right)}^2}}}\\[0.5cm]
+				\cos {\varphi _1} = \dfrac{R}{{\sqrt {{R^2} + {{\left( {1 - x} \right)}^2}} }}
+				\end{array} \right.$ \\\midrule 
+				2n & 2 & 2 & $\dfrac{x}{2}$ & ${P_2} = \dfrac{{{2^2}R}}{\displaystyle {{R^2} + {{\left( {2 - \dfrac{x}{2}} \right)}^2}}}$ \\\midrule				
+				n$\sqrt{2}$ & $\sqrt{2}$ & $\sqrt{2}$ & $\dfrac{x}{{\sqrt 2 }}$ & ${P_3} = \dfrac{{2R}}{{\displaystyle {R^2} + {{\left( {\sqrt 2 - \dfrac{x}{{\sqrt 2 }}} \right)}^2}}}$
+			\end{bang} 
+			\item Vì ${P_2} = 4{P_1}$ nên $\dfrac{{{2^2}R}}{\displaystyle {{R^2} + {{\left( {2 - \dfrac{x}{2}} \right)}^2}}} = 4.\dfrac{{{1^2}.R}}{{{R^2} + {{\left( {1 - x} \right)}^2}}} \Rightarrow x = 2$.
+			\item Thay vào $\cos {\varphi _1} = \dfrac{{\sqrt 3 }}{2}$ suy ra: $\dfrac{{\sqrt 3 }}{2} = \dfrac{R}{{\sqrt {{R^2} + {{\left( {1 - 2} \right)}^2}} }} \Rightarrow R = \sqrt 3 $.
+			\item $\dfrac{{{P_3}}}{{{P_1}}} = \dfrac{{2\left[ {3 + {{\left( {1 - 2} \right)}^2}} \right]}}{\displaystyle {{1^2}\left[ {3 + {{\left( {\sqrt 2 - \dfrac{2}{{\sqrt 2 }}} \right)}^2}} \right]}} = \dfrac{8}{3}$.
+		\end{itemize}
+%		\begin{note}
+%			\textbf{Bình luận: }Trong các đại lượng cùng đơn vị $R$, $Z_L$ và $Z_C$ thì chỉ có thể chuẩn hóa một đại lượng. Chẳng hạn, nếu chuẩn hóa $Z_L = 1$ thì không thể chuẩn hóa thêm $Z_C = 1$ hoặc $R =1$. Nếu chuẩn hóa $Z_C = 1$ thì hoàn toàn giống như trên. Bây giờ, ta chuẩn hóa $R = 1$.
+%		\end{note}
+	}
+\end{vidu*}
+\loai{Cực trị $\omega$}
+\begin{vidu*} %[3P3-12.3T][Loai11] 
+	Nối hai cực của một máy phát điện xoay chiều một pha vào hai đầu đoạn mạch A, B mắc nối tiếp gồm điện trở $R = 180\ \Omega$, cuộn cảm thuần có độ tự cảm $L = 5\ H$ và tụ điện có điện dung $180\ \mu F$. Bỏ qua điện trở thuần của các cuộn dây của máy phát. Biết rôto máy phát có ba cặp cực. Khi rôto quay đều với tốc độ bao nhiêu thì dòng điện hiệu dụng trong đoạn mạch AB đạt cực đại?
+	\choice
+	{\True 2,7 vòng/s}
+	{3 vòng/s}
+	{4 vòng/s}
+	{1,8 vòng/s}
+	\loigiai{
+		\begin{itemize}
+			\item 
+			\item 
+			\item 
+			\item 
+			\item 
+			\item 
+		\end{itemize}
+	}
+\end{vidu*}
+\loai{Đồ thị}
+\begin{vidu}%[3P3-12.3G][Loai14] 
+	immini[thm]{Rôto của một máy phát điện xoay chiều một pha có 4 cực từ và quay với tốc độ n vòng/phút. Hai cực phần ứng của máy mắc với một tụ điện có điện dung $C = 10\ \mu F$. Điện trở trong của máy không đáng kể. Đồ thị biểu diễn sự biến thiên của cường độ dòng điện hiệu dụng I qua tụ theo tốc độ quay của rôto khi tốc độ quay của rôto biến thiên liên tục từ $n_1 = 150$ vòng/phút đến $n_2 = 1500$ vòng/phút. Biết rằng với tốc độ quay 1500 vòng/phút thì suất điện động hiệu dụng giữa hai cực máy phát tương ứng là E. Giá trị E là}{\begin{tikzpicture}[scale=2,thick,>=stealth']
+		\tkzDefPoints{0/0/o, 2.5/0/x, 0/2.5/i, 0/2/a, 2/0/b}
+		\tkzDrawSegments[->](o,x o,i)
+		\draw [blue, line width = 1.2pt, domain=0:2, samples=500]%
+		plot (\x, {0.5*\x^2});
+		\coordinate (m) at (0.5,{0.5*0.5^2});
+		\coordinate (n) at (1.7,{0.5*1.7^2});
+		\tkzDefPointBy[projection=onto o--x](m)\tkzGetPoint{m1}
+		\tkzDefPointBy[projection=onto o--i](m)\tkzGetPoint{m2}
+		\tkzDefPointBy[projection=onto o--x](n)\tkzGetPoint{n1}
+		\tkzDefPointBy[projection=onto o--i](n)\tkzGetPoint{n2}
+		\pgfresetboundingbox 
+		\tkzDrawSegments[dashed](m1,m m2,m n1,n n2,n)
+		\tkzDrawPoints[size=3,fill=white](m,n)
+		\tkzLabelPoint[below](m1){$150$}
+		\tkzLabelPoint[below](n1){$1500$}
+		\tkzLabelPoint[left](m2){$0,0628$}
+		\tkzLabelPoint[left](n2){$0,628$}
+		\node at (x)[above]{$n\ (v/p)$};
+		\node at (i)[right]{$I\ (A)$};
+		\node at (o)[below left]{$O$};
+		\end{tikzpicture}}
+	\choice
+	{400 V}
+	{100 V}
+	{\True 200 V}
+	{300 V}
+	\loigiai{
+%		\Binhluan{
+		\begin{itemize}
+			\item Khi $n = 1500$ vòng/phút $\Rightarrow f = \dfrac{np}{60} = 50$ Hz.
+			\item Dung kháng $Z_C = \dfrac{1}{C\omega} = 318,3\ \Omega$.
+			\item $E = U = I.Z_C \approx 200$ V.
+	\end{itemize}
+%}
+%{
+%Ta chỉ sử dụng một điểm trên đồ thị là đủ.\\ 
+%Chú ý 4 cực từ thì tương ứng ta có 2 cặp cực từ: $p=2$.
+%}
+}
+\end{vidu}

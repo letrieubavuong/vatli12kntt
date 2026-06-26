@@ -1,0 +1,96 @@
+%mac
+\begin{dang}{ĐỊNH LUẬT 2 NEWTON}
+\Bookmark\textbf{Bài toán thường gặp:}
+\begin{itemize}
+\item Bài toán giữ nguyên khối lượng vật, thay đổi lực tác dụng:\\ 
+$\begin{cases}
+F_1=ma_1 \\
+F_2=ma_2 \\
+\end{cases}$
+$\Rightarrow F=ma=F_1\pm F_2=ma_1\pm ma_2=m(a_1\pm a_2) \Rightarrow a=a_1\pm a_2$.
+\item Bài toán giữ nguyên lực tác dụng, thay đổi khối lượng vật:\\ 
+$\begin{cases}
+F=m_1a_1 \Rightarrow m_1=\dfrac{F}{a_1}\\
+F=m_2a_2 \Rightarrow m_2=\dfrac{F}{a_2}\\
+\end{cases}$
+$\Rightarrow
+F=ma=(m_1\pm m_2)a \Rightarrow a=\dfrac{F}{m_1\pm m_2}=\dfrac{F}{\dfrac{F}{a_1}\pm\dfrac{F}{a_2}} \Rightarrow a=\dfrac{1}{\dfrac{1}{a_1}\pm\dfrac{1}{a_2}}.
+$
+\end{itemize}
+\tcbline*
+\Bookmark\textbf{Phương pháp động lực học:}
+\begin{description}
+\item[Bước 1:] Chọn vật (hệ vật) khảo sát.
+\item[Bước 2:] Chọn hệ quy chiếu (trục toạ độ Ox luôn trùng với chiều chuyển động; trục toạ độ Oy vuông góc với phương chuyển động).
+\item[Bước 3:]  Xác định các lực và biểu diễn các lực tác dụng lên vật trên hình vẽ.
+\item[Bước 4:] Viết phương trình hợp lực tác dụng lên vật theo định luật 2 Newton.
+\begin{align*} \overrightarrow{{F}_{hl}}=\sum\limits_{i=1}^{n}{{\overrightarrow{F}}_{i}}=\overrightarrow{{F}_{1}}+\overrightarrow{{F}_{2}}+...+\overrightarrow{{F}_{n}}=m\overrightarrow{a}\ \ (*)   \ \   \text{(tổng tất cả các lực tác dụng lên vật)}.
+\end{align*}
+\item[Bước 5:]  Chiếu phương trình (*) lên các trục toạ độ Ox, Oy: 
+\begin{align*}
+\begin{cases}
+\text{Ox}:{F}_{1x}+{F}_{2x}+...+{F}_{nx}=ma\ \ (1)\\
+Oy:{F}_{1y}+{F}_{2y}+...+{F}_{ny}=0\ \ (2)
+\end{cases}
+\end{align*}
+\end{description}
+\textsc{\textbf{Phương pháp chiếu:}}
+\begin{itemize}
+\item Nếu $\overrightarrow{F}$ vuông góc với phương chiếu thì hình chiếu của $\overrightarrow{F}$ trên phương đó có giá trị đại số bằng 0.
+\item Nếu $\overrightarrow{F}$ song song với phương chiếu thì hình chiếu trên phương đó có độ dài đại số bằng F nếu $\overrightarrow{F}$ cùng chiều dương và bằng $-F$ nếu $\overrightarrow{F}$ ngược chiều dương.
+\item Nếu $\overrightarrow{F}$ tạo với phương ngang một góc $\alpha$ (xem hình dưới)
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 2/1/a, 4/2/b,2/0/a1,0/1/a2, 4/0/b1, 0/2/b2, 0/2.5/y, 4.5/0/x, 4/1/h, 4.5/1/m, 8/1/n}
+\tkzDrawSegments[->](o,x o,y m,n)
+\tkzDrawSegments[very thick,blue,->](a,b)
+\tkzDrawSegments[very thick,red,->](a1,b1 a2,b2)
+\tkzDrawSegments[dashed](a1,a a2,a b1,b b2,b a,h)
+\tkzDrawPoints[size=3,fill=black](o,a,a1,a2)
+\tkzMarkAngles[size=0.5cm](h,a,b)
+\tkzLabelAngle[pos=0.8](h,a,b){$\alpha$}
+\tkzLabelSegment[below](a1,b1){$\vec{F}_x$}
+\tkzLabelSegment[left](a2,b2){$\vec{F}_y$}
+\tkzLabelSegment[above](m,n){Chiếu lên Ox, Oy}
+\tkzLabelPoint[above](b){$\vec{F}$}
+\tkzLabelPoint[below left](o){$O$}
+\tkzLabelPoint[below](x){$x$}
+\tkzLabelPoint[left](y){$y$}
+\tkzLabelPoint[right](n){$\left\{{
+\begin{matrix}
+{F_x=F.\cos\alpha}\\
+{F_y=F.\sin\alpha}\\
+\end{matrix}}\right.$}  
+\end{tikzpicture}
+\end{center}
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 2/1/a, 4/2/b,2/0/a1,0/1/a2, 4/0/b1, 0/2/b2, 0/2.5/y, 4.5/0/x, 4/1/h, 4.5/1/m, 8/1/n}
+\tkzDrawSegments[->](o,x o,y m,n)
+\tkzDrawSegments[very thick,blue,->](b,a)
+\tkzDrawSegments[very thick,red,->](b1,a1 b2,a2)
+\tkzDrawSegments[dashed](a1,a a2,a b1,b b2,b a,h)
+\tkzDrawPoints[size=3,fill=black](o,b,b1,b2)
+\tkzMarkAngles[size=0.5cm](b2,b,a)
+\tkzLabelAngle[pos=-0.8](b2,b,a){$\alpha$}
+\tkzLabelSegment[below](a1,b1){$\vec{F}_x$}
+\tkzLabelSegment[left](a2,b2){$\vec{F}_y$}
+\tkzLabelSegment[above](m,n){Chiếu lên Ox, Oy}
+\tkzLabelPoint[above](b){$\vec{F}$}
+\tkzLabelPoint[below left](o){$O$}
+\tkzLabelPoint[below](x){$x$}
+\tkzLabelPoint[left](y){$y$}
+\tkzLabelPoint[right](n){$\left\{{
+\begin{matrix}
+{F_x=-F.cos\alpha}\\
+{F_y=-F.sin\alpha}\\
+\end{matrix}}\right.$}  
+\end{tikzpicture}
+\end{center}
+\item Dấu $(-)$ nói lên rằng lực ngược chiều dương.
+\end{itemize}
+\Bookmark\textbf{Một số công thức động học liên quan:}
+\begin{align*}
+v=v_0+at,\,\, s=v_0t+\dfrac{1}{2}at^2,\,\, v^2-v_0^2=2as.
+\end{align*}
+\end{dang}

@@ -1,0 +1,175 @@
+
+\loai{Hoán đổi vai trò các cuộn dây}
+\begin{vidu} %[3P3-14.4G][Loai3] 
+	Một máy biến áp lí tưởng có hai cuộn dây $D_1$ và $D_2$. Khi mắc hai đầu cuộn dây $D_1$ vào điện áp xoay chiều có giá trị hiệu dụng U thì điện áp hiệu dụng hai đầu của cuộn $D_2$ để hở có giá trị là 8 V. Khi mắc hai đầu cuộn $D_2$ vào điện áp xoay chiều có giá trị hiệu dụng U thì điện áp hiệu dụng ở hai đầu của cuộn $D_1$ để hở có giá trị là 2 V. Giá trị U bằng
+	\choice
+	{16 V}
+	{\True 4 V}
+	{6 V}
+	{8 V}
+	\loigiai{
+		\Binhluan{
+		Theo giả thuyết bài toán ta có:
+			\begin{align*}
+			\begin{cases}
+			\dfrac{U}{8}=\dfrac{N_1}{N_2}\\
+			\dfrac{U}{2}=\dfrac{N_2}{N_1}
+			\end{cases}\Rightarrow \dfrac{U}{8}=\dfrac{2}{U}\Rightarrow U=4\ V.
+		\end{align*}
+}
+{Với bài toán này các kí hiệu $N_1;\ N_2;\ U_1;\ U_2$ trong công thức chỉ mang tính tương đối. Học sinh cần hiểu rõ bản chất}
+}
+\end{vidu}
+\loai{Hai máy biến áp}
+\begin{vidu} %[3P3-14.4T][Loai4] 
+	Hai máy biến áp lí tưởng (bỏ qua mọi hao phí) cuộn sơ cấp có cùng số vòng dây nhưng cuộn thứ cấp có số vòng dây khác nhau. Khi đặt điện áp xoay chiều có giá trị hiệu dụng U không đổi vào hai đầu cuộn thứ cấp của máy thứ nhất thì tỉ số giữa điện áp hiệu dụng ở hai đầu cuộn thứ cấp để hở và cuộn sơ cấp của máy đó là 1,5. Khi đặt điện áp xoay chiều nói trên vào hai đầu cuộn sơ cấp của máy thứ hai thì tỉ số đó là 1,8. Khi cùng thay đổi số vòng dây của cuộn thứ cấp của mỗi máy 48 vòng dây rồi lặp lại thí nghiệm thì tỉ số điện áp nói trên của hai máy là bằng nhau. Số vòng dây của cuộn sơ cấp của mỗi máy là
+	\choice
+	{300 vòng}
+	{440 vòng}
+	{250 vòng}
+	{\True 320 vòng}
+	\loigiai{
+		\Binhluan{
+		\begin{itemize}
+			\item Máy thứ nhất: $\dfrac{N_2}{N_1}=\dfrac{3}{2}$.
+			\item Máy thứ hai: $\dfrac{N_{2}'}{N_1}=1,8$.
+			\item Khi cùng thay đổi số vòng dây $\dfrac{N_{2}'-48}{N_1}=\dfrac{{N_2}+48}{N_1}\Leftrightarrow N_{2}'-{N_2}=96$.
+			\item Mặt khác : $\dfrac{N_2}{N_{2}'}=\dfrac{5}{6}$
+			$\Rightarrow N_{2}'=576\Leftrightarrow {N_1}=320$.
+		\end{itemize}	
+	}
+{
+Ta phải biện luận được máy 1 tăng số vòng dây và máy 2 giảm bớt số vòng dây.
+}
+	}
+\end{vidu}
+\loai{MBA mắc liên tiếp nhau}
+\begin{vidu} %[3P3-14.4T][Loai5] 
+	Đặt vào hai đầu cuộn sơ cấp của máy biến áp ${M_1}$ một điện áp xoay chiều có giá trị hiệu dụng 200 V. Khi nối hai đầu cuộn sơ cấp của máy biến áp ${M_2}$ vào hai đầu cuộn thứ cấp của ${M_1}$ thì điện áp hiệu dụng ở hai đầu cuộn thứ cấp của ${M_2}$ để hở bằng 12,5 V. Khi nối hai đầu của cuộn thứ cấp của ${M_2}$ với hai đầu cuộn thứ cấp của ${M_1}$ thì điện áp hiệu dụng ở hai đầu cuộn sơ cấp của ${M_2}$ để hở bằng 50 V. Bỏ qua mọi hao phí. ${M_1}$ có tỉ số giữa số vòng dây cuộn sơ cấp và số vòng cuộn thứ cấp là
+	\choice
+	{\True 8}
+	{4}
+	{6}
+	{15}
+	\loigiai{
+\Bookmark\ \textbf{Cách 1:}
+\begin{center}
+	\begin{tikzpicture}[scale=1,thick,>=stealth']
+	\tkzDefPoints{0/0/o, -0.5/0/1, -0.5/2/2, 1.9/0/3, 1.9/2/4, 0/0/1', 0/2/2', 1.4/0/3', 1.4/2/4'}
+	\tkzDrawSegments[very thick,blue](1,1' 2,2' 3,3' 4,4')
+	\foreach  \y  in  {0,0.2,0.4,...,1.8}
+	{\draw [very thick, blue](0,\y) arc (-90:90:0.3cm and 0.1cm);}
+	\foreach  \y  in  {2,1.8,...,0.2}
+	{\draw [very thick, blue](1.4,\y) arc (90:270:0.3cm and 0.1cm);}
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.45cm]  {};
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.15cm]  {};
+	\tkzDrawPoints[size=4,fill=white](1,2,3,4)
+	\node[above] at (0,2){$N_1$};
+	\node[above] at (1.4,2){$N_2$};
+	\node[left] at (0,1){$U_1=200\ V$};
+	\node[right] at (1.4,1){$U_2\ \ =\ \ U_3$};
+	\draw[very thick,red](1.9,0) to [bend left =60](2.9,0);
+	\draw[very thick,red](1.9,2) to [bend left =60](2.9,2);
+	\begin{scope}[shift={(3.4,0)}]
+	\tkzDefPoints{0/0/o, -0.5/0/1, -0.5/2/2, 1.9/0/3, 1.9/2/4, 0/0/1', 0/2/2', 1.4/0/3', 1.4/2/4'}
+	\tkzDrawSegments[very thick,blue](1,1' 2,2' 3,3' 4,4')
+	\foreach  \y  in  {0,0.2,0.4,...,1.8}
+	{\draw [very thick, blue](0,\y) arc (-90:90:0.3cm and 0.1cm);}
+	\foreach  \y  in  {2,1.8,...,0.2}
+	{\draw [very thick, blue](1.4,\y) arc (90:270:0.3cm and 0.1cm);}
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.45cm]  {};
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.15cm]  {};
+	\tkzDrawPoints[size=4,fill=white](1,2,3,4)
+	\node[above] at (0,2){$N_3$};
+	\node[above] at (1.4,2){$N_4$};
+	\node[left] at (0,1){};
+	\node[right] at (1.4,1){$U_4=12,5\ V$};
+	\end{scope}
+	\begin{scope}[shift={(8,0)}]
+	\tkzDefPoints{0/0/o, -0.5/0/1, -0.5/2/2, 1.9/0/3, 1.9/2/4, 0/0/1', 0/2/2', 1.4/0/3', 1.4/2/4'}
+	\tkzDrawSegments[very thick,blue](1,1' 2,2' 3,3' 4,4')
+	\foreach  \y  in  {0,0.2,0.4,...,1.8}
+	{\draw [very thick, blue](0,\y) arc (-90:90:0.3cm and 0.1cm);}
+	\foreach  \y  in  {2,1.8,...,0.2}
+	{\draw [very thick, blue](1.4,\y) arc (90:270:0.3cm and 0.1cm);}
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.45cm]  {};
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.15cm]  {};
+	\tkzDrawPoints[size=4,fill=white](1,2,3,4)
+	\node[above] at (0,2){$N_1$};
+	\node[above] at (1.4,2){$N_2$};
+	\node[left] at (0,1){$U_1$};
+	\node[right] at (1.4,1){$U_2\ \ =\ \ U_3'$};
+	\draw[very thick,red](1.9,0) to [bend left =60](2.9,0);
+	\draw[very thick,red](1.9,2) to [bend left =60](2.9,2);
+	\begin{scope}[shift={(3.4,0)}]
+	\tkzDefPoints{0/0/o, -0.5/0/1, -0.5/2/2, 1.9/0/3, 1.9/2/4, 0/0/1', 0/2/2', 1.4/0/3', 1.4/2/4'}
+	\tkzDrawSegments[very thick,blue](1,1' 2,2' 3,3' 4,4')
+	\foreach  \y  in  {0,0.2,0.4,...,1.8}
+	{\draw [very thick, blue](0,\y) arc (-90:90:0.3cm and 0.1cm);}
+	\foreach  \y  in  {2,1.8,...,0.2}
+	{\draw [very thick, blue](1.4,\y) arc (90:270:0.3cm and 0.1cm);}
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.45cm]  {};
+	\node  at  (0.7,1)  [shape=rectangle,draw=black,minimum height=2cm,minimum width=0.15cm]  {};
+	\tkzDrawPoints[size=4,fill=white](1,2,3,4)
+	\node[above] at (0,2){$N_4$};
+	\node[above] at (1.4,2){$N_3$};
+	\node[left] at (0,1){};
+	\node[right] at (1.4,1){$U_4'=50\ V$};
+	\end{scope}
+	\end{scope}
+	
+	\end{tikzpicture}
+\end{center}
+\Binhluan{
+\begin{itemize}
+	\item Trường hợp 1: 
+	$\begin{cases}
+	\dfrac{U_2}{200}=\dfrac{N_2}{N_1}=\dfrac{1}{k_1}\\
+	\dfrac{U_2}{12,5}=\dfrac{N_3}{N_4}=k_2\Rightarrow U_2=12,5.k_2
+	\end{cases}$
+	\item Trường hợp 2: $
+	\dfrac{U_2}{50}=\dfrac{N_4}{N_3}=\dfrac{1}{k_2}\Rightarrow U_2=\dfrac{50}{k_2}$
+	  \item Giải hệ $(1);\ (2);\ (3)$ ta có: $k_2=2;\ U_2=25\ V$ và $k_1=8$.
+\end{itemize}
+}
+{
+Ta để ý $U_2=U_3=U'_3$ và áp dụng khéo léo công thức máy biến áp để hạn chế ẩn số.
+}
+
+
+
+
+
+
+
+
+
+
+%\Bookmark\ \textbf{Cách 2:}
+%		\begin{itemize}
+%			\item Ta có: 
+%			\begin{align*}
+%				&{U_2}=\dfrac{N_2}{N_1}.{U_1}=\dfrac{U_1}{k} 
+%				{k_1}=\dfrac{N_1}{N_2}\\
+%				&{k_2}=\dfrac{N_3}{N_4} \Rightarrow  \dfrac{200}{k_1}.\dfrac{1}{k_2}=12,5. 
+%				\dfrac{200}{k_1}.\dfrac{1}{k_2}=50 
+%				\Rightarrow {k_1}=8.
+%			\end{align*}
+%			\item Lại có: ${{U}_{1M1}}=200\ V$.
+%			\item \textbf{Trường hợp 1}: Khi nối hai đầu cuộn sơ cấp ${M_2}$ vào hai đầu cuộn thứ cấp ${M_1}$ thì: 
+%			\begin{align*}
+%				U_{1M2}=U_{2M1}\ \ct{và}\  U_{2M2}=12,5\ V\quad (1).
+%			\end{align*}
+%			\item \textbf{Trường hợp 2}: Khi nối hai đầu cuộn thứ cấp ${M_2}$ vào hai đầu cuộn thứ cấp ${M_1}$ thì:
+%			\begin{align*}
+%				U'_{2M2}=U_{2M1}\ \ct{và}\  U'_{1M2}=50\ V\quad (2).
+%			\end{align*}
+%			\item Mà:  $\dfrac{{{U}_{1M2}}}{{{U}_{2M2}}}=\dfrac{N_1}{N_2}=\dfrac{U{{'}_{1M2}}}{U{{'}_{2M2}}}\Rightarrow \dfrac{{{U}_{1M2}}}{{{U}_{2M2}}}.\dfrac{U{{'}_{2M2}}}{U{{'}_{1M2}}}=1\quad (3)$.
+%			\item Từ $(1)$; $(2)$ và $(3)$ 
+%			\begin{align*}
+%				\Rightarrow\  &\dfrac{{{U}_{1M2}}}{12,5}.\dfrac{{{U}_{2M1}}}{50}=1\Rightarrow \dfrac{{{U}_{1M2}}}{12,5}.\dfrac{{{U}_{1M2}}}{50}=1\Rightarrow {{U}_{1M2}}=25\ V \Rightarrow {{U}_{2M1}}=25\ V\\ 
+%				\Rightarrow\  &\dfrac{{{U}_{1M1}}}{{{U}_{2M1}}}=\dfrac{N_1}{N_2}\Rightarrow \dfrac{N_1}{N_2}=\dfrac{200}{25}=8.
+%			\end{align*}
+	%	\end{itemize}	
+	}
+\end{vidu}

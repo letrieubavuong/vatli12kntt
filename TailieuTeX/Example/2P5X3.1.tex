@@ -1,0 +1,182 @@
+\loai{Thay đổi từ thông}
+\begin{vidu}%[2P5-3.1K][Loai2]
+Một vòng dây tròn bán kính 10 cm đặt trong một từ trường đều có $B = 10^{-2}$ T. Mặt phẳng vòng dây vuông góc với các đường cảm ứng từ, sau thời gian 0,01 s từ thông giảm đều đến 0. Suất điện động cảm ứng xuất hiện trong vòng dây là
+\choice
+{0,314 V}
+{0 V}
+{0,0628 V}
+{\True 0,0314 V}
+\loigiai{
+Suất điện động cảm ứng xuất hiện trong khung dây là: 
+\begin{align*}
+|e_c| = \left|{\dfrac{\Delta \Phi}{\Delta t}} \right| = \left| {\dfrac{N\Delta BS.\cos \alpha}{\Delta t}} \right| = \left|- \dfrac{10^{-2}.\pi .0,1^2.\cos 0^\circ} {0,01}\right|= \pi.10^{-2}\ V.
+\end{align*}
+}
+\end{vidu}
+\loai{Thay đổi cảm ứng từ}
+\begin{vidu}%[2P5-3.1K][Loai3]
+Một khung dây phẳng diện tích 40 $cm^2$ gồm 200 vòng đặt trong từ trường đều $B = 2.10^{-4}$   T, vector cảm ứng từ hợp với mặt phẳng khung một góc 30\degree. Người ta giảm đều từ trường đến 0 trong khoảng thời gian 0,01 s. Tính suất điện động cảm ứng xuất hiện trong khung trong thời gian từ trường biến đổi.
+\choice
+{$4.10^{-2}$ V}
+{\True $8.10^{-3}$ V}
+{$4.10^{-3}$ V}
+{$2.10^{-3}$ V}
+\loigiai{
+Ta có: $|e_c| = \left|\dfrac{\Delta \Phi}{\Delta t}\right| = \left|\dfrac{N\Delta B.S\cos \alpha}{\Delta t}\right| = \left|\dfrac{200.2.10^{-4}.40.10^{-4}.\cos60\degree}{0,01}\right|=8.10^{-3}$ V.
+}
+\end{vidu}
+\loai{Thay đổi góc $\alpha$}
+\begin{vidu}%[2P5-3.1G][Loai4]
+Một vòng dây phẳng có diện tích $80\ cm^2$ đặt trong từ trường đều $B = 0,3.10^{-3}$ T, vector cảm ứng từ vuông góc với mặt phẳng vòng dây. Vector cảm ứng từ đột ngột đổi hướng trong $10^{-3}$ s. Trong thời gian đó suất điện động cảm ứng xuất hiện trong khung là
+\choice
+{$4,8.10^{-2}$ V}
+{0,48 V}
+{\True $4,8.10^{-3}$ V}
+{0,24 V}
+\loigiai{
+\begin{itemize}
+\item $t = 0$ s, vector cảm ứng từ vuông góc với mặt phẳng vòng dây $\Rightarrow \alpha =0^\circ$.
+\item $t = 10^{-3}$ s, vector cảm ứng từ đổi hướng $\Rightarrow \alpha =180^\circ$
+\begin{align*}
+e_{C} &=-\dfrac{\Delta \Phi}{\Delta t}=\dfrac{\Phi_1-\Phi_2}{\Delta t}=\dfrac{NBS(\cos \alpha_1-\cos \alpha_2)}{\Delta t}\\
+&=\dfrac{1.0,{3.10}^{-3}{.80.10}^{-4}(\cos 0^{\circ}-\cos {180}^{\circ})}{{10}^{-3}}=4,8.10^{-3}\ V.
+\end{align*}
+\end{itemize}
+}
+\end{vidu}
+\loai{Thay đổi diện tích}
+\begin{vidu}%[2P5-3.1K][Loai5]
+Một vòng dây đặt trong từ trường đều $B = 0,3$ T. Mặt phẳng vòng dây vuông góc với đường sức từ. Tính suất điện động cảm ứng xuất hiện trong vòng dây nếu đường kính vòng dây giảm từ 100 cm xuống 60 cm trong 0,5 s.
+\choice
+{300 V}
+{30 V}
+{3 V}
+{\True 0,3 V}
+\loigiai{
+Mặt phẳng khung vuông góc với các đường cảm ứng từ $\Rightarrow \alpha =0^{\circ}$
+\begin{align*}
+|e_c| &=\left|\dfrac{\Delta \Phi}{\Delta t}\right|=\dfrac{\Phi_1-\Phi_2}{\Delta t}=\dfrac{NB\cos \alpha (S_1-S_2)}{\Delta t}\\
+&=\dfrac{NB\cos \alpha.\pi (D_1^2-D_2^2)}{4\Delta t}\dfrac{1.0,3.\cos 0^{\circ}.\pi {({100.10}^{-2})}^2-{({60.10}^{-2})}^2}{4.0,5}=0,3\ V.
+\end{align*}
+}
+\end{vidu}
+\loai{Đồ thị}
+\begin{vidu}%[2P5-3.1K][Loai7]
+immini[thm]{
+Từ thông qua một khung dây biến thiên theo thời gian như đồ thị. Suất điện động cảm ứng trong khung trong các thời điểm tương ứng sẽ là
+\choice
+{\True trong khoảng thời gian 0 đến 0,1 s: $e_{C}=3$ V}
+{trong khoảng thời gian 0,1 đến 0,2 s: $e_{C}=6$ V}
+{trong khoảng thời gian 0,2 đến 0,3 s: $e_{C}=9$ V}
+{trong khoảng thời gian 0 đến 0,3 s: $e_{C}=12$ V}}{\begin{tikzpicture}
+\coordinate (o) at (0,0);
+\draw [->](0,-0.3)--++(90:4)node[right]{\normalsize{\bth{\Phi\ Wb}}};
+\draw [->](-0.3,0)--++(0:4)node[above]{\normalsize{\bth{t\ s}}};
+\draw[very thick](0,3)--(2,1.5)--(3,0);
+\draw[dashed](0,1.5)--(2,1.5)--(2,0);
+\filldraw[black] (0,0)circle(1pt)node[below left]{\normalsize{\bth{0}}};
+\filldraw[black] (2,0)circle(1pt)node[below]{\normalsize{\bth{0,2}}};
+\filldraw[black] (3,0)circle(1pt)node[below]{\normalsize{\bth{0,3}}};
+\filldraw[black] (0,3)circle(1pt)node[left]{\normalsize{\bth{1,2}}};
+\filldraw[black] (0,1.5)circle(1pt)node[left]{\normalsize{\bth{0,6}}};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Tại thời điểm $t_1 = 0\Rightarrow \Phi_1=0$.
+\item Tại thời điểm $t_2 = 0,2\Rightarrow \Phi_2=0,6\ Wb$.
+\item Suất điện động cảm ứng xuất hiện trong khung là $|e_c|=\left|{\dfrac{\Delta \Phi}{\Delta t}}\right|=3\ V$. 
+\item Trong khoảng thời gian 0 đến 0,1 s: $e_c=3$ V.
+\end{itemize}
+}
+\end{vidu}
+\loai{Cường độ dòng điện cảm ứng}
+\begin{vidu}%[2P5-3.1G][Loai8]
+Một vòng dây đồng có đường kính 20 cm, tiết diện 0,5 $mm^2$ đặt vào trong từ trường đều cảm ứng từ vuông góc với mặt phẳng vòng dây. Biết đồng có điện trở suất là $1,75.{10^{- 8}}\ \Omega m$, dòng điện cảm ứng xuất hiện trong vòng dây là 2 A thì tốc độ biến thiên của cảm ứng từ qua vòng dây là
+\choice
+{1 T/s}
+{0,7 T/s}
+{2,8 T/s}
+{\True 1,4 T/s}
+\loigiai{
+\begin{itemize}
+\item Suất điện động cảm ứng xuất hiện trong vòng dây có độ lớn: 
+\begin{align*}
+|e_c| = \left|{\dfrac{\Delta \Phi}{\Delta t}} \right| = \left| {\dfrac{{\Delta \left( {BS} \right)}}{\Delta t}} \right| = S\left| {\dfrac{\Delta B}{\Delta t}} \right| = \dfrac{\pi {d^2}}{4}\left| {\dfrac{\Delta B}{\Delta t}} \right|.
+\end{align*}
+\item Có $R = \dfrac{\rho \ell}{S} \Rightarrow R = \dfrac{\rho .\pi d}{S}$.
+\item Dòng điện cảm ứng $i_c = \dfrac{|e_c|}{R} = \dfrac{d.S}{4\rho}\left| {\dfrac{\Delta B}{\Delta t}} \right| \Rightarrow \left| {\dfrac{\Delta B}{\Delta t}} \right| = \dfrac{4\rho.i_c}{d.S} = \dfrac{{4.1,75.10^{-8}.2}}{0,2.0,5.10^{-6}}=1,4$ T/s.
+\end{itemize}
+}
+\end{vidu}
+\begin{vidu}%[2P5-3.1G][Loai8]
+Một khung dây hình chữ nhật có chiều dài 2 dm, chiều rộng 1,14 dm, đặt trong từ trường đều B, $\vec{B}$ vuông góc với mặt phẳng khung, hướng từ trong ra. Cho $B = 0,1$ T. Xác định chiều $i_c$ và độ lớn của suất điện động cảm ứng $e_c$ xuất hiện trong khung dây khi người ta uốn khung dây nói trên thành một vòng dây hình tròn ngay trong từ trường đều nói trên trong thời gian một phút.
+\choice
+{Chu vi mạch điện không đổi nên từ thông qua mạch không biến thiên, $e_c = 0$}
+{\True $i_c$ cùng chiều kim đồng hồ; $e_c = 14\ \mu V$}
+{$i_c$ cùng chiều kim đồng hồ; $e_c = 1,4$ V}
+{$i_c$ ngược chiều kim đồng hồ; $e_c = 0,86$ V}
+\loigiai{
+\begin{itemize}
+\item Diện tích của khung dây lúc đầu: $S_1 = 0,2.0,114 = 0,0228\ m^2$.
+\item Chu vi của khung dây: $p = 2(0,2 + 0,114) = 0,628$ m.
+\item Khi uốn dây thành hình tròn: $p=2\pi r\Rightarrow r=0,1\ m$.
+\item Diện tích của khung dây lúc sau: $S_2=\pi r^2=0,0314\ m^2$.
+\item Từ thông lúc đầu: $\Phi_1=BS_1=2,28.10^{-3}\ Wb$.
+\item Từ thông lúc sau: $\Phi_2=BS_2=3,14.10^{-3}\ Wb$.
+\item Suất điện động xuất hiện trong khung dây: $|e_c|=\left|{\dfrac{\Delta \Phi}{\Delta t}}\right|\approx 14\ \mu V $.
+\item Áp dụng quy tắc nắm bàn tay phải có thể xác định được chiều dòng điện cùng chiều với kim đồng hồ.
+\end{itemize}
+}
+\end{vidu}
+\loai{Loại khác}
+\begin{vidu}%[2P5-3.1K][Loai9]
+Một khung dây hình vuông MNPQ cạnh $a = 5$ cm, nằm trong mặt phẳng thẳng đứng đặt trong vùng có từ trường đều nằm ngang. Vector cảm ứng từ hợp với pháp tuyến của khung dây một góc $60^\circ$. Giảm cường độ cảm ứng từ B theo qui luật: $B=0,04-0,004t$. Suất điện động cảm ứng xuất hiện trong khung dây có độ lớn là
+\choice
+{$5.10^{-3}$ V}
+{\True $5.10^{-6}$ V}
+{$10^{-5}$ V}
+{$2.5.10^{-6}$ V}
+\loigiai{
+Ta có:
+\begin{align*}
+\left|e_c\right|=\left|\dfrac{\Delta \Phi}{\Delta t}\right|=\left|\dfrac{\Phi_2-\Phi _1}{t_2-t_1}\right|=\left|\dfrac{B_2S\cos \alpha -B_1S\cos \alpha}{t_2-t_1}\right|=S\cos \alpha \left|\dfrac{B_2-B_1}{t_2-t_1}\right|.
+\end{align*}
+Từ biểu thức của B ta có:
+\begin{itemize}
+\item $B_2=0,04-0,004t_2$
+\item $B_1=0,04-0,004t_1$
+\end{itemize}
+\begin{align*}
+\Rightarrow \left|e_c\right|=S\cos \alpha \left|\dfrac{-0,004\left(t_2-t_1\right)}{t_2-t_1}\right|=\left(25.10^{-4}\right)\cos 60^\circ.0,004=5.10^{-6}\ V.
+\end{align*}
+}
+\end{vidu}
+\begin{vidu}%[2P5-3.1T][Loai9]
+Một khung dây dẫn hình vuông cạnh $a = 6$ cm; đặt trong từ trường đều $B = 4.10^{-3}$ T, đường sức từ trường vuông góc với mặt phẳng khung dây. Cầm hai cạnh đối diện hình vuông kéo về hai phía để được hình chữ nhật có cạnh này dài gấp đôi cạnh kia. Biết điện trở khung $R = 0, 01\ \Omega$. Tính điện lượng di chuyển trong khung.
+\choice
+{$12. 10^{-5}$ C}
+{$14. 10^{-5}$ C}
+{\True $16. 10^{-5}$ C}
+{$18. 10^{-5}$ C}
+\loigiai{
+\begin{itemize}
+\item Diện tích hình vuông $S=a^2=0,6^2=3,6.10^{-3}\ m^2$.
+\item Diện tích hình chữ nhật $S=\dfrac{2a}{3}.\dfrac{4a}{3}=3,2.10^{-3}\ m^2$
+\begin{align*}
+\Rightarrow\Delta S=3,6.10^{-3}-3,2.10^{-3}=0,4.10^{-3}\ m^2.
+\end{align*}
+\item Suất điện động cảm ứng xuất hiện trong khung dây:
+\begin{align*}
+|e_c| =\dfrac{\Delta \Phi}{\Delta t}.
+\end{align*}
+\item Cường độ dòng điện trong khung:
+\begin{align*}
+i_c=\dfrac{|e_c|}{R}=\dfrac{\dfrac{\Delta \Phi}{\Delta t}}{R}=\dfrac{\Delta \Phi}{R\Delta t}.
+\end{align*}
+\item Điện lượng dịch chuyển trong khung:
+\begin{align*}
+\Delta q=i_c.\Delta t=\dfrac{\Delta \Phi}{R}=\dfrac{1,6.10^{-6}}{0,01}=16.10^{-5}\ C.
+\end{align*}
+\end{itemize}
+}
+\end{vidu}

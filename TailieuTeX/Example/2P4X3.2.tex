@@ -1,0 +1,321 @@
+\loai{Các trường hợp cụ thể của bài toán mẫu}
+\begin{vidu} %[2P4-3.2K][Loại2] 
+Hai dây dẫn thẳng, dài song song cách nhau 32 cm trong không khí, dòng điện chạy trên dây 1 là $I_1=5$ A, dòng điện chạy trên dây 2 là $I_2=1$ A và ngược chiều với $I_1$. Điểm M nằm trong mặt phẳng của hai dây và cách đều hai dây. Cảm ứng từ tại M có độ lớn là
+\choice
+{$5,0.10^{-6}\ T $}
+{\True $7,5.10^{-6}\ T $}
+{$7,5.10^{-7}\ T $}
+{$5,0.10^{-7}\ T$}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Cảm ứng từ do hai dòng điện gây ra tại M có phương chiều như hình vẽ và có độ lớn lần lượt là: $\begin{cases}
+&B_1=2.10^{-7}\dfrac{I_1}{r_1}=2.10^{-7}\dfrac{5}{0,16}=6,25.10^{-6}\ T\\
+&B_2=2.10^{-7}\dfrac{I_2}{r_2}=2.10^{-7}\dfrac{1}{0,16}=1,25.10^{-6}\ T\\
+\end{cases}$
+\item Cảm ứng từ tại M là tổng hợp của hai vector cảm ứng từ thành phần\\ $\vec{B}=\vec{B_1}+\vec{B_2}\xrightarrow{\vec{B_1}\uparrow \uparrow \vec{B_2}}B=B_1+B_2=7,5.10^{-6}\ T$
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (o1) at (0,0);
+\path (o1)--++(0:3)coordinate (m)node[above]{\normalsize{\bth{M}}}--++(0:3) coordinate (o2)node[below=5pt]{\normalsize{\bth{I_{2}}}};
+\path (m)--++(0:0.1)coordinate (m1)--++(180:0.2) coordinate (m2);
+\draw (o2)node[above right=3pt]{\normalsize{\bth{B}}}circle (0.2);
+\filldraw[black] (m)circle(1.2pt);
+\filldraw[black] (m1)circle(1.2pt);
+\filldraw[black] (m2)circle(1.2pt);
+\draw [dashed] (o1)-- (o2);
+\draw[very thick,->] (m)--++(270:2.4) node[below]{\normalsize{\bth{\vec{B}_{M}}}};
+\draw[very thick,->] (m2)--++(270:1.6) node[left]{\normalsize{\bth{\vec{B}_{1M}}}};
+\draw[very thick,->] (m1)--++(270:0.7) node[right]{\normalsize{\bth{\vec{B}_{2M}}}};
+\draw [fill=white](o1)node[above left=3pt]{\normalsize{\bth{A}}}circle (0.2)node[below=5pt]{\normalsize{\bth{I_{1}}}} ;
+\draw [fill=white](o2)circle (0.2);
+\draw [very thick](o1)--++(45:0.2);
+\draw [very thick](o1)--++(135:0.2);
+\draw [very thick](o1)--++(225:0.2);
+\draw [very thick](o1)--++(-45:0.2);
+\filldraw[black] (o2)circle(0.05);
+\end{tikzpicture}}
+}
+\end{vidu}
+\begin{vidu} %[2P4-3.2K][Loại2] 
+Hai dòng điện cường độ $I_1=6\ A,\ I_2=9\ A$ chạy trong hai dây dẫn thẳng song song dài vô hạn có chiều ngược nhau, được đặt trong chân không cách nhau một khoảng $a=10\ cm$. Cảm ứng từ tại điểm M cách $I_1$ 6 cm và cách $I_2$ 4 cm có độ lớn bằng
+\choice
+{$5.10^{-5}\ T$}
+{$6.10^{-5}\ T$}
+{\True $6,5.10^{-5}\ T$}
+{$8.10^{-5}\ T$}
+\loigiai{\begin{itemize}
+\item Cảm ứng từ do $I_1$ và $I_2$ gây ra tại M có độ lớn:$\begin{cases}
+B_1=2.10^{-7}\dfrac{I_1}{r_1}=2.10^{-7}\dfrac{6}{0,06}=2.10^{-5}\ T.\\
+B_2=2.10^{-7}\dfrac{I_2}{r_2}=2.10^{-7}\dfrac{9}{0,04}=4,5.10^{-5}\ T.\\
+\end{cases} $.
+\item Vì $\vec B_1$ và $\vec B_2$ là cùng chiều nên $B_M=B_1+B_2=6,5.10^{-5}\ T $.
+\end{itemize}}
+\end{vidu}
+\begin{vidu} %[2P4-3.2K][Loại2]
+Hai dây dẫn thẳng, dài song song cách nhau cách nhau 40 cm. Trong hai dây có hai dòng điện cùng cường độ $I_1 = I_2 = 100$ A, cùng chiều chạy qua. Cảm ứng từ do hệ hai dòng điện gây ra tại điểm M nằm trong mặt phẳng hai dây, cách dòng điện ${I_1}$ 10 cm và cách dòng điện ${I_2}$ 30 cm có độ lớn là
+\choice
+{0 T}
+{$2.10^{-4}$ T}
+{$24.10^{-5}$ T}
+{\True $13,3.10^{-5}$ T}
+\loigiai{\begin{itemize}
+\item Ta có: $B_1=2.10^{-7}.\dfrac{I_1}{r_1}=2.10^{-4}\ T$.
+\item Tương tự: $B_2=2.10^{-7}.\dfrac{I_2}{r_2}=2.10^{-4}=6,67.10^{-5}\ T$ $\Rightarrow B=B_1-B_2=13,3.10^{-4}\ T$.
+\end{itemize}}
+\end{vidu}
+\begin{vidu} %[2P4-3.2K][Loại2]
+Hai dòng điện cường độ $I_1 =6$ A, $I_2 = 9$ A chạy trong hai dây dẫn thẳng song song dài vô hạn có chiều ngược nhau, được đặt trong chân không cách nhau một khoảng $a = 10\ cm$. Cảm ứng từ tại điểm N cách ${I_1},\ {I_2}$ tương ứng là 6 cm và 8 cm có độ lớn bằng
+\choice
+{$0,25.10^{-5}$ T}
+{$4,25.10^{-5}$ T}
+{$4.10^{-5}$ T}
+{\True $3.10^{-5}$ T}
+\loigiai{\begin{itemize}
+\item Áp dụng quy tắc nắm bàn tay phải xác định được vector cảm ứng từ
+\item Ta có:
+\begin{align*}
+&B_1=2.10^{-7}.\dfrac{6}{0,06}=2.10^{-5}\ T;\ B_2=2.10^{-7}.\dfrac{9}{0,08}=2,25.10^{-5}\ T\\ \Rightarrow &B=\sqrt{{B_1^2+B_2^2}}=\sqrt{{{({2.10}^{-5})}^2+{(2,{25.10}^{-5})}^2}}=3.10^{-5}\ T.
+\end{align*}
+\end{itemize}}
+\end{vidu}
+\begin{vidu} %[2P4-3.2K][Loại2] 
+Hai dây dẫn thẳng dài đặt song song, cách nhau 6 cm trong không khí. Trong hai dây dẫn có hai dòng điện cùng chiều có cùng cường độ $I_1=I_2=2A$. Cảm ứng từ tại điểm M cách mỗi dây 5 cm là
+\choice
+{$8.10^{-6}\ T$}
+{$16.10^{-6}\ T$}
+{\True $12,8.10^{-6}\ T$}
+{$9,6.10^{-6}\ T$}
+\loigiai{
+immini[thm]{\begin{itemize}
+\item Hai dây dẫn cách nhau 6 cm, điểm M cách mỗi dây 5 cm $\Rightarrow $ M nằm trên trung trực của $I_1I_2$ và cách trung điểm O của $I_1I_2$ một đoạn 4 cm.
+\item Cảm ứng từ do các dòng điện gây ra tại I có độ lớn $B=2.10^{-7}\dfrac{I}{r}=8.10^{-6}\ T $.
+\item Chiều được xác định theo quy tắc nắm tay phải.
+\item Từ hình vẽ ta có $B_M=2B\cos \alpha =2.8.10^{-6}\dfrac{4}{5}=12,8.10^{-6}\ T $.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\filldraw[black] (0,0)coordinate (o1) node[below=5pt]{\normalsize{\bth{I_{1}}}};
+\path (o1)--++(0:2)coordinate (h)node[below]{\normalsize{\bth{H}}}--++(0:2) coordinate (o2)node[below=5pt]{\normalsize{\bth{I_{2}}}}--++(120:4)coordinate (m)node[right=8pt]{\normalsize{\bth{M}}};
+\filldraw[black] (m)circle(1.2pt);
+\draw [dashed] (o1)-- (o2)-- (m)-- (o1);
+\draw [dashed] (m)-- (h);
+\draw[very thick,->] (m)--++(210:2) node[below]{\normalsize{\bth{\vec{B}_{2}}}}coordinate (b2);
+\draw[very thick,->] (m)--++(150:2) node[above]{\normalsize{\bth{\vec{B}_{1}}}}coordinate (b1);
+\draw [dashed] (b2)--++(150:2)coordinate (b);
+\draw[very thick,->] (m)--(b) node[left]{\normalsize{\bth{\vec{B}}}};
+\draw [dashed] (b1)--(b);
+\draw (m)++(240:0.4) arc (240:270:0.4);
+\path (m) ++(255:0.8) node{\normalsize{\bth{\alpha}}};
+\draw (m)++(270:0.4) arc (270:300:0.4);
+\path (m) ++(285:0.8) node{\normalsize{\bth{\alpha}}};
+\draw (m)++(150:0.4) arc (150:180:0.4);
+\path (m) ++(165:0.8) node{\normalsize{\bth{\alpha}}};
+\draw (m)++(180:0.4) arc (180:210:0.4);
+\path (m) ++(195:0.8) node{\normalsize{\bth{\alpha}}};
+\draw [fill=white](o2)node[above right=3pt]{\normalsize{\bth{B}}}circle (0.2);
+\filldraw[black] (o2)circle(0.05);
+\draw [fill=white](o1)node[above left=3pt]{\normalsize{\bth{A}}}circle (0.2);
+\filldraw[black] (o1)circle(0.05);
+\end{tikzpicture}}
+}
+\end{vidu}
+\loai{Cảm ứng từ tổng hợp của hai dòng điện thẳng chéo nhau}
+\begin{vidu} %[2P4-3.2K][Loại3] 
+immini[thm]{Cho hai dòng điện cùng cường độ $I_1=I_2=8$ A chạy trong hai dây dẫn thẳng  dài  vô hạn,  chéo  nhau  và  vuông  góc  với  nhau,  đặt  trong  chân không; đoạn vuông góc  chung có chiều dài 8 cm. Xác định cảm ứng từ tại trung điểm M của đoạn vuông góc chung ấy}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\draw(0,0)--++(0:4)--++(45:3.5)--++(180:4)--cycle;
+\draw[](4,1)++(-135:0.5)--++(45:2);
+\draw[->](4,1)--++(45:1)node[below right]{$I_1$};
+\draw[](2,1)--++(90:2);
+\draw[dashed](2,1)--++(-90:1);
+\draw[->](2,1)--++(90:0.5)node[below left]{$I_2$};
+\draw[](2,1)++(90:0.2)--++(0:0.2)--++(-90:0.2);
+\draw[](4,1)++(45:0.2)--++(180:0.2)--++(-135:0.2);
+\draw[dashed](2,1)--(4,1);
+\draw[fill=white](3,1)circle(1pt)node[below]{$M$};
+\end{tikzpicture}} 
+\choice
+{$8\sqrt{2}.10^{-5}\ T$}
+{$4.10^{-5}\ T$}
+{\True $4\sqrt{2}.10^{-5}\ T$}
+{$2\sqrt{2}.10^{-5}\ T$}
+\loigiai{
+\begin{itemize}
+\item  $B_1=2.10^{-7}\dfrac{I_1}{r_1}=4.10^{-5}\ T$
+\item $B_2=2.10^{-7}\dfrac{I_2}{r_2}=4.10^{-5}\ T$
+\item Vì $\vec B_1\bot \vec B_2$ nên $B=\sqrt{B_1^2+B_2^2}=4\sqrt{2}.10^{-5}\ T$
+\end{itemize}
+}
+\end{vidu}
+\loai{Tổng hợp từ trường của ba dòng điện}
+\begin{vidu} %[2P4-3.2K][Loại4]
+\impicinpar{Ba dòng điện thẳng song song vuông góc với mặt phẳng hình vẽ, cả ba dòng điện đều hướng ra phía trước mặt phẳng hình vẽ. Khoảng cách từ điểm M đến ba dòng điện trên mô tả như hình vẽ. Biết $I_1 = I_2 = I_3 = 10$ A. Cảm ứng từ tổng hợp tại M có độ lớn là	
+\choice
+{\True $10^{-4}$ T}
+{$2,24.10^{-4}$ T}
+{$2\sqrt{2}.10^{-4}$ T}
+{$3,36.10^{-4}$ T}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0);
+\filldraw[black] (a) circle(0.05);
+\draw (a) circle(0.2)node[above=5pt]{\normalsize{\bth{I_{1}}}};
+\draw [dashed](a)--++(0:2)coordinate (m)node[below=5pt]{\normalsize{\bth{M}}};
+\filldraw[black] (m) circle(1.2pt);
+\draw [dashed](m)--++(0:2)coordinate (b);
+\filldraw[black] (b) circle(0.05);
+\draw (b) circle(0.2)node[above=5pt]{\normalsize{\bth{I_{2}}}};
+\draw [dashed](m)--++(90:2)coordinate (c);
+\filldraw[black] (c) circle(0.05);
+\draw (c) circle(0.2)node[right=5pt]{\normalsize{\bth{I_{3}}}};
+\path (a) ++(0:1)++(90:0.01)node[above]{\normalsize{\bth{2\;cm}}};
+\path (a) ++(0:3)++(90:0.01)node[above]{\normalsize{\bth{2\;cm}}};
+\path (m) ++(90:1)++(180:0.3)coordinate (n);
+\node at (n)[rotate=90]{\normalsize{\bth{2\;cm}}};
+\end{tikzpicture}
+}	
+\loigiai{Ta thấy cảm ứng từ do $I_1$ và $I_2$ gây ra tại M tự triệt tiêu nhau. Vậy $B = B_3 = 10^{-4}$ T}
+\end{vidu}
+\begin{vidu} %[2P4-3.2G][Loại4]
+immini[thm]{Ba dòng điện thẳng song song vuông góc với mặt phẳng hình vẽ, có chiều như hình vẽ. ABCD là hình vuông cạnh 10 cm, $I_1 = I_2 = I_3 = 5$ A. Xác định vector cảm ứng từ tại đỉnh thứ tư D của hình vuông
+\haicot
+{\True $\dfrac{3}{\sqrt{2}}.10^{-5}$ T}
+{$\dfrac{1}{\sqrt{2}}.10^{-5}$ T}
+{$2\sqrt{2}{.10^{-5}}$ T}
+{$3.10^{-5}$ T}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above=5pt]{\normalsize{\bth{A}}};
+\filldraw[black] (a) circle(0.05);
+\draw (a) circle(0.2)node[left=5pt]{\normalsize{\bth{I_{1}}}};
+
+\draw [dashed](a)--++(270:3)coordinate (b)node[below left=5pt]{\normalsize{\bth{B}}};
+\draw [dashed](b)--++(0:3)coordinate (c)node[below right=5pt]{\normalsize{\bth{C}}};
+\draw [dashed](c)--++(90:3)coordinate (d)node[above right=5pt]{\normalsize{\bth{D}}};
+
+\draw [dashed](a)--(d);
+
+\filldraw[black] (b) circle(0.05);
+\draw (b) circle(0.2)node[above left=5pt]{\normalsize{\bth{I_{2}}}};
+\filldraw[black] (c) circle(0.05);
+\draw (c) circle(0.2)node[above right=5pt]{\normalsize{\bth{I_{3}}}};
+\filldraw[black] (d) circle(0.05);
+\end{tikzpicture}
+
+}
+\loigiai{immini[thm]{\begin{itemize}
+\item Ta có: $B_1 = B_3 = 10^{-5}\ T,\ B_2 = \dfrac{1}{\sqrt{2}}.10^{-5}$ T.
+\item Vector cảm ứng từ tổng hợp:  $\vec{B}=\vec{B}_1+\vec{B}_2+\vec{B}_{3}$.
+\item Dễ thấy $\vec{B}_{13}=\vec{B}_1+\vec{B}_3$ có cùng phương chiều với $\vec{B}_2$ và có độ lớn $B_{13}=B_1\sqrt{2}=\sqrt{2}.10^{-5}$ T.
+\item Vậy $B = B_{13} + B_2 = \dfrac{3\sqrt{2}}{2}.10^{-5}$ T.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above=5pt]{\normalsize{\bth{A}}};
+\filldraw[black] (a) circle(0.05);
+\draw (a) circle(0.2)node[left=5pt]{\normalsize{\bth{I_{1}}}};
+
+\draw [dashed](a)--++(270:3)coordinate (b)node[below left=5pt]{\normalsize{\bth{B}}};
+\draw [dashed](b)--++(0:3)coordinate (c)node[below right=5pt]{\normalsize{\bth{C}}};
+\draw [dashed](c)--++(90:3)coordinate (d)node[above right=5pt]{\normalsize{\bth{D}}};
+
+\draw [dashed](a)--(d)(b)--(d);
+
+\filldraw[black] (b) circle(0.05);
+\draw (b) circle(0.2)node[above left=5pt]{\normalsize{\bth{I_{2}}}};
+\filldraw[black] (c) circle(0.05);
+\draw (c) circle(0.2)node[above right=5pt]{\normalsize{\bth{I_{3}}}};
+\filldraw[black] (d) circle(0.05);
+\draw [very thick,->](d) -- ($(d)!1.4cm!-90:(a)$)node[above
+]{\normalsize{\bth{\vec{B}_{1}}}}coordinate (b1);
+\draw [very thick,->](d) -- ($(d)!1.4cm!-90:(c)$)node[below
+]{\normalsize{\bth{\vec{B}_{3}}}}coordinate (b3);
+\draw [very thick,->](d) -- ($(d)!1cm!-90:(b)$)node[left
+]{\normalsize{\bth{\vec{B}_{2}}}}coordinate (b2);
+\end{tikzpicture}
+}}
+\end{vidu}
+\loai{Xác định điểm có cảm ứng từ tổng hợp triệt tiêu}
+\begin{vidu} %[2P4-3.2G][Loại5]
+Hai dòng điện cường độ $I_1 = 6$ A, $I_2 = 9$ A chạy trong hai dây dẫn thẳng song song dài vô hạn có chiều ngược nhau, được đặt trong chân không cách nhau một khoảng $a = 10\ cm$. Quỹ tích những điểm mà tại đó vector cảm ứng từ bằng 0 là
+\choice
+{\True đường thẳng song song với hai dòng điện, cách $I_1$ 20 cm, cách $I_2$ 30 cm}
+{đường thẳng vuông góc với hai dòng điện, cách $I_1$ 20 cm, cách $I_2$ 30 cm}
+{đường thẳng song song với hai dòng điện, cách $I_1$ 30 cm, cách $I_2$ 20 cm}
+{đường thẳng vuông góc với hai dòng điện, cách $I_1$ 30 cm, cách $I_2$ 30 cm}
+\loigiai{\begin{itemize}
+\item 2 dòng điện có chiều ngược nhau nên điểm mà có véctơ cảm ứng từ bằng không phải nằm trên đường thẳng nối hai dòng điện và nằm ngoài đoạn $I_1I_2$ .
+\item Do $I_2$ lớn hơn $I_1$ nên điểm cần tìm nằm về phía $I_1$.
+\item Ta có: $2.10^{-7}.\dfrac{6}{r_1}=2.10^{-7}.\dfrac{9}{r_2}$ và $r_2-r_1=10$.
+\item Giải hệ trên ta được: $r_1=20\ cm;\ r_2=30\ cm$.
+\item Trong mặt phẳng vuông góc hai dòng điện, điểm P với $PO_1=20\ cm;\ PO_2=30\ cm$ là điểm tại đó vector cảm ứng tại đó bằng không.
+\item Trong không gian, quỹ tích của P là đường thẳng song song với hai dòng điện, cách $I_1$ 20 cm, cách $I_2$ 30 cm.
+\end{itemize}}
+\end{vidu}
+
+\begin{vidu} %[2P4-3.2G][Loại5]
+Trong mặt phẳng Oxy có hai dây dẫn: dây thứ nhất đặt trên trục Ox và dòng điện chạy qua nó có chiều dương của trục Ox với cường độ là $I_1 = 2$ A; dây thứ hai đặt trên trục Oy và dòng điện chạy qua nó có chiều dương của trục Oy với cường độ là $I_2 = 10$ A. Hai dây cách điện với nhau. Điểm có vector cảm ứng từ gây bởi hai dòng điện bằng 0 là
+\choice
+{những điểm thuộc đường thẳng $y = 5x$}
+{\True những điểm thuộc đường thẳng $y = 0,2x$}
+{những điểm thuộc đường thẳng $y = - 5x$}
+{những điểm thuộc đường thẳng $y = - 0,2x$}
+\loigiai{\begin{itemize}
+\item $\vec{B}=\vec{B}_1+\vec{B}_2$ bằng 0 khi $\vec{B}_1$ và $\vec{B}_2$ ngược chiều và có độ lớn bằng nhau.
+\item Áp dụng quy tắc nắm bàn tay phải: $\vec{B}_1$ và $\vec{B}_2$ ngược chiều khi $xy > 0$ (điểm thuộc góc phần tư thứ I và thứ III).
+\item $B_1=B_2\rightarrow \dfrac{I_1}{\left| y \right|}=\dfrac{I_2}{\left| x \right|}\rightarrow \left| y \right|=0,2\left| x \right|
+\Rightarrow y = 0,2x$.
+\end{itemize}}
+\end{vidu}
+\begin{vidu} %[2P4-3.2G][Loại5]
+immini[thm]{Ba dòng điện thẳng song song vuông góc với mặt phẳng hình vẽ có chiều như hình. Tam giác ABC đều cạnh 10 cm. Biết $I_1 = I_2 = I_3 = 5$ A. Cảm ứng từ tại tâm O của tam giác có độ lớn là
+\choice
+{$\dfrac{3}{\sqrt{2}}{.10^{-5}}$ T}
+{\True 0 T}
+{$2\sqrt{3}{.10^{-5}}$ T}
+{$3.10^{-5}$ T}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above=5pt]{\normalsize{\bth{A}}};
+\filldraw[black] (a) circle(0.05);
+\draw (a) circle(0.2)node[left=5pt]{\normalsize{\bth{I_{1}}}};
+
+\draw [dashed](a)--++(240:3)coordinate (b)node[below left=5pt]{\normalsize{\bth{B}}};
+\draw [dashed](b)--++(0:3)coordinate (c)node[below right=5pt]{\normalsize{\bth{C}}};
+
+\draw [dashed](a)--(b)--(c)--cycle;
+
+\filldraw[black] (b) circle(0.05);
+\draw (b) circle(0.2)node[above left=5pt]{\normalsize{\bth{I_{2}}}};
+\filldraw[black] (c) circle(0.05);
+\draw (c) circle(0.2)node[above right=5pt]{\normalsize{\bth{I_{3}}}};
+\end{tikzpicture}
+}
+\loigiai{immini[thm]{Dễ thấy: $\vec{B}={\vec{B}_1}+{\vec{B}_2}+{\vec{B}_{3}}=0$}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\coordinate (a) at (0,0)node[above=5pt]{\normalsize{\bth{A}}};
+\filldraw[black] (a) circle(0.05);
+\draw (a) circle(0.2)node[left=5pt]{\normalsize{\bth{I_{1}}}};
+
+\draw [dashed](a)--++(240:6)coordinate (b)node[below left=5pt]{\normalsize{\bth{B}}};
+\draw [dashed](b)--++(0:6)coordinate (c)node[below right=5pt]{\normalsize{\bth{C}}};
+
+\draw [dashed](a)--(b)--(c)--cycle;
+
+\filldraw[black] (b) circle(0.05);
+\draw (b) circle(0.2)node[above left=5pt]{\normalsize{\bth{I_{2}}}};
+\filldraw[black] (c) circle(0.05);
+\draw (c) circle(0.2)node[above right=5pt]{\normalsize{\bth{I_{3}}}};
+
+\path (a) ++(240:3)coordinate (h1);
+\path (b) ++(0:3)coordinate (h2);
+\path (a) ++(-60:3)coordinate (h3);
+
+\tkzInterLL(a,h2)(b,h3)
+\tkzGetPoint{o}
+\path (o) ++(290:0.5) node{\normalsize{\bth{O}}};
+\filldraw[black] (o) circle(1.2pt);
+\draw [dashed](a)--(o);
+\draw [dashed](b)--(o);
+\draw [dashed](c)--(o);
+
+\draw [very thick,->](o) -- ($(o)!1cm!-90:(a)$)node[below right]{\normalsize{\bth{\vec{B}_{1}}}}coordinate (b1);
+\draw [very thick,->](o) -- ($(o)!1cm!-90:(b)$)node[below left]{\normalsize{\bth{\vec{B}_{2}}}}coordinate (b2);
+\draw [very thick,->](o) -- ($(o)!1cm!-90:(c)$)node[below right]{\normalsize{\bth{\vec{B}_{3}}}};
+
+\draw [dashed](b1)--++(120:1)coordinate (b12);
+\draw [dashed](b2)--(b12);
+\draw [very thick,->](o) -- (b12)node[above right=-8pt]{\normalsize{\bth{\vec{B}_{12}}}};
+\end{tikzpicture}
+}}
+\end{vidu}
+

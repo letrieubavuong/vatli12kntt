@@ -1,0 +1,573 @@
+\TieudeT{PHONG TỎA VẬT LÍ}
+\subsubsection*{PHẦN I. Thí sinh trả lời câu hỏi từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án}
+\setcounter{ex}{0}
+%mac
+
+%\loai{Lý thuyết}
+\begin{ex}
+Một vật được ném xiên từ mặt đất lên với vận tốc ban đầu $v_0$ và góc ném $\alpha$. Bỏ qua sức cản không khí. Phát biểu nào sau đây đúng?
+\choice
+{\True Thời gian vật lên tới độ cao cực đại bằng một nửa tổng thời gian bay}
+{Gia tốc của vật tại đỉnh quỹ đạo bằng $0$}
+{Vận tốc của vật tại đỉnh quỹ đạo bằng $0$}
+{Quỹ đạo chuyển động là một đường tròn}
+\haidong{7} \end{ex}
+
+\begin{ex}
+Một vật được ném xiên với vận tốc ban đầu $v_0 = 20\ m/s$ theo góc $60^\circ$ so với phương ngang. Bỏ qua sức cản không khí, lấy $g = 10\ m/s^2$. Hỏi vật đạt độ cao cực đại sau bao lâu?
+\choice
+{$1,0\ s$}
+{$2,0\ s$}
+{\True $1,7\ s$}
+{$3,5\ s$}
+\haidong{7} \end{ex}
+
+\begin{ex}
+Một vật được ném xiên với góc ném $\alpha$ so với phương ngang. Bỏ qua sức cản không khí. Nếu tăng góc ném từ $30^\circ$ đến $60^\circ$ mà vẫn giữ nguyên vận tốc ban đầu, thì
+\choice
+{Tầm bay xa tăng lên}
+{\True Tầm bay xa không đổi}
+{Tầm bay xa giảm đi một nửa}
+{Thời gian bay giảm đi}
+\haidong{7} \end{ex}
+
+\begin{ex}
+Một vật được ném xiên từ mặt đất với vận tốc ban đầu $v_0$ và góc ném $\alpha$. Gọi $H$ là độ cao cực đại và $L$ là tầm bay xa của vật. Biểu thức đúng là:
+\choice
+{$H = \dfrac{v_0^2 \cos^2 \alpha}{2g}$}
+{$L = \dfrac{v_0^2 \sin^2 \alpha}{g}$}
+{\True $H = \dfrac{v_0^2 \sin^2 \alpha}{2g}$}
+{$L = \dfrac{v_0^2 \cos \alpha}{g}$}
+\haidong{7} \end{ex}
+
+\begin{ex}
+\immini[thm]{Hai vật được ném xiên cùng lúc từ một điểm trên sườn dốc nghiêng một góc $\theta$ so với mặt phẳng nằm ngang. Vật $1$ được ném ngược chiều dốc, vật $2$ cùng chiều dốc, vận tốc ban đầu như nhau. Bỏ qua sức cản không khí. Phát biểu nào sau đây là đúng?
+\choice
+{Hai vật chạm đất cùng một lúc}
+{\True Vật $2$ chạm đất trước vật $1$}
+{Hai vật có cùng tầm bay}
+{Vật $1$ có vận tốc lớn hơn khi chạm đất}
+}{
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/O, 5/0/B}
+\draw[rotate=-20] (O) --++ (5,0);
+\tkzDefShiftPoint[O](20:2.5){v1}
+\tkzDefShiftPoint[O](-20:2.5){v2}
+\tkzDrawSegments[->,very thick,Mapcolor](O,v1 O,v2)
+\tkzLabelPoint[right](v1){$\vec{v}_{01}$}
+\tkzLabelPoint[right](v2){$\vec{v}_{02}$}
+\end{tikzpicture}}
+\haidong{7} \end{ex}
+\begin{ex}%SBT12.8
+\immini[thm]{Hai vật được đồng thời ném từ mặt đất lên với vận tốc ban đầu vẽ như hình bên. Nếu bỏ qua sức cản của không khí thì
+\choice
+{\True vật $1$ chạm đất trước}
+{hai vật chạm đất cùng một lúc}
+{hai vật có tầm bay cao như nhau}
+{vật $1$ có tầm bay cao hơn}}
+{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, 4/0/a, 3/0/h, 3/1.5/v1, 3/3/v2}
+\tkzDrawSegments[](o,a)
+\tkzDrawSegments[dashed](h,v2)
+\tkzDrawSegments[very thick,Mapcolor,->](o,v1 o,v2)
+\tkzLabelPoint[right](v1){$\vec{V}_{01}$}
+\tkzLabelPoint[right](v2){$\vec{V}_{02}$}
+\tkzMarkAngles[size=0.7cm](a,o,v1)
+\tkzLabelAngles[pos=1](a,o,v1){$\alpha_1$}
+\tkzMarkAngles[size=1.3cm](a,o,v2)
+\tkzLabelAngles[pos=1.7](v1,o,v2){$\alpha_2$}
+%\node at (2,-0.5){Hình 12.1};
+\end{tikzpicture}\end{hinhanh}}
+
+\haidong{7} \end{ex}
+
+\begin{ex}%SBT12.9
+\immini[thm]{Hai vật đồng thời được ném từ mặt đất lên với vận tốc ban đầu như hình bên. Bỏ qua sức cản của không khí. Phát biểu nào sau đây \textbf{không} đúng?
+\choice
+{Hai vật chạm đất cùng một lúc}
+{\True Hai vật có cùng tầm bay xa}
+{Vật $2$ có tầm bay xa lớn hơn}
+{Hai vật có cùng tầm bay cao}}
+{\begin{hinhanh}{6}\begin{tikzpicture}[scale=1,thick,>=stealth',draw=Mapcolor]
+\tkzDefPoints{0/0/o, 4/0/a, 0/3/b, 0/2.5/h, 4/2.5/i, 1.5/2.5/v1, 3/2.5/v2}
+\tkzDrawSegments[](o,a)
+\tkzDrawSegments[dashed](h,i o,b)
+\tkzDrawSegments[very thick,Mapcolor,->](o,v1 o,v2)
+\tkzLabelPoint[above](v1){$\vec{V}_{01}$}
+\tkzLabelPoint[above](v2){$\vec{V}_{02}$}
+%\node at (2,-0.5){Hình 12.2};
+\end{tikzpicture}\end{hinhanh}}
+\haidong{7} \end{ex}
+\begin{ex}%book%SBT12.7
+Trong chuyển động của vật được ném xiên từ mặt đất, bỏ qua sức cản của không khí thì đại lượng nào sau đây không đổi?
+\choice
+{\True Gia tốc của vật}
+{Độ cao của vật}
+{Khoảng cách theo phương nằm ngang từ điểm vật được ném tới vật}
+{Vận tốc của vật}
+\haidong{7} \end{ex}	
+%\newpage
+%\begin{ex}%book%SBTII.2
+%	\immini[thm]{Hai vật được đồng thời ném lên từ cùng một độ cao với vận tốc ban đầu có cùng độ lớn và có phương vuông góc với nhau. Phát biểu nào sau đây đúng?
+%		\choice
+%		{Hai vật có tầm bay xa bằng nhau}
+%		{Hai vật có tầm bay cao bằng nhau}
+%		{Vật 2 có tầm bay xa lớn hơn vật 1}
+%		{Vật 1 rơi tới đất sau vật 2}}
+%	{\begin{tikzpicture}[scale=1,thick,>=stealth']
+%			\tkzDefPoints{0/0/o, -2.5/0/a, 2.5/0/b}
+%			\tkzDefShiftPoint[o](30:2cm){v1}
+%			\tkzDefShiftPoint[o](120:3cm){v2}
+%			\tkzDrawSegments[](a,b)
+%			\tkzDrawSegments[very thick,blue,->](o,v1 o,v2)
+%			\tkzLabelPoint[right](v1){$\vec{V}_{1}$}
+%			\tkzLabelPoint[above right](v2){$\vec{V}_{2}$}
+%			\tkzMarkAngles[size=0.7cm](b,o,v1)
+%			\tkzLabelAngles[pos=1](b,o,v1){$\alpha_1$}
+%			\tkzMarkAngles[size=0.4cm](v2,o,a)
+%			\tkzLabelAngles[pos=0.8](v2,o,a){$\alpha_2$}
+%			\tkzMarkRightAngle[size=0.3](v1,o,v2)
+%			\node at (0,-0.5){Hình II.1};
+%	\end{tikzpicture}}
+%	\loigiai{
+%		\begin{itemize}
+%			\item $\alpha_1+\alpha_2=90^\circ\Rightarrow 2\alpha_1=180^\circ-2\alpha_2\Rightarrow \sin 2\alpha_1=\sin 2\alpha_2$.
+%			\item $L_1=\dfrac{v_0^2\sin 2\alpha_1}{g};\ L_2=\dfrac{v_0^2\sin 2\alpha_2}{g}\Rightarrow L_1=L_2$.
+%		\end{itemize}	
+%	}
+%\haidong{7} \end{ex}	
+%\loai{Tính tầm cao}
+\begin{ex}%book
+Một vật được ném xiên từ mặt đất lên với vận tốc ban đầu là $v_0=10\ m/s$ theo phương hợp với phương ngang góc $30^\circ$.  Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Độ cao cực đại vật đạt đến là
+\choice
+{$22,5\ m$}
+{$45\ m$}
+{\True 1,25 m}
+{$60\ m$}
+\haidong{9}
+\loigiai{
+Độ cao cực đại: $h=\dfrac{v_0^2 \sin ^2 \alpha}{2 g}=1,25\ m$.
+}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Một quả banh được người chơi gôn đánh đi với vận tốc ban đầu là $v_0=40\ m/s$ hợp với phương ngang một góc $\alpha=45^\circ$. Quả banh bay về hướng hồ cách đó $100\ m$, hồ rộng $50\ m$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Độ cao cực đại mà quả banh lên được là
+\choice
+{$40 \sqrt{2}\ m$}
+{$20 \sqrt{2}\ m$}
+{$20\ m$}
+{\True $40\ m$}
+\haidong{8}
+\loigiai{
+$
++h=\dfrac{v_0^2 \sin ^2 \alpha}{2 \ g}=\dfrac{40^2 . \left(\dfrac{\sqrt{2}}{2}\right)^2}{2 .  10}=40\ m
+$
+}
+\haidong{7} \end{ex}
+%\loai{Tính tầm xa}
+\begin{ex}%book
+Một vật được ném xiên từ mặt đất lên với vận tốc ban đầu là $v_0=10\ m/s$ theo phương hợp với phương ngang góc $30^\circ$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Tầm bay xa của vật là
+\choice
+{\True 8,66 m}
+{$4,33\ m$}
+{$5\ m$}
+{$10\ m$}
+\haidong{8}
+\loigiai{
+\begin{itemize}
+\item Tầm bay xa của vật: $L=\dfrac{v_0^2 \sin 2 \alpha}{g}=8,66\ m$
+\end{itemize}
+}
+\haidong{7} \end{ex}
+%\loai{Tính thời gian}
+\begin{ex}%book
+Một vật được ném với vận tốc $12\ m/s$ từ mặt đất với góc ném lên $\alpha=30^\circ$ so với mặt phẳng ngang. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Hòn đá bay chạm đất cách chỗ ném theo phương ngang một khoảng $200\ m$. Thời gian kể từ lúc ném đến khi hòn đá chạm đất là
+\choice
+{$24,5\ s$}
+{\True $19,2\ s$}
+{$14,6\ s$}
+{$32,8\ s$}
+\haidong{8}
+\loigiai{
+\begin{itemize}
+\item Chọn gốc O tại mặt đất, gốc thời gian lúc ném hòn đá.
+\item Trục $Ox$ nằm ngang, trục $Oy$ thẳng đứng hướng lên.
+\item $
+x=v_0 \cos \alpha t \Rightarrow t=\dfrac{v_0}{\cos \alpha} \Rightarrow t=\dfrac{200}{12 \cos 30^\circ}=19,2\ s
+$
+\end{itemize}
+}
+\haidong{7} \end{ex}
+%\begin{ex}%book
+%	Một quả banh được người chơi gôn đánh đi với vận tốc ban đầu là $v_0=40\ m/s$ hợp với phương ngang một góc $\alpha=45^\circ$. Quả banh bay về hướng hồ cách đó $100\ m$, hồ rộng $50\ m$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Thời gian quả banh bay trong không khí là
+%	\choice
+%	{$\sqrt{2}\ s$}
+%	{$2 \sqrt{2}$ s}
+%	{\True $4 \sqrt{2}$ s}
+%	{$8 \sqrt{2}\ s$}
+%	\loigiai{
+%		\begin{itemize}
+%			\item Thời điểm đến điểm cao nhất: $t=\dfrac{v_0 \sin \alpha}{g}=2 \sqrt{2}\ s$
+%			\item Thời gian bay trong không khí: $t^{\prime}=2 t=4 \sqrt{2}\ s$
+%		\end{itemize}
+%	}
+%\haidong{7} \end{ex}
+%\loai{Xác định góc ném}
+
+%\loai{Phương trình chuyển động}
+
+\begin{ex}%book
+Từ mặt đất một quả cầu được ném theo phương hướng lên hợp với phương ngang một góc $60^\circ$ với vận tốc $20\ m/s$.  Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Phương trình quỹ đạo của quả cầu là
+\choice
+{\True $y=\sqrt{3} x-\dfrac{x^2}{20}$}
+{$y=\sqrt{2} x$}
+{$y=\sqrt{2} x-\dfrac{x^2}{10}$}
+{$y=\sqrt{3} x$}
+\haidong{8}
+\loigiai{
+\immini{
+\begin{itemize}
+\item Chọn hệ quy chiếu Oxy như hình vẽ
+\item Tại thời điểm đầu
+\begin{itemize}
+\item Chiếu lên trục $O x$ có $x_0=0;\ v_{0 x}=v_0 \cos \alpha=20 .  \dfrac{1}{2}=10(\ m / s)$
+\item Chiếu lên trục Oy có: $y_0=0$
+$v_{0 y}=v_0 \sin \alpha=20 .  \dfrac{\sqrt{3}}{2}=10 \sqrt{3}(\ m / s)$
+\end{itemize}
+\item Xét tại thời điểm $t$ có $a_{x}=0;\ a_{y}=-g$
+\begin{itemize}
+\item Chiếu lên trục $Ox$: $v_{x}=10;\ x=10 t$
+\item Chiếu lên trục oy có: $v_{y}=10 \sqrt{3}-10 t;\ y=10 \sqrt{3} t-5 t^2 \Rightarrow y=\sqrt{3} x-\dfrac{x^2}{20}$ 
+\end{itemize}
+\end{itemize}}{\includegraphics[width=7cm]{images/10_3}}
+}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Từ mặt đất một vật được ném xiên lên lệch với phương ngang một góc $\alpha=45^\circ$ với vận tốc ban đầu là $20\ m/s$.  Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Phương trình quỹ đạo của vật là
+\choice
+{$y=x-\dfrac{x^2}{10}$}
+{$y=x-\dfrac{x^2}{20}$}
+{$y=x-\dfrac{x^2}{15}$}
+{\True $y=x-\dfrac{x^2}{40}$}
+\haidong{8}
+\loigiai{
+\immini{
+\begin{itemize}
+\item Chọn hệ quy chiếu Oxy như hình vẽ
+\item Thời điểm ban đầu
+\begin{itemize}
+\item Chiếu lên trục ox có $x_0=0$
+$v_{0 x}=v_0 \cos \alpha=20 .  \dfrac{\sqrt{2}}{2}=10 \sqrt{2}(\ m / s)$
+\item Chiếu lên trục oy có: $y_0=0$
+$v_{0 y}=v_0 \sin \alpha=20 .  \dfrac{\sqrt{2}}{2}=10 \sqrt{2}(\ m / s)$
+\end{itemize}
+\item Xét tại thời điểm $t$ có $a_{x}=0;\ a_{y}=-g$
+\begin{itemize}
+\item Chiếu lên trục Ox có: $v_{x}=10 \sqrt{2};\ x=10 \sqrt{2} t$
+\item Chiếu lên trục Oy có: $v_{y}=10 \sqrt{2}-10 t;\ y=10 \sqrt{2} t-5 t^2$ $\Rightarrow y=x-\dfrac{x^2}{40}$
+\end{itemize}
+\item Vậy quỹ đạo của vật là một parabol
+\end{itemize}}{\includegraphics[width=7cm]{images/10_3}}
+}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Từ độ cao $7,5\ m$ một quả cầu được ném lên xiên góc $\alpha=45^\circ$ so với phương ngang với vận tốc $10\ m/s$. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Quả cầu chạm đất cách vị trí ném là
+\choice
+{\True $15\ m$}
+{$10\ m$}
+{$25\ m$}
+{$30\ m$}
+\haidong{7}
+\loigiai{
+\immini{\begin{itemize}
+\item Chọn gốc tọa độ O tại nơi ném vật, trục tọa độ $OXY$ như hình vẽ, gốc thời gian là lúc vừa ném vật. \item Phương trình quỹ đạo của quả cầu:
+\end{itemize}
+$
+\begin{aligned}
+& y=-\left(\dfrac{1}{2} \dfrac{g}{v_0^2 \cos ^2 \alpha}\right) x^2+(\tan \alpha) x \\
+& \text {+ Với } v_0=10\ m/s;\ \alpha=45^{0} \Rightarrow y=-\dfrac{1}{10} x^2+x(x \geq 0) \\
+& \text {+ Khi vật chạm đất:} y=-\dfrac{1}{10} x^2+x=-7,5 m
+\end{aligned}
+$}{		\includegraphics[width=5cm]{images/10_6}}
+\begin{itemize}
+\item Giải phương trình và loại nghiệm âm ta suy ra $x=15\ m$
+\item Quả cầu chạm đất tại nơi cách vị trí ban đầu theo phương ngang là $15\ m$
+\end{itemize}
+}
+\haidong{7} \end{ex} 
+%\loai{Tính vận tốc ném}
+\begin{ex}%book%SBT12.11
+Một cầu thủ bóng rổ cao 2 m đứng cách xa rổ 10 m theo phương nằm ngang để tập ném bóng vào rổ. Biết miệng rổ ở độ cao 3,05 m. Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Hỏi người đó phải ném bóng từ độ cao ngang đầu với vận tốc theo phương $45^\circ$ có độ lớn bằng bao nhiêu để bóng rơi vào rổ?
+\choice
+{13,27 m/s}
+{8,75 m/s}
+{6,05 m/s}
+{\True 10,57 m/s}
+\haidong{7}
+\loigiai{
+\begin{itemize}
+\item Chọn hệ trục toạ độ Oxy như hình. Ta có:
+\item Theo phương Ox: $x=v_0t\cos 45^\circ=\dfrac{\sqrt 2}{2}v_0t\ (m)$
+\item Theo phương Oy: $y=v_0t\sin 45^\circ-\dfrac{1}{2}gt^2=\dfrac{\sqrt 2}{2}v_0t-5t^2\quad (m)$
+\item Để bóng rơi trúng rổ thì $x=10\ m;\ y=1,05\ m$.
+\item Giải ra tìm được $v_0=10,57\ m/s$.
+\end{itemize}
+}
+\haidong{7} \end{ex}
+\begin{ex}%book
+Một vật được ném từ độ cao $10\ m$ so với mặt đất với góc ném $\alpha=60^\circ$ so với mặt phẳng ngang.  Bỏ qua sức cản của không khí, lấy $g=10\ m/s^2$. Vật rơi đến đất cách chỗ ném theo phương ngang một khoảng $100\ m$. Vận tốc của vật khi ném là
+\choice
+{\True $33\ m/s$}
+{$50\ m/s$}
+{$18\ m/s$}
+{$27\ m/s$}
+\haidong{8}
+\loigiai{
+\begin{itemize}
+\item Chọn gốc O tại điểm ném vật, gốc thời gian lúc ném vật.
+\item Trục $Ox$ hướng theo $\overrightarrow{v}$ trục $Oy$ thẳng đứng hướng xuống.
+\item Các phương trình của vật:
+\end{itemize}
+$x=v_0 \cos \alpha t(1)$
+$y=H+v_0 \sin \alpha t-\dfrac{1}{2} gt^2$
+\item Từ (1): $\Rightarrow t=\dfrac{x}{v_0 \cos \alpha}$ thế vào (2) ta được: $y=H+x \tan \alpha-\dfrac{1}{2} \ g \dfrac{x^2}{v_0^2 \cos ^2 \alpha}$ (3)
+\begin{itemize}
+\item Khi vật rơi đến đất $y=0$, theo đề bài $x=100\ m$.
+\end{itemize}
+\item Từ (3) ta có: $10+100 \tan 60^\circ-\dfrac{1}{2} .  10 \dfrac{100^2}{v_0^2 \cos ^2 60^{0}}=0 \Rightarrow v_0=33\ m/s$
+}
+\haidong{7} \end{ex}	
+\begin{ex}%book
+Một vật được ném từ mặt đất với vận tốc $\vec v_0$ nghiêng lên một góc $\alpha$ với phương ngang. Lấy $g=10\ m/s^2$. Bỏ qua sức cản của không khí. Để tầm xa lớn nhất thì
+\choice
+{\True $\alpha=\dfrac{\pi}{4}$}
+{$\alpha=\dfrac{\pi}{3}$}
+{$\alpha=\dfrac{\pi}{2}$}
+{$\alpha=\dfrac{\pi}{6}$}
+\haidong{10}
+\loigiai{
+\immini{
+\begin{itemize}
+\item Chọn hệ quy chiếu Oxy như hình vẽ
+\item Tại thời điểm đầu
+\begin{itemize}
+\item Chiếu lên trục $Ox$ có $x_0=0;\ v_{0 x}=v_0 \cos \alpha$
+\item Chiếu lên trục Oy có: $y_0=0;\ v_{0 y}=v_0 \sin \alpha$
+\end{itemize}
+\item Xét tại thời điểm $t$ có $a_{x}=0;\ a_{y}=-g$
+\begin{itemize}
+\item Chiếu lên trục Ox có: $v_{x}=v_0 \cos \alpha;\ x=v_0 \cos \alpha t \Rightarrow t=\dfrac{x}{v_0 .  \cos \alpha}$
+\item Chiếu lên trục Oy có: $v_{y}=v_0 \sin \alpha-gt;\ y=v_0 \sin \alpha t-\dfrac{1}{2} gt^2$
+\end{itemize}
+\end{itemize}}{\includegraphics[width=6cm]{images/10_3}}
+\begin{itemize}
+\item Khi chạm đất: $y=0 \Rightarrow v_0=\sin \alpha t-\dfrac{1}{2} gt^2=0 \Rightarrow t=\dfrac{2 v_0 \sin \alpha}{g} \Rightarrow x=v_0 \cos \alpha .  \dfrac{2 v_0 .  \sin \alpha}{g}=\dfrac{v_0^2 .  \sin 2 \alpha}{g}$
+\item Vậy $x_{\max}$ lớn nhất khi $\sin 2 \alpha$ đạt max: $\sin 2 \alpha=1 \Rightarrow 2 \alpha=\dfrac{\pi}{2} \Rightarrow \alpha=\dfrac{\pi}{4}$
+\end{itemize}
+}
+\haidong{7} \end{ex}
+\subsubsection*{PHẦN 2. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.}
+\setcounter{ex}{0}
+%\newpage
+\begin{ex}%book
+Ở một đồi cao $100\ m$, người ta đặt một súng cối nằm ngang và muốn bắn sao cho quả đạn rơi trên nóc của tòa nhà. Biết tòa nhà cao $20\ m$ và vận tốc của quả đạn khi ra khỏi nòng súng cối có độ lớn là $200\ m/s$. Lấy $g=10 \ m / s^{2}$.
+\choiceTF[t]
+{\True Quỹ đạo của quả đạn có dạng là một phần của đường parabol}
+{\True Thời gian của chuyển động quả đạn bằng thời gian rơi tự do từ vị trí ném}
+{Thời gian quả đạn rơi xuống nóc tòa nhà là $9\ s$}
+{Đỉnh đồi cách tòa nhà theo phương ngang là $900\ m$}
+\loigiai{\begin{itemchoice}
+\itemch Đúng.
+\itemch Đúng.
+\itemch Sai. Thời gian quả đạn rơi xuống nóc tòa nhà là $t=\sqrt{\dfrac{2 h}{g}}=\sqrt{\dfrac{2(100-20)}{10}}=4 \ s$
+\itemch Sai. Đỉnh đồi cách tòa nhà theo phương ngang bằng tầm xa của quả đạn $L=v_{0} . t=200.4=800\ \ m$
+\end{itemchoice}
+}
+
+\haidong{14} \end{ex}
+\begin{ex}%book
+Một tàu cướp biển đang neo đậu cách bờ một khoảng cách $672,4 \ m$. Trên bờ một khẩu súng đại bác bắn một viên đạn với tốc độ ra khỏi nòng súng là $82 \ m / s$. Lấy $g=10 \ m / s^{2}$.
+\choiceTF[t]
+{Chuyển động của viên đạn là chuyển động thẳng đều}
+{\True Bỏ qua sức cản của không khí. Theo phương thẳg đứng, viên đạn đi lên chậm dần đều rồi đi xuống nhanh dần đều}
+{Để bắn trúng tàu thì phải đặt nòng súng nghiêng so với phương ngang một góc $30^{\circ}$}
+{\True Thời gian bay của viên đạn kể từ lúc bắn đến khi trúng tàu là $11,6 {\ s}$}		
+
+\loigiai{\begin{itemchoice}
+\itemch Sai. Viên đạn chuyển động theo quỹ đạo parabol. Chuyển động của viên đạn theo phương ngang mới là chuyển động thẳng đều.
+\itemch Đúng.
+\itemch Sai. Để bắn trúng tàu thì phải nghiêng nòng súng một góc $\alpha$ sao cho tầm xa $L=672,4 \ m$.\\
+Ta có: $L=\dfrac{v_{0}^{2} \sin 2 \alpha}{g}=\dfrac{82^{2} \sin 2 \alpha}{10}=672,4\ m \Rightarrow \alpha=45^{\circ}$.
+\itemch Đúng. Thời gian bay của viên đạn kể từ lúc bắn cho đến khi trúng tàu là: $t=\dfrac{2 . v_{0} . \sin \alpha}{g}=\dfrac{2 . 82 . \sin 45^{\circ}}{10} \approx 11,6 \ s$
+\end{itemchoice}
+}
+
+\haidong{14} \end{ex}
+\begin{ex}%Tailieuchuan
+Một vật được ném từ mặt đất theo phương xiên góc. Tại điểm cao nhất của quỹ đạo có  độ cao $h_0=15 \ m$ thì vật có tốc độ bằng một nửa tốc độ ban đầu. Lấy $g=10 \ m/s^2$. Coi sức cản không khí không đáng kể.
+\choiceTF[t]
+{\True Vận tốc ban đầu của vật hợp với phương ngang một góc $60^\circ$} 
+{Tốc độ ban đầu của vật là $30 \ m/s$} 
+{Tầm ném xa của vật là $36,4 \ m$} 
+{Vật ở độ cao $5\ m$ thì vận tốc của vật hợp với phương ngang một góc $30^\circ$} 
+\loigiai{}
+\end{ex}
+\begin{ex}
+Trong một trận đấu bóng đá, thủ môn Onana phát bóng bổng cho Bruno phía trên, cách đó $83\ m$. Lấy $g = 9{,}8\ m/s^2$. Bỏ qua chuyển động tự quay của quả bóng và sức cản của không khí. 
+\choiceTF[t]
+{\True Chuyển động của quả bóng có quỹ đạo là một đường cong}
+{\True Gia tốc của quả bóng ở điểm cao nhất bằng gia tốc rơi tự do}
+{Tốc độ của quả bóng ở điểm cao nhất bằng không}
+{\True Để quả bóng từ điểm phát bóng của thủ môn đến được khu vực vòng cấm địa của đội bạn thì tốc độ ban đầu của nó không nhỏ hơn $28{,}52\ m/s$}
+\loigiai{
+\begin{itemize}
+\item Chuyển động của quả bóng có quỹ đạo là đường cong (dạng parabol) $\Rightarrow$ Đúng.
+\item Bỏ qua sức cản không khí, gia tốc của quả bóng luôn là gia tốc trọng trường $g$, kể cả tại điểm cao nhất $\Rightarrow$ Đúng.
+\item Ở điểm cao nhất, thành phần vận tốc theo phương thẳng đứng bằng $0$, nhưng vận tốc theo phương ngang vẫn còn $\Rightarrow$ Sai.
+\item Tầm xa cực đại của chuyển động ném xiên: 
+$$ L_{\text{max}} = \dfrac{v_0^2}{g} \quad \Rightarrow \quad v_0 \ge \sqrt{L \cdot g} = \sqrt{83 \cdot 9{,}8} \approx 28{,}52\ m/s \Rightarrow \text{Đúng.} $$
+\end{itemize}
+}
+\end{ex}
+\subsubsection*{PHẦN 3. Thí sinh trả lời từ câu 1 đến câu 6.}
+\setcounter{ex}{0} 
+\begin{ex}
+Một viên đạn chuyển động có các thành phần vận tốc theo hai trục vuông góc $Ox$ và $Oy$ với độ lớn lần lượt $v_{x}=10 \ m/s$ và $v_{y}=30 \ m/s$. Góc tạo bởi vận tốc của viên đạn và phương $Ox$ là $\alpha$ có $\tan \alpha$ là bao nhiêu?
+\shortans[oly]{3}
+\loigiai{
+$\tan \alpha=\dfrac{v_{y}}{v_{x}}=\dfrac{30}{10}=3$.
+}
+\end{ex}
+
+
+
+\begin{ex}
+\immini[thm]{Một người nhảy xa có đồ thị biểu diễn quỹ đạo chuyển động ném xiên như hình bên. Tầm xa của người này nhảy được là bao nhiêu mét (làm tròn kết quả đến chữ số hàng đơn vị)?}{	
+\begin{tikzpicture}[line cap=round, line join=round, scale=1, font=\footnotesize, >=stealth,draw=Mapcolor]
+\path
+(0,0)coordinate(O)
+(7,0)coordinate(x)
+(0,1.4)coordinate(y)
+;
+\draw [->](O)--(x);
+\draw [->](O)--(y);
+
+\node at (0,1.8) {$y\ (m)$};
+\node at (8,0) {$x\ (m)$};
+\node[below left] at (0,0) {$O$};
+
+\draw[dashed] (0,1) -- (3.5,1);
+\node[left] at (0,1) {$0,72$};
+\node[below] at (6.5,0) {$4,98$};
+\draw[very thick,Mapcolor] (0,0) .. controls (2.5,1.3) and (4.5,1.3) .. (6.5,0);
+\end{tikzpicture}
+}
+\shortans[oly]{5}	
+\loigiai{
+Tầm xa của người nhảy là $L = 4,98\ m$.
+}
+\end{ex}
+
+\begin{ex}
+Một vật được ném từ một điểm $M$ ở độ cao $h=3 \ m$ với vận tốc ban đầu $v_0=5 \ m/s$ xiên lên theo phương hợp với phương nằm ngang một góc $30^\circ$. Lấy $g=10 \ m/s^2$. Bỏ qua lực cản của không khí. Độ dịch chuyển của vật từ lúc ném đến lúc chạm đất là bao nhiêu mét (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{5,5}
+\loigiai{
+Khi vật chạm đất,có
+$x=v_{o} \cos \alpha. t$
+$y=v_{o} \sin \alpha. t-\dfrac{1}{2} g t^2+h=0 \Rightarrow t=\dfrac{5+\sqrt{265}}{20} s \Rightarrow L=x=v_{o} \cos \alpha. t$
+
+\includegraphics[width=4cm]{images/2025_06_04_af03f1d88c157fe9bf98g-104}
+
+Độ dịch chuyển $d=\sqrt{h^2+L^2}=5,49\ m$
+}
+\end{ex}
+\begin{ex}
+Ở Giải vô địch điền kinh thế giới Tokyo năm $1991$, Mike Powell đã thực hiện cú nhảy xa lịch sử với thành tích $8,95\ m$. Suốt gần $3$ thập kỷ qua vẫn chưa có ai phá vỡ kỉ lục này. Giả sử vận tốc khi nhảy của anh ấy là $v_0 = 9,6\ m/s$, tương đương với tốc độ của một vận động viên chạy nước rút. Lấy gia tốc trọng trường tại Tokyo là $g = 9,8\ m/s^2$. Bỏ qua sức cản không khí thì tầm nhảy xa nhất mà vận động viên siêu hạng này có thể đạt tới là bao nhiêu mét  (làm tròn kết quả đến chữ số hàng phần mười)?
+\shortans[oly]{9,4}
+\loigiai{
+Tầm nhảy xa nhất đạt được khi vận động viên nhảy với góc $45^\circ$ so với phương ngang. Khi đó:
+\[
+L_{\text{max}} = \dfrac{v_0^2 \sin 2\alpha}{g} = \dfrac{(9{,}6)^2 \cdot \sin 90^\circ}{9{,}8} = \dfrac{92{,}16}{9{,}8} \approx 9{,}4\ m
+\]
+Vậy nếu bỏ qua sức cản không khí, Mike Powell có thể đạt tới tầm nhảy xa nhất là khoảng $9{,}4\ m$.
+}
+\end{ex}
+
+\begin{ex}
+Một sĩ quan chỉ huy bắn pháo đứng trên đỉnh đồi có góc nghiêng $30^\circ$ so với mặt đất. Viên đạn được bắn đi theo phương ngang với vận tốc ban đầu $v_0 = 200\sqrt{3}\ m/s$. Viên đạn rơi tại một điểm ở sườn đồi và nổ tại đó. Bỏ qua sức cản không khí. Biết tốc độ truyền âm trong không khí là $340\ m/s$ và gia tốc trọng trường là $g = 10\ m/s^2$. Sau bao nhiêu giây kể từ khi bắn thì sĩ quan chỉ huy nghe thấy tiếng nổ (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{87}
+\loigiai{
+Gọi thời gian từ lúc bắn đến khi đạn nổ là $t$.
+
+Tọa độ điểm nổ trên sườn đồi thỏa mãn:
+\[
+\begin{cases}
+x = v_0 t = OM \cos 30^\circ \\
+y = \dfrac{1}{2} g t^2 = OM \sin 30^\circ
+\end{cases}
+\Rightarrow \dfrac{\dfrac{1}{2} g t^2}{v_0 t} = \tan 30^\circ
+\Rightarrow t = \dfrac{2 v_0 \tan 30^\circ}{g} = \dfrac{2 \cdot 200\sqrt{3} \cdot \dfrac{\sqrt{3}}{3}}{10} = 40\ s
+\]
+
+Tầm bay:
+\[
+OM = v_0 t = 200\sqrt{3} \cdot 40 = 8000\sqrt{3} \approx 13856\ m
+\]
+
+Thời gian âm truyền từ điểm nổ về chỗ người bắn:
+\[
+t' = \dfrac{OM}{v_{\text{âm}}} = \dfrac{8000\sqrt{3}}{340} \approx 47{,}1\ s
+\]
+
+Vậy thời gian từ lúc bắn đến khi nghe thấy tiếng nổ là:
+\[
+t_{\text{nghe}} = t + t' = 40 + 47{,}1 = 87{,}1\ s
+\]
+}
+\end{ex}
+
+
+
+
+
+
+\begin{ex}
+\impicinpar{Hình ảnh bên là một khẩu lựu pháo $105\ mm$ đã được Quân đội Nhân dân Việt Nam sử dụng trong chiến dịch Điện Biên Phủ năm $1954$. Giả sử một viên đạn pháo được bắn ra khỏi nòng súng với vận tốc ban đầu là $472 \ m/s$ chếch lên theo hướng hợp với phương ngang một góc $30^\circ$. Cho rằng vị trí đặt khẩu pháo và vị trí viên đạn chạm đất cùng ở trên một đường nằm ngang. Bỏ qua sức cản của không khí và lấy gia tốc trọng trường $g=10 \ m/s^2$. Tầm bay xa của viên đạn pháo theo phương nằm ngang là bao nhiêu kilômét (làm tròn kết quả đến chữ số hàng phần mười)?}{\includegraphics[width=4cm]{images/2025_06_04_af03f1d88c157fe9bf98g-096(1)}}
+\shortans[oly]{19,3}
+\loigiai{
+Chuyển động của đạn theo phương Ox là chuyển động thẳng đều:
+$$
+v_{x}=v_{0 x}=v_0 .  \cos \alpha; d_{x}=v_{0 x} .  t
+$$
+Chuyển động của đạn theo phương $O y$ là chuyển động mà nửa đầu chậm dần đều, nửa sau nhanh dần đều:
+
+$a_{y}=-g; v_{0 y}=v_0 .  \sin \alpha$
+
+Vận tốc theo phương Oy tại thời điểm $t$:
+\begin{center}
+\includegraphics[width=4cm]{images/2025_06_04_af03f1d88c157fe9bf98g-097}
+\end{center} 
+$v_{y}=v_{0 y}+a_{y}. t=v_0. \sin \alpha-g. t$
+
+Tọa độ của viên đạn theo phương Oy ở thời điểm $t$:
+
+$y=\dfrac{1}{2} a_{y} .  t^2$
+
+ Khi lên đến độ cao cực đại H thì:
+
+$v_{y}=0; y_{\max}=H=\dfrac{v_0{}^2 .  \sin ^2 \alpha}{2 .  g}$
+
+Thời gian từ lúc bắt đầu ném đến khi viên đạn đạt tầm cao cực đại:		
+$$
+t=\dfrac{v_{0 y}}{g}=\dfrac{v_0 .  \sin \alpha}{g} \quad\left(v_{y}=0\right)
+$$
+Thời gian từ lúc bắt đầu ném đến khi viên đạn chạm đất:
+$$
+t^{\prime}=2 .  t=\dfrac{2 .  v_0 .  \sin \alpha}{g}
+$$
+Tầm xa của viên đạn:
+$$
+L=d_{x \max}=v_{0 x} .  t^{\prime}=>L=\dfrac{v_0^2 .  \sin 2 \alpha}{g}=\dfrac{472^2 .  \sin 60^{0}}{10} \approx 19,3 \ km
+$$
+}
+\end{ex}
+
