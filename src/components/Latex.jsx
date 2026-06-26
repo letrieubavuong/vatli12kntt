@@ -3,76 +3,34 @@ import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { TimelineHistory, FlowchartExperimental, FlowchartModel } from './PhysicsDiagrams';
 import TikzViewer from './TikzViewer';
+import BangTable from './BangTable';
+import { renderTextWithMath } from '../utils/renderTextWithMath';
 
-// Hàm helper để render chữ thường xen kẽ inline LaTeX và bold text
-export function renderTextWithMath(text) {
-  if (!text) return null;
-
-  // Regex tìm **bold** hoặc $inline math$
-  const regex = /\*\*([\s\S]+?)\*\*|\$([\s\S]+?)\$/g;
-  const parts = [];
-  let lastIndex = 0;
-  let match;
-
-  while ((match = regex.exec(text)) !== null) {
-    const textBefore = text.substring(lastIndex, match.index);
-    if (textBefore) {
-      parts.push({ content: textBefore, type: 'text' });
-    }
-
-    const boldText = match[1];
-    const mathText = match[2];
-
-    if (boldText !== undefined) {
-      parts.push({ content: boldText, type: 'bold' });
-    } else if (mathText !== undefined) {
-      parts.push({ content: mathText, type: 'math' });
-    }
-
-    lastIndex = regex.lastIndex;
-  }
-
-  const textAfter = text.substring(lastIndex);
-  if (textAfter) {
-    parts.push({ content: textAfter, type: 'text' });
-  }
-
-  return parts.map((part, index) => {
-    if (part.type === 'bold') {
-      return <strong key={index} style={{ fontWeight: '700', color: 'var(--text-bright)' }}>{part.content}</strong>;
-    } else if (part.type === 'math') {
-      try {
-        const html = katex.renderToString(part.content, {
-          displayMode: false,
-          throwOnError: false,
-        });
-        return (
-          <span
-            key={index}
-            className="latex-inline"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        );
-      } catch (e) {
-        return <code key={index} className="math-error">{part.content}</code>;
-      }
-    } else {
-      return part.content;
-    }
-  });
-}
+export { renderTextWithMath };
 
 export default function Latex({ content }) {
   if (!content) return null;
 
+  let contentWithPlaceholders = content;
+
+  // Trích xuất khối \begin{bang}...\end{bang} trước (có thể chứa TikZ/hình ảnh trong ô)
+  const bangRegex = /\\begin\{bang\}(?:\[([\s\S]*?)\])?\{([\s\S]*?)\}([\s\S]*?)\\end\{bang\}/g;
+  const bangBlocks = [];
+  let bangCounter = 0;
+  contentWithPlaceholders = contentWithPlaceholders.replace(
+    bangRegex,
+    (_match, _opts, title, body) => {
+      bangBlocks.push({ title, body: body.trim() });
+      return `__BANG_BLOCK_${bangCounter++}__`;
+    }
+  );
+
   // Trích xuất tất cả các khối [TIKZ: ...] (có thể trải dài trên nhiều dòng)
   const tikzRegex = /\[TIKZ: ([\s\S]+?)\]/g;
   const tikzBlocks = [];
-  let contentWithPlaceholders = content;
   let counter = 0;
-  
-  // Tìm các đoạn trùng khớp và thay thế bằng placeholder dạng __TIKZ_BLOCK_N__
-  const matches = [...content.matchAll(tikzRegex)];
+
+  const matches = [...contentWithPlaceholders.matchAll(tikzRegex)];
   matches.forEach((m) => {
     tikzBlocks.push(m[1]);
     contentWithPlaceholders = contentWithPlaceholders.replace(m[0], `__TIKZ_BLOCK_${counter}__`);
@@ -103,6 +61,17 @@ export default function Latex({ content }) {
     // 1. Dòng trống
     if (trimmed === '') {
       pushCurrentList();
+      return;
+    }
+
+    // Nhận diện placeholder __BANG_BLOCK_N__
+    const bangPlaceholderMatch = trimmed.match(/^__BANG_BLOCK_(\d+)__$/);
+    if (bangPlaceholderMatch) {
+      pushCurrentList();
+      const block = bangBlocks[parseInt(bangPlaceholderMatch[1], 10)];
+      renderedElements.push(
+        <BangTable key={`bang-${index}`} title={block.title} body={block.body} />
+      );
       return;
     }
 
