@@ -851,6 +851,169 @@ button, input {
   color: #f87171;
 }
 
+/* ── Chọn Dạng bài tập ── */
+.dang-intro {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0.25rem 0 0;
+}
+
+.dang-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .dang-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dang-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.dang-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.dang-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--primary-glow);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.dang-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px -8px var(--primary-glow);
+}
+
+.dang-card:hover::before {
+  opacity: 1;
+}
+
+.dang-icon {
+  font-size: 2rem;
+  line-height: 1;
+  position: relative;
+}
+
+.dang-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.4;
+  position: relative;
+}
+
+.dang-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.06);
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  position: relative;
+}
+
+.dang-start-btn {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  position: relative;
+  transition: gap var(--transition-fast);
+}
+
+/* ── Header làm bài 1 dạng ── */
+.dang-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.back-to-dang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  align-self: flex-start;
+}
+
+.back-to-dang-btn:hover {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-bright);
+  border-color: var(--primary);
+}
+
+.dang-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--primary);
+}
+
+.dang-title-row h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-bright);
+}
+
+/* ── Footer buttons ── */
+.footer-btn-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.back-dang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-normal);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.back-dang-btn:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 /* --- 9. Modal Đăng nhập (LoginModal) --- */
 .modal-overlay {
   position: fixed;
