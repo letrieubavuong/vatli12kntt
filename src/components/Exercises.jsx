@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { renderTextWithMath } from './Latex';
+import { KATEX_MACROS } from '../utils/renderTextWithMath';
 import {
   Lock, Check, X, HelpCircle, RefreshCw, Award, AlertCircle,
   ChevronLeft, ChevronRight, BookOpen, Clock, Send
@@ -9,22 +10,38 @@ import katex from 'katex';
 /* ── Render lời giải có LaTeX ── */
 function ExplanationBlock({ text }) {
   if (!text) return null;
+
+  // Trích xuất tất cả các khối $$...$$ (display math) để tránh việc split theo dòng mới
+  const mathBlocks = [];
+  let mathCounter = 0;
+  const contentWithPlaceholders = text.replace(/\$\$([\s\S]+?)\$\$/g, (_match, formula) => {
+    mathBlocks.push(formula.trim());
+    return `__MATH_BLOCK_${mathCounter++}__`;
+  });
+
   return (
     <div className="az-explanation">
       <div className="az-explanation-label">📘 Lời giải chi tiết</div>
       <div className="az-explanation-body">
-        {text.split('\n').map((line, i) => {
+        {contentWithPlaceholders.split('\n').map((line, i) => {
           const trimmed = line.trim();
-          if (trimmed.startsWith('$$') && trimmed.endsWith('$$')) {
-            const formula = trimmed.slice(2, -2);
+          if (!trimmed) return null;
+
+          const mathPlaceholderMatch = trimmed.match(/^__MATH_BLOCK_(\d+)__$/);
+          if (mathPlaceholderMatch) {
+            const formula = mathBlocks[parseInt(mathPlaceholderMatch[1], 10)];
             try {
-              const html = katex.renderToString(formula, { displayMode: true, throwOnError: false });
+              const html = katex.renderToString(formula, {
+                displayMode: true,
+                throwOnError: false,
+                macros: KATEX_MACROS,
+              });
               return <div key={i} className="latex-block" dangerouslySetInnerHTML={{ __html: html }} />;
             } catch {
               return <div key={i} className="latex-block-error"><code>{formula}</code></div>;
             }
           }
-          if (!trimmed) return null;
+
           return <p key={i} className="explanation-line">{renderTextWithMath(line)}</p>;
         })}
       </div>

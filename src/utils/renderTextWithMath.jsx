@@ -1,6 +1,24 @@
 import React from 'react';
 import katex from 'katex';
 
+export const KATEX_MACROS = {
+  "\\ct": "\\text{#1}",
+  "\\sh": "\\text{#1}",
+  "\\bth": "\\displaystyle{#1}",
+  "\\hoac": "\\left[\\begin{aligned}#1\\end{aligned}\\right.",
+  "\\heva": "\\left\\{\\begin{aligned}#1\\end{aligned}\\right.",
+  "\\pso": "\\displaystyle{\\frac{#1}{#2}}",
+  "\\vec": "\\overrightarrow{#1}",
+  "\\degree": "^\\circ",
+  "\\doC": "^\\circ\\text{C}",
+  "\\microc": "\\mu\\text{C}",
+  "\\microm": "\\mu\\text{m}",
+  "\\microf": "\\mu\\text{F}",
+  "\\microh": "\\mu\\text{H}",
+  "\\ohm": "\\Omega",
+  "\\angstrom": "\\text{\\AA}",
+};
+
 export function renderTextWithMath(text) {
   if (!text) return null;
 
@@ -41,6 +59,7 @@ export function renderTextWithMath(text) {
         const html = katex.renderToString(part.content, {
           displayMode: false,
           throwOnError: false,
+          macros: KATEX_MACROS,
         });
         return (
           <span

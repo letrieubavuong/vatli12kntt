@@ -36,6 +36,35 @@ def parse_braces(text, start):
         i += 1
     return text[start+1:i-1], i
 
+def process_boder_commands(content):
+    idx = 0
+    while True:
+        match = re.search(r'\\boder{', content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        start_braces = match_start + 6
+        
+        inner_content, end_idx = parse_braces(content, start_braces)
+        
+        text_before = content[:match_start]
+        in_align = text_before.count(r'\begin{align*}') > text_before.count(r'\end{align*}')
+        in_bracket = text_before.count(r'\[') > text_before.count(r'\]')
+        
+        if in_align or in_bracket:
+            replacement = f"\\boxed{{{inner_content}}}"
+        else:
+            in_center = text_before.count(r'\begin{center}') > text_before.count(r'\end{center}')
+            if in_center:
+                replacement = f"\n$$\n\\boxed{{{inner_content}}}\n$$\n"
+            else:
+                replacement = f"$\\boxed{{{inner_content}}}$"
+                
+        content = content[:match_start] + replacement + content[end_idx:]
+        idx = match_start + len(replacement)
+        
+    return content
+
 def convert_tabular_to_md(table_content):
     rows = table_content.split('\\\\')
     lines = []
@@ -186,8 +215,8 @@ def parse_tex_file(file_path, lesson_id):
         content = content[:match_start] + md_table + content[end_idx:]
         idx = match_start + len(md_table)
 
-    # 6. Replace custom class macros
-    content = content.replace(r'\boder{', r'\boxed{') # standard KaTeX box
+    # 6. Replace custom class macros context-aware
+    content = process_boder_commands(content)
 
     # Headings
     content = re.sub(r'\\subsection\*?{([\s\S]*?)}', r'## \1', content)

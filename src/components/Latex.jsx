@@ -4,7 +4,7 @@ import 'katex/dist/katex.min.css';
 import { TimelineHistory, FlowchartExperimental, FlowchartModel } from './PhysicsDiagrams';
 import TikzViewer from './TikzViewer';
 import BangTable from './BangTable';
-import { renderTextWithMath } from '../utils/renderTextWithMath';
+import { renderTextWithMath, KATEX_MACROS } from '../utils/renderTextWithMath';
 
 export { renderTextWithMath };
 
@@ -36,6 +36,18 @@ export default function Latex({ content }) {
     contentWithPlaceholders = contentWithPlaceholders.replace(m[0], `__TIKZ_BLOCK_${counter}__`);
     counter++;
   });
+
+  // Trích xuất tất cả các khối $$...$$ (display math) để tránh việc split theo dòng mới
+  const mathBlockRegex = /\$\$([\s\S]+?)\$\$/g;
+  const mathBlocks = [];
+  let mathCounter = 0;
+  contentWithPlaceholders = contentWithPlaceholders.replace(
+    mathBlockRegex,
+    (_match, formula) => {
+      mathBlocks.push(formula.trim());
+      return `__MATH_BLOCK_${mathCounter++}__`;
+    }
+  );
 
   const lines = contentWithPlaceholders.split('\n');
   const renderedElements = [];
@@ -85,14 +97,16 @@ export default function Latex({ content }) {
       return;
     }
 
-    // 2. Block LaTeX ($$...$$)
-    if (trimmed.startsWith('$$') && trimmed.endsWith('$$')) {
+    // Nhận diện placeholder __MATH_BLOCK_N__
+    const mathPlaceholderMatch = trimmed.match(/^__MATH_BLOCK_(\d+)__$/);
+    if (mathPlaceholderMatch) {
       pushCurrentList();
-      const formula = trimmed.slice(2, -2);
+      const formula = mathBlocks[parseInt(mathPlaceholderMatch[1], 10)];
       try {
         const html = katex.renderToString(formula, {
           displayMode: true,
           throwOnError: false,
+          macros: KATEX_MACROS,
         });
         renderedElements.push(
           <div
