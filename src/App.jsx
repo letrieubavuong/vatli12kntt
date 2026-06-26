@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Latex from './components/Latex';
 import Exercises from './components/Exercises';
 import AdminView from './components/AdminView';
-import { physicsData } from './data/physicsData';
+import { physicsCatalog } from './data/physicsCatalog';
 import { BookOpen, Award, GraduationCap, Shield, User, Phone, Key, AlertCircle, RefreshCw } from 'lucide-react';
 
 export default function App() {
@@ -25,6 +25,10 @@ export default function App() {
 
   // 5. Trạng thái Sidebar trên Mobile
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // --- Dynamic Loading for Lesson Content ---
+  const [activeLessonContent, setActiveLessonContent] = useState(null);
+  const [isLessonLoading, setIsLessonLoading] = useState(true);
 
   // --- Các State phục vụ màn hình Portal Đăng nhập ---
   const [portalSelection, setPortalSelection] = useState(null); // 'student' | 'admin' | null
@@ -48,14 +52,39 @@ export default function App() {
     }
   }, []);
 
+  // Tải động nội dung bài học khi đổi bài
+  useEffect(() => {
+    let isMounted = true;
+    setIsLessonLoading(true);
+    
+    import(`./data/lessons/${currentLessonId}.js`)
+      .then((module) => {
+        if (isMounted) {
+          setActiveLessonContent(module.default);
+          setIsLessonLoading(false);
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to load lesson content:', err);
+        if (isMounted) {
+          setActiveLessonContent({ theory: '', exercises: [] });
+          setIsLessonLoading(false);
+        }
+      });
+      
+    return () => {
+      isMounted = false;
+    };
+  }, [currentLessonId]);
+
   // Tìm bài học hiện tại dựa trên ID
-  const allLessons = physicsData.flatMap(chapter => chapter.lessons);
+  const allLessons = physicsCatalog.flatMap(chapter => chapter.lessons);
   const currentLesson = allLessons.find(lesson => lesson.id === currentLessonId) || allLessons[0];
 
   // Tìm chương chứa bài học hiện tại
-  const currentChapter = physicsData.find(chapter =>
+  const currentChapter = physicsCatalog.find(chapter =>
     chapter.lessons.some(lesson => lesson.id === currentLesson.id)
-  ) || physicsData[0];
+  ) || physicsCatalog[0];
 
   const handleSelectLesson = (lessonId) => {
     setCurrentLessonId(lessonId);
@@ -335,7 +364,7 @@ export default function App() {
     <div className="app-container">
       {/* 1. Thanh điều hướng Mục lục bên trái */}
       <Sidebar
-        chapters={physicsData}
+        chapters={physicsCatalog}
         currentLessonId={currentLessonId}
         onSelectLesson={handleSelectLesson}
         isOpen={isSidebarOpen}
@@ -388,13 +417,18 @@ export default function App() {
 
             {/* Chi tiết nội dung của từng Tab */}
             <div className="tab-content-panel">
-              {activeTab === 'theory' ? (
+              {isLessonLoading ? (
+                <div className="az-loading-container animate-fade-in">
+                  <div className="az-spinner"></div>
+                  <p>Đang tải nội dung bài học...</p>
+                </div>
+              ) : activeTab === 'theory' ? (
                 <article className="theory-card animate-fade-in">
-                  <Latex content={currentLesson.theory} />
+                  <Latex content={activeLessonContent?.theory} />
                 </article>
               ) : (
                 <Exercises
-                  exercises={currentLesson.exercises}
+                  exercises={activeLessonContent?.exercises || []}
                   studentInfo={studentInfo}
                   onOpenLogin={() => {
                     setSessionRole(null);
