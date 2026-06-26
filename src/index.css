@@ -691,6 +691,7 @@ button, input {
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-bright);
+  text-align: justify;
 }
 
 .question-number {
@@ -847,6 +848,7 @@ button, input {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-align: justify;
 }
 
 .text-success {
@@ -862,6 +864,7 @@ button, input {
   font-size: 0.95rem;
   color: var(--text-muted);
   margin: 0.25rem 0 0;
+  text-align: justify;
 }
 
 .dang-grid {
@@ -930,6 +933,7 @@ button, input {
   color: var(--text-bright);
   line-height: 1.4;
   position: relative;
+  text-align: left;
 }
 
 .dang-count {
@@ -955,6 +959,19 @@ button, input {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.dang-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  text-align: left;
+}
+
+.dang-description {
+  font-size: 0.95rem;
+  color: var(--text-normal);
+  text-align: justify;
 }
 
 .back-to-dang-btn {
